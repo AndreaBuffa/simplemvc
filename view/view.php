@@ -44,7 +44,7 @@ class ViewBase {
 			$var = 'view_'.$var;
 			$$var = $val;
 		}
-		$file = __DIR__.'/'.$this->file.'.php';
+		$file = __DIR__.'/tpl/'.$this->file.'.php';
 		ob_start();		
 		require($file);
 		$output = ob_get_clean();

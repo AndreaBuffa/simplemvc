@@ -6,9 +6,9 @@
  **/
 class ModelBase {
 
-	static protected instance;
+	static protected $instance;
 	
-	private __construct() {}
+	private function __construct() {}
 
 	/**
 	 * nome della tabella di riferimento del modello
@@ -124,7 +124,7 @@ class ModelBase {
 	}
 	
 	public function getRecordBy($attrName, $attrValue) {
-		$sql = 'Select * FROM '.$this->tabella.' '
+		$sql = 'Select * FROM '.$this->tabella.' ';
 	}
 
 }
