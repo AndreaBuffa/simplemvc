@@ -53,9 +53,9 @@ class ControllerSubscription extends ControllerBase {
               	  header('Location: /subscription/enderror');
             	}
             	$_SESSION['subscriptionStep'] = "end";
-            	header('Location: /subscription/end');	 		
+            	header('Location: /subscription/end');
         	} else {
-				header('Location: /subscription/storeSubscription');        		
+				header('Location: /subscription/storeSubscription');
         	}
         } else {
             $this->view->assign('firstname', $_POST['firstname']);

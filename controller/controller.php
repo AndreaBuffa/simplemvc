@@ -1,7 +1,8 @@
 <?php
-
-
-/** classe base che **/
+//define("IS_TEST", true);
+define('METHOD', 'http');
+define('HOST', 'localhost');
+define('APP', 'configuratore');
 class ControllerBase {
 
 	protected $view;
@@ -10,34 +11,37 @@ class ControllerBase {
 		$controller = '';
 		$action     = '';
 
-		$tokens = split('&', $_SERVER['QUERY_STRING']);
+		$tokens = explode('&', $_SERVER['QUERY_STRING']);
 		$params = array();
 		foreach ($tokens as $key => $value) {
 			# code...
-			$tmp = split('=', $value);
+			$tmp = explode('=', $value);
 			if (count($tmp) == 2) {
 				$params[$tmp[0]] = $tmp[1];	
 			}
 		}
-		//$tokens = split($_SERVER['REQUEST_URI'], '/');
+
 		 if (defined('IS_TEST') && IS_TEST) {
 			 $controller = 'test';
 			 $action = 'dummy';
 		 } else {
 		 	switch ($params['page']) {
-		 		case 'start': {
+		 		case 'start':
+		 		case 'panorama':
+		 		case 'opening':
+		 		case 'config': 
+		 		{
 		 			$controller = $params['page'];
 		 			$action = 'start';
 		 			break;
 		 			defaut:
-		 				print 'not found'
-		 				;
+		 				print 'not found';
 		 		}
 		 	}
 		 }
-		 // inclusione file definizione controller
+
 		 require_once(__DIR__.'/'.strtolower($controller).'.php');
-		 // creazione oggetti 
+
 		 $class_controller = 'Controller'.ucfirst(strtolower($controller));
 		 $view = new ViewBase(strtolower('wizard/'.$controller));
 		 $obj = new $class_controller($view);
@@ -45,13 +49,11 @@ class ControllerBase {
 	}
 
 
-	/**
-	 * costruttore
-	 * @param object $view oggetto relativo alla view usare nella
-	 *                     creazione dell'html da inviare all'utente
-	 **/
 	public function __construct(&$view) {
 		$this->view = &$view;
+		$this->view->assign('HOST', HOST);
+		$this->view->assign('METHOD', METHOD);
+		$this->view->assign('APP', APP);
 	}
 
 }

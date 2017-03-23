@@ -41,10 +41,10 @@ class ViewBase {
 	 **/
 	public function fetch() {		
 		foreach ($this->vars as $var=>$val) {
-			$var = 'view_'.$var;
+			$var = 'v_'.$var;
 			$$var = $val;
 		}
-		$file = __DIR__.'/tpl/'.$this->file.'.php';
+		$file = __DIR__.'/tpl/'.$this->file.'.tpl';
 		ob_start();		
 		require($file);
 		$output = ob_get_clean();

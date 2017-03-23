@@ -3,7 +3,7 @@
 class ControllerStart extends ControllerBase {
 
 	public function start() {
-        return $this->view->fetch();
+		return $this->view->fetch();
 	}
 }
 
