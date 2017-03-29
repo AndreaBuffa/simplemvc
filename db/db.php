@@ -1,6 +1,5 @@
 <?php
 
-/** classe di interazione con il database **/
 class DB {
 	
 	/**
@@ -16,35 +15,18 @@ class DB {
 	static public function getRecordsAsArray($sql,$tabella) {
 		$records = array();
 		/**
-		 * codice non presente, supporre che sia presente e funzionante
-		 * . . .
-		 * tenere a mente che ogni elemento di $records è una istanza
 		 * generata dalla classe ModelXXX relativa alla tabella indicata
 		 **/		
 		return $records;
 	}
 	
 	/**
-	 * esegue una query di insert/update e ritorna l'id del record
-	 * modificato, oppure -1 in caso di errore
-	 * 
-	 * @param  string $sql query da eseguire
-	 * 
-	 * @return int
+	 * @param  string $sql
+	 * @return int    the record ID. -1 if error.
 	 **/
 	static public function executeAndReturnID($sql) {
 		$id = -1;
-		/**
-		 * codice non presente, supporre che sia presente e funzionante
-		 * . . .
-		 * 
-		 **/
 		return $id;
 	}
-	
 }
-
-
-
-
 ?>

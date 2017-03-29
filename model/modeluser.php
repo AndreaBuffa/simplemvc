@@ -1,19 +1,13 @@
 <?php
 
-/** esempio di controller : Test **/
-
 class Modeluser extends ModelBase {
-	
-	public $campo__firstname;
-	public $campo__lastname;
-	public $campo__email;
-	public $campo__datetime;
-	public $campo__emailDomain;
 
-	// la trasforma in un singleton, così uso sempre solo un'istanza... 
-	// tuttavia potrebbe rivelarsi scomoda questa scelata, e il controller 
-	// può occuparsi di istanziare una sola volta questa classe e assegnarla ad un 
-	// membro privato del controller.
+	private $campo__firstname;
+	private $campo__lastname;
+	private $campo__email;
+	private $campo__datetime;
+	private $campo__emailDomain;
+
 	private function __construct() {
 		$this->tabella = "user";
 	}

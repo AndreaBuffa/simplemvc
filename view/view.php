@@ -1,10 +1,14 @@
 <?php
 
-/** classe per la gestione base delle view e dei template **/
 class ViewBase {
 
 	/**
-	 * file di template da utilizzare
+	 * template dir
+	 * @var string
+	 **/
+	private $tplSubDir;
+	/**
+	 * template file
 	 * @var string
 	 **/
 	private $file;
@@ -19,38 +23,39 @@ class ViewBase {
 	 * costruttore oggetto
 	 * @param string $azione file specifico da caricare
 	 **/
-	public function __construct($azione) {
+	public function __construct($tplSubDir, $template) {
 		$this->vars = array();
-		$this->file = $azione;
+		// prevent directory traversal
+		if (preg_match('/^(\w+)$/', $tplSubDir, $matches) && 
+				preg_match('/^(\w+)$/', $template, $matches)) {
+			$this->tplSubDir = $tplSubDir;
+			$this->file = $template;
+		} else {
+			throw new Exception('Invalid paths');
+		}
+	}
+	/**
+	 * @param string $name
+	 * @param string $val
+	 **/
+	public function setTplParam($name, $val) {
+		$this->vars[ $name ] = $val;
 	}
 
 	/**
-	 * metodo per assegnare un valore ad una variabile della view
-	 * @param string $nome    nome della variabile
-	 * @param string $valore  valore della variabile
+	 * Generate HTTP payload
 	 **/
-	public function assign($nome,$valore) {
-		$this->vars[ $nome ] = $valore;
-	}
-
-	/**
-	 * metodo per caricare un template php, eseguirlo e ritornare 
-	 * quanto generato. per tutte le variabili registrate nella view
-	 * vado a generare una nuova variabile, accessibile dal template,
-	 * che avrà come nome view_<nome> (es: test --> view_test )
-	 **/
-	public function fetch() {		
-		foreach ($this->vars as $var=>$val) {
+	public function fetch() {
+		foreach ($this->vars as $var => $val) {
 			$var = 'v_'.$var;
 			$$var = $val;
 		}
-		$file = __DIR__.'/tpl/'.$this->file.'.tpl';
-		ob_start();		
+		$file = __DIR__.'/tpl/'.$this->tplSubDir.'/'.$this->file.'.tpl';
+		ob_start();
 		require($file);
 		$output = ob_get_clean();
 		return $output;
 	}
-
 }
 
 ?>
