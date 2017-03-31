@@ -39,31 +39,31 @@ class ControllerSubscription extends ControllerBase {
             header('Location: /subscription/start');
         }
         if ($_POST['submit']) {
-        	if ($_SESSION['firstnameCheckBox'] === 
-        			$_SESSION['lastnameCheckBox'] ===
-        		 		$_SESSION['emailCheckBox'] === '1') {
-            	require_once(__DIR__.'/models/modeluser.php');
-            	$myModel = Modeluser::getInstance();
-            	$myModel->campo__firstname = $_SESSION['firstname'];
-            	$myModel->campo__lastname = $_SESSION['lastname'];
-            	$myModel->campo__email = $_SESSION['email'];
-            	$ret = $myModel->save();
-            	if ($ret === -1) {
-              	  //menage error;
-              	  header('Location: /subscription/enderror');
-            	}
-            	$_SESSION['subscriptionStep'] = "end";
-            	header('Location: /subscription/end');
-        	} else {
-				header('Location: /subscription/storeSubscription');
-        	}
+            if ($_SESSION['firstnameCheckBox'] === 
+                    $_SESSION['lastnameCheckBox'] ===
+                        $_SESSION['emailCheckBox'] === '1') {
+                require_once(__DIR__.'/models/modeluser.php');
+                $myModel = Modeluser::getInstance();
+                $myModel->campo__firstname = $_SESSION['firstname'];
+                $myModel->campo__lastname = $_SESSION['lastname'];
+                $myModel->campo__email = $_SESSION['email'];
+                $ret = $myModel->save();
+                if ($ret === -1) {
+                  //menage error;
+                  header('Location: /subscription/enderror');
+                }
+                $_SESSION['subscriptionStep'] = "end";
+                header('Location: /subscription/end');
+            } else {
+                header('Location: /subscription/storeSubscription');
+            }
         } else {
             $this->view->assign('firstname', $_POST['firstname']);
             $this->view->assign('firstname', $_POST['lastname']);
             $this->view->assign('firstname', $_POST['email']);
             return $this->view->fetch();
         }
-	}
+    }
 
     public function end() {
         if ($_SESSION['subscriptionStep'] !== "end") {

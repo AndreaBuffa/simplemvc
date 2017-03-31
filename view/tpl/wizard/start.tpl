@@ -143,20 +143,24 @@ margin: 0 0 0 0;
 #sppb-addon-1485788451565 .sppb-divider {margin-top:6px;margin-bottom:6px;}#sppb-addon-1485788451565 .sppb-divider {border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:rgba(212, 212, 212, 1);}
 #column-id-1485249579744{padding:0 5px 0 5px;}
 .sp-page-builder .page-content #section-id-1485250782919{margin:0px 0px 0px 0px;padding:10px 0px 10px 0px;}
+
 #sppb-addon-1483350722 {
-	color: rgba(255, 16, 3, 0.01);
+color: rgba(255, 16, 3, 0.01);
 padding: 0 5px 10px 5px;
 }
-#sppb-addon-1483350722 a {
-	color: rgba(255, 3, 3, 1);
-}
-#sppb-addon-1483350722 .sppb-addon-title {
-margin-top:10px;margin-bottom:9px;color:rgba(135, 135, 135, 1);font-size:15px;line-height:15px;}
 
+#sppb-addon-1483350722 a {
+color: rgba(255, 3, 3, 1);
+}
+
+#sppb-addon-1483350722 .sppb-addon-title {
+margin-top:10px;margin-bottom:9px;color:rgba(135, 135, 135, 1);font-size:15px;line-height:15px;
+}
 
 #sppb-addon-1483350723 {
-padding: 0 5px 10px 5px;
+adding: 0 5px 10px 5px;
 }
+
 #sppb-addon-1483350723 .sppb-addon-title {
 margin-top:10px;margin-bottom:9px;color:rgba(135, 135, 135, 1);font-size:15px;line-height:15px;}
 
@@ -171,6 +175,7 @@ margin-top:10px;margin-bottom:9px;color:rgba(135, 135, 135, 1);font-size:15px;li
 #sppb-addon-1483350726 {
 padding: 0 5px 10px 5px;
 }
+
 #sppb-addon-1483350726 .sppb-addon-title {
 margin-top:10px;margin-bottom:9px;color:rgba(135, 135, 135, 1);font-size:15px;line-height:15px;}
 
@@ -410,7 +415,35 @@ var sp_offanimation = 'default';
 <h6 style="margin: 0px; font-size: 15px; font-family: Raleway; color: #4e4e4e; line-height: 30px; font-weight: 600;">INDICA IL PANORAMA</h6>
 </div></div></div></div><div id="sppb-addon-1485788451561" class="clearfix" ><div class="sppb-divider sppb-divider-border "></div></div><div id="sppb-addon-1485788451564" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div><span class="f-square2" style="width: 28px; height: 28px; float: left;"><strong class="fa fa-pencil" style="color: #ffffff; font-size: 20px;">&nbsp;&nbsp;.</strong></span><span class="f-circle2" style="width: 28px; height: 28px; float: left;"><strong class="fa-alph">4</strong></span>
 <h6 style="margin: 0px; font-size: 15px; font-family: Raleway; color: #4e4e4e; line-height: 30px; font-weight: 600;">CONFIGURA I DETTAGLI</h6>
-</div></div></div></div><div id="sppb-addon-1485788451565" class="clearfix" ><div class="sppb-divider sppb-divider-border "></div></div></div></div></div></div></div></div></div></div></div><div class="sppb-col-md-9 sppb-col-xs-12"><div id="column-id-1485249579744" class="sppb-column " ><div class="sppb-column-addons"><div id="section-id-1485250782919" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-6"><div id="column-id-1485250782920" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1483350722" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-left box2tris"><h3 class="sppb-addon-title">COUNTRY</h3><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><a href="/index.php/panorama1"><img class="sppb-img-responsive" src="/images/2016/12/30/COUNTRY_VERO.jpg" alt=""></a></div></div></div></div><div id="sppb-addon-1483350723" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-left box2tris"><h3 class="sppb-addon-title">COMMERCIALE</h3><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><a  href="#"><img class="sppb-img-responsive" src="/images/2016/12/30/COMMERCIALE.jpg" alt=""></a></div></div></div></div></div></div></div><div class="sppb-col-md-6"><div id="column-id-1485250782923" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1483350727" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-left box2tris"><h3 class="sppb-addon-title">MODERNO</h3><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><a href="/index.php/panorama2"><img class="sppb-img-responsive" src="/images/2017/01/23/moderno2.jpg" alt=""></a></div></div></div></div><div id="sppb-addon-1483350726" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-left box2tris"><h3 class="sppb-addon-title">CLASSICO</h3><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><a  href="#"><img class="sppb-img-responsive" src="/images/2016/11/09/CLASSICOOK2.jpg" alt=""></a></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></section>			</div>
+</div></div></div></div><div id="sppb-addon-1485788451565" class="clearfix" ><div class="sppb-divider sppb-divider-border "></div></div></div></div></div></div></div></div></div></div></div><div class="sppb-col-md-9 sppb-col-xs-12"><div id="column-id-1485249579744" class="sppb-column " ><div class="sppb-column-addons"><div id="section-id-1485250782919" class="sppb-section "  >
+    <div class="sppb-container-inner">
+	<div class="sppb-row">
+	    <div class="sppb-col-md-6">
+		<div id="column-id-1485250782920" class="sppb-column" >
+		    <div class="sppb-column-addons">
+			<div id="sppb-addon-1483350722" class="clearfix" >
+			    <div class="sppb-addon sppb-addon-single-image sppb-text-left box2tris">
+				<h3 class="sppb-addon-title">COUNTRY</h3>
+				<div class="sppb-addon-content">
+				    <div class="sppb-addon-single-image-container">
+					<a href="/index.php/panorama1">
+					    <img class="sppb-img-responsive" src="/images/2016/12/30/COUNTRY_VERO.jpg" alt="">
+					    </a></div></div></div></div>
+			<div id="sppb-addon-1483350723" class="clearfix" >
+			    <div class="sppb-addon sppb-addon-single-image sppb-text-left box2tris">
+				<h3 class="sppb-addon-title">COMMERCIALE</h3>
+				<div class="sppb-addon-content">
+				    <div class="sppb-addon-single-image-container">
+					<a  href="#">
+					    <img class="sppb-img-responsive" src="/images/2016/12/30/COMMERCIALE.jpg" alt="">
+					    </a></div></div></div></div></div></div></div>
+
+    <div class="sppb-col-md-6"><div id="column-id-1485250782923" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1483350727" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-left box2tris"><h3 class="sppb-addon-title">MODERNO</h3><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><a href="/index.php/panorama2">
+    <img class="sppb-img-responsive" src="/images/2017/01/23/moderno2.jpg" alt=""></a></div></div></div></div><div id="sppb-addon-1483350726" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-left box2tris"><h3 class="sppb-addon-title">CLASSICO</h3><div class="sppb-addon-content">
+    <div class="sppb-addon-single-image-container">
+    <a  href="#"><img class="sppb-img-responsive" src="/images/2016/11/09/CLASSICOOK2.jpg" alt="">
+    </a></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></section>
+    </div>
 </div></div></div></div></section>                        </div> <!-- /.body-innerwrapper -->
                     </div> <!-- /.off-canvas-menu-wrap -->
 

@@ -18,7 +18,7 @@ class Modeluser extends ModelBase {
 		}
 		return Modeluser::instance;
 	}
-	
+
 	__set($prop, $val) {
 		// non so se funziona così, l'alternativa è una semplice funzione "calcolaDominio"
 		// da chiamare dal controller. 

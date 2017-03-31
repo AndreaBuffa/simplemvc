@@ -32,7 +32,7 @@ class ControllerBase {
 				case 'opening':
 				case 'config': 
 				{
-					$controller = 'start';
+					$controller = 'Wizard';
 					$view = 'start';
 					$action = 'start';
 					break;
@@ -42,12 +42,11 @@ class ControllerBase {
 			}
 		 }
 
-		 require_once(__DIR__.'/'.strtolower($controller).'.php');
+		require_once(__DIR__.'/'.strtolower($controller).'.php');
 
-		 $class_controller = 'Controller'.ucfirst(strtolower($controller));
-		 $view = new ViewBase('wizard', $view);
-		 $obj = new $class_controller($view);
-		 return $obj->$action();
+		$view = new ViewBase('wizard', $view);
+		$obj = new $controller($view);
+		return $obj->$action();
 	}
 
 

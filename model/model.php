@@ -10,10 +10,9 @@ class ModelBase {
 	private function __construct() {}
 
 	/**
-	 * nome della tabella di riferimento del modello
 	 * @var string
 	 **/
-	protected $tabella = '';
+	protected $table = '';
 
 
 	/**
@@ -56,8 +55,8 @@ class ModelBase {
 		if (!$attr) {
 			return array(); 
 		}
-		$sql = "SELECT * FROM {$this->tabella} WHERE $attr='{$this->cleanString($value)}';";
-		return DB::getRecordsAsArray($sql, $this->tabella);
+		$sql = "SELECT * FROM {$this->table} WHERE $attr='{$this->cleanString($value)}';";
+		return DB::getRecordsAsArray($sql, $this->table);
 	}
 
 	/**
@@ -66,7 +65,7 @@ class ModelBase {
 	public function save() {
 		$id = $this->campo__id;
 		$campi = array();
-		foreach ($this as $prop=>$val) {
+		foreach ($this as $prop => $val) {
 			if (substr($prop,0,7) == 'campo__') {
 				$campi[ substr($prop,7) ] = $val;
 			}
@@ -76,20 +75,20 @@ class ModelBase {
 			foreach ($campi as $v) {
 				$valori[] = "'".$v."'";
 			}
-			$sql = 'INSERT INTO '.$this->tabella.' ('.implode(',',array_keys($campi)).') VALUES ('.implode(',',$valori).')';
+			$sql = 'INSERT INTO '.$this->table.' ('.implode(',',array_keys($campi)).') VALUES ('.implode(',',$valori).')';
 		} else {
 			$id = $this->cleanNumberInt($id);
 			$valori = array();
 			foreach ($campi as $k=>$v) {
 				$valori[] = $k . " = '".$v."' ";
 			}
-			$sql = 'UPDATE '.$this->tabella.' SET '.implode(', ',$valori).' WHERE id='.$id;
+			$sql = 'UPDATE '.$this->table.' SET '.implode(', ',$valori).' WHERE id='.$id;
 		}
 		return DB::executeAndReturnID($sql);
 	}
 
 	public function getRecordBy($attrName, $attrValue) {
-		$sql = 'Select * FROM '.$this->tabella.' ';
+		$sql = 'Select * FROM '.$this->table.' ';
 	}
 }
 ?>
