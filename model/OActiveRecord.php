@@ -8,9 +8,13 @@ class OActiveRecord extends ActiveRecord {
         return CustomDB::getInstance();   
     }
 
-    public function findAll() {
-        OActiveRecord::getDataGateway()->executeQuery($this, "");
+    public static function findAll() {
+        return OActiveRecord::getDataGateway()->executeQuery(get_called_class(), "");
     }
+
+    public function save() {}
+
+    public function delete() {}
 }
 
 ?>

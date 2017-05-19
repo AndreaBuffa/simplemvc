@@ -15,7 +15,12 @@ if (version_compare(PHP_VERSION, '5.4.0')<0) {
     }
 }
 
-define('IS_DEBUG', true);
+define("IS_DEBUG", true);
+define("METHOD", "http");
+define("HOST", "localhost");
+define("APP", "configuratore");
+define("O_METHOD", "http");
+define("O_HOST", "alwin.orchestraweb.net");
 
 ob_start();
 

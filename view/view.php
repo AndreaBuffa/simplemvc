@@ -6,23 +6,15 @@ class ViewBase {
 	 * template dir
 	 * @var string
 	 **/
-	private $tplSubDir;
-	/**
-	 * template file
-	 * @var string
-	 **/
-	private $file;
+	protected $tplSubDir = '';
 
 	/**
 	 * elenco variabili accessibile nel template
 	 * @var array
 	 **/
-	private $vars = array();
+	protected $vars = array();
 
 	/**
-	 * costruttore oggetto
-	 * @param string $azione file specifico da caricare
-	 **/
 	public function __construct($tplSubDir, $template) {
 		$this->vars = array();
 		// prevent directory traversal
@@ -34,6 +26,8 @@ class ViewBase {
 			throw new Exception('Invalid paths');
 		}
 	}
+	**/
+
 	/**
 	 * @param string $name
 	 * @param string $val
@@ -42,15 +36,19 @@ class ViewBase {
 		$this->vars[ $name ] = $val;
 	}
 
+	public function setPostHandler($value) {
+		$this->setTplParam('action', $value);		
+	}	
+
 	/**
 	 * Generate HTTP payload
 	 **/
-	public function fetch() {
+	public function fetch($tplFile) {
 		foreach ($this->vars as $var => $val) {
 			$var = 'v_'.$var;
 			$$var = $val;
 		}
-		$file = __DIR__.'/tpl/'.$this->tplSubDir.'/'.$this->file.'.tpl';
+		$file = $this->tplSubDir.'/'.$tplFile.'.tpl';
 		ob_start();
 		require($file);
 		$output = ob_get_clean();

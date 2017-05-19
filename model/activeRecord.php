@@ -8,17 +8,26 @@ abstract class ActiveRecord {
 
     private $_recordState;
 
+    public function __constructor() {
+        $this->_recordState = self::STATE_NEW;
+    }
+
     public static function getInstance($type, $data) {
         //if (empty($data))
             //return null;
         $record = new $type($data);
-        $record->_recordState = self::STATE_NEW;
+        $record->_recordState = self::STATE_LOADED;
         return $record;
     }
 
     abstract protected static function getDataGateway();
 
-    abstract public function findAll();
+    abstract public static function findAll();
+
+    abstract public function delete();
+
+    abstract public function save();
+
 }
 
 ?>

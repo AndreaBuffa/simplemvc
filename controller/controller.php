@@ -1,15 +1,12 @@
 <?php
 //define("IS_TEST", true);
-define('METHOD', 'http');
-define('HOST', 'localhost');
-define('APP', 'configuratore');
+
 class ControllerBase {
 
 	protected $view;
 
 	static public function exec() {
-		$controller = '';
-		$view = '';
+		$controllerName = '';
 		$action = '';
 
 		$tokens = explode('&', $_SERVER['QUERY_STRING']);
@@ -23,7 +20,7 @@ class ControllerBase {
 		}
 
 		if (defined('IS_TEST') && IS_TEST) {
-			$controller = 'test';
+			$controllerName = 'test';
 			$action = 'dummy';
 		} else {
 			switch ($params['page']) {
@@ -31,30 +28,18 @@ class ControllerBase {
 				case 'panorama':
 				case 'opening':
 				case 'config': 
-				{
-					$controller = 'Wizard';
-					$view = 'start';
-					$action = 'start';
+					$controllerName = 'Wizard';
+					$action = $params['page'];
 					break;
-					defaut:
-						print 'not found';
-				}
+				default:
+					echo 'not found';
+					return "";
 			}
-		 }
+		}
 
-		require_once(__DIR__.'/'.strtolower($controller).'.php');
-
-		$view = new ViewBase('wizard', $view);
-		$obj = new $controller($view);
-		return $obj->$action();
-	}
-
-
-	public function __construct(&$view) {
-		$this->view = &$view;
-		$this->view->setTplParam('HOST', HOST);
-		$this->view->setTplParam('METHOD', METHOD);
-		$this->view->setTplParam('APP', APP);
+		require_once(__DIR__.'/'.strtolower($controllerName).'.php');
+		$controller = new $controllerName();
+		return $controller->$action();
 	}
 
 }
