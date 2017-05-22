@@ -1,7 +1,7 @@
 <?php
 //define("IS_TEST", true);
 
-class ControllerBase {
+abstract class ControllerBase {
 
 	protected $view;
 
@@ -23,23 +23,24 @@ class ControllerBase {
 			$controllerName = 'test';
 			$action = 'dummy';
 		} else {
-			switch ($params['page']) {
-				case 'start':
-				case 'panorama':
-				case 'opening':
-				case 'config': 
-					$controllerName = 'Wizard';
-					$action = $params['page'];
-					break;
-				default:
-					echo 'not found';
-					return "";
+			require_once(__DIR__.'/wizard.php');
+			$factory = new WizardFactory($params['page']);
+			$controller = $factory->getController();
+			if ($controller) {
+				return $controller->processRequest();
+			} else {
+				//@todo not found page
+				echo 'not found';
+				return "";
 			}
 		}
+	}
 
-		require_once(__DIR__.'/'.strtolower($controllerName).'.php');
-		$controller = new $controllerName();
-		return $controller->$action();
+	abstract public function processRequest();
+
+	public function redirect($pageName) {
+		//@todo check the page
+		header('Location: index.php?page='.$pageName);
 	}
 
 }

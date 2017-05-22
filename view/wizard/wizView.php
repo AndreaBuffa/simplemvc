@@ -1,6 +1,6 @@
 <?php
 
-class Start extends ViewBase {
+class WizView extends ViewBase {
 
 	/**
 	 * template dir
@@ -10,15 +10,16 @@ class Start extends ViewBase {
 
 	public function chooseStyle() {
 		require_once(__DIR__.'/../../model/style.php');
-		//$styleList = Style::getInstance('Style', null)->findAll();
 		$styleList = Style::findAll();
-		$this->setPostHandler('http://localhost/configuratore/index.php?page=start');
+		$this->setPostHandler('http://localhost/configuratore/index.php?page=style');
 		$this->setTplParam('styleList', $styleList);
-		return $this->fetch('start');
+		return $this->fetch('style');
 	}
 
 	public function choosePanorama() {
 		//require_once(__DIR__.'/../../model/style.php');
+		$this->setPostHandler('http://localhost/configuratore/index.php?page=panorama');
+		return $this->fetch('panorama');
 	}
 }
 

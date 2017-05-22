@@ -13,7 +13,7 @@ class Style extends OActiveRecord {
     public $img_URL;
 
     public function getImgURL() {
-    	return O_METHOD."://".O_HOST."/".$this->img_URL;
+		return O_METHOD."://".O_HOST."/".$this->img_URL;
     }
 }
 
