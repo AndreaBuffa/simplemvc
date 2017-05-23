@@ -34,10 +34,11 @@ class CustomDB extends DB {
         }
 
         if ($query) {
-            $path  +=  '?' + $query;
+            $path .= '?'.$query;
         }
         $url = O_METHOD."://".O_HOST."/api/".$path;
-        $response = file_get_contents($url); //http_get($url, array("timeout"=>1), $info);
+        $response = file_get_contents($url);
+        //http_get($url, array("timeout"=>1), $info);
 /*
         $response = <<<XML
 <styles>

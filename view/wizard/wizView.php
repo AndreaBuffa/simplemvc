@@ -11,15 +11,24 @@ class WizView extends ViewBase {
 	public function chooseStyle() {
 		require_once(__DIR__.'/../../model/style.php');
 		$styleList = Style::findAll();
-		$this->setPostHandler('http://localhost/configuratore/index.php?page=style');
 		$this->setTplParam('styleList', $styleList);
 		return $this->fetch('style');
 	}
 
 	public function choosePanorama() {
 		//require_once(__DIR__.'/../../model/style.php');
-		$this->setPostHandler('http://localhost/configuratore/index.php?page=panorama');
 		return $this->fetch('panorama');
+	}
+
+	public function chooseOpening() {
+		require_once(__DIR__.'/../../model/tipoInfisso.php');
+		$types = Category::findAll();
+		$this->setTplParam('typeList', $types);
+		return $this->fetch('opening');	
+	}
+
+	public function config() {
+		return $this->fetch('config');	
 	}
 }
 

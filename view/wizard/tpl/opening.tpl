@@ -660,6 +660,23 @@ var sp_offanimation = 'default';
     });
   </script>
 
+<script type="text/javascript">
+
+function wizPost(paramsList) {
+    var theForm = document.getElementById('thisForm');
+    for (var param of paramsList) {
+        //<input type="hidden" name="country" value="Norway">
+        var elem = document.createElement("input");
+        elem.type = "hidden";
+        elem.name = param.name;
+        elem.value = param.value;
+        theForm.appendChild(elem);
+    };
+    theForm.submit();
+};
+</script>
+
+<form id='thisForm' method="POST" action="<?php echo $v_action?>">
 
 <div id="favimagehover-16644" class="favth-row">
 
@@ -724,7 +741,7 @@ var sp_offanimation = 'default';
                    class="favimagehover-readmore"
                    style="text-align: center;">
 
-                <a class="btn" href="/index.php/country-portafinestra-battente"
+                <a class="btn" href="javascript: wizPost([{name: 'category', value:'MAIN-PORTAFINESTRA'}]);"
                   target="_self"
                   style="color: #FFFFFF;
                         background-color: #C20000;
@@ -827,7 +844,7 @@ var sp_offanimation = 'default';
                    class="favimagehover-readmore"
                    style="text-align: center;">
 
-                <a class="btn" href="/"
+                <a class="btn" href="javascript: wizPost([{name: 'category', value:'MAIN-PORTAFINESTRA'}]);"
                   target="_self"
                   style="color: #FFFFFF;
                         background-color: #C20000;
@@ -853,7 +870,7 @@ var sp_offanimation = 'default';
 
   </div>
 
-  
+</form>
 </div>
 </div></div></div></div></div></div></div></div></section>			</div>
 </div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer2" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright">All Rights Reserved 2017 © Alsistem Scrl</span></div></div></div></div></footer>                        </div> <!-- /.body-innerwrapper -->

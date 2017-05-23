@@ -2,7 +2,7 @@
 
 require_once('OActiveRecord.php');
 
-class TipoInfisso extends OActiveRecord {
+class Category extends OActiveRecord {
 
     const METHOD = 'main_categories_list.php';
 

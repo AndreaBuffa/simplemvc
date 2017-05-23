@@ -29,12 +29,15 @@ class StyleState extends State {
 			$this->view->setTplParam('HOST', HOST);
 			$this->view->setTplParam('METHOD', METHOD);
 			$this->view->setTplParam('APP', APP);
+			$this->view->setPostHandler(METHOD.'://'.HOST.'/'.APP.'/index.php?page='.self::NAME);
 			return $this->view->chooseStyle();			
 		} else {
 			if (isset($_POST['style'])) {
 				$_SESSION['style'] = $_POST['style'];
 				$_SESSION['wizState'] = new PanoramaState();
 				return header('Location: index.php?page='.PanoramaState::NAME);
+			} else {
+				return $this->process('GET', self::NAME);
 			}
 		}
 	}
@@ -47,26 +50,72 @@ class PanoramaState extends State {
 		if ($page !== self::NAME) {
 			return header('Location: index.php?page='.self::NAME);
 		}		
-		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-			
-		} else {
+		if ($method === 'GET') {
 			require_once(__DIR__.'/../view/wizard/wizView.php');
 			$this->view = new WizView();
 			$this->view->setTplParam('HOST', HOST);
 			$this->view->setTplParam('METHOD', METHOD);
 			$this->view->setTplParam('APP', APP);
+			$this->view->setPostHandler(METHOD.'://'.HOST.'/'.APP.'/index.php?page='.self::NAME);
 			return $this->view->choosePanorama();
+		} else {
+			if (isset($_POST['panorama'])) {
+				$_SESSION['panorama'] = $_POST['panorama'];
+				$_SESSION['wizState'] = new OpeningState();
+				return header('Location: index.php?page='.OpeningState::NAME);
+			} else {
+				return $this->process('GET', self::NAME);
+			}
 		}
 	}
 }
 
 class OpeningState extends State {
+	const NAME = 'opening';
 
-	public function process($method, $page) {}
+	public function process($method, $page) {
+		if ($page !== self::NAME) {
+			return header('Location: index.php?page='.self::NAME);
+		}
+		if ($method === 'GET') {
+			require_once(__DIR__.'/../view/wizard/wizView.php');
+			$this->view = new WizView();
+			$this->view->setTplParam('HOST', HOST);
+			$this->view->setTplParam('METHOD', METHOD);
+			$this->view->setTplParam('APP', APP);
+			$this->view->setPostHandler(METHOD.'://'.HOST.'/'.APP.'/index.php?page='.self::NAME);
+			return $this->view->chooseOpening();
+		} else {
+			if (isset($_POST['category'])) {
+				$_SESSION['category'] = $_POST['category'];
+				$_SESSION['wizState'] = new ConfigState();
+				return header('Location: index.php?page='.ConfigState::NAME);
+			} else {
+				return $this->process('GET', self::NAME);
+			}
+		}
+	}
 }
 
 class ConfigState extends State {
-	public function process($method, $page) {}
+	const NAME = 'config';
+
+	public function process($method, $page) {
+		if ($page !== self::NAME) {
+			return header('Location: index.php?page='.self::NAME);
+		}
+		if ($method === 'GET') {
+			require_once(__DIR__.'/../view/wizard/wizView.php');
+			$this->view = new WizView();
+			$this->view->setTplParam('HOST', HOST);
+			$this->view->setTplParam('METHOD', METHOD);
+			$this->view->setTplParam('APP', APP);
+			$this->view->setPostHandler(METHOD.'://'.HOST.'/'.APP.'/index.php?page='.self::NAME);
+			return $this->view->config();
+		} else {
+
+		}
+	}
 }
 
 class WizardFactory {
