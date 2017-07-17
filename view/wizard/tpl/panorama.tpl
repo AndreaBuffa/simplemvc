@@ -854,7 +854,7 @@ function wizPost(paramsList) {
                    class="favimagehover-readmore"
                    style="text-align: center;">
 
-                <a class="btn" href="/index.php/country-montagna"
+                <a class="btn" href="javascript: wizPost([{name: 'panorama', value:'MONTAGNA'}]);"
                   target="_self"
                   style="color: #FFFFFF;
                         background-color: #C20000;
@@ -957,7 +957,7 @@ function wizPost(paramsList) {
                    class="favimagehover-readmore"
                    style="text-align: center;">
 
-                <a class="btn" href="/"
+                <a class="btn" href="javascript: wizPost([{name: 'panorama', value:'CITTA'}]);"
                   target="_self"
                   style="color: #FFFFFF;
                         background-color: #C20000;
@@ -1060,7 +1060,7 @@ function wizPost(paramsList) {
                    class="favimagehover-readmore"
                    style="text-align: center;">
 
-                <a class="btn" href="/"
+                <a class="btn" href="javascript: wizPost([{name: 'panorama', value:'LAGO'}]);"
                   target="_self"
                   style="color: #FFFFFF;
                         background-color: #C20000;

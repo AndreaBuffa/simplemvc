@@ -30,7 +30,7 @@ abstract class ControllerBase {
 				return $controller->processRequest();
 			} else {
 				//@todo not found page
-				echo 'not found';
+				echo 'SMVC page not found';
 				return "";
 			}
 		}

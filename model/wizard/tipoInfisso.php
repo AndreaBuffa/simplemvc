@@ -1,6 +1,6 @@
 <?php
 
-require_once('OActiveRecord.php');
+require_once(__DIR__.'/../OActiveRecord.php');
 
 class Category extends OActiveRecord {
 

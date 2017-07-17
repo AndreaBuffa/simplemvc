@@ -111,6 +111,7 @@ class ConfigState extends State {
 			$this->view->setTplParam('METHOD', METHOD);
 			$this->view->setTplParam('APP', APP);
 			$this->view->setPostHandler(METHOD.'://'.HOST.'/'.APP.'/index.php?page='.self::NAME);
+			var_dump($_SESSION);
 			return $this->view->config();
 		} else {
 

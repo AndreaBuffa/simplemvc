@@ -9,21 +9,21 @@ class WizView extends ViewBase {
 	protected $tplSubDir = __DIR__.'/tpl/';
 
 	public function chooseStyle() {
-		require_once(__DIR__.'/../../model/style.php');
+		require_once(__DIR__.'/../../model/wizard/style.php');
 		$styleList = Style::findAll();
 		$this->setTplParam('styleList', $styleList);
 		return $this->fetch('style');
 	}
 
 	public function choosePanorama() {
-		//require_once(__DIR__.'/../../model/style.php');
+		//require_once(__DIR__.'/../../model/wizard/panorama.php');
 		return $this->fetch('panorama');
 	}
 
 	public function chooseOpening() {
-		require_once(__DIR__.'/../../model/tipoInfisso.php');
-		$types = Category::findAll();
-		$this->setTplParam('typeList', $types);
+		require_once(__DIR__.'/../../model/wizard/tipoInfisso.php');
+		//$types = Category::findAll();
+		//$this->setTplParam('typeList', $types);
 		return $this->fetch('opening');	
 	}
 
