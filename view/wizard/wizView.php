@@ -28,6 +28,9 @@ class WizView extends ViewBase {
 	}
 
 	public function config() {
+		require_once(__DIR__.'/../../model/wizard/rendering.php');
+		$currRendering = Rendering::findAll(/* pass me some params*/);
+		$this->setTplParam('renderingList', $currRendering);
 		return $this->fetch('config');	
 	}
 }

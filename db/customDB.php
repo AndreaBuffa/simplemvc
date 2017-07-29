@@ -6,18 +6,17 @@
  */
 class CustomDB extends DB {
 
-    private static $instance;
-
     const SCRIPT_NAME = 'METHOD';
 
-	private function __constructor() {}
+    private function __construct(){}
 
-	public static function getInstance() {
-		if (!self::$instance) {
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
+    public static function getInstance() {
+        // self is always binded to the class where it is defined
+        if (!self::$instance) {
+            self::$instance = new self();
+        }
+        return self::$instance;
+    }
 
     /**
      * @param  string $query not used for this particular DB
