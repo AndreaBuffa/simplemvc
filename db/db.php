@@ -9,9 +9,10 @@ abstract class DB {
 
 	/**
 	 * @param  string $query
-	 * @return int    the record ID. -1 if error.
+	 * @param  array  $query
+	 * @return array  the result list
 	 **/
-	abstract public function executeQuery($type, $query);
+	abstract public function executeQuery($type, $criteria);
 
 }
 ?>

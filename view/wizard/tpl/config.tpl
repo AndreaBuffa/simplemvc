@@ -823,7 +823,9 @@ var sp_offanimation = 'default';
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFIGURA ESTERNO</div> <div style="float:right; margin-right:5px"><i class="fa fa-pencil-square-o"></i></div></div>
 </a></div></div></div><div id="sppb-addon-1494508536879" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="/index.php/countryfinale" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFERMA E PROSEGUI</div> <div style="float:right; margin-right:5px"><i class="fa fa-floppy-o"></i></div></div>
-</a></div></div></div></div></div></div><div class="sppb-col-md-9 sppb-col-sm-9"><div id="column-id-1490355666611" class="sppb-column  posizione1" ><div class="sppb-column-addons"><div id="sppb-addon-1494256006468" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><link rel="stylesheet" type="text/css" href="/css/component.css" />
+</a></div></div></div></div></div></div>
+<!-- colonnna rendering -->
+<div class="sppb-col-md-9 sppb-col-sm-9"><div id="column-id-1490355666611" class="sppb-column  posizione1" ><div class="sppb-column-addons"><div id="sppb-addon-1494256006468" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><link rel="stylesheet" type="text/css" href="/css/component.css" />
 <script src="/js/modernizr.custom.js"></script>
 
 <style type="text/css">
@@ -1712,7 +1714,9 @@ $("#nascondimaniglie").click(function(){
 });
 
 });
-// ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/APERTURE/COUNTRY/PORTAFINESTRA_BATTENTE/COUNTRY_MONTAGNA_BATTENTE_ROVERE_CHIARO.jpg">+</a><img class="sppb-img-responsive" src="/images/APERTURE/COUNTRY/PORTAFINESTRA_BATTENTE/COUNTRY_MONTAGNA_BATTENTE_ROVERE_CHIARO.jpg" alt=""></div></div></div></div></div></div></div></div></div></div><div id="martellina2" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1495227802230" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1495234310694" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="mancremonese" style="width: 100%">
+// ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom"
+href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a>
+<img class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt=""></div></div></div></div></div></div></div></div></div></div><div id="martellina2" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1495227802230" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1495234310694" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="mancremonese" style="width: 100%">
 <table>
 <tbody>
 <tr>

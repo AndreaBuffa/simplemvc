@@ -12,8 +12,8 @@ class ImgActiveRecord extends ActiveRecord {
         return imageDB::getInstance();   
     }
 
-    public static function findAll() {
-        return ImgActiveRecord::getDataGateway()->executeQuery(get_called_class(), "");
+    public static function findAll($criteria = array()) {
+        return ImgActiveRecord::getDataGateway()->executeQuery(get_called_class(), $criteria);
     }
 
     public function save() {

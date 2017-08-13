@@ -21,13 +21,11 @@ define("HOST", "localhost");
 define("APP", "configuratore");
 define("O_METHOD", "http");
 define("O_HOST", "alwin.orchestraweb.net");
+define("DFLT_CONF_IMG", "montagna/chiari/stili/classico/battente/sistemi/luce/interno/colore/avorio/maniglie/cremonese/193.jpg");
 
 ob_start();
 
-require_once(__DIR__.'/db/db.php');
-require_once(__DIR__.'/model/model.php');
 require_once(__DIR__.'/controller/controller.php');
-require_once(__DIR__.'/view/view.php');
 
 echo ControllerBase::exec();
 

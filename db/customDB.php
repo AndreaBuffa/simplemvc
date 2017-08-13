@@ -1,5 +1,5 @@
 <?php
-
+require_once('db.php');
 /**
  *  third party HTTP based API database 
  *  returning XML data.

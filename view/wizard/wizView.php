@@ -1,5 +1,7 @@
 <?php
 
+require_once(__DIR__.'/../../view/view.php');
+
 class WizView extends ViewBase {
 
 	/**
@@ -28,9 +30,15 @@ class WizView extends ViewBase {
 	}
 
 	public function config() {
+		var_dump($_SESSION);
 		require_once(__DIR__.'/../../model/wizard/rendering.php');
-		$currRendering = Rendering::findAll(/* pass me some params*/);
-		$this->setTplParam('renderingList', $currRendering);
+		$criteria["style"] = strtolower($_SESSION["style"]);
+		$criteria["panorama"] = strtolower($_SESSION["panorama"]);
+		$criteria["category"] = strtolower($_SESSION["category"]);
+		$currRendering = Rendering::findAll($criteria);
+
+		//$this->setTplParam('renderingList', $currRendering);
+		$this->setTplParam('rendering', "static/images/montagna/chiari/stili/classico/battente/sistemi/classic/esterno/colore/6638.jpg");
 		return $this->fetch('config');	
 	}
 }
