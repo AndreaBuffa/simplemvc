@@ -26,19 +26,24 @@ class WizView extends ViewBase {
 		require_once(__DIR__.'/../../model/wizard/tipoInfisso.php');
 		//$types = Category::findAll();
 		//$this->setTplParam('typeList', $types);
-		return $this->fetch('opening');	
+		return $this->fetch('opening');
 	}
 
 	public function config() {
-		var_dump($_SESSION);
 		require_once(__DIR__.'/../../model/wizard/rendering.php');
 		$criteria["style"] = strtolower($_SESSION["style"]);
 		$criteria["panorama"] = strtolower($_SESSION["panorama"]);
 		$criteria["category"] = strtolower($_SESSION["category"]);
-		$currRendering = Rendering::findAll($criteria);
-
+		$renderingList = Rendering::findAll($criteria);
+		$defaultRendering = '';
+		foreach ($renderingList as $key => $elem) {
+			if (preg_match('/interno/', $elem)) {
+				$defaultRendering = $renderingList[$key];
+				break;
+			}
+		}
 		//$this->setTplParam('renderingList', $currRendering);
-		$this->setTplParam('rendering', "static/images/montagna/chiari/stili/classico/battente/sistemi/classic/esterno/colore/6638.jpg");
+		$this->setTplParam('rendering', $defaultRendering);
 		return $this->fetch('config');	
 	}
 }
