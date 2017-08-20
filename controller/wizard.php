@@ -105,12 +105,30 @@ class ConfigState extends State {
 			return header('Location: index.php?page='.self::NAME);
 		}
 		if ($method === 'GET') {
+			require_once(__DIR__.'/../model/wizard/rendering.php');
+			$criteria["style"] = strtolower($_SESSION["style"]);
+			$criteria["panorama"] = strtolower($_SESSION["panorama"]);
+			$criteria["category"] = strtolower($_SESSION["category"]);
+			$renderingList = Rendering::findAll($criteria);
+			if (count($renderingList) == 0) {
+				$_SESSION['wizState'] = new StartState();
+				return header('Location: index.php?page='.StartState::NAME);
+			}
+			$defaultRendering = '';
+			foreach ($renderingList as $key => $elem) {
+				if (preg_match('/interno/', $elem)) {
+					$defaultRendering = $renderingList[$key];
+					break;
+				}
+			}
 			require_once(__DIR__.'/../view/wizard/wizView.php');
 			$this->view = new WizView();
 			$this->view->setTplParam('HOST', HOST);
 			$this->view->setTplParam('METHOD', METHOD);
 			$this->view->setTplParam('APP', APP);
 			$this->view->setPostHandler(METHOD.'://'.HOST.'/'.APP.'/index.php?page='.self::NAME);
+			$this->view->setTplParam('rendering', $defaultRendering);
+			$this->view->setTplParam('renderingList', $renderingList);
 			return $this->view->config();
 		} else {
 

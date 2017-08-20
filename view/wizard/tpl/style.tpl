@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it-it" lang="it-it" dir="ltr">
     <head>
@@ -10,31 +11,31 @@
     <title>stili</title>
     <link href="/templates/shaper_helix3/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/animate.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/sppagebuilder.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/sppagecontainer.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/magnific-popup.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/sc_bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/common.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/default.css" rel="stylesheet" type="text/css" />
+    <link href="/components/com_sppagebuilder/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/components/com_sppagebuilder/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="/components/com_sppagebuilder/assets/css/sppagebuilder.css" rel="stylesheet" type="text/css" />
+    <link href="/components/com_sppagebuilder/assets/css/sppagecontainer.css" rel="stylesheet" type="text/css" />
+    <link href="/components/com_sppagebuilder/assets/css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="/media/sourcecoast/css/sc_bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/media/sourcecoast/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/media/sourcecoast/themes/sclogin/default.css" rel="stylesheet" type="text/css" />
     <link href="/modules/mod_favimagehover/theme/bootstrap/favth-bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="/modules/mod_favimagehover/theme/css/favimagehover.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="//fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet" type="text/css" />
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/style.min.css?v=6.0.3" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css?family=Raleway:100,200,300,regular,500,600,700,800,900&amp;subset=latin" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css?family=Aldrich:regular&amp;subset=latin" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&amp;subset=greek-ext" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css?family=Oswald:300,regular,700&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/legacy.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/template.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/presets/preset4.css" rel="stylesheet" type="text/css" class="preset" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/pagebuilder.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/css/frontend-edit.css" rel="stylesheet" type="text/css" />
+    <link href="/media/tooltips/css/style.min.css?v=6.0.3" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900&amp;subset=latin" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Aldrich:regular&amp;subset=latin" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&amp;subset=greek-ext" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,regular,700&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+    <link href="/templates/shaper_helix3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/templates/shaper_helix3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/templates/shaper_helix3/css/legacy.css" rel="stylesheet" type="text/css" />
+    <link href="/templates/shaper_helix3/css/template.css" rel="stylesheet" type="text/css" />
+    <link href="/templates/shaper_helix3/css/presets/preset4.css" rel="stylesheet" type="text/css" class="preset" />
+    <link href="/plugins/system/helix3/assets/css/pagebuilder.css" rel="stylesheet" type="text/css" />
+    <link href="/templates/shaper_helix3/css/frontend-edit.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
 .margini1 {
     margin-right: -15px;
@@ -358,7 +359,7 @@ var sp_offanimation = 'default';
                         <div class="body-innerwrapper">
                             <div class="sp-pre-loader"><div class="sp-loader-bubble-loop"></div></div><section id="sp-top-bar"><div class="container"><div class="row"><div id="sp-top1" class="col-sm-6 col-md-6 hidden-md hidden-lg hidden-sm hidden-xs"><div class="sp-column "></div></div><div id="sp-top2" class="col-sm-6 col-md-6 hidden-md hidden-lg hidden-sm hidden-xs"><div class="sp-column "></div></div></div></div></section><header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-3 col-md-3 hidden-md hidden-lg hidden-sm hidden-xs"><div class="sp-column "><div class="logo"><a href="/"><img class="sp-default-logo" src="/templates/shaper_helix3/images/presets/preset4/logo.png" alt="alwin3d"><img class="sp-retina-logo" src="/templates/shaper_helix3/images/presets/preset4/logo@2x.png" alt="alwin3d" width="145" height="48"></a></div></div></div><div id="sp-menu" class="col-xs-4 col-sm-9 col-md-9 hidden-md hidden-lg hidden-sm hidden-xs"><div class="sp-column ">            <div class='sp-megamenu-wrapper'>
                 <a id="offcanvas-toggler" class="visible-sm visible-xs" href="#"><i class="fa fa-bars"></i></a>
-                <ul class="sp-megamenu-parent menu-fade hidden-sm hidden-xs"><li class="sp-menu-item"></li><li class="sp-menu-item current-item active"><a  href="/index.php/stili" >stili</a></li><li class="sp-menu-item"><a  href="/index.php/country-panorami" >country panorami</a></li><li class="sp-menu-item"><a  href="/index.php/country-montagna" >country montagna</a></li><li class="sp-menu-item"><a  href="/index.php/country-portafinestra-battente" >country portafinestra battente</a></li><li class="sp-menu-item"><a  href="/index.php/country-portafinestra-battente-esterno" >country portafinestra battente esterno</a></li><li class="sp-menu-item"><a  href="/index.php/countryfinale" >countryfinale</a></li><li class="sp-menu-item"><a  href="/index.php/pagina-utente-finale" >pagina utente finale</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-panorami" >moderno panorami</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-citta" >moderno citta</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-portafinestra-scorrevole" >moderno portafinestra scorrevole</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-portafinestra-scorrevole-esterno" >moderno portafinestra scorrevole esterno</a></li><li class="sp-menu-item"><a  href="/index.php/modernofinale" >modernofinale</a></li></ul>            </div>
+                <ul class="sp-megamenu-parent menu-fade hidden-sm hidden-xs"><li class="sp-menu-item"></li><li class="sp-menu-item current-item active"><a  href="/index.php/stili" >stili</a></li><li class="sp-menu-item"><a  href="/index.php/country-panorami" >country panorami</a></li><li class="sp-menu-item"><a  href="/index.php/country-montagna" >country montagna</a></li><li class="sp-menu-item"><a  href="/index.php/country-portafinestra-battente" >country portafinestra battente</a></li><li class="sp-menu-item"><a  href="/index.php/country-portafinestra-battente-2" >country portafinestra battente2</a></li><li class="sp-menu-item"><a  href="/index.php/country-portafinestra-battente-esterno" >country portafinestra battente esterno</a></li><li class="sp-menu-item"><a  href="/index.php/countryfinale" >countryfinale</a></li><li class="sp-menu-item"><a  href="/index.php/pagina-utente-finale" >pagina utente finale</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-panorami" >moderno panorami</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-citta" >moderno citta</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-portafinestra-scorrevole" >moderno portafinestra scorrevole</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-portafinestra-scorrevole-esterno" >moderno portafinestra scorrevole esterno</a></li><li class="sp-menu-item"><a  href="/index.php/modernofinale" >modernofinale</a></li></ul>           </div>
         </div></div></div></div></header><section id="sp-page-title"><div class="row"><div id="sp-title" class="col-sm-12 col-md-12"><div class="sp-column "></div></div></div></section><section id="sp-main-body"><div class="row"><div id="sp-component" class="col-sm-12 col-md-12"><div class="sp-column "><div id="system-message-container">
     </div>
 <div id="sp-page-builder" class="sp-page-builder  page-14">
@@ -438,7 +439,7 @@ var sp_offanimation = 'default';
                     <input type="hidden" name="task" value="user.logout" />
                     
                     <input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDE=" />
-                    <input type="hidden" name="8078a1c8b5ffbaf108e13e3e32fdcc19" value="1" />                </div>
+                    <input type="hidden" name="e584fa22ad6385760f6332fa7a4a167c" value="1" />                </div>
             </form>
         </div>
     </div>
@@ -624,7 +625,7 @@ var sp_offanimation = 'default';
 <td style="width:1%"></td>
 <td style="width:4%">
 <a href="#" style="padding: 0px 2px; font-size: 12px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Condividi sui social la configurazione" title="Titolo Suggerimento">
+<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&qquot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Condividi sui social la configurazione" title="Titolo Suggerimento">
 <i class="fa fa-share-alt"></i></span>
 </a>
 </td>
@@ -643,12 +644,13 @@ var sp_offanimation = 'default';
 
   <script type="text/javascript">
     jQuery(document).ready(function() {
-    jQuery('#favimagehover-10680 .layout-effect').addClass("favhide").viewportChecker({
+    jQuery('#favimagehover-13859 .layout-effect').addClass("favhide").viewportChecker({
       classToAdd: 'favshow layout-effect1', // Class to add to the elements when they are visible
       offset: 100
       });
     });
   </script>
+
 
 <script type="text/javascript">
 
@@ -667,8 +669,9 @@ function wizPost(paramsList) {
 </script>
 
 <form id='thisForm' method="POST" action="<?php echo $v_action?>">
-<?php foreach ($v_styleList as $style): ?>
-<div id="favimagehover-10680" class="favth-row">
+
+
+<div id="favimagehover-13859" class="favth-row">
 
   <div style="position: relative;
     margin-bottom: -50px;
@@ -695,7 +698,7 @@ function wizPost(paramsList) {
                      vertical-align: top">
             </i>
 
-<?php echo $style->name?>
+            Classico
           </h4>
         </div>
   <div style="z-index:8" class="favimagehover favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
@@ -708,8 +711,12 @@ function wizPost(paramsList) {
 
           <div id="favimagehover-image-container1">
 
-            <div id="favimagehover-image1" style="height: 100%;">
-                <img src="<?php echo $style->getImgURL();?>" alt="" />
+            <div id="favimagehover-image1"
+                 style="height: 100%;">
+
+                                  <img src="/images/STILI/cover/Classico-interno.jpg"
+                      alt=""/>
+                
             </div>
 
             <div id="favimagehover-overlay1">
@@ -719,16 +726,17 @@ function wizPost(paramsList) {
                     font-size: 16px;
                     line-height: 26px;
                     text-align: center;">
-<?php echo $style->description;?>
+
+                Sobrietà ed eleganza, caratteristiche di uno stile senza tempo.
               </p>
 
               <div id="favimagehover-readmore1"
                    class="favimagehover-readmore"
                    style="text-align: center;">
 
-                <a class="btn" href="javascript: wizPost([{name: 'style', value:'RUSTICO'}]);"
-                    target="_self"
-                    style="color: #FFFFFF;
+                <a class="btn" href="javascript: wizPost([{name: 'style', value:'classico'}]);"
+                  target="_self"
+                  style="color: #FFFFFF;
                         background-color: #C20000;
                         padding: 11px 16px 9px;
                         -webkit-border-radius: 4px;
@@ -751,21 +759,319 @@ function wizPost(paramsList) {
     </div>
 
   </div>
-<?php endforeach; ?>
-</form>
-  
 
-</div></div></div></div></div></div><div class="sppb-col-md-6"><div id="column-id-1494160813209" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-1494160813215" class="clearfix" ><div class="sppb-addon sppb-addon-module  marginia"><div class="sppb-addon-content">
+  
+</div>
+</div></div></div><div id="sppb-addon-1494160813218" class="clearfix" ><div class="sppb-addon sppb-addon-module  marginib2"><div class="sppb-addon-content">
 
   <script type="text/javascript">
     jQuery(document).ready(function() {
-    jQuery('#favimagehover-14925 .layout-effect').addClass("favhide").viewportChecker({
+    jQuery('#favimagehover-18471 .layout-effect').addClass("favhide").viewportChecker({
       classToAdd: 'favshow layout-effect1', // Class to add to the elements when they are visible
       offset: 100
       });
     });
   </script>
 
+
+<div id="favimagehover-18471" class="favth-row">
+
+  <div style="position: relative;
+    margin-bottom: -50px;
+    z-index: 9;
+    padding: 0 5px;
+    margin-left: 10px;
+    margin-right: 10px;">
+          <h4 id="favimagehover-title3"
+          style="color: #FFFFFF;
+                background-color: #111111;
+                opacity: 0.5;
+                font-family: Open Sans;
+                font-weight: 400;
+                font-style: normal;
+                padding: 10px 20px;
+                font-size: 18px;
+                line-height: 1.4em;
+                text-align: left;
+                margin-bottom: 0;">
+
+            <i class="fa fa-arrow"
+               style="color: #FFFFFF;
+                     font-size: 18px;
+                     vertical-align: top">
+            </i>
+
+            Country
+          </h4>
+        </div>
+  <div style="z-index:8" class="favimagehover favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
+
+    <div id="favimagehover-box3"
+        class="favimagehover3 layout-effect"
+        style="-webkit-border-radius: 0px;
+              -moz-border-radius: 0px;
+              border-radius: 0px;">
+
+          <div id="favimagehover-image-container3">
+
+            <div id="favimagehover-image3"
+                 style="height: 100%;">
+
+                                  <img src="/images/STILI/cover/Country.jpg"
+                      alt=""/>
+                
+            </div>
+
+            <div id="favimagehover-overlay3">
+
+              <p id="favimagehover-description3"
+              style="color: #FFFFFF;
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-align: center;">
+
+                Tradizione e materiali naturali,<br />per un’atmosfera irresistibilmente calda e accogliente.
+              </p>
+
+              <div id="favimagehover-readmore3"
+                   class="favimagehover-readmore"
+                   style="text-align: center;">
+
+                <a class="btn" href="javascript: wizPost([{name: 'style', value:'country'}]);"
+                  target="_self"
+                  style="color: #FFFFFF;
+                        background-color: #C20000;
+                        padding: 11px 16px 9px;
+                        -webkit-border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        border-radius: 4px;
+                        margin: 0; ">
+
+                  <i class="fa fa-arrow-right"
+                     style="font-size: 16px; padding-right: 0.4em;"></i>
+
+                  Scegli il tuo stile +
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        
+    </div>
+
+  </div>
+
+  
+</div>
+</div></div></div></div></div></div><div class="sppb-col-md-6"><div id="column-id-1494160813209" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-1494160813215" class="clearfix" ><div class="sppb-addon sppb-addon-module  marginia"><div class="sppb-addon-content">
+
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+    jQuery('#favimagehover-14073 .layout-effect').addClass("favhide").viewportChecker({
+      classToAdd: 'favshow layout-effect1', // Class to add to the elements when they are visible
+      offset: 100
+      });
+    });
+  </script>
+
+
+<div id="favimagehover-14073" class="favth-row">
+
+  <div style="position: relative;
+    margin-bottom: -50px;
+    z-index: 9;
+    padding: 0 5px;
+    margin-left: 10px;
+    margin-right: 10px;">
+          <h4 id="favimagehover-title2"
+          style="color: #FFFFFF;
+                background-color: #111111;
+                opacity: 0.5;
+                font-family: Open Sans;
+                font-weight: 400;
+                font-style: normal;
+                padding: 10px 20px;
+                font-size: 18px;
+                line-height: 1.4em;
+                text-align: left;
+                margin-bottom: 0;">
+
+            <i class="fa fa-arrow"
+               style="color: #FFFFFF;
+                     font-size: 18px;
+                     vertical-align: top">
+            </i>
+
+            Moderno
+          </h4>
+        </div>
+  <div style="z-index:8" class="favimagehover favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
+
+    <div id="favimagehover-box2"
+        class="favimagehover2 layout-effect"
+        style="-webkit-border-radius: 0px;
+              -moz-border-radius: 0px;
+              border-radius: 0px;">
+
+          <div id="favimagehover-image-container2">
+
+            <div id="favimagehover-image2"
+                 style="height: 100%;">
+
+                                  <img src="/images/STILI/cover/Moderno.jpg"
+                      alt=""/>
+                
+            </div>
+
+            <div id="favimagehover-overlay2">
+
+              <p id="favimagehover-description2"
+              style="color: #FFFFFF;
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-align: center;">
+
+                Razionalità e purezza delle forme,<br />elementi distintivi di uno stile fatto di leggerezza e rigore.
+              </p>
+
+              <div id="favimagehover-readmore2"
+                   class="favimagehover-readmore"
+                   style="text-align: center;">
+
+                <a class="btn" href="javascript: wizPost([{name: 'style', value:'moderno'}]);"
+                  target="_self"
+                  style="color: #FFFFFF;
+                        background-color: #C20000;
+                        padding: 11px 16px 9px;
+                        -webkit-border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        border-radius: 4px;
+                        margin: 0; ">
+
+                  <i class="fa fa-arrow-right"
+                     style="font-size: 16px; padding-right: 0.4em;"></i>
+
+                  Scegli il tuo stile +
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        
+    </div>
+
+  </div>
+
+  
+</div>
+</div></div></div><div id="sppb-addon-1494160813221" class="clearfix" ><div class="sppb-addon sppb-addon-module  marginia2"><div class="sppb-addon-content">
+
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+    jQuery('#favimagehover-14544 .layout-effect').addClass("favhide").viewportChecker({
+      classToAdd: 'favshow layout-effect1', // Class to add to the elements when they are visible
+      offset: 100
+      });
+    });
+  </script>
+
+
+<div id="favimagehover-14544" class="favth-row">
+
+  <div style="position: relative;
+    margin-bottom: -50px;
+    z-index: 9;
+    padding: 0 5px;
+    margin-left: 10px;
+    margin-right: 10px;">
+          <h4 id="favimagehover-title4"
+          style="color: #FFFFFF;
+                background-color: #111111;
+                opacity: 0.5;
+                font-family: Open Sans;
+                font-weight: 400;
+                font-style: normal;
+                padding: 10px 20px;
+                font-size: 18px;
+                line-height: 1.4em;
+                text-align: left;
+                margin-bottom: 0;">
+
+            <i class="fa fa-arrow"
+               style="color: #FFFFFF;
+                     font-size: 18px;
+                     vertical-align: top">
+            </i>
+
+            Uffici
+          </h4>
+        </div>
+  <div style="z-index:8" class="favimagehover favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
+
+    <div id="favimagehover-box4"
+        class="favimagehover4 layout-effect"
+        style="-webkit-border-radius: 0px;
+              -moz-border-radius: 0px;
+              border-radius: 0px;">
+
+          <div id="favimagehover-image-container4">
+
+            <div id="favimagehover-image4"
+                 style="height: 100%;">
+
+                                  <img src="/images/STILI/cover/Ufficio-ambiente.jpg"
+                      alt=""/>
+                
+            </div>
+
+            <div id="favimagehover-overlay4">
+
+              <p id="favimagehover-description4"
+              style="color: #FFFFFF;
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-align: center;">
+
+                … non solo casa, progetta al meglio il tuo spazio di lavoro.
+              </p>
+
+              <div id="favimagehover-readmore4"
+                   class="favimagehover-readmore"
+                   style="text-align: center;">
+
+                <a class="btn" href="javascript: wizPost([{name: 'style', value:'ufficio'}]);"
+                  target="_self"
+                  style="color: #FFFFFF;
+                        background-color: #C20000;
+                        padding: 11px 16px 9px;
+                        -webkit-border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        border-radius: 4px;
+                        margin: 0; ">
+
+                  <i class="fa fa-arrow-right"
+                     style="font-size: 16px; padding-right: 0.4em;"></i>
+
+                  Scegli il tuo stile +
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        
+    </div>
+
+  </div>
+</form>
+
+  
+</div>
 </div></div></div></div></div></div></div></div></section>          </div>
 </div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer2" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright">All Rights Reserved 2017 © Alsistem Scrl</span></div></div></div></div></footer>                        </div> <!-- /.body-innerwrapper -->
                     </div> <!-- /.body-innerwrapper -->

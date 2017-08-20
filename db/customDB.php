@@ -36,7 +36,11 @@ class CustomDB extends DB {
             $path .= '?'.$query;
         }
         $url = O_METHOD."://".O_HOST."/api/".$path;
-        $response = file_get_contents($url);
+        try {
+            $response = file_get_contents($url);
+        } catch (Exception $e) {
+            echo 'SMVC error while querying O database';
+        }
         //http_get($url, array("timeout"=>1), $info);
 /*
         $response = <<<XML
@@ -52,9 +56,13 @@ class CustomDB extends DB {
 </styles>
 XML;
 */
+        if (!$response) {
+            echo 'SMVC response from ODatabase is empty';
+            return $results;
+        }
         $root = new SimpleXMLElement($response);
         if (!is_object($root)) {
-            return;
+            return $results;
         }
         $queue = array();
         if ($root->children() instanceof Traversable) {

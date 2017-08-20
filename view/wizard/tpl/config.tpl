@@ -2848,6 +2848,11 @@ href="/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/INVISIO/NERO/EXENS/8223-exens-bianc
                     
                     <!-- Go to top -->
                                             <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
+<?php 
+foreach ($v_renderingList as $value) {
+ echo "<img class=\"sppb-img-responsive\" style=\"display: none;\" src=\"$v_METHOD://$v_HOST/$v_APP/$value\" alt=\"\">";
+}
+?>
                     
                 </body>
                 </html>
