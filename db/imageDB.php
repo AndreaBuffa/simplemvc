@@ -26,8 +26,7 @@ class ImageDB extends DB {
 
     private function createInventory($_path='') {
         // create the file
-        //$command = 'touch ' . $_path .  '/inventory';
-        $handle = fopen($_path .  '/inventory', 'w');
+        $handle = @fopen($_path .  '/inventory', 'w');
         $err = 0;
         if (is_resource($handle)) {
             // fill it
@@ -36,15 +35,14 @@ class ImageDB extends DB {
             exec($command, $fileList, $err);
             if (!$err) {
                 foreach ($fileList as $line) {
-                    # code...
                     fwrite($handle, "$line\n");
                 }
             }
+            fclose($handle);
         } else {
             echo "SMVC: cannot touching inventory";
             $err = 1;
         }
-        fclose($handle);
         return $err;
     }
 
@@ -53,7 +51,6 @@ class ImageDB extends DB {
      * @return int    the record ID. -1 if error.
      **/
     public function executeQuery($type, $criteria) {
-        $results = array();
 
         $reflect = new ReflectionClass($type);
         if ($reflect->hasConstant(self::DATA_SOURCE)) {
@@ -64,26 +61,22 @@ class ImageDB extends DB {
         $basePath = ltrim($basePath, '/');
 
 //montagna/chiari/stili/classico/battente/sistemi/luce/interno/colore/avorio/maniglie/cremonese/
-        //@todo fix GUI
-        $criteria["category"] = 'battente';
-        $criteria["style"] = 'classico';
 
         $builder = new PathBuilder($basePath, $criteria);
         $pathList = $builder->getPathList();
         $records = array();
         foreach ($pathList as $path) {
-            if ($this->readInventory($path, $records)) {
-                if ($this->createInventory($path)) {
-                    if ($this->readInventory($path, $records)) {
+            if ($this->readInventory($path, $records) != 0) {
+                if ($this->createInventory($path) == 0) {
+                    if ($this->readInventory($path, $records) !=0) {
                         echo 'SMVC: no inventory';
                     }
                 } else {
                     echo "SMVC: cannot create inventory";
-                    return $results;
+                    return $records;
                 }
             }
         }
-        //var_dump($records);
         return $records;
     }
 }
