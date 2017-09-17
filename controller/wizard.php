@@ -12,7 +12,7 @@ class StartState extends State {
 	public function process($method, $page) {
 		//reset all session data
 		$_SESSION['wizState'] = new StyleState();
-		return header('Location: index.php?page='.StyleState::NAME);
+		return header(HEADER_PREFIX.StyleState::NAME);
 	}
 }
 
@@ -21,7 +21,7 @@ class StyleState extends State {
 
 	public function process($method, $page) {
 		if ($page !== self::NAME) {
-			return header('Location: index.php?page='.self::NAME);
+			return header(HEADER_PREFIX.self::NAME);
 		}
 		if ($method === 'GET') {
 			require_once(__DIR__.'/../view/wizard/wizView.php');
@@ -29,13 +29,13 @@ class StyleState extends State {
 			$this->view->setTplParam('HOST', HOST);
 			$this->view->setTplParam('METHOD', METHOD);
 			$this->view->setTplParam('APP', APP);
-			$this->view->setPostHandler(METHOD.'://'.HOST.'/'.APP.'/index.php?page='.self::NAME);
+			$this->view->setPostHandler(URL_PREFIX.self::NAME);
 			return $this->view->chooseStyle();			
 		} else {
 			if (isset($_POST['style'])) {
 				$_SESSION['style'] = $_POST['style'];
 				$_SESSION['wizState'] = new PanoramaState();
-				return header('Location: index.php?page='.PanoramaState::NAME);
+				return header(HEADER_PREFIX.PanoramaState::NAME);
 			} else {
 				return $this->process('GET', self::NAME);
 			}
@@ -48,7 +48,7 @@ class PanoramaState extends State {
 
 	public function process($method, $page) {
 		if ($page !== self::NAME) {
-			return header('Location: index.php?page='.self::NAME);
+			return header(HEADER_PREFIX.self::NAME);
 		}		
 		if ($method === 'GET') {
 			require_once(__DIR__.'/../view/wizard/wizView.php');
@@ -56,13 +56,13 @@ class PanoramaState extends State {
 			$this->view->setTplParam('HOST', HOST);
 			$this->view->setTplParam('METHOD', METHOD);
 			$this->view->setTplParam('APP', APP);
-			$this->view->setPostHandler(METHOD.'://'.HOST.'/'.APP.'/index.php?page='.self::NAME);
+			$this->view->setPostHandler(URL_PREFIX.self::NAME);
 			return $this->view->choosePanorama();
 		} else {
 			if (isset($_POST['panorama'])) {
 				$_SESSION['panorama'] = $_POST['panorama'];
 				$_SESSION['wizState'] = new OpeningState();
-				return header('Location: index.php?page='.OpeningState::NAME);
+				return header(HEADER_PREFIX.OpeningState::NAME);
 			} else {
 				return $this->process('GET', self::NAME);
 			}
@@ -75,7 +75,7 @@ class OpeningState extends State {
 
 	public function process($method, $page) {
 		if ($page !== self::NAME) {
-			return header('Location: index.php?page='.self::NAME);
+			return header(HEADER_PREFIX.self::NAME);
 		}
 		if ($method === 'GET') {
 			require_once(__DIR__.'/../view/wizard/wizView.php');
@@ -83,13 +83,13 @@ class OpeningState extends State {
 			$this->view->setTplParam('HOST', HOST);
 			$this->view->setTplParam('METHOD', METHOD);
 			$this->view->setTplParam('APP', APP);
-			$this->view->setPostHandler(METHOD.'://'.HOST.'/'.APP.'/index.php?page='.self::NAME);
+			$this->view->setPostHandler(URL_PREFIX.self::NAME);
 			return $this->view->chooseOpening();
 		} else {
 			if (isset($_POST['category'])) {
 				$_SESSION['category'] = $_POST['category'];
 				$_SESSION['wizState'] = new ConfigState();
-				return header('Location: index.php?page='.ConfigState::NAME);
+				return header(HEADER_PREFIX.ConfigState::NAME);
 			} else {
 				return $this->process('GET', self::NAME);
 			}
@@ -100,9 +100,23 @@ class OpeningState extends State {
 class ConfigState extends State {
 	const NAME = 'config';
 
+	private function saveConf() {
+		//http://alwin.orchestraweb.net/api/modify_window.php?job_token=89ddd4c28166&category=CTG-PORTAFINESTRA-SCORREVOLE-2ANTE&window_id=new
+		require_once(__DIR__.'/../model/wizard/jobWindow.php');
+		$jobWindow = new JobWindow();
+		$jobWindow->job_token = '';
+		//$jobWindow->save();
+		$jobWindow->category = "CTG-PORTAFINESTRA-SCORREVOLE-2ANTE";//$_SESSION['category'];
+		$jobWindow->window_id = 3;
+		$jobWindow->save();
+		//var_dump($jobWindow);
+		//$r = new ReflectionClass('JobWindow');
+        //var_dump($r->getDocComment());
+	}
+
 	public function process($method, $page) {
 		if ($page !== self::NAME) {
-			return header('Location: index.php?page='.self::NAME);
+			return header(HEADER_PREFIX.self::NAME);
 		}
 		if ($method === 'GET') {
 			require_once(__DIR__.'/../model/wizard/rendering.php');
@@ -112,7 +126,7 @@ class ConfigState extends State {
 			$renderingList = Rendering::findAll($criteria);
 			if (count($renderingList) == 0) {
 				$_SESSION['wizState'] = new StartState();
-				return header('Location: index.php?page='.StartState::NAME);
+				return header(HEADER_PREFIX.StartState::NAME);
 			}
 			$defaultRendering = '';
 			foreach ($renderingList as $key => $elem) {
@@ -121,15 +135,56 @@ class ConfigState extends State {
 					break;
 				}
 			}
+
 			require_once(__DIR__.'/../view/wizard/wizView.php');
 			$this->view = new WizView();
 			$this->view->setTplParam('HOST', HOST);
 			$this->view->setTplParam('METHOD', METHOD);
 			$this->view->setTplParam('APP', APP);
-			$this->view->setPostHandler(METHOD.'://'.HOST.'/'.APP.'/index.php?page='.self::NAME);
+			$this->view->setPostHandler(URL_PREFIX.self::NAME);
 			$this->view->setTplParam('rendering', $defaultRendering);
-			$this->view->setTplParam('renderingList', $renderingList);
+			//$this->view->setTplParam('renderingList', $renderingList);
+			$this->view->setTplParam('renderingList', json_encode($renderingList));
+			$parameters["style-hidden"] = "chiari";
+			$this->view->setTplParam('parameters', $parameters);
 			return $this->view->config();
+		} else {
+			if (isset($_POST['action'])) {
+				switch ($_POST['action']) {
+					case 'configB':
+						$this->saveConf();
+						$_SESSION['wizState'] = new ConfigB();
+						return header(HEADER_PREFIX.ConfigB::NAME);
+						break;
+					case 'outdoor':
+						# code...
+						break;
+					default:
+						return $this->process('GET', self::NAME);
+						break;
+				}
+			} else {
+				return $this->process('GET', self::NAME);
+			}
+		}
+	}
+}
+
+class ConfigB extends State {
+	const NAME = 'configB';
+
+	public function process($method, $page) {
+		if ($page !== self::NAME) {
+			return header(HEADER_PREFIX.self::NAME);
+		}
+		if ($method === 'GET') {
+			require_once(__DIR__.'/../view/wizard/wizView.php');
+			$this->view = new WizView();
+			$this->view->setTplParam('HOST', HOST);
+			$this->view->setTplParam('METHOD', METHOD);
+			$this->view->setTplParam('APP', APP);
+			$this->view->setPostHandler(URL_PREFIX.self::NAME);
+			return $this->view->sizeAndQuantity();
 		} else {
 
 		}
@@ -145,16 +200,17 @@ class WizardFactory {
 			case PanoramaState::NAME:
 			case OpeningState::NAME:
 			case ConfigState::NAME:
+			case ConfigB::NAME:
 				$this->controller = new Wizard($pageName);
 			break;
 			default:
 				//@todo warning
 		}
 	}
+
 	public function getController() {
 		return $this->controller;
 	}
-
 }
 
 class Wizard extends ControllerBase {

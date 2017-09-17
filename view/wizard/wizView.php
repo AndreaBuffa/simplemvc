@@ -29,6 +29,10 @@ class WizView extends ViewBase {
 	public function config() {
 		return $this->fetch('config');	
 	}
+
+	public function sizeAndQuantity() {
+		return $this->fetch('configB');	
+	}
 }
 
 ?>

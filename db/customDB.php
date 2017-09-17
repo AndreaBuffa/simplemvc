@@ -22,7 +22,7 @@ class CustomDB extends DB {
      * @param  string $query not used for this particular DB
      * @return int    the record ID. -1 if error.
      **/
-    public function executeQuery($type, $query) {
+    public function executeQuery($type, $instance) {
         $results = array();
 
         $reflect = new ReflectionClass($type);
@@ -32,9 +32,17 @@ class CustomDB extends DB {
                 throw new Exception('Invalid OActiveRecord (' + $type + ')');
         }
 
-        if ($query) {
-            $path .= '?'.$query;
+        if ($instance) {
+            $queryData = array();
+            foreach ($instance->getAttrToSave() as $attr) {
+                $queryData[$attr] = $reflect->getProperty($attr)->getValue($instance);
+            }
+            $path .= '?'.http_build_query($queryData);
+
+        } else {
+            $instance = $type::getInstance($type, null);
         }
+
         $url = O_METHOD."://".O_HOST."/api/".$path;
         try {
             $response = file_get_contents($url);
@@ -72,7 +80,6 @@ XML;
         foreach ($queue as $key => $node) {
             # ActiveRecord class name and tag name must be the same
             if (strtolower($type) == $node->getName()) {
-                $record = $type::getInstance($type, null);
                 // now each children elem is an ActiveRecord Object
 
                 $props = $reflect->getProperties(ReflectionProperty::IS_PUBLIC);
@@ -80,11 +87,11 @@ XML;
                     //print $prop->getName() . "\n";
                     foreach ($node->children() as $name => $valueNode) {
                         if ($prop->getName() == $name) {
-                            $record->$name = $valueNode->__toString();
+                            $instance->$name = $valueNode->__toString();
                         }
                     }
                 }
-                array_push($results, $record);
+                array_push($results, $instance);
             }
         }
 

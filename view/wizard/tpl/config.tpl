@@ -819,9 +819,14 @@ var sp_offanimation = 'default';
 <button style="background: #ce0000; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="nascostano">
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#ffffff;">Cerniera nascosta</div> <div style="float:right; margin-right:5px"><i style="color:#ffffff" class="fa fa-check"></i></div></div></button>
 
-</div></div></div><div id="sppb-addon-1494174149873" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="/index.php/country-portafinestra-battente-esterno" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
-<div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFIGURA ESTERNO</div> <div style="float:right; margin-right:5px"><i class="fa fa-pencil-square-o"></i></div></div>
-</a></div></div></div><div id="sppb-addon-1494508536879" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="/index.php/countryfinale" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+</div></div></div><div id="sppb-addon-1494174149873" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html ">
+<div class="sppb-addon-content">
+<a href="<?php echo 'cacca';?>" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+<div>
+<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFIGURA ESTERNO</div> <div style="float:right; margin-right:5px"><i class="fa fa-pencil-square-o"></i></div></div>
+</a></div></div></div><div id="sppb-addon-1494508536879" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html ">
+<div class="sppb-addon-content">
+<a href="javascript: wizPost([{name: 'action', value:'configB'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFERMA E PROSEGUI</div> <div style="float:right; margin-right:5px"><i class="fa fa-floppy-o"></i></div></div>
 </a></div></div></div></div></div></div>
 <!-- colonnna rendering -->
@@ -1093,13 +1098,15 @@ if(document.getElementById){
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 <script>// <![CDATA[
+
+
 $(document).ready(function() {
  $("#base").show();
- $("#chiarisi").show();
- $("#chiarino").hide();
+ //$("#chiarisi").show();
+ //$("#chiarino").hide();
 $("#baseok").hide();
- $("#scurisi").show();
- $("#scurino").hide();
+ //$("#scurisi").show();
+ //$("#scurino").hide();
  $("#mostra").show();
  $("#nascondi").hide();
  $("#scelta1").hide();
@@ -1117,11 +1124,21 @@ $("#chiarisi").click(function(){
  $("#chiarino").show();
  $("#scurisi").show();
  $("#scurino").hide();
+    var match = [];
+    for(var i=0; i < renderList.length; i++) {
+    match = renderList[i].match(/chiari.+interno/);
+    if (match != null)
+        break;
+    }
+    var URL = '<?php echo "$v_METHOD://$v_HOST/$v_APP/"?>' + renderList[i];
+    $("#renderImg").attr("src", URL);
+    $("#renderImgPopUp").attr("href", URL)
  });
 
 $("#chiarino").click(function(){
  $("#chiarino").hide();
  $("#chiarisi").show();
+  alert("2");
  });
 
 $("#scurisi").click(function(){
@@ -1129,6 +1146,16 @@ $("#scurisi").click(function(){
  $("#scurino").show();
  $("#chiarisi").show();
  $("#chiarino").hide();
+ var match = [];
+ for(var i=0; i < renderList.length; i++) {
+    match = renderList[i].match(/scuri.+interno/);
+    if (match != null)
+        break;
+ }
+ var URL = '<?php echo "$v_METHOD://$v_HOST/$v_APP/"?>' + renderList[i];
+ $("#renderImg").attr("src", URL);
+ $("#renderImgPopUp").attr("href", URL)
+
  });
 
 $("#scurino").click(function(){
@@ -1714,9 +1741,9 @@ $("#nascondimaniglie").click(function(){
 });
 
 });
-// ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom"
+// ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a id="renderImgPopUp" class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom"
 href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a>
-<img class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt=""></div></div></div></div></div></div></div></div></div></div><div id="martellina2" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1495227802230" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1495234310694" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="mancremonese" style="width: 100%">
+<img id="renderImg" class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt=""></div></div></div></div></div></div></div></div></div></div><div id="martellina2" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1495227802230" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1495234310694" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="mancremonese" style="width: 100%">
 <table>
 <tbody>
 <tr>
@@ -2848,11 +2875,41 @@ href="/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/INVISIO/NERO/EXENS/8223-exens-bianc
                     
                     <!-- Go to top -->
                                             <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
-<?php 
-foreach ($v_renderingList as $value) {
- echo "<img class=\"sppb-img-responsive\" style=\"display: none;\" src=\"$v_METHOD://$v_HOST/$v_APP/$value\" alt=\"\">";
+
+<form id='thisForm' method="POST" action="<?php echo $v_action?>">
+<?php
+foreach ($v_parameters as $id => $value) {
+ echo "<input type=\"hidden\" id=\"$id\" value=\"$value\">";
 }
 ?>
-                    
+<script type="text/javascript">
+var renderList = <?php echo $v_renderingList?>;
+if ($("#style-hidden").val() === "chiari") {
+    $("#chiarisi").hide();
+    $("#chiarino").show();
+    $("#scurisi").show();
+    $("#scurino").hide();
+} else {
+    $("#chiarisi").show();
+    $("#chiarino").hide();
+    $("#scurisi").hide();
+    $("#scurino").show();
+}
+
+function wizPost(paramsList) {
+    var theForm = document.getElementById('thisForm');
+    for (var param of paramsList) {
+        //<input type="hidden" name="country" value="Norway">
+        var elem = document.createElement("input");
+        elem.type = "hidden";
+        elem.name = param.name;
+        elem.value = param.value;
+        theForm.appendChild(elem);
+    };
+    theForm.submit();
+};
+
+</script>
+</form>
                 </body>
                 </html>

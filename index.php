@@ -19,9 +19,10 @@ define("IS_DEBUG", true);
 define("METHOD", "http");
 define("HOST", "localhost");
 define("APP", "configuratore");
+define("URL_PREFIX", METHOD.'://'.HOST.'/'.APP.'/index.php?page=');
+define("HEADER_PREFIX", "Location: index.php?page=");
 define("O_METHOD", "http");
 define("O_HOST", "alwin.orchestraweb.net");
-define("DFLT_CONF_IMG", "montagna/chiari/stili/classico/battente/sistemi/luce/interno/colore/avorio/maniglie/cremonese/193.jpg");
 
 ob_start();
 

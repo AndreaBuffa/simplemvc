@@ -9,6 +9,10 @@ class Category extends OActiveRecord {
     public $name;
     public $img_URL;
 
+    public function getAttrToSave() {
+    	return [];
+    }
+
 }
 
 ?>
