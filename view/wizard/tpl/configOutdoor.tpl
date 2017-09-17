@@ -782,9 +782,11 @@ var sp_offanimation = 'default';
 </div></div></div></div><div id="sppb-addon-1494247615170" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><button style="background: #ffffff; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="mostra">
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">Scegli il colore dell'esterno</div> <div style="float:right; margin-right:5px"><i class="fa fa-plus"></i></div></div></button>
 <button style="background: #ce0000; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="nascondi">
-<div><div style="float:left; vertical-align: middle; padding-top:7px; color:#ffffff;">Scegli il colore dell'esterno</div> <div style="float:right; margin-right:5px"><i style="color:#ffffff" class="fa fa-plus"></i></div></div></button></div></div></div><div id="sppb-addon-1494174149873" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="/index.php/country-portafinestra-battente" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+<div><div style="float:left; vertical-align: middle; padding-top:7px; color:#ffffff;">Scegli il colore dell'esterno</div> <div style="float:right; margin-right:5px"><i style="color:#ffffff" class="fa fa-plus"></i></div></div></button></div></div></div><div id="sppb-addon-1494174149873" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content">
+<a href="javascript: wizPost([{name: 'action', value:'config'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFIGURA INTERNO</div> <div style="float:right; margin-right:5px"><i class="fa fa-pencil-square-o"></i></div></div>
-</a></div></div></div><div id="sppb-addon-1494509008898" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="/index.php/countryfinale" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+</a></div></div></div><div id="sppb-addon-1494509008898" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content">
+<a href="javascript: wizPost([{name: 'action', value:'configB'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFERMA E PROSEGUI</div> <div style="float:right; margin-right:5px"><i class="fa fa-floppy-o"></i></div></div>
 </a></div></div></div></div></div></div><div class="sppb-col-md-9 sppb-col-sm-9"><div id="column-id-1490355666611" class="sppb-column  posizione1" ><div class="sppb-column-addons"><div id="sppb-addon-1494256006468" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><link rel="stylesheet" type="text/css" href="/css/component.css" />
 <script src="/js/modernizr.custom.js"></script>
@@ -1054,7 +1056,9 @@ $("#nero1").click(function(){
  $("#baseok").hide();
 });
 });
-// ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-AVORIO.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-AVORIO.jpg" alt="COUNTRY-ESTERNO-AVORIO.jpg" title=""></div></div></div></div></div></div></div></div></div></div><div id="section-id-1494256006413" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494256006414" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1494247615153" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="baseok" style="width:100%; height:500px; ">
+// ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div>
+<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a>
+<img class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="COUNTRY-ESTERNO-AVORIO.jpg" title=""></div></div></div></div></div></div></div></div></div></div><div id="section-id-1494256006413" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494256006414" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1494247615153" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="baseok" style="width:100%; height:500px; ">
 <div id="scelta1" style="width:100%; ">
 <table width="100%">
 <tbody>
@@ -1174,6 +1178,30 @@ onclick="mostranascondi1('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', '
                     
                     <!-- Go to top -->
                                             <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
-                    
+<form id='thisForm' method="POST" action="<?php echo $v_action?>">
+<?php
+foreach ($v_parameters as $id => $value) {
+ echo "<input type=\"hidden\" id=\"$id\" value=\"$value\">";
+}
+?>
+<script type="text/javascript">
+
+//var renderList = <?php echo $v_renderingList?>;
+
+function wizPost(paramsList) {
+    var theForm = document.getElementById('thisForm');
+    for (var param of paramsList) {
+        //<input type="hidden" name="country" value="Norway">
+        var elem = document.createElement("input");
+        elem.type = "hidden";
+        elem.name = param.name;
+        elem.value = param.value;
+        theForm.appendChild(elem);
+    };
+    theForm.submit();
+};
+
+</script>
+</form>
                 </body>
                 </html>

@@ -29,8 +29,10 @@ class CustomDB extends DB {
         if ($reflect->hasConstant(self::SCRIPT_NAME)) {
             $path = $reflect->getConstant(self::SCRIPT_NAME);
             if (empty($path))
-                throw new Exception('Invalid OActiveRecord (' + $type + ')');
+                throw new Exception('SMWC Invalid OActiveRecord (' + $type + ')');
         }
+
+        $path = $instance->getMethod();
 
         if ($instance) {
             $queryData = array();
@@ -44,6 +46,7 @@ class CustomDB extends DB {
         }
 
         $url = O_METHOD."://".O_HOST."/api/".$path;
+        var_dump($url);
         try {
             $response = file_get_contents($url);
         } catch (Exception $e) {

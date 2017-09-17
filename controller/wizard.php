@@ -99,12 +99,15 @@ class OpeningState extends State {
 
 class ConfigState extends State {
 	const NAME = 'config';
+	const BRIGHTNESS = 'style-hidden';
+	const BRIGHTNESS_DEF_VAL = 'chiari';
+	const BRIGHTNESS_SESS_NAME = 'room-brightness';
 
 	private function saveConf() {
 		//http://alwin.orchestraweb.net/api/modify_window.php?job_token=89ddd4c28166&category=CTG-PORTAFINESTRA-SCORREVOLE-2ANTE&window_id=new
 		require_once(__DIR__.'/../model/wizard/jobWindow.php');
 		$jobWindow = new JobWindow();
-		$jobWindow->job_token = '';
+		$jobWindow->job_token = '89ddd4c28166';
 		//$jobWindow->save();
 		$jobWindow->category = "CTG-PORTAFINESTRA-SCORREVOLE-2ANTE";//$_SESSION['category'];
 		$jobWindow->window_id = 3;
@@ -128,9 +131,14 @@ class ConfigState extends State {
 				$_SESSION['wizState'] = new StartState();
 				return header(HEADER_PREFIX.StartState::NAME);
 			}
+			if (isset($_SESSION[self::BRIGHTNESS_SESS_NAME])) {
+				$parameters[self::BRIGHTNESS] = $_SESSION[self::BRIGHTNESS_SESS_NAME];
+			} else {
+				$parameters[self::BRIGHTNESS] = self::BRIGHTNESS_DEF_VAL;
+			}
 			$defaultRendering = '';
 			foreach ($renderingList as $key => $elem) {
-				if (preg_match('/interno/', $elem)) {
+				if (preg_match('/'.$parameters[self::BRIGHTNESS].'.+interno/', $elem)) {
 					$defaultRendering = $renderingList[$key];
 					break;
 				}
@@ -143,13 +151,12 @@ class ConfigState extends State {
 			$this->view->setTplParam('APP', APP);
 			$this->view->setPostHandler(URL_PREFIX.self::NAME);
 			$this->view->setTplParam('rendering', $defaultRendering);
-			//$this->view->setTplParam('renderingList', $renderingList);
 			$this->view->setTplParam('renderingList', json_encode($renderingList));
-			$parameters["style-hidden"] = "chiari";
 			$this->view->setTplParam('parameters', $parameters);
 			return $this->view->config();
 		} else {
 			if (isset($_POST['action'])) {
+				$_SESSION[self::BRIGHTNESS_SESS_NAME] = $_POST[self::BRIGHTNESS];
 				switch ($_POST['action']) {
 					case 'configB':
 						$this->saveConf();
@@ -157,7 +164,8 @@ class ConfigState extends State {
 						return header(HEADER_PREFIX.ConfigB::NAME);
 						break;
 					case 'outdoor':
-						# code...
+						$_SESSION['wizState'] = new Outdoor();
+						return header(HEADER_PREFIX.Outdoor::NAME);
 						break;
 					default:
 						return $this->process('GET', self::NAME);
@@ -191,6 +199,61 @@ class ConfigB extends State {
 	}
 }
 
+class Outdoor extends State {
+	const NAME = 'outdoor';
+
+	public function process($method, $page) {
+		if ($page !== self::NAME) {
+			return header(HEADER_PREFIX.self::NAME);
+		}
+		if ($method === 'GET') {
+			require_once(__DIR__.'/../model/wizard/rendering.php');
+			$criteria["style"] = strtolower($_SESSION["style"]);
+			$criteria["panorama"] = strtolower($_SESSION["panorama"]);
+			$criteria["category"] = strtolower($_SESSION["category"]);
+			$renderingList = Rendering::findAll($criteria);
+			if (count($renderingList) == 0) {
+				$_SESSION['wizState'] = new StartState();
+				return header(HEADER_PREFIX.StartState::NAME);
+			}
+			$defaultRendering = '';
+			foreach ($renderingList as $key => $elem) {
+				if (preg_match('/esterno/', $elem)) {
+					$defaultRendering = $renderingList[$key];
+					break;
+				}
+			}
+			require_once(__DIR__.'/../view/wizard/wizView.php');
+			$this->view = new WizView();
+			$this->view->setTplParam('HOST', HOST);
+			$this->view->setTplParam('METHOD', METHOD);
+			$this->view->setTplParam('APP', APP);
+			$this->view->setPostHandler(URL_PREFIX.self::NAME);
+			$this->view->setTplParam('rendering', $defaultRendering);
+			$this->view->setTplParam('renderingList', json_encode($renderingList));
+			return $this->view->outdoor();
+		} else {
+			if (isset($_POST['action'])) {
+				switch ($_POST['action']) {
+					case 'configB':
+						$_SESSION['wizState'] = new ConfigB();
+						return header(HEADER_PREFIX.ConfigB::NAME);
+						break;
+					case 'config':
+						$_SESSION['wizState'] = new ConfigState();
+						return header(HEADER_PREFIX.ConfigState::NAME);
+						break;
+					default:
+						return $this->process('GET', self::NAME);
+						break;
+				}
+			} else {
+				return $this->process('GET', self::NAME);
+			}
+		}
+	}
+}
+
 class WizardFactory {
 	protected $controller;
 	public function __construct($pageName) {
@@ -201,6 +264,7 @@ class WizardFactory {
 			case OpeningState::NAME:
 			case ConfigState::NAME:
 			case ConfigB::NAME:
+			case Outdoor::NAME:
 				$this->controller = new Wizard($pageName);
 			break;
 			default:

@@ -23,6 +23,8 @@ abstract class OActiveRecord extends ActiveRecord {
     public function delete() {}
 
     abstract function getAttrToSave();
+
+
 }
 
 ?>

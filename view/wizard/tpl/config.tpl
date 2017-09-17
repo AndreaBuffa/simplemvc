@@ -821,7 +821,7 @@ var sp_offanimation = 'default';
 
 </div></div></div><div id="sppb-addon-1494174149873" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html ">
 <div class="sppb-addon-content">
-<a href="<?php echo 'cacca';?>" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+<a href="javascript: wizPost([{name: 'action', value:'outdoor'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
 <div>
 <div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFIGURA ESTERNO</div> <div style="float:right; margin-right:5px"><i class="fa fa-pencil-square-o"></i></div></div>
 </a></div></div></div><div id="sppb-addon-1494508536879" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html ">
@@ -1132,7 +1132,8 @@ $("#chiarisi").click(function(){
     }
     var URL = '<?php echo "$v_METHOD://$v_HOST/$v_APP/"?>' + renderList[i];
     $("#renderImg").attr("src", URL);
-    $("#renderImgPopUp").attr("href", URL)
+    $("#renderImgPopUp").attr("href", URL);
+    $("input[name=style-hidden").attr("value", "chiari");
  });
 
 $("#chiarino").click(function(){
@@ -1154,7 +1155,8 @@ $("#scurisi").click(function(){
  }
  var URL = '<?php echo "$v_METHOD://$v_HOST/$v_APP/"?>' + renderList[i];
  $("#renderImg").attr("src", URL);
- $("#renderImgPopUp").attr("href", URL)
+ $("#renderImgPopUp").attr("href", URL);
+ $("input[name=style-hidden").attr("value", "scuri");
 
  });
 
@@ -2879,12 +2881,12 @@ href="/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/INVISIO/NERO/EXENS/8223-exens-bianc
 <form id='thisForm' method="POST" action="<?php echo $v_action?>">
 <?php
 foreach ($v_parameters as $id => $value) {
- echo "<input type=\"hidden\" id=\"$id\" value=\"$value\">";
+ echo "<input type=\"hidden\" name=\"$id\" value=\"$value\">";
 }
 ?>
 <script type="text/javascript">
 var renderList = <?php echo $v_renderingList?>;
-if ($("#style-hidden").val() === "chiari") {
+if ($("input[name=style-hidden").val() === "chiari") {
     $("#chiarisi").hide();
     $("#chiarino").show();
     $("#scurisi").show();

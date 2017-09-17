@@ -10,8 +10,10 @@ class JobWindow extends OActiveRecord {
 
     const METHOD = 'modify_window.php';
 
-    public function __constructor() {
+    public function __construct() {
     	parent::__construct();
+    	$this->_methodList[ActiveRecord::STATE_NEW] = 'modify_window.php';//'job_token_from_reference.php';
+    	$this->_methodList[ActiveRecord::STATE_LOADED] = 'modify_window.php';
         $this->window_id = 'new';
     }
 
@@ -62,7 +64,9 @@ class JobWindow extends OActiveRecord {
 	public function getAttrToSave() {
 		return ['job_token', 'category', 'window_id'];
 	}
-
+    public function getMethod() {
+    	return $this->_methodList[$this->_recordState];
+    }
 }
 
 ?>

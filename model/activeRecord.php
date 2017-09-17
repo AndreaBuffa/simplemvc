@@ -6,9 +6,11 @@ abstract class ActiveRecord {
     const STATE_LOADED = 1;
     const STATE_DELETED = 2;
 
-    private $_recordState;
+    protected $_recordState;
 
-    public function __constructor() {
+    protected $_methodList = [];
+
+    public function __construct() {
         $this->_recordState = self::STATE_NEW;
     }
 
