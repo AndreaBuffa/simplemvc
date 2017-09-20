@@ -383,7 +383,7 @@ var sp_offanimation = 'default';
 <tbody>
 <tr>
 <td style="width:5%; height:85px;">
-<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
+<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px; display: none;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
 <span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Chiamaci" title="Titolo Suggerimento">
 <i class="fa fa fa-phone"></i></span>
 </a>
@@ -396,28 +396,28 @@ var sp_offanimation = 'default';
 </a>
 </td>
 <td style="width:1%"></td>
-<td style="width:5%">
+<td style="width:5%; display: none;">
 <a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
 <span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Avvia la chat di supporto" title="Titolo Suggerimento">
 <i class="fa fa-weixin"></i></span>
 </a>
 </td>
 <td style="width:1%"></td>
-<td style="width:5%">
+<td style="width:5%; display: none;">
 <a href="#"style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
 <span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Stampa" title="Titolo Suggerimento">
 <i class="fa fa-print"></i></span>
 </a>
 </td>
 <td style="width:1%"></td>
-<td style="width:5%">
+<td style="width:5%; display: none;">
 <a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
 <span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Condividi sui social la configurazione" title="Titolo Suggerimento">
 <i class="fa fa-share-alt"></i></span>
 </a>
 </td>
 <td style="width:1%"></td>
-<td style="width:5%">
+<td style="width:5%; display: none;">
 <a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
 <span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Scrivici" title="Titolo Suggerimento">
 <i class="fa fa-at"></i></span>

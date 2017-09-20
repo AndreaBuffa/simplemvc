@@ -231,6 +231,8 @@ class Outdoor extends State {
 			$this->view->setPostHandler(URL_PREFIX.self::NAME);
 			$this->view->setTplParam('rendering', $defaultRendering);
 			$this->view->setTplParam('renderingList', json_encode($renderingList));
+			$parameters = [];
+			$this->view->setTplParam('parameters', $parameters);
 			return $this->view->outdoor();
 		} else {
 			if (isset($_POST['action'])) {

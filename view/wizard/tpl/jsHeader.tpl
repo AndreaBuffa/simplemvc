@@ -1,0 +1,14 @@
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/core.js?e1bedbb0bf06d100502235a22d4c3633" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/jquery.min.js?e1bedbb0bf06d100502235a22d4c3633" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/jquery-noconflict.js?e1bedbb0bf06d100502235a22d4c3633" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/jquery-migrate.min.js?e1bedbb0bf06d100502235a22d4c3633" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/parallax.min.js" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/sppagebuilder.js" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/favth-bootstrap.js" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/viewportchecker.js" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/script.min.js?v=7.1.2" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/jquery.sticky.js" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/main.js" type="text/javascript"></script>
+<script src="<?php echo "$v_METHOD://$v_HOST/$v_APP"?>/static/js/frontend-edit.js" type="text/javascript"></script>
