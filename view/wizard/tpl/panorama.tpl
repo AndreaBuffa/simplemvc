@@ -370,25 +370,25 @@ var sp_offanimation = 'default';
 <tbody>
 <tr>
 <td style="width:50%; height:85px;">
-<div style="margin-left:15px; margin-right:30px; float:right; height: 36px; width: 36px; background-color: rgba(132, 132, 132, 1); display: none;">
+<div style="margin-left:15px; margin-right:30px; float:right; height: 36px; width: 36px; background-color: rgba(132, 132, 132, 1);">
 <a style="padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);"  class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/index.php/country-panorami">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-search"></i>
 </span></a>
 </div>
-<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(132, 132, 132, 1);  display: none;" >
+<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(132, 132, 132, 1);" >
 <a style="padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/index.php/country-panorami">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-pencil"></i>
 </span></a>
 </div>
-<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);  display: none;">
+<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
 <a style="padding-left: 13px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/index.php/country-panorami">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-map-marker"></i>
 </span></a>
 </div>
-<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);  display: none;">
+<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
 <a style="padding-left: 10px; cursor: pointer; width: 36px; color: rgba(201, 0, 0, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/index.php/stili">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-home"></i>

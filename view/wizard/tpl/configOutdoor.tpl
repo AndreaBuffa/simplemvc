@@ -419,16 +419,8 @@ var sp_offanimation = 'default';
 
                     <div class="body-wrapper">
                         <div class="body-innerwrapper">
-                            <div class="sp-pre-loader"><div class="sp-loader-bubble-loop"></div></div><section id="sp-top-bar"><div class="container"><div class="row"><div id="sp-top1" class="col-sm-6 col-md-6 hidden-md hidden-lg hidden-sm hidden-xs"><div class="sp-column "></div></div><div id="sp-top2" class="col-sm-6 col-md-6 hidden-md hidden-lg hidden-sm hidden-xs"><div class="sp-column "></div></div></div></div></section><header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-3 col-md-3 hidden-md hidden-lg hidden-sm hidden-xs"><div class="sp-column "><div class="logo"><a href="/"><img class="sp-default-logo" src="/templates/shaper_helix3/images/presets/preset4/logo.png" alt="alwin3d"><img class="sp-retina-logo" src="/templates/shaper_helix3/images/presets/preset4/logo@2x.png" alt="alwin3d" width="145" height="48"></a></div></div></div><div id="sp-menu" class="col-xs-4 col-sm-9 col-md-9 hidden-md hidden-lg hidden-sm hidden-xs"><div class="sp-column ">			<div class='sp-megamenu-wrapper'>
-				<a id="offcanvas-toggler" class="visible-sm visible-xs" href="#"><i class="fa fa-bars"></i></a>
-				<ul class="sp-megamenu-parent menu-fade hidden-sm hidden-xs"><li class="sp-menu-item"></li><li class="sp-menu-item"><a  href="/index.php/stili" >stili</a></li><li class="sp-menu-item"><a  href="/index.php/country-panorami" >country panorami</a></li><li class="sp-menu-item"><a  href="/index.php/country-montagna" >country montagna</a></li><li class="sp-menu-item"><a  href="/index.php/country-portafinestra-battente" >country portafinestra battente</a></li><li class="sp-menu-item"><a  href="/index.php/country-portafinestra-battente-2" >country portafinestra battente2</a></li><li class="sp-menu-item current-item active"><a  href="/index.php/country-portafinestra-battente-esterno" >country portafinestra battente esterno</a></li><li class="sp-menu-item"><a  href="/index.php/countryfinale" >countryfinale</a></li><li class="sp-menu-item"><a  href="/index.php/pagina-utente-finale" >pagina utente finale</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-panorami" >moderno panorami</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-citta" >moderno citta</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-portafinestra-scorrevole" >moderno portafinestra scorrevole</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-portafinestra-scorrevole-esterno" >moderno portafinestra scorrevole esterno</a></li><li class="sp-menu-item"><a  href="/index.php/modernofinale" >modernofinale</a></li></ul>			</div>
-		</div></div></div></div></header><section id="sp-page-title"><div class="row"><div id="sp-title" class="col-sm-12 col-md-12"><div class="sp-column "></div></div></div></section><section id="sp-main-body"><div class="row"><div id="sp-component" class="col-sm-12 col-md-12"><div class="sp-column "><div id="system-message-container">
-	</div>
-<div id="sp-page-builder" class="sp-page-builder  page-20">
-
-	
-	<div class="page-content">
-		<section id="section-id-1494172944745" class="sppb-section  sppb-hidden-sm sppb-hidden-xs"  ><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-4"><div id="column-id-1494085957782" class="sppb-column  margini1bis" ><div class="sppb-column-addons"><div id="sppb-addon-1494080026683" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
+                            <div class="sp-pre-loader"><div class="sp-loader-bubble-loop"></div></div>
+ <section id="section-id-1494172944745" class="sppb-section  sppb-hidden-sm sppb-hidden-xs"  ><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-4"><div id="column-id-1494085957782" class="sppb-column  margini1bis" ><div class="sppb-column-addons"><div id="sppb-addon-1494080026683" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
 <tbody>
 <tr>
 <td><img style="width:85px; height: 85px;" src="/images/2017/05/06/logo_alsistem150x150.png"></td>
@@ -465,54 +457,21 @@ var sp_offanimation = 'default';
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-home"></i>
 </span></a>
 </div></td>
-<td style="width:5%">
+<td style="width:6%">
 <a href="#" style="padding: 0px 5px; font-size: 27px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Guarda la guida tutorial" title="Titolo Suggerimento">
+<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Guarda la guida tutorial" title="">
 <i class="fa fa-youtube-play"></i></span>
 </a>
 </td>
 <td style="width:1%"></td>
-<td style="width:5%">
+
+<td style="width:4%">
 <a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Chiamaci" title="Titolo Suggerimento">
-<i class="fa fa fa-phone"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:5%">
-<a href="/index.php/countryfinale" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Salva il percorso" title="Titolo Suggerimento">
+<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Salva il percorso" title="">
 <i class="fa fa-floppy-o"></i></span>
 </a>
 </td>
-<td style="width:1%"></td>
-<td style="width:5%">
-<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Avvia la chat di supporto" title="Titolo Suggerimento">
-<i class="fa fa-weixin"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:5%">
-<a href="#"style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Stampa" title="Titolo Suggerimento">
-<i class="fa fa-print"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:5%">
-<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Condividi sui social la configurazione" title="Titolo Suggerimento">
-<i class="fa fa-share-alt"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:5%">
-<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Scrivici" title="Titolo Suggerimento">
-<i class="fa fa-at"></i></span>
-</a>
-</td>
+
 <td style="width:1%; padding-right:8px;"></td>
 </tr>
 </tbody>
@@ -528,7 +487,7 @@ var sp_offanimation = 'default';
                     <input type="hidden" name="task" value="user.logout" />
                     
                     <input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDE=" />
-                    <input type="hidden" name="e4d7a28e49970dbcedd3df798838bc0d" value="1" />                </div>
+                    <input type="hidden" name="9cc2afe1b1d2ac72a514a6d7dc4989db" value="1" />                </div>
             </form>
         </div>
     </div>
@@ -536,7 +495,11 @@ var sp_offanimation = 'default';
             </div>
     <div class="clearfix"></div>
 </div>
-</div></div></div></div></div></div></div></div></section><div id="section-id-1494172984093" class="sppb-section  sppb-hidden-md sppb-hidden-lg sppb-hidden-xs"  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-3 sppb-col-sm-3"><div id="column-id-1494158935830" class="sppb-column  margini1" ><div class="sppb-column-addons"><div id="sppb-addon-1494158935831" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html  posizione2"><div class="sppb-addon-content"><div style="margin-left: 10px; z-index:100;">
+</div></div></div></div></div></div></div></div></section>
+
+
+
+<div id="section-id-1494172984093" class="sppb-section  sppb-hidden-md sppb-hidden-lg sppb-hidden-xs"  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-3 sppb-col-sm-3"><div id="column-id-1494158935830" class="sppb-column  margini1" ><div class="sppb-column-addons"><div id="sppb-addon-1494158935831" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html  posizione2"><div class="sppb-addon-content"><div style="margin-left: 10px; z-index:100;">
 <table>
 <tbody>
 <tr>
