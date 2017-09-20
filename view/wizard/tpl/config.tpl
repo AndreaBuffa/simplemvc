@@ -8,7 +8,7 @@
                 <base href="http://frontend6.orchestraweb.net/alwin3d2/index.php/country-portafinestra-battente" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="generator" content="Joomla! - Open Source Content Management" />
-    <title>COUNTRY PORTAFINESTRA BATTENTE</title>
+    <title>Configurazione Infisso</title>
     <link href="/alwin3d2/templates/shaper_helix3/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link href="/alwin3d2/components/com_sppagebuilder/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="/alwin3d2/components/com_sppagebuilder/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
@@ -461,25 +461,25 @@ var sp_offanimation = 'default';
 <tbody>
 <tr>
 <td style="width:50%; height:85px;">
-<div style="margin-left:15px; margin-right:30px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
+<div style="margin-left:15px; margin-right:30px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1); display: none;">
 <a style="padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);"  class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/alwin3d2/index.php/country-portafinestra-battente">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-search"></i>
 </span></a>
 </div>
-<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);" >
+<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1); display: none;" >
 <a style="padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/alwin3d2/index.php/country-montagna">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-pencil"></i>
 </span></a>
 </div>
-<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
+<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1); display: none;">
 <a style="padding-left: 13px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/alwin3d2/index.php/country-panorami">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-map-marker"></i>
 </span></a>
 </div>
-<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
+<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1); display: none;">
 <a style="padding-left: 10px; cursor: pointer; width: 36px; color: rgba(201, 0, 0, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/alwin3d2/index.php/stili">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-home"></i>
@@ -776,9 +776,9 @@ var sp_offanimation = 'default';
 </button></div></div></div><div id="sppb-addon-1494256006698" class="sppb-hidden-md sppb-hidden-lg sppb-hidden-sm sppb-hidden-xs clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><button style="background: #ffffff; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="mostramaniglie">
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">Scegli le maniglie</div> <div style="float:right; margin-right:5px"><i class="fa fa-arrow-right"></i></div></div></button>
 <button style="background: #ce0000; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="nascondimaniglie">
-<div><div style="float:left; vertical-align: middle; padding-top:7px; color:#ffffff;">Scegli le maniglie</div> <div style="float:right; margin-right:5px"><i style="color:#ffffff" class="fa fa-arrow-right"></i></div></div></button></div></div></div><div id="sppb-addon-1494174149873" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="/alwin3d2/index.php/country-portafinestra-battente-esterno" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+<div><div style="float:left; vertical-align: middle; padding-top:7px; color:#ffffff;">Scegli le maniglie</div> <div style="float:right; margin-right:5px"><i style="color:#ffffff" class="fa fa-arrow-right"></i></div></div></button></div></div></div><div id="sppb-addon-1494174149873" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="javascript: wizPost([{name: 'action', value:'outdoor'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFIGURA ESTERNO</div> <div style="float:right; margin-right:5px"><i class="fa fa-pencil-square-o"></i></div></div>
-</a></div></div></div><div id="sppb-addon-1494508536879" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="/alwin3d2/index.php/countryfinale" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+</a></div></div></div><div id="sppb-addon-1494508536879" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="javascript: wizPost([{name: 'action', value:'configB'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFERMA E PROSEGUI</div> <div style="float:right; margin-right:5px"><i class="fa fa-floppy-o"></i></div></div>
 </a></div></div></div></div></div></div><div class="sppb-col-md-9 sppb-col-sm-9"><div id="column-id-1490355666611" class="sppb-column  posizione1" ><div class="sppb-column-addons"><div id="sppb-addon-1494256006468" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><link rel="stylesheet" type="text/css" href="/alwin3d2/css/component.css" />
 <script src="/alwin3d2/js/modernizr.custom.js"></script>
@@ -1050,11 +1050,12 @@ if(document.getElementById){
 <script>// <![CDATA[
 $(document).ready(function() {
  $("#base").show();
- $("#chiarisi").show();
- $("#chiarino").hide();
+ //$("#chiarisi").show();
+ //$("#chiarino").hide();
  $("#baseok").hide();
- $("#scurisi").show();
- $("#scurino").hide();
+ //$("#scurisi").show();
+ //$("#scurino").hide();
+
  $("#mostra").show();
  $("#nascondi").hide();
  $("#scelta1").hide();
@@ -1072,6 +1073,16 @@ $("#chiarisi").click(function(){
  $("#chiarino").show();
  $("#scurisi").show();
  $("#scurino").hide();
+    var match = [];
+    for(var i=0; i < renderList.length; i++) {
+    match = renderList[i].match(/chiari.+interno/);
+    if (match != null)
+        break;
+    }
+    var URL = '<?php echo "$v_METHOD://$v_HOST/$v_APP/"?>' + renderList[i];
+    $("#renderImg").attr("src", URL);
+    $("#renderImgPopUp").attr("href", URL);
+    $("input[name=style-hidden").attr("value", "chiari");
  });
 
 $("#chiarino").click(function(){
@@ -1084,6 +1095,16 @@ $("#scurisi").click(function(){
  $("#scurino").show();
  $("#chiarisi").show();
  $("#chiarino").hide();
+ var match = [];
+ for(var i=0; i < renderList.length; i++) {
+    match = renderList[i].match(/scuri.+interno/);
+    if (match != null)
+        break;
+ }
+ var URL = '<?php echo "$v_METHOD://$v_HOST/$v_APP/"?>' + renderList[i];
+ $("#renderImg").attr("src", URL);
+ $("#renderImgPopUp").attr("href", URL);
+ $("input[name=style-hidden").attr("value", "scuri");
  });
 
 $("#scurino").click(function(){
@@ -1642,7 +1663,7 @@ $("#nascondimaniglie").click(function(){
 });
 
 });
-// ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/alwin3d2/images/APERTURE/COUNTRY/PORTAFINESTRA_BATTENTE/COUNTRY_MONTAGNA_BATTENTE_ROVERE_CHIARO.jpg">+</a><img class="sppb-img-responsive" src="/alwin3d2/images/APERTURE/COUNTRY/PORTAFINESTRA_BATTENTE/COUNTRY_MONTAGNA_BATTENTE_ROVERE_CHIARO.jpg" alt="COUNTRY_MONTAGNA_BATTENTE_ROVERE_CHIARO.jpg" title=""></div></div></div></div></div></div></div></div></div></div><div id="martellina2" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1495227802230" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1495234310694" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="mancremonese" style="width: 100%">
+// ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a id="renderImgPopUp" class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a><img id="renderImg" class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="__" title=""></div></div></div></div></div></div></div></div></div></div><div id="martellina2" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1495227802230" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1495234310694" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="mancremonese" style="width: 100%">
 <table>
 <tbody>
 <tr>
@@ -3068,6 +3089,42 @@ href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/
                     
                     <!-- Go to top -->
                                             <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
+
+<form id='thisForm' method="POST" action="<?php echo $v_action?>">
+<?php
+foreach ($v_parameters as $id => $value) {
+ echo "<input type=\"hidden\" name=\"$id\" value=\"$value\">";
+}
+?>
+<script type="text/javascript">
+var renderList = <?php echo $v_renderingList?>;
+if ($("input[name=style-hidden").val() === "chiari") {
+    $("#chiarisi").hide();
+    $("#chiarino").show();
+    $("#scurisi").show();
+    $("#scurino").hide();
+} else {
+    $("#chiarisi").show();
+    $("#chiarino").hide();
+    $("#scurisi").hide();
+    $("#scurino").show();
+}
+
+function wizPost(paramsList) {
+    var theForm = document.getElementById('thisForm');
+    for (var param of paramsList) {
+        //<input type="hidden" name="country" value="Norway">
+        var elem = document.createElement("input");
+        elem.type = "hidden";
+        elem.name = param.name;
+        elem.value = param.value;
+        theForm.appendChild(elem);
+    };
+    theForm.submit();
+};
+
+</script>
+</form>
                     
                 </body>
                 </html>
