@@ -9,11 +9,16 @@ abstract class State implements iState {
 	const BRIGHTNESS_SESS_NAME = 'room-brightness';
 	const BRIGHTNESS = 'smvc-bright';
 	const WIN_TYPE = 'smvc-win-type';
-	const WIN_TYPE_SESS = 'win-type';	
+	const WIN_TYPE_SESS = 'win-type';
+	const WIN_TYPE_DEF = 'luce';
 	const WIN_COLOR = 'smvc-win-color';
 	const WIN_COLOR_SESS = 'win-color';
+	const WIN_COLOR_DEF = 'avorio';
 	const HANDLE_TYPE = 'smvc-handle-type';
 	const HANDLE_COLOR = 'smvc-handle-color';
+	const WIN_COLOR_OUT = 'smvc-win-color-out';
+	const WIN_COLOR_OUT_SESS = 'win-color-out';
+	const WIN_COLOR_OUT_DEF = 'avorio';
 }
 
 class StartState extends State {
@@ -23,6 +28,9 @@ class StartState extends State {
 		//@todo add a class for managing the sesion
 		//reset all session data
 		$_SESSION[self::BRIGHTNESS_SESS_NAME] = self::BRIGHTNESS_DEF_VAL;
+		$_SESSION[self::WIN_TYPE_SESS] = self::BRIGHTNESS_DEF_VAL;
+		$_SESSION[self::WIN_COLOR_SESS] = self::BRIGHTNESS_DEF_VAL;
+		$_SESSION[self::WIN_COLOR_OUT_SESS] = self::BRIGHTNESS_DEF_VAL;
 		$_SESSION['wizState'] = new StyleState();
 		return header(HEADER_PREFIX.StyleState::NAME);
 	}
@@ -251,6 +259,7 @@ class Outdoor extends State {
 					break;
 				}
 			}
+			$defaultRendering = ($defaultRendering == '') ? OUTDOOR_DEF_IMG : $defaultRendering;
 			require_once(__DIR__.'/../view/wizard/wizView.php');
 			$this->view = new WizView();
 			$this->view->setTplParam('HOST', HOST);
@@ -259,7 +268,12 @@ class Outdoor extends State {
 			$this->view->setPostHandler(URL_PREFIX.self::NAME);
 			$this->view->setTplParam('rendering', $defaultRendering);
 			$this->view->setTplParam('renderingList', json_encode($renderingList));
+			$this->view->setTplParam('indoorColor', (isset($_SESSION[self::WIN_COLOR_SESS])) ? 
+				$_SESSION[self::WIN_COLOR_SESS] : 'avorio');
+			$this->view->setTplParam('winColorOutdoorParam', self::WIN_COLOR_OUT);
 			$p = [];
+			$p[self::WIN_COLOR_OUT] = (isset($_SESSION[self::WIN_COLOR_OUT_SESS])) ? 
+				$_SESSION[self::WIN_COLOR_OUT_SESS] : 'avorio';
 			$this->view->setTplParam('parameters', $p);
 			return $this->view->outdoor();
 		} else {

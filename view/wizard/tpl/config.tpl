@@ -3149,10 +3149,10 @@ function wizPost(paramsList) {
 function smvcGetFilter() {
     return $("input[name^=smvc]").map(function() {
         return $( this ).val();
-      }).toArray()
+      }).toArray();
 }
 
-function smvcApplyFilter(filterList = array()) {
+function smvcApplyFilter(filterList) {
     pattern = '';
     for (var i = 0; i < filterList.length; i++) {
         if (filterList[i] !== "") {

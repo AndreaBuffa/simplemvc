@@ -186,7 +186,7 @@ padding: 0 0px 0 0px;
 }
 #sppb-addon-1490355890066 .sppb-addon-image-overlay{background-color: rgba(255, 255, 255, 0.51);}
 .sp-page-builder .page-content #section-id-1494256006413{margin:0px 0px 0px -15px;padding:0px 0px 0px 0px;}
-#column-id-1494256006414{padding:0 5px 0 5px;background-image:url(/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-AVORIO.jpg);background-repeat:no-repeat;background-size:cover;background-attachment:scroll;background-position:0 0;}
+#column-id-1494256006414{padding:0 5px 0 5px;background-image:url(<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>);background-repeat:no-repeat;background-size:cover;background-attachment:scroll;background-position:0 0;}
 .sp-page-builder .page-content #avorio{margin:0px 5px 0px -5px;padding:0px 0px 0px 0px;}
 #sppb-addon-1490731691299 {
 margin: 0 -5px 0 -8px;
@@ -738,7 +738,7 @@ var sp_offanimation = 'default';
 <tr>
 <td style="padding-top: 3px; font-size: 12px; line-height: 18px; border-top: 1px solid #858585; border-bottom: 1px solid #858585;">PER L'INTERNO HAI SCELTO IL COLORE</td>
 <td style="width: 2%;">&nbsp;</td>
-<td style="padding-top: 3px; font-size: 12px; line-height: 18px; border-top: 1px solid #858585; border-bottom: 1px solid #858585;">AVORIO</td>
+<td style="padding-top: 3px; font-size: 12px; line-height: 18px; border-top: 1px solid #858585; border-bottom: 1px solid #858585;"><?php echo strtoupper($v_indoorColor); ?></td>
 </tr>
 </tbody>
 </table>
@@ -868,7 +868,11 @@ if(document.getElementById){
 	    el11.style.border="0px solid #ff3000";
             el12.style.display="none";
         }
+	 $("input[name=<?php echo $v_winColorOutdoorParam ?>").attr("value", "bianco");
+	 var tmp = smvcApplyFilter(smvcGetFilter()); 
+	 updateRender(tmp[0]);
     }
+
 }
 function mostranascondi3(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11,id12){
 if(document.getElementById){
@@ -997,6 +1001,11 @@ $("#baseok").hide();
 $("#avorio1").click(function(){
  $("#avorio").show();
  $("#baseok").hide();
+  // SMVC
+ $("input[name=<?php echo $v_winColorOutdoorParam ?>").attr("value", "avorio");
+ var tmp = smvcApplyFilter(smvcGetFilter()); 
+ updateRender(tmp[0]);
+
 });
 
 $("#bianco1").click(function(){
@@ -1007,21 +1016,30 @@ $("#bianco1").click(function(){
 $("#grigio1").click(function(){
  $("#grigio").show();
  $("#baseok").hide();
+ $("input[name=<?php echo $v_winColorOutdoorParam ?>").attr("value", "avorio");
+ var tmp = smvcApplyFilter(smvcGetFilter()); 
+ updateRender(tmp[0]);
 });
 
 $("#noce1").click(function(){
  $("#noce").show();
  $("#baseok").hide();
+ $("input[name=<?php echo $v_winColorOutdoorParam ?>").attr("value", "avorio");
+ var tmp = smvcApplyFilter(smvcGetFilter()); 
+ updateRender(tmp[0]);
 });
 
 $("#nero1").click(function(){
  $("#nero").show();
  $("#baseok").hide();
+ $("input[name=<?php echo $v_winColorOutdoorParam ?>").attr("value", "avorio");
+ var tmp = smvcApplyFilter(smvcGetFilter()); 
+ updateRender(tmp[0]);
 });
 });
 // ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div>
 <a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a>
-<img class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="COUNTRY-ESTERNO-AVORIO.jpg" title=""></div></div></div></div></div></div></div></div></div></div><div id="section-id-1494256006413" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494256006414" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1494247615153" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="baseok" style="width:100%; height:500px; ">
+<img class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="" title=""></div></div></div></div></div></div></div></div></div></div><div id="section-id-1494256006413" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494256006414" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1494247615153" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="baseok" style="width:100%; height:500px; ">
 <div id="scelta1" style="width:100%; ">
 <table width="100%">
 <tbody>
@@ -1122,7 +1140,7 @@ onclick="mostranascondi1('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', '
 	</tbody>
   </table>
 </div>
-</div></div></div></div></div></div></div></div></div></div><div id="avorio" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614550" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490731691299" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-AVORIO.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-AVORIO.jpg" alt="COUNTRY-ESTERNO-AVORIO.jpg" title=""></div></div></div></div><div id="sppb-addon-1490777906390" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO AVORIO</div></div></div></div></div></div></div></div></div></div><div id="bianco" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614586" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490731691306" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-BIANCO.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-BIANCO.jpg" alt="COUNTRY-ESTERNO-BIANCO.jpg" title=""></div></div></div></div><div id="sppb-addon-1494231614588" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO BIANCO</div></div></div></div></div></div></div></div></div></div><div id="grigio" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614608" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490731691313" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-GRIGIO.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-GRIGIO.jpg" alt="COUNTRY-ESTERNO-GRIGIO.jpg" title=""></div></div></div></div><div id="sppb-addon-1494231614610" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO GRIGIO</div></div></div></div></div></div></div></div></div></div><div id="noce" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614652" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490731691329" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NOCE.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NOCE.jpg" alt="COUNTRY-ESTERNO-NOCE.jpg" title=""></div></div></div></div><div id="sppb-addon-1494231614654" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO NOCE</div></div></div></div></div></div></div></div></div></div><div id="nero" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494317158345" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1494317158346" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NERO.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NERO.jpg" alt="COUNTRY-ESTERNO-NERO.jpg" title=""></div></div></div></div><div id="sppb-addon-1494317158347" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO NERO</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></section>			</div>
+</div></div></div></div></div></div></div></div></div></div><div id="avorio" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614550" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490731691299" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a><img class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="COUNTRY-ESTERNO-AVORIO.jpg" title=""></div></div></div></div><div id="sppb-addon-1490777906390" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO AVORIO</div></div></div></div></div></div></div></div></div></div><div id="bianco" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614586" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490731691306" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-BIANCO.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-BIANCO.jpg" alt="COUNTRY-ESTERNO-BIANCO.jpg" title=""></div></div></div></div><div id="sppb-addon-1494231614588" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO BIANCO</div></div></div></div></div></div></div></div></div></div><div id="grigio" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614608" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490731691313" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-GRIGIO.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-GRIGIO.jpg" alt="COUNTRY-ESTERNO-GRIGIO.jpg" title=""></div></div></div></div><div id="sppb-addon-1494231614610" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO GRIGIO</div></div></div></div></div></div></div></div></div></div><div id="noce" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614652" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490731691329" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NOCE.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NOCE.jpg" alt="COUNTRY-ESTERNO-NOCE.jpg" title=""></div></div></div></div><div id="sppb-addon-1494231614654" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO NOCE</div></div></div></div></div></div></div></div></div></div><div id="nero" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494317158345" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1494317158346" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NERO.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NERO.jpg" alt="COUNTRY-ESTERNO-NERO.jpg" title=""></div></div></div></div><div id="sppb-addon-1494317158347" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO NERO</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></section>			</div>
 </div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer2" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright">All Rights Reserved 2017 © Alsistem Scrl</span></div></div></div></div></footer>                        </div> <!-- /.body-innerwrapper -->
                     </div> <!-- /.body-innerwrapper -->
 
@@ -1142,14 +1160,66 @@ onclick="mostranascondi1('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', '
                     <!-- Go to top -->
                                             <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
 <form id='thisForm' method="POST" action="<?php echo $v_action?>">
+<input type="hidden" name="smvc-def" value="esterno">";
 <?php
 foreach ($v_parameters as $id => $value) {
- echo "<input type=\"hidden\" id=\"$id\" value=\"$value\">";
+ echo "<input type=\"hidden\" name=\"$id\" value=\"$value\">\n";
 }
 ?>
 <script type="text/javascript">
 
-//var renderList = <?php echo $v_renderingList?>;
+var renderList = <?php echo $v_renderingList?>;
+if ($("input[name=<?php echo $v_winColorOutdoorParam ?>").val() === "chiari") {
+
+} else {
+
+}
+
+function smvcGetFilter() {
+    return $("input[name^=smvc]").map(function() {
+        return $( this ).val();
+      }).toArray();
+}
+
+function smvcApplyFilter(filterList) {
+    pattern = '';
+    for (var i = 0; i < filterList.length; i++) {
+        if (filterList[i] !== "") {
+            pattern += filterList[i] + '.+';
+        }
+    }
+    var match = [];
+    var results = [];
+    for(var i=0; i < renderList.length; i++) {
+        match = renderList[i].match('/' + pattern +'/');
+        if (match != null)
+            results.push(renderList[i]);
+    }
+    return results;
+}
+
+function updateRender(renderPath) {
+    var URL = '<?php echo "$v_METHOD://$v_HOST/$v_APP/"?>' + renderPath;
+    var style = 'width:100%; height:500px; background-image:url(';
+    $("#renderImg").attr("src", URL);
+    $("#renderImgPopUp").attr("href", URL);
+    if ($("#baseok").css("display") == 'none') {
+        style += URL + "); background-position: center center; background-size: contain; background-repeat: no-repeat;" + 'display: none;';
+    } else {
+        style += URL + "); background-position: center center; background-size: contain; background-repeat: no-repeat;"        
+    }
+    $("#baseok").attr("style", style);
+    $("#avorio").find('img').attr("src", URL);
+    $("#avorio").find('a').attr("href", URL);
+    $("#bianco").find('img').attr("src", URL);
+    $("#bianco").find('a').attr("href", URL);
+    $("#grigio").find('img').attr("src", URL);
+    $("#grigio").find('a').attr("href", URL);
+    $("#noce").find('img').attr("src", URL);
+    $("#noce").find('a').attr("href", URL);
+    $("#nero").find('img').attr("src", URL);
+    $("#nero").find('a').attr("href", URL);
+}
 
 function wizPost(paramsList) {
     var theForm = document.getElementById('thisForm');

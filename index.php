@@ -23,6 +23,7 @@ define("URL_PREFIX", METHOD.'://'.HOST.'/'.APP.'/index.php?page=');
 define("HEADER_PREFIX", "Location: index.php?page=");
 define("O_METHOD", "http");
 define("O_HOST", "alwin.orchestraweb.net");
+define("OUTDOOR_DEF_IMG", 'http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-AVORIO.jpg');
 
 ob_start();
 
