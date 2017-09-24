@@ -29,7 +29,7 @@ class StartState extends State {
 		//reset all session data
 		$_SESSION[self::BRIGHTNESS_SESS_NAME] = self::BRIGHTNESS_DEF_VAL;
 		$_SESSION[self::WIN_TYPE_SESS] = self::WIN_TYPE_DEF;
-		$_SESSION[self::WIN_COLOR_SESS] = self::WIN_COLOR_DEF
+		$_SESSION[self::WIN_COLOR_SESS] = self::WIN_COLOR_DEF;
 		$_SESSION[self::WIN_COLOR_OUT_SESS] = self::WIN_COLOR_OUT_DEF;
 		$_SESSION['wizState'] = new StyleState();
 		return header(HEADER_PREFIX.StyleState::NAME);
