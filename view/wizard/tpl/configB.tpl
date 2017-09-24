@@ -716,7 +716,7 @@ if(document.getElementById){
 </button>
 </div></div></div><div id="sppb-addon-1494174149834" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="#" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">Aggiungi un'altra tipologia</div> <div style="float:right; margin-right:5px"><i class="fa fa-clone"></i></div></div>
-</a></div></div></div><div id="sppb-addon-1494174149878" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="#" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 15px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+</a></div></div></div><div id="sppb-addon-1494174149878" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="javascript: wizPost([{name: 'action', value:'submitForPrice'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 15px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">Definisci preventivo tecnico</div> <div style="float:right; margin-right:5px"><i class="fa fa-calculator"></i></div></div>
 </a></div></div></div><div id="sppb-addon-1494236518886" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="/alwin3d2/index.php/pagina-utente-finale" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
 <div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">Vai alla tua pagina</div> <div style="float:right; margin-right:5px"><i class="fa fa-sign-in"></i></div></div>
@@ -730,10 +730,10 @@ if(document.getElementById){
 <td style="font-size: 12px; height: 24px; font-weight: 500; text-align: left; padding: 3px 0; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">inserisci le misure e le quantit&agrave;</td>
 </tr>
 <tr>
-<td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">BASE CM <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" /></td>
+<td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">BASE CM <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" value="100"/></td>
 </tr>
 <tr>
-<td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">ALTEZZA CM <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" /></td>
+<td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">ALTEZZA CM <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" value="200"/></td>
 </tr>
 <tr>
 <td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">QUANTITA <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" /></td>
@@ -1060,37 +1060,37 @@ var polyfilter_scriptpath = '/js/';
 </div></div></div></div></div></div><div class="sppb-col-md-4"><div id="column-id-1494182124221" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490777906432" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><table width="100%">
 <tbody>
 <tr>
-<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-top: 1px solid #dedede;" colspan="3">PORTAFINESTRA - MODELLO&nbsp;INVISIO</td>
+<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-top: 1px solid #dedede;" colspan="3">PORTAFINESTRA - MODELLO&nbsp;<?php echo $v_type?></td>
 </tr>
 <tr>
 <td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">COLORE INTERNO</td>
 <td style="width: 10px;">&nbsp;</td>
-<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">Noce scuro</td>
+<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;"><?php echo $v_color?></td>
 </tr>
 <tr>
 <td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">COLORE ESTERNO</td>
 <td style="width: 10px;">&nbsp;</td>
-<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">Bianco 9010&nbsp;lucido</td>
+<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;"><?php echo $v_color_outdoor?></td>
 </tr>
 <tr>
 <td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">TIPO MANIGLIA</td>
 <td style="width: 10px;">&nbsp;</td>
-<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">Martellina Aurora</td>
+<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;"><?php echo $v_handle?></td>
 </tr>
 <tr>
 <td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">COLORE MANIGLIA</td>
 <td style="width: 10px;">&nbsp;</td>
-<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">Ottone</td>
+<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;"><?php echo $v_handle_color?></td>
 </tr>
 <tr>
 <td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">CERNIERE</td>
 <td style="width: 10px;">&nbsp;</td>
-<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">A vista</td>
+<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;"><?php echo $v_handle_type?></td>
 </tr>
 <tr>
 <td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">COLORE CERNIERE</td>
 <td style="width: 10px;">&nbsp;</td>
-<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">Ottone</td>
+<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;"><?php echo $v_handle_color?></td>
 </tr>
 </tbody>
 </table></div></div></div></div></div></div><div class="sppb-col-md-12"><div id="column-id-1506015910105" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1506015910110" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><link rel="stylesheet" type="text/css" href="/alwin3d2/css/component.css" />
@@ -1162,7 +1162,7 @@ style="width:30px;
     </div>
     </div>				
  <div class="md-overlay"></div></td>
-<td style="width:10%; text-align: right; border-top: 1px solid #dedede; border-bottom: 1px solid #dedede;" colspan="1"><input style="width: 70px; height: 24px; float: right;" maxlength="18" size="5" type="text" /></td>
+<td style="width:10%; text-align: right; border-top: 1px solid #dedede; border-bottom: 1px solid #dedede;" colspan="1"><input style="width: 70px; height: 24px; float: right;" maxlength="18" size="5" type="text" value="<?php echo $v_price?>"/></td>
 </tr>
 </tbody>
 </table>
@@ -1218,10 +1218,10 @@ var polyfilter_scriptpath = '/js/';
 <td style="font-size: 12px; height: 24px; font-weight: 500; text-align: left; padding: 3px 0; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">inserisci le misure e le quantit&agrave;</td>
 </tr>
 <tr>
-<td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">BASE CM <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" /></td>
+<td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">BASE CM <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" value="100" /></td>
 </tr>
 <tr>
-<td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">ALTEZZA CM <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" /></td>
+<td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">ALTEZZA CM <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" value="200"/></td>
 </tr>
 <tr>
 <td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">QUANTITA <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" /></td>
@@ -1766,6 +1766,22 @@ var polyfilter_scriptpath = '/js/';
                     
                     <!-- Go to top -->
                                             <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
+<form id='thisForm' method="POST" action="<?php echo $v_action?>">
+<script type="text/javascript">
+function wizPost(paramsList) {
+    var theForm = document.getElementById('thisForm');
+    for (var param of paramsList) {
+        //<input type="hidden" name="country" value="Norway">
+        var elem = document.createElement("input");
+        elem.type = "hidden";
+        elem.name = param.name;
+        elem.value = param.value;
+        theForm.appendChild(elem);
+    };
+    theForm.submit();
+};
+</script>
+</form>
                     
                 </body>
                 </html>

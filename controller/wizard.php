@@ -224,6 +224,17 @@ class ConfigState extends State {
 class ConfigB extends State {
 	const NAME = 'configB';
 
+	private function buildBriefDescr() {
+		$this->view->setTplParam('rendering', $_SESSION[self::CURR_IMG_SEL_SESS]);
+		$this->view->setTplParam('type', strtoupper($_SESSION[self::WIN_TYPE_SESS]));
+		$this->view->setTplParam('color', ucwords($_SESSION[self::WIN_COLOR_SESS]));
+		$this->view->setTplParam('color_outdoor', ucwords($_SESSION[self::WIN_COLOR_OUT_SESS]));
+		$this->view->setTplParam('handle', ucwords('exens'));
+		$this->view->setTplParam('handle_type', ucwords('a scomparsa'));
+		//@todo change me
+		$this->view->setTplParam('handle_color', ucwords($_SESSION[self::WIN_COLOR_SESS]));
+	}
+
 	public function process($method, $page) {
 		if ($page !== self::NAME) {
 			return header(HEADER_PREFIX.self::NAME);
@@ -235,10 +246,31 @@ class ConfigB extends State {
 			$this->view->setTplParam('METHOD', METHOD);
 			$this->view->setTplParam('APP', APP);
 			$this->view->setPostHandler(URL_PREFIX.self::NAME);
-			$this->view->setTplParam('rendering', $_SESSION[self::CURR_IMG_SEL_SESS]);
+			$this->buildBriefDescr();
 			return $this->view->sizeAndQuantity();
 		} else {
+			if (isset($_POST['action'])) {
+				switch ($_POST['action']) {
+					case 'submitForPrice':
+						//$_SESSION['wizState'] = new ConfigB();
+						require_once(__DIR__.'/../view/wizard/wizView.php');
+						$this->view = new WizView();
+						$this->view->setTplParam('HOST', HOST);
+						$this->view->setTplParam('METHOD', METHOD);
+						$this->view->setTplParam('APP', APP);
+						$this->view->setPostHandler(URL_PREFIX.self::NAME);
+						$this->buildBriefDescr();
+						$this->view->setTplParam('price', 1250);
 
+						return $this->view->sizeAndQuantity();
+						break;
+					default:
+						return $this->process('GET', self::NAME);
+						break;
+				}
+			} else {
+				return $this->process('GET', self::NAME);
+			}
 		}
 	}
 }
