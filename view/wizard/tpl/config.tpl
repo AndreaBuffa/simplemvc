@@ -1192,6 +1192,10 @@ $("#bianco1").click(function(){
  $("#lucenero").hide();
  $("#baseok").hide();
   $("#maniglie").hide();
+ // SMVC
+ $("input[name=<?php echo $v_winColorParam ?>").attr("value", "bianco");
+ var tmp = smvcApplyFilter(smvcGetFilter());
+ updateRender(tmp[0]);
 });
 
 $("#grigio1").click(function(){
@@ -1203,6 +1207,10 @@ $("#grigio1").click(function(){
  $("#lucenero").hide();
  $("#baseok").hide();
   $("#maniglie").hide();
+ // SMVC
+ $("input[name=<?php echo $v_winColorParam ?>").attr("value", "grigio");
+ var tmp = smvcApplyFilter(smvcGetFilter());
+ updateRender(tmp[0]);
 });
 
 $("#marrone1").click(function(){
@@ -1220,6 +1228,10 @@ $("#noce1").click(function(){
  $("#lucenero").hide();
  $("#baseok").hide();
   $("#maniglie").hide();
+ // SMVC
+ $("input[name=<?php echo $v_winColorParam ?>").attr("value", "marrone");
+ var tmp = smvcApplyFilter(smvcGetFilter());
+ updateRender(tmp[0]);
 });
 
 $("#nero1").click(function(){
@@ -1228,7 +1240,7 @@ $("#nero1").click(function(){
  $("#lucebianco").hide();
  $("#lucegrigio").hide();
  $("#lucenoce").hide();
- //$("#lucenero").show();
+ $("#lucenero").show();
  $("#baseok").hide();
   $("#maniglie").hide();
  // SMVC
@@ -1994,9 +2006,9 @@ Breve testo<br />Descrittivo<br />
   </td>
         <td style="width:2%"></td>
         <td style="vertical-align: top; width: 15%">
-  <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
+  <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;  display: none;">
   <button  id="marrone1" style="padding:5px; font-size: 14px;">
-  <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" width="250" height="250" class="imagebox" alt=""/>MARRONE GOTICO</button>
+  <img  style="padding-bottom:5px;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NOCE.jpg" width="250" height="250" class="imagebox" alt=""/>sarebbe noce</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
   </div>
@@ -2006,7 +2018,7 @@ Breve testo<br />Descrittivo<br />
         <td style="vertical-align: top; width: 15%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
   <button  id="noce1" style="padding:5px; font-size: 14px;">
-  <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NOCE.jpg" width="250" height="250" class="imagebox" alt=""/>NOCE</button>
+  <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" width="250" height="250" class="imagebox" alt=""/>MARRONE</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
   </div>
@@ -3174,6 +3186,16 @@ function updateRender(renderPath) {
         style += URL + "); background-position: center center; background-size: contain; background-repeat: no-repeat;"        
     }
     $("#baseok").attr("style", style);
+    $("#luceavorio").find('img').attr("src", URL);
+    $("#luceavorio").find('a').attr("href", URL);
+    $("#lucebianco").find('img').attr("src", URL);
+    $("#lucebianco").find('a').attr("href", URL);
+    $("#lucegrigio").find('img').attr("src", URL);
+    $("#lucegrigio").find('a').attr("href", URL);
+    $("#lucenoce").find('img').attr("src", URL);
+    $("#lucenoce").find('a').attr("href", URL);
+    $("#lucenero").find('img').attr("src", URL);
+    $("#lucenero").find('a').attr("href", URL);
 }
 </script>
 </form>
