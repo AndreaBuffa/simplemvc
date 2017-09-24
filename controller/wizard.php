@@ -318,6 +318,7 @@ class Outdoor extends State {
 			return $this->view->outdoor();
 		} else {
 			if (isset($_POST['action'])) {
+				$_SESSION[self::WIN_COLOR_OUT_SESS] = $_POST[self::WIN_COLOR_OUT];
 				switch ($_POST['action']) {
 					case 'configB':
 						$_SESSION['wizState'] = new ConfigB();

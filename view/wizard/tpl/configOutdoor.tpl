@@ -838,6 +838,10 @@ if(document.getElementById){
 	    el11.style.border="0px solid #ff3000";
             el12.style.display="none";
         }
+       //SMVC
+	 $("input[name=<?php echo $v_winColorOutdoorParam ?>").attr("value", "avorio");
+	 var tmp = smvcApplyFilter(smvcGetFilter()); 
+	 updateRender(tmp[0]);
     }
 }
 function mostranascondi2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11,id12){
@@ -868,6 +872,7 @@ if(document.getElementById){
 	    el11.style.border="0px solid #ff3000";
             el12.style.display="none";
         }
+      //SMVC
 	 $("input[name=<?php echo $v_winColorOutdoorParam ?>").attr("value", "bianco");
 	 var tmp = smvcApplyFilter(smvcGetFilter()); 
 	 updateRender(tmp[0]);
@@ -902,6 +907,10 @@ if(document.getElementById){
 	    el11.style.border="0px solid #ff3000";
             el12.style.display="none";
         }
+        //SMVC
+	 $("input[name=<?php echo $v_winColorOutdoorParam ?>").attr("value", "grigio");
+	 var tmp = smvcApplyFilter(smvcGetFilter()); 
+	 updateRender(tmp[0]);
     }
 }
 function mostranascondi4(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11,id12){
@@ -932,6 +941,10 @@ if(document.getElementById){
 	    el11.style.border="0px solid #ff3000";
             el12.style.display="none";
         }
+       //SMVC
+	 $("input[name=<?php echo $v_winColorOutdoorParam ?>").attr("value", "marrone");
+	 var tmp = smvcApplyFilter(smvcGetFilter()); 
+	 updateRender(tmp[0]);
     }
 }
 
@@ -963,6 +976,10 @@ if(document.getElementById){
 	    el11.style.border="3px solid #ff3000";
             el12.style.display="none";
         }
+      //SMVC
+	 $("input[name=<?php echo $v_winColorOutdoorParam ?>").attr("value", "nero");
+	 var tmp = smvcApplyFilter(smvcGetFilter()); 
+	 updateRender(tmp[0]);
     }
 }
 </script>
@@ -1038,8 +1055,8 @@ $("#nero1").click(function(){
 });
 });
 // ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div>
-<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a>
-<img class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="" title=""></div></div></div></div></div></div></div></div></div></div><div id="section-id-1494256006413" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494256006414" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1494247615153" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="baseok" style="width:100%; height:500px; ">
+<a id="renderImg" class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a>
+<img id="renderImgPopUp" class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="" title=""></div></div></div></div></div></div></div></div></div></div><div id="section-id-1494256006413" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494256006414" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1494247615153" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="baseok" style="width:100%; height:500px; ">
 <div id="scelta1" style="width:100%; ">
 <table width="100%">
 <tbody>
@@ -1185,13 +1202,13 @@ function smvcApplyFilter(filterList) {
     pattern = '';
     for (var i = 0; i < filterList.length; i++) {
         if (filterList[i] !== "") {
-            pattern += filterList[i] + '.+';
+            pattern += filterList[i] + '\/.+';
         }
     }
     var match = [];
     var results = [];
     for(var i=0; i < renderList.length; i++) {
-        match = renderList[i].match('/' + pattern +'/');
+        match = renderList[i].match(pattern);
         if (match != null)
             results.push(renderList[i]);
     }
@@ -1200,15 +1217,9 @@ function smvcApplyFilter(filterList) {
 
 function updateRender(renderPath) {
     var URL = '<?php echo "$v_METHOD://$v_HOST/$v_APP/"?>' + renderPath;
-    var style = 'width:100%; height:500px; background-image:url(';
     $("#renderImg").attr("src", URL);
     $("#renderImgPopUp").attr("href", URL);
-    if ($("#baseok").css("display") == 'none') {
-        style += URL + "); background-position: center center; background-size: contain; background-repeat: no-repeat;" + 'display: none;';
-    } else {
-        style += URL + "); background-position: center center; background-size: contain; background-repeat: no-repeat;"        
-    }
-    $("#baseok").attr("style", style);
+
     $("#avorio").find('img').attr("src", URL);
     $("#avorio").find('a').attr("href", URL);
     $("#bianco").find('img').attr("src", URL);
