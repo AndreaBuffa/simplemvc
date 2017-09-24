@@ -3119,7 +3119,7 @@ href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/
                                             <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
 
 <form id='thisForm' method="POST" action="<?php echo $v_action?>">
-<input type="hidden" name="<?php echo $v_currSelImg?>" value="<?php $v_rendering?>">\n";
+<input type="hidden" name="<?php echo $v_currSelImg?>" value="<?php echo $v_rendering?>">\n";
 <?php
 foreach ($v_parameters as $name => $value) {
  echo "<input type=\"hidden\" name=\"$name\" value=\"$value\">\n";
@@ -3163,7 +3163,7 @@ function smvcApplyFilter(filterList) {
     pattern = '';
     for (var i = 0; i < filterList.length; i++) {
         if (filterList[i] !== "") {
-            pattern += filterList[i] + '.+';
+            pattern += filterList[i] + '\/.+';
         }
     }
     var match = [];

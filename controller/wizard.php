@@ -190,13 +190,16 @@ class ConfigState extends State {
 			$this->view->setTplParam('winTypeParam', self::WIN_TYPE);
 			$this->view->setTplParam('winColorParam', self::WIN_COLOR);
 			$this->view->setTplParam('currSelImg', self::CURR_IMG_SEL);
+			//$this->view->setTplParam('currSelImgVal', $defaultRendering);
 			return $this->view->config();
 		} else {
 			if (isset($_POST['action'])) {
 				$_SESSION[self::BRIGHTNESS_SESS_NAME] = $_POST[self::BRIGHTNESS];
 				$_SESSION[self::WIN_TYPE_SESS] = $_POST[self::WIN_TYPE];
 				$_SESSION[self::WIN_COLOR_SESS] = $_POST[self::WIN_COLOR];
-				$_SESSION[self::CURR_IMG_SEL_SESS] = $_POST[self::CURR_IMG_SEL];
+				if (isset($_POST[self::CURR_IMG_SEL])) {
+					$_SESSION[self::CURR_IMG_SEL_SESS] = $_POST[self::CURR_IMG_SEL];
+				}
 				switch ($_POST['action']) {
 					case 'configB':
 						$this->saveConf();
