@@ -1049,6 +1049,7 @@ if(document.getElementById){
 
 <script>// <![CDATA[
 $(document).ready(function() {
+    //SMVC
  $("#base").show();
  //$("#chiarisi").show();
  //$("#chiarino").hide();
@@ -1073,17 +1074,12 @@ $("#chiarisi").click(function(){
  $("#chiarino").show();
  $("#scurisi").show();
  $("#scurino").hide();
-    var match = [];
-    for(var i=0; i < renderList.length; i++) {
-    match = renderList[i].match(/chiari.+interno/);
-    if (match != null)
-        break;
-    }
-    var URL = '<?php echo "$v_METHOD://$v_HOST/$v_APP/"?>' + renderList[i];
-    $("#renderImg").attr("src", URL);
-    $("#renderImgPopUp").attr("href", URL);
-    $("input[name=style-hidden").attr("value", "chiari");
- });
+ // SMVC
+ $("input[name=<?php echo $v_brightParam ?>").attr("value", "chiari");
+ var tmp = smvcApplyFilter(smvcGetFilter()); 
+ updateRender(tmp[0]);
+
+});
 
 $("#chiarino").click(function(){
  $("#chiarino").hide();
@@ -1095,16 +1091,9 @@ $("#scurisi").click(function(){
  $("#scurino").show();
  $("#chiarisi").show();
  $("#chiarino").hide();
- var match = [];
- for(var i=0; i < renderList.length; i++) {
-    match = renderList[i].match(/scuri.+interno/);
-    if (match != null)
-        break;
- }
- var URL = '<?php echo "$v_METHOD://$v_HOST/$v_APP/"?>' + renderList[i];
- $("#renderImg").attr("src", URL);
- $("#renderImgPopUp").attr("href", URL);
- $("input[name=style-hidden").attr("value", "scuri");
+ $("input[name=<?php echo $v_brightParam ?>").attr("value", "scuri");
+ var tmp = smvcApplyFilter(smvcGetFilter());
+ updateRender(tmp[0]);
  });
 
 $("#scurino").click(function(){
@@ -1155,15 +1144,27 @@ $("#nascostano").click(function(){
  $("#maniglie").hide();
   $("#martellina2").hide();
  });
- 
- $("#mostra").click(function(){
- $("#base").hide();
- $("#baseok").show();
- $("#scelta1").show();
- $("#nascondi").show();
- $("#mostra").hide();
+ // SMVC
+ // tipo infisso
+ $("#mostra").click(function() {
+ $("#base").hide(); // first render
+ $("#baseok").show();//
+ $("#scelta1").show(); //tipo infisso
+ $("#nascondi").show(); //nasconde il bottoni bianco
+ $("#mostra").hide(); // mostra il bottone rosso
  $("#maniglie").hide();
   $("#martellina2").hide();
+  /*
+ renderListFiltered = smvcApplyFilter(smvcGetFilter());
+ var match = [];
+ var colorList = [];
+ for(var i=0; i < renderListFiltered.length; i++) {
+        match = renderListFiltered[i].match('/' + pattern +'/');
+        if (match != null)
+            results.push(renderList[i]);
+    }
+    return results;
+    */
  });
 
 $("#avorio1").click(function(){
@@ -1174,7 +1175,12 @@ $("#avorio1").click(function(){
  $("#lucenoce").hide();
  $("#lucenero").hide();
  $("#baseok").hide();
-  $("#maniglie").hide();
+ $("#maniglie").hide();
+ // SMVC
+ $("input[name=<?php echo $v_winColorParam ?>").attr("value", "avorio");
+ var tmp = smvcApplyFilter(smvcGetFilter());
+
+ updateRender(tmp[0]);
 });
 
 $("#bianco1").click(function(){
@@ -1218,13 +1224,17 @@ $("#noce1").click(function(){
 
 $("#nero1").click(function(){
  $("#luce").show();
-  $("#luceavorio").hide();
+ $("#luceavorio").hide();
  $("#lucebianco").hide();
  $("#lucegrigio").hide();
  $("#lucenoce").hide();
- $("#lucenero").show();
+ //$("#lucenero").show();
  $("#baseok").hide();
   $("#maniglie").hide();
+ // SMVC
+ $("input[name=<?php echo $v_winColorParam ?>").attr("value", "nero");
+ var tmp = smvcApplyFilter(smvcGetFilter());
+ updateRender(tmp[0]);
 });
 
 $("#avorio11").click(function(){
@@ -1791,7 +1801,7 @@ SCEGLI IL COLORE</td>
 </tr>
 </tbody>
 </table>
-</div></div></div></div></div></div></div></div></div></div><div id="section-id-1494256006413" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494256006414" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1494247615153" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="baseok" style="width:100%; height:500px; background-image:url(http://frontend6.orchestraweb.net/alwin3d2/images/APERTURE/COUNTRY/PORTAFINESTRA_BATTENTE/COUNTRY_MONTAGNA_BATTENTE_ROVERE_CHIARO.jpg); background-position: center center; background-size: contain; background-repeat: no-repeat;">
+</div></div></div></div></div></div></div></div></div></div><div id="section-id-1494256006413" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494256006414" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1494247615153" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="baseok" style="width:100%; height:500px; background-image:url(<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>); background-position: center center; background-size: contain; background-repeat: no-repeat;">
 <div id="scelta1" style="width:100%; ">
 <table width="100%">
 <tbody>
@@ -1807,7 +1817,7 @@ SCEGLI IL COLORE</td>
     box-sizing: none;
     padding: 0;
     border: none;" 
-onclick="mostranascondi1('base', 'luce', 'vetro', 'nathura', 'classic', 'invisio', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1','colore1','colore2','colore3','colore4','colore5'); return(false)">
+onclick="winTypeClicked(); return(false)">
 <div class="boxpuls" id="luce1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/alwin3d2/images/PRODOTTI/PICCOLE/PICCOLA-STILLIFE-LUCE.jpg" class="imagebox" alt=""/>LUCE
     <div class="middlebox">
 Breve testo<br />Descrittivo<br />
@@ -3092,13 +3102,14 @@ href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/
 
 <form id='thisForm' method="POST" action="<?php echo $v_action?>">
 <?php
-foreach ($v_parameters as $id => $value) {
- echo "<input type=\"hidden\" name=\"$id\" value=\"$value\">";
+foreach ($v_parameters as $name => $value) {
+ echo "<input type=\"hidden\" name=\"$name\" value=\"$value\">\n";
 }
 ?>
 <script type="text/javascript">
 var renderList = <?php echo $v_renderingList?>;
-if ($("input[name=style-hidden").val() === "chiari") {
+var renderListFiltered = [];
+if ($("input[name=<?php echo $v_brightParam ?>").val() === "chiari") {
     $("#chiarisi").hide();
     $("#chiarino").show();
     $("#scurisi").show();
@@ -3123,6 +3134,47 @@ function wizPost(paramsList) {
     theForm.submit();
 };
 
+function smvcGetFilter() {
+    return $("input[name^=smvc]").map(function() {
+        return $( this ).val();
+      }).toArray()
+}
+
+function smvcApplyFilter(filterList = array()) {
+    pattern = '';
+    for (var i = 0; i < filterList.length; i++) {
+        if (filterList[i] !== "") {
+            pattern += filterList[i] + '.+';
+        }
+    }
+    var match = [];
+    var results = [];
+    for(var i=0; i < renderList.length; i++) {
+        match = renderList[i].match('/' + pattern +'/');
+        if (match != null)
+            results.push(renderList[i]);
+    }
+    return results;
+}
+
+function winTypeClicked() {
+    mostranascondi1('base', 'luce', 'vetro', 'nathura', 'classic', 'invisio', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1','colore1','colore2','colore3','colore4','colore5');
+
+    $("input[name=<?php echo $v_winTypeParam ?>").attr("value", "luce");    
+}
+
+function updateRender(renderPath) {
+    var URL = '<?php echo "$v_METHOD://$v_HOST/$v_APP/"?>' + renderPath;
+    var style = 'width:100%; height:500px; background-image:url(';
+    $("#renderImg").attr("src", URL);
+    $("#renderImgPopUp").attr("href", URL);
+    if ($("#baseok").css("display") == 'none') {
+        style += URL + "); background-position: center center; background-size: contain; background-repeat: no-repeat;" + 'display: none;';
+    } else {
+        style += URL + "); background-position: center center; background-size: contain; background-repeat: no-repeat;"        
+    }
+    $("#baseok").attr("style", style);
+}
 </script>
 </form>
                     

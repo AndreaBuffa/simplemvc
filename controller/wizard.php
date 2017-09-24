@@ -4,13 +4,25 @@ interface iState {
 	public function process($method, $page);
 }
 
-abstract class State implements iState {}
+abstract class State implements iState {
+	const BRIGHTNESS_DEF_VAL = 'chiari';
+	const BRIGHTNESS_SESS_NAME = 'room-brightness';
+	const BRIGHTNESS = 'smvc-bright';
+	const WIN_TYPE = 'smvc-win-type';
+	const WIN_TYPE_SESS = 'win-type';	
+	const WIN_COLOR = 'smvc-win-color';
+	const WIN_COLOR_SESS = 'win-color';
+	const HANDLE_TYPE = 'smvc-handle-type';
+	const HANDLE_COLOR = 'smvc-handle-color';
+}
 
 class StartState extends State {
 	const NAME = 'start';
 
 	public function process($method, $page) {
+		//@todo add a class for managing the sesion
 		//reset all session data
+		$_SESSION[self::BRIGHTNESS_SESS_NAME] = self::BRIGHTNESS_DEF_VAL;
 		$_SESSION['wizState'] = new StyleState();
 		return header(HEADER_PREFIX.StyleState::NAME);
 	}
@@ -99,9 +111,6 @@ class OpeningState extends State {
 
 class ConfigState extends State {
 	const NAME = 'config';
-	const BRIGHTNESS = 'style-hidden';
-	const BRIGHTNESS_DEF_VAL = 'chiari';
-	const BRIGHTNESS_SESS_NAME = 'room-brightness';
 
 	private function saveConf() {
 		//http://alwin.orchestraweb.net/api/modify_window.php?job_token=89ddd4c28166&category=CTG-PORTAFINESTRA-SCORREVOLE-2ANTE&window_id=new
@@ -131,14 +140,27 @@ class ConfigState extends State {
 				$_SESSION['wizState'] = new StartState();
 				return header(HEADER_PREFIX.StartState::NAME);
 			}
+			// this is error prone
 			if (isset($_SESSION[self::BRIGHTNESS_SESS_NAME])) {
-				$parameters[self::BRIGHTNESS] = $_SESSION[self::BRIGHTNESS_SESS_NAME];
+				$p[self::BRIGHTNESS] = $_SESSION[self::BRIGHTNESS_SESS_NAME];
 			} else {
-				$parameters[self::BRIGHTNESS] = self::BRIGHTNESS_DEF_VAL;
+				$p[self::BRIGHTNESS] = self::BRIGHTNESS_DEF_VAL;
 			}
+			if (isset($_SESSION[self::WIN_TYPE_SESS])) {
+				$p[self::WIN_TYPE] = $_SESSION[self::WIN_TYPE_SESS];
+			} else {
+				$p[self::WIN_TYPE] = '';
+			}
+			$p[self::WIN_COLOR] = (isset($_SESSION[self::WIN_COLOR_SESS])) ? 
+				$_SESSION[self::WIN_COLOR_SESS] : 'avorio';
+
+			$p[self::HANDLE_TYPE] = '';
+			$p[self::HANDLE_COLOR] = '';			
 			$defaultRendering = '';
 			foreach ($renderingList as $key => $elem) {
-				if (preg_match('/'.$parameters[self::BRIGHTNESS].'.+interno/', $elem)) {
+				if (preg_match('/'.$p[self::BRIGHTNESS].'.+' .
+					$p[self::WIN_TYPE] . '.+interno\/colore\/' .
+					$p[self::WIN_COLOR] . '/', $elem)) {
 					$defaultRendering = $renderingList[$key];
 					break;
 				}
@@ -152,11 +174,17 @@ class ConfigState extends State {
 			$this->view->setPostHandler(URL_PREFIX.self::NAME);
 			$this->view->setTplParam('rendering', $defaultRendering);
 			$this->view->setTplParam('renderingList', json_encode($renderingList));
-			$this->view->setTplParam('parameters', $parameters);
+			//hidden params sent to the client
+			$this->view->setTplParam('parameters', $p);
+			$this->view->setTplParam('brightParam', self::BRIGHTNESS);
+			$this->view->setTplParam('winTypeParam', self::WIN_TYPE);
+			$this->view->setTplParam('winColorParam', self::WIN_COLOR);			
 			return $this->view->config();
 		} else {
 			if (isset($_POST['action'])) {
 				$_SESSION[self::BRIGHTNESS_SESS_NAME] = $_POST[self::BRIGHTNESS];
+				$_SESSION[self::WIN_TYPE_SESS] = $_POST[self::WIN_TYPE];
+				$_SESSION[self::WIN_COLOR_SESS] = $_POST[self::WIN_COLOR];
 				switch ($_POST['action']) {
 					case 'configB':
 						$this->saveConf();
@@ -231,8 +259,8 @@ class Outdoor extends State {
 			$this->view->setPostHandler(URL_PREFIX.self::NAME);
 			$this->view->setTplParam('rendering', $defaultRendering);
 			$this->view->setTplParam('renderingList', json_encode($renderingList));
-			$parameters = [];
-			$this->view->setTplParam('parameters', $parameters);
+			$p = [];
+			$this->view->setTplParam('parameters', $p);
 			return $this->view->outdoor();
 		} else {
 			if (isset($_POST['action'])) {
