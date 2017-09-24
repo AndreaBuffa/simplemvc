@@ -115,9 +115,6 @@ z-index:100
 }
 
 
-
-
-
 .sp-page-builder .page-content #section-id-1494172944745{margin:0px 0px 0px 0px;padding:15px 0px 10px 0px;}
 #column-id-1494085957782{padding:0 10px 0 -10px;background-color:rgba(241, 241, 241, 1);}
 #sppb-addon-1494080026683 {
@@ -420,83 +417,81 @@ var sp_offanimation = 'default';
                     <div class="body-wrapper">
                         <div class="body-innerwrapper">
                             <div class="sp-pre-loader"><div class="sp-loader-bubble-loop"></div></div>
- <section id="section-id-1494172944745" class="sppb-section  sppb-hidden-sm sppb-hidden-xs"  ><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-4"><div id="column-id-1494085957782" class="sppb-column  margini1bis" ><div class="sppb-column-addons"><div id="sppb-addon-1494080026683" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
+ <!-- header -->
+<section id="section-id-1494172944745" class="sppb-section  sppb-hidden-sm sppb-hidden-xs"><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-4"><div id="column-id-1494085957782" class="sppb-column  margini1bis"><div class="sppb-column-addons"><div id="sppb-addon-1494080026683" class="clearfix"><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
 <tbody>
 <tr>
 <td><img style="width:85px; height: 85px;" src="/images/2017/05/06/logo_alsistem150x150.png"></td>
 <td style="width:10px"></td>
-<td style="padding-left:10px; width: 196px; height: 85px; background: #f1f1f1;"><div style="padding-top: 10px; font-family: Aldrich; font-size: 28px; color: #ce0000; line-height: 75px; vertical-align: middle; text-align: center; margin-right:12px;">ALWIN3D</div></td>
-<td style="width:7px; background: #ffffff;"></td>
+<td style="padding-left:10px; width: 172px; height: 85px; background: #f1f1f1;"><div style="padding-top: 10px; font-family: Aldrich; font-size: 28px; color: #ce0000; line-height: 75px; vertical-align: middle; text-align: center; margin-right:12px;">ALWIN3D</div></td>
+<td style="width:10px; background: #ffffff;"></td>
 </tr>
 </tbody>
-</table></div></div></div></div></div></div><div class="sppb-col-md-6"><div id="column-id-1494085957783" class="sppb-column  margini2" ><div class="sppb-column-addons"><div id="sppb-addon-1494148931288" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
+</table></div></div></div></div></div></div><div class="sppb-col-md-6"><div id="column-id-1494085957783" class="sppb-column  paddingzero2"><div class="sppb-column-addons"><div id="sppb-addon-1494148931288" class="clearfix"><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
 <tbody>
 <tr>
 <td style="width:50%; height:85px;">
 <div style="margin-left:15px; margin-right:30px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
-<a style="padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);"  class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/index.php/country-portafinestra-battente">
+<a style="padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/alwin3d2/index.php/country-portafinestra-battente">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-search"></i>
 </span></a>
 </div>
-<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);" >
-<a style="padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/index.php/country-montagna">
+<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
+<a style="padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/alwin3d2/index.php/country-montagna">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-pencil"></i>
 </span></a>
 </div>
 <div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
-<a style="padding-left: 13px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/index.php/country-panorami">
+<a style="padding-left: 13px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/alwin3d2/index.php/country-panorami">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-map-marker"></i>
 </span></a>
 </div>
 <div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
-<a style="padding-left: 10px; cursor: pointer; width: 36px; color: rgba(201, 0, 0, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/index.php/stili">
+<a style="padding-left: 10px; cursor: pointer; width: 36px; color: rgba(201, 0, 0, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/index.php?page=start"?>">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-home"></i>
 </span></a>
 </div></td>
 <td style="width:6%">
 <a href="#" style="padding: 0px 5px; font-size: 27px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Guarda la guida tutorial" title="">
-<i class="fa fa-youtube-play"></i></span>
+<!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="<div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;><div class=&quot;arrow&quot;></div><div class=&quot;popover-inner&quot;><h3 class=&quot;popover-title&quot;></h3><div class=&quot;popover-content&quot;><p></p></div></div></div>" data-placement="top" data-content="Guarda la guida tutorial" title="" data-original-title="">
+<i class="fa fa-youtube-play"></i></span><!-- END: Tooltips -->
 </a>
 </td>
 <td style="width:1%"></td>
 
 <td style="width:4%">
 <a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Salva il percorso" title="">
-<i class="fa fa-floppy-o"></i></span>
+<!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="<div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;><div class=&quot;arrow&quot;></div><div class=&quot;popover-inner&quot;><h3 class=&quot;popover-title&quot;></h3><div class=&quot;popover-content&quot;><p></p></div></div></div>" data-placement="top" data-content="Salva il percorso" title="" data-original-title="">
+<i class="fa fa-floppy-o"></i></span><!-- END: Tooltips -->
 </a>
 </td>
 
 <td style="width:1%; padding-right:8px;"></td>
 </tr>
 </tbody>
-</table></div></div></div></div></div></div><div class="sppb-col-md-2"><div id="column-id-1494085957784" class="sppb-column  margini3" ><div class="sppb-column-addons"><div id="sppb-addon-1494169781290" class="clearfix" ><div class="sppb-addon sppb-addon-module "><div class="sppb-addon-content"><div class="sclogin sourcecoast">
+</table></div></div></div></div></div></div><div class="sppb-col-md-2"><div id="column-id-1494085957784" class="sppb-column  margini3"><div class="sppb-column-addons"><div id="sppb-addon-1494169781290" class="clearfix"><div class="sppb-addon sppb-addon-module "><div class="sppb-addon-content"><div class="sclogin sourcecoast">
 
     <div class="sclogout-button">
         <div class="sclogin-joomla-login">
-            <form action="/index.php/country-portafinestra-battente-esterno" method="post" id="sclogin-form">
+            <form action="/alwin3d2/index.php/country-portafinestra-battente-esterno" method="post" id="sclogin-form">
                 <div class="logout-button" id="scLogoutButton">
-                    <input type="submit" name="Submit" class="logout-link" value="Esci" />
+                    <input type="submit" name="Submit" class="logout-link" value="Esci">
 
-                                                            <input type="hidden" name="option" value="com_users" />
-                    <input type="hidden" name="task" value="user.logout" />
+                                                            <input type="hidden" name="option" value="com_users">
+                    <input type="hidden" name="task" value="user.logout">
                     
-                    <input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDE=" />
-                    <input type="hidden" name="9cc2afe1b1d2ac72a514a6d7dc4989db" value="1" />                </div>
+                    <input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDE=">
+                    <input type="hidden" name="2be490c5762b744f2cd739522b1350f0" value="1">                </div>
             </form>
         </div>
     </div>
-    <div class="sclogin-social-connect">
-            </div>
     <div class="clearfix"></div>
 </div>
 </div></div></div></div></div></div></div></div></section>
-
 
 
 <div id="section-id-1494172984093" class="sppb-section  sppb-hidden-md sppb-hidden-lg sppb-hidden-xs"  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-3 sppb-col-sm-3"><div id="column-id-1494158935830" class="sppb-column  margini1" ><div class="sppb-column-addons"><div id="sppb-addon-1494158935831" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html  posizione2"><div class="sppb-addon-content"><div style="margin-left: 10px; z-index:100;">
