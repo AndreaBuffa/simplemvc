@@ -1078,6 +1078,7 @@ $("#chiarisi").click(function(){
  $("input[name=<?php echo $v_brightParam ?>").attr("value", "chiari");
  var tmp = smvcApplyFilter(smvcGetFilter()); 
  updateRender(tmp[0]);
+ $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));
 
 });
 
@@ -1094,6 +1095,7 @@ $("#scurisi").click(function(){
  $("input[name=<?php echo $v_brightParam ?>").attr("value", "scuri");
  var tmp = smvcApplyFilter(smvcGetFilter());
  updateRender(tmp[0]);
+ $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));
  });
 
 $("#scurino").click(function(){
@@ -1179,8 +1181,8 @@ $("#avorio1").click(function(){
  // SMVC
  $("input[name=<?php echo $v_winColorParam ?>").attr("value", "avorio");
  var tmp = smvcApplyFilter(smvcGetFilter());
-
  updateRender(tmp[0]);
+ $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));
 });
 
 $("#bianco1").click(function(){
@@ -1196,6 +1198,7 @@ $("#bianco1").click(function(){
  $("input[name=<?php echo $v_winColorParam ?>").attr("value", "bianco");
  var tmp = smvcApplyFilter(smvcGetFilter());
  updateRender(tmp[0]);
+ $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));
 });
 
 $("#grigio1").click(function(){
@@ -1211,6 +1214,7 @@ $("#grigio1").click(function(){
  $("input[name=<?php echo $v_winColorParam ?>").attr("value", "grigio");
  var tmp = smvcApplyFilter(smvcGetFilter());
  updateRender(tmp[0]);
+ $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));
 });
 
 $("#marrone1").click(function(){
@@ -1232,6 +1236,7 @@ $("#noce1").click(function(){
  $("input[name=<?php echo $v_winColorParam ?>").attr("value", "marrone");
  var tmp = smvcApplyFilter(smvcGetFilter());
  updateRender(tmp[0]);
+ $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));
 });
 
 $("#nero1").click(function(){
@@ -1247,6 +1252,7 @@ $("#nero1").click(function(){
  $("input[name=<?php echo $v_winColorParam ?>").attr("value", "nero");
  var tmp = smvcApplyFilter(smvcGetFilter());
  updateRender(tmp[0]);
+ $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));
 });
 
 $("#avorio11").click(function(){
@@ -3113,6 +3119,7 @@ href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/
                                             <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
 
 <form id='thisForm' method="POST" action="<?php echo $v_action?>">
+<input type="hidden" name="<?php echo $v_currSelImg?>" value="<?php $v_rendering?>">\n";
 <?php
 foreach ($v_parameters as $name => $value) {
  echo "<input type=\"hidden\" name=\"$name\" value=\"$value\">\n";

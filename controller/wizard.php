@@ -10,7 +10,7 @@ abstract class State implements iState {
 	const BRIGHTNESS = 'smvc-bright';
 	const WIN_TYPE = 'smvc-win-type';
 	const WIN_TYPE_SESS = 'win-type';
-	const WIN_TYPE_DEF = 'luce';
+	const WIN_TYPE_DEF = '';
 	const WIN_COLOR = 'smvc-win-color';
 	const WIN_COLOR_SESS = 'win-color';
 	const WIN_COLOR_DEF = 'avorio';
@@ -19,6 +19,8 @@ abstract class State implements iState {
 	const WIN_COLOR_OUT = 'smvc-win-color-out';
 	const WIN_COLOR_OUT_SESS = 'win-color-out';
 	const WIN_COLOR_OUT_DEF = 'avorio';
+	const CURR_IMG_SEL = 'currSelImg';
+	const CURR_IMG_SEL_SESS = 'currSelImg'; 
 }
 
 class StartState extends State {
@@ -186,13 +188,15 @@ class ConfigState extends State {
 			$this->view->setTplParam('parameters', $p);
 			$this->view->setTplParam('brightParam', self::BRIGHTNESS);
 			$this->view->setTplParam('winTypeParam', self::WIN_TYPE);
-			$this->view->setTplParam('winColorParam', self::WIN_COLOR);			
+			$this->view->setTplParam('winColorParam', self::WIN_COLOR);
+			$this->view->setTplParam('currSelImg', self::CURR_IMG_SEL);
 			return $this->view->config();
 		} else {
 			if (isset($_POST['action'])) {
 				$_SESSION[self::BRIGHTNESS_SESS_NAME] = $_POST[self::BRIGHTNESS];
 				$_SESSION[self::WIN_TYPE_SESS] = $_POST[self::WIN_TYPE];
 				$_SESSION[self::WIN_COLOR_SESS] = $_POST[self::WIN_COLOR];
+				$_SESSION[self::CURR_IMG_SEL_SESS] = $_POST[self::CURR_IMG_SEL];
 				switch ($_POST['action']) {
 					case 'configB':
 						$this->saveConf();
@@ -228,6 +232,7 @@ class ConfigB extends State {
 			$this->view->setTplParam('METHOD', METHOD);
 			$this->view->setTplParam('APP', APP);
 			$this->view->setPostHandler(URL_PREFIX.self::NAME);
+			$this->view->setTplParam('rendering', $_SESSION[self::CURR_IMG_SEL_SESS]);
 			return $this->view->sizeAndQuantity();
 		} else {
 
