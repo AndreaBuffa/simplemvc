@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
                                 <!-- head -->
-                	<base href="http://94.177.177.252/index.php/country-montagna" />
+                	<base href="http://frontend6.orchestraweb.net/alwin3d2/index.php/country-montagna" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="Joomla! - Open Source Content Management" />
 	<title>country montagna</title>
@@ -873,7 +873,7 @@ function wizPost(paramsList) {
 </form>
 </div>
 </div></div></div></div></div></div></div></div></section>			</div>
-</div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer2" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright">All Rights Reserved 2017 © Alsistem Scrl</span></div></div></div></div></footer>                        </div> <!-- /.body-innerwrapper -->
+</div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer2" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright">All Rights Reserved 2017 © ALsistem Scrl</span></div></div></div></div></footer>                        </div> <!-- /.body-innerwrapper -->
                     </div> <!-- /.body-innerwrapper -->
 
                     <!-- Off Canvas Menu -->

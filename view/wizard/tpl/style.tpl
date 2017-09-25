@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
                                 <!-- head -->
-                    <base href="http://94.177.177.252/index.php/stili" />
+                    <base href="http://frontend6.orchestraweb.net/alwin3d2/index.php/stili" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="generator" content="Joomla! - Open Source Content Management" />
     <title>stili</title>
@@ -36,7 +36,7 @@
     <link href="/templates/shaper_helix3/css/presets/preset4.css" rel="stylesheet" type="text/css" class="preset" />
     <link href="/plugins/system/helix3/assets/css/pagebuilder.css" rel="stylesheet" type="text/css" />
     <link href="/templates/shaper_helix3/css/frontend-edit.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
+<!--
 .margini1 {
     margin-right: -15px;
 }
@@ -52,6 +52,113 @@ margin-right: -15px;
    margin-left: -20px;
    padding-left: 5px;
     border-left: 1px solid #858585;
+}
+-->
+    <style type="text/css">
+.margini1 {
+    margin-right: -15px;
+}
+.margini2 {
+float:right;
+margin-right: -30px;
+}
+.margini3 {
+width:111%;
+    float:right;
+    border-left: 1px solid #858585;
+}
+.margini4 {
+   margin-left: -20px;
+   padding-left: 5px;
+    border-left: 1px solid #858585;
+}
+.mfp-close-btn-in .mfp-content .mfp-close {
+color:#333;
+}
+.paddingzero {
+margin-right:-60px;
+float:right;
+}
+.paddingzero2 {
+margin-right:-10px;
+float:right;
+width:120%;
+}
+.paddingzero3 {
+margin-left:-30px;
+float:left;
+width:120%;
+height:85px;
+}
+.white-popup-block{
+padding: 10px;
+}
+
+#sppb-addon-1494148931288 a {
+    color: rgba(135, 135, 135, 1);
+}
+
+#sppb-addon-1494148931288 a:hover {
+   color: #ce0000;
+}
+
+#sppb-addon-1494158935833 a {
+    color: rgba(135, 135, 135, 1);
+}
+
+#sppb-addon-1494158935833 a:hover {
+   color: #ce0000;
+}
+
+#sppb-addon-1494159618661 a {
+    color: rgba(135, 135, 135, 1);
+}
+
+#sppb-addon-1494159618661 a:hover {
+   color: #ce0000;
+}
+#sppb-addon-1494169577394 a {
+    color: rgba(135, 135, 135, 1);
+}
+
+#sppb-addon-1494169577394 a:hover {
+   color: #ce0000;
+}
+
+.marginia {
+    margin-left: -10px;
+    margin-right: 0px;
+}
+.marginib {
+    margin-left: 0px;
+    margin-right: -10px;
+}
+#sppb-addon-1505897235724 a {
+    color: rgba(135, 135, 135, 1);
+}
+
+#sppb-addon-1505897235724 a:hover {
+   color: #ce0000;
+}
+
+#column-id-1494085957783 {
+z-index:100
+}
+
+.marginia2 {
+    margin-left: -10px;
+    margin-right: 0px;
+    margin-bottom:-15px;
+}
+.marginib2 {
+    margin-left: 0px;
+    margin-right: -10px;
+    margin-bottom:-15px;
+}
+.marginic2 {
+margin-left: -15px;
+margin-right: -35px;
+height:85px;
 }
 
 #sppb-addon-1494148931288 a {
@@ -1110,7 +1217,7 @@ function wizPost(paramsList) {
   
 </div>
 </div></div></div></div></div></div></div></div></section>          </div>
-</div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer2" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright">All Rights Reserved 2017 © Alsistem Scrl</span></div></div></div></div></footer>                        </div> <!-- /.body-innerwrapper -->
+</div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer2" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright">All Rights Reserved 2017 © ALsistem Scrl</span></div></div></div></div></footer>                        </div> <!-- /.body-innerwrapper -->
                     </div> <!-- /.body-innerwrapper -->
 
                     <!-- Off Canvas Menu -->

@@ -480,7 +480,7 @@ var sp_offanimation = 'default';
 </span></a>
 </div>
 <div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
-<a style="padding-left: 10px; cursor: pointer; width: 36px; color: rgba(201, 0, 0, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/alwin3d2/index.php/stili">
+<a style="padding-left: 10px; cursor: pointer; width: 36px; color: rgba(201, 0, 0, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/index.php?page=start"?>">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-home"></i>
 </span></a>
@@ -3099,7 +3099,7 @@ href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/
 </tbody>
 </table>
 </div></div></div></div></div></div></div><div class="sppb-col-md-6"><div id="column-id-1494231614655" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1494231614656" class="clearfix" ><div class="sppb-addon sppb-addon-video "><div class="sppb-video-block sppb-embed-responsive sppb-embed-responsive-16by9"><iframe class="sppb-embed-responsive-item" src="//www.youtube.com/embed/AhgL3_Pb1Zo" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div></div></div></div><div class="sppb-col-md-6"><div id="column-id-1494231614657" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1494231614658" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; line-height: 24px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. <br />Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut.</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></section>           </div>
-</div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright">All Rights Reserved 2017 © Alsistem Scrl</span></div></div></div></div></footer>                        </div> <!-- /.body-innerwrapper -->
+</div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright">All Rights Reserved 2017 © ALsistem Scrl</span></div></div></div></div></footer>                        </div> <!-- /.body-innerwrapper -->
                     </div> <!-- /.body-innerwrapper -->
 
                     <!-- Off Canvas Menu -->
