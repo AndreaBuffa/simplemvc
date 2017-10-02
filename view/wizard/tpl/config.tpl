@@ -2515,9 +2515,19 @@ if(document.getElementById){
     </tbody>
   </table>
 </div>
-</div></div></div></div></div></div></div></div></div><div id="luce" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614550" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1495228025257" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="luceavorio">
-<div class="sppb-addon-single-image-container">
-<div class="sppb-addon-image-overlay"></div>
+</div></div></div></div></div></div></div></div></div>
+
+<div id="luce" class="sppb-section "  >
+    <div class="sppb-container-inner">
+        <div class="sppb-row">
+            <div class="sppb-col-md-12">
+                <div id="column-id-1494231614550" class="sppb-column" >
+                    <div class="sppb-column-addons">
+                        <div id="sppb-addon-1495228025257" class="clearfix" >
+                            <div class="sppb-addon sppb-addon-raw-html ">
+                                <div class="sppb-addon-content"><div id="luceavorio">
+                                    <div class="sppb-addon-single-image-container">
+                                        <div class="sppb-addon-image-overlay"></div>
 <a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/LUCE/MARTELLINA/Country-interno-3g-martellina-cerniere-Avorio-1013.jpg">+</a>
 <img class="sppb-img-responsive" src="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/LUCE/MARTELLINA/Country-interno-3g-martellina-cerniere-Avorio-1013.jpg" alt>
 </div>
@@ -2584,7 +2594,21 @@ href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/
 </tr>
 </tbody>
 </table>
-</div></div></div></div></div></div></div><div class="sppb-col-md-6"><div id="column-id-1494231614551" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490822373018" class="clearfix" ><div class="sppb-addon sppb-addon-video "><div class="sppb-video-block sppb-embed-responsive sppb-embed-responsive-16by9"><iframe class="sppb-embed-responsive-item" src="//www.youtube.com/embed/AhgL3_Pb1Zo" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div></div></div></div><div class="sppb-col-md-6"><div id="column-id-1494231614552" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1494231614592" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; line-height: 24px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. <br />Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut.</div></div></div></div></div></div></div></div></div></div><div id="vetro" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614586" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1495228025266" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="vetrobianco">
+</div></div></div></div></div></div></div>
+<!-- first col -->
+<div class="sppb-col-md-6"><div id="column-id-1494231614589" class="sppb-column"><div class="sppb-column-addons"><div id="sppb-addon-1495458626758" class="clearfix"><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><button style="margin:10px 0 15px 0; background: #ffffff; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="sceglimaniglie">
+<div>
+<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">Scegli le maniglie e le cerniere</div>
+<div style="float:right; margin-right:5px"><i class="fa fa-arrow-right"></i></div>
+</div>
+</button>
+<br>
+<div style="font-size: 14px; line-height: 24px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. <br>
+Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut.
+</div></div></div></div></div></div></div>
+<!-- secnd col -->
+<div class="sppb-col-md-6"><div id="column-id-1494231614552" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1494231614592" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; line-height: 24px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. <br />Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut.</div></div></div></div></div></div></div></div></div></div><div id="vetro" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614586" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1495228025266" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="vetrobianco">
 <div class="sppb-addon-single-image-container">
 <div class="sppb-addon-image-overlay"></div>
 <a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" 
@@ -2656,11 +2680,12 @@ $(document).ready(function() {
  
  $("#sceglimaniglie").click(function(){
  $("#sceglimanigliavetro").show();
- $("#martellinagrigiacon").hide();
- $("#martellinagrigiasenza").hide();
- $("#vetrogrigio").show();
-  $("#vetronero").hide();
-   $("#vetrobianco").hide();
+ $("#martellinagrigiacon").show();
+ $("#martellinagrigiasenza").show();
+ //$("#vetrogrigio").show();
+ //$("#vetronero").hide();
+ //$("#vetrobianco").hide();
+ $("#maniglie").show();
 });
  
  $("#grigiocon").click(function(){
@@ -3119,7 +3144,7 @@ href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/
                                             <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
 
 <form id='thisForm' method="POST" action="<?php echo $v_action?>">
-<input type="hidden" name="<?php echo $v_currSelImg?>" value="<?php echo $v_rendering?>">\n";
+<input type="hidden" name="<?php echo $v_currSelImg?>" value="<?php echo $v_rendering?>">";
 <?php
 foreach ($v_parameters as $name => $value) {
  echo "<input type=\"hidden\" name=\"$name\" value=\"$value\">\n";
