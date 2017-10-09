@@ -852,6 +852,20 @@ div#colore5{display:none}
 </style>
 
 <script type="text/javascript">
+
+ // SMVC
+function setWinColor(theColor) {
+ $("#luce").show(); // main container
+ //$("#luceavorio").show();
+ $("#baseok").hide(); // tipo infisso
+ //$("#maniglie").hide();
+ $("input[name=<?php echo $v_winColorParam ?>").attr("value", theColor);
+ var tmp = smvcApplyFilter(smvcGetFilter());
+ updateRender(tmp[0]);
+ $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));    
+}
+
+
 function mostranascondi1(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11,id122,id133, id144,id155,id166){
 if(document.getElementById){
    el1=document.getElementById(id1);  
@@ -1169,6 +1183,7 @@ $("#nascostano").click(function(){
     */
  });
 
+/*
 $("#avorio1").click(function(){
  $("#luce").show();
  $("#luceavorio").show();
@@ -1184,7 +1199,9 @@ $("#avorio1").click(function(){
  updateRender(tmp[0]);
  $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));
 });
+*/
 
+/*
 $("#bianco1").click(function(){
  $("#luce").show();
  $("#luceavorio").hide();
@@ -1238,6 +1255,7 @@ $("#noce1").click(function(){
  updateRender(tmp[0]);
  $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));
 });
+
 
 $("#nero1").click(function(){
  $("#luce").show();
@@ -1616,25 +1634,26 @@ $("#nero55").click(function(){
  $("#baseok").hide();
  $("#maniglie").hide();
 });
-
+*/
 $("#perla1").click(function(){
  $("#martellina2").show();
- $("#mancremonese").show();
+ $("#divmaniglia").show();
 $("#manexens").hide();
 $("#manmartellina").hide();
  $("#baseok").hide();
  $("#maniglie").hide();
 });
 
+/*
 $("#perla11").click(function(){
- $("#mancremonese").show();
+ $("#divmaniglia").show();
  $("#manexens").hide();
  $("#manmartellina").hide();
 });
 
 $("#perla2").click(function(){
  $("#martellina2").show();
- $("#mancremonese").hide();
+ $("#divmaniglia").hide();
 $("#manexens").hide();
 $("#manmartellina").show();
  $("#baseok").hide();
@@ -1642,14 +1661,14 @@ $("#manmartellina").show();
 });
 
 $("#perla22").click(function(){
- $("#mancremonese").show();
+ $("#divmaniglia").show();
  $("#manexens").hide();
  $("#manmartellina").hide();
 });
 
 $("#perla3").click(function(){
  $("#martellina2").show();
- $("#mancremonese").hide();
+ $("#divmaniglia").hide();
 $("#manexens").show();
 $("#manmartellina").hide();
  $("#baseok").hide();
@@ -1657,11 +1676,12 @@ $("#manmartellina").hide();
 });
 
 $("#perla33").click(function(){
- $("#mancremonese").show();
+ $("#divmaniglia").show();
  $("#manexens").hide();
  $("#manmartellina").hide();
 });
 
+*/
 $("#mostramaniglie").click(function(){
  $("#base").hide();
  $("#baseok").hide();
@@ -1691,7 +1711,14 @@ $("#nascondimaniglie").click(function(){
 });
 
 });
-// ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a id="renderImgPopUp" class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a><img id="renderImg" class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="__" title=""></div></div></div></div></div></div></div></div></div></div><div id="martellina2" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1495227802230" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1495234310694" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="mancremonese" style="width: 100%">
+// ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div>
+<a id="renderImgPopUp" class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a>
+<img id="renderImg" class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="__" title="">
+</div></div></div></div></div></div></div></div></div></div>
+<!-- delete me -->
+<div id="martellina2" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1495227802230" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1495234310694" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content">
+
+<div id="divmaniglia" style="width: 100%">
 <table>
 <tbody>
 <tr>
@@ -1699,9 +1726,9 @@ $("#nascondimaniglie").click(function(){
 <div>
 <div class="sppb-addon-single-image-container">
 <div class="sppb-addon-image-overlay"></div>
-<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" 
-href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/CLASSIC/GRIGIO/cremonese.jpg">+</a>
-<img class="sppb-img-responsive" src="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/CLASSIC/GRIGIO/cremonese.jpg" alt>
+<a id="renderImgPopUpHandle" class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" 
+href="">+</a>
+<img id="renderImgHandle" class="sppb-img-responsive" src="" alt>
 </div>
 </div>
 </td>
@@ -1776,50 +1803,11 @@ SCEGLI IL COLORE</td>
 </tbody>
 </table>
 </div>
+</div></div></div></div></div></div></div></div></div>
 
-
-<div id="manmartellina" style="width: 100%">
-<table>
-<tbody>
-<tr>
-<td colspan="5">
-<div>
-<div class="sppb-addon-single-image-container">
-<div class="sppb-addon-image-overlay"></div>
-<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" 
-href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/INVISIO/AVORIO/MARTELLINA/7298-martellina-bianca.jpg">+</a>
-<img class="sppb-img-responsive" src="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/INVISIO/AVORIO/MARTELLINA/7298-martellina-bianca.jpg" alt>
-</div>
-</div>
-</td>
-<tr>
-<td style="width:30%; height: 45px; border-bottom: 1px solid #858585;">
-<span style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px;">MANIGLIA - MARTELLINA</span>
-</td>
-<td style="vertical-align: middle; width:10%; border-bottom: 1px solid #858585; text-align: right; margin-right: 10px; font-family: Helvetica, Arial, 'sans-serif'; font-weight: normal; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; padding-right:10px;">
-SCEGLI IL COLORE</td>
-<td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
-<div style="text-align: center; background: #ffffff;">
-<!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="GRIGIO PERLA" title="">
-<button id="perla33" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/GRIGIO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
-</div>
-</td>
-<td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
-<div style="text-align: center; background: #ffffff;">
-<!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="OTTONE" title="">
-<button id="manottone33" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/OTTONE.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
-</div>
-</td>
-<td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
-<div style="text-align: center; background: #ffffff;">
-<!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="NERO" title="">
-<button id="mannero33" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NERO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div></div></div></div></div></div></div></div></div></div><div id="section-id-1494256006413" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494256006414" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1494247615153" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="baseok" style="width:100%; height:500px; background-image:url(<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>); background-position: center center; background-size: contain; background-repeat: no-repeat;">
+<div id="section-id-1494256006413" class="sppb-section "  >
+    <div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12">
+        <div id="column-id-1494256006414" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1494247615153" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="baseok" style="width:100%; height:500px; background-image:url(<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>); background-position: center center; background-size: contain; background-repeat: no-repeat;">
 <div id="scelta1" style="width:100%; ">
 <table width="100%">
 <tbody>
@@ -1983,7 +1971,7 @@ Breve testo<br />Descrittivo<br />
              <tr>
         <td style="vertical-align: top; width: 15%">
          <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
-         <button  id="avorio1" style="padding:5px; font-size: 14px;">
+         <button  id="avorio1" style="padding:5px; font-size: 14px;" onclick="setWinColor('avorio')">
          <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/AVORIO.jpg" width="250" height="250" class="imagebox" alt=""/>AVORIO</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
@@ -1993,7 +1981,7 @@ Breve testo<br />Descrittivo<br />
         <td style="width:2%"></td>
         <td style="vertical-align: top; width: 15%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
-  <button  id="bianco1" style="padding:5px; font-size: 14px;">
+  <button  id="bianco1" style="padding:5px; font-size: 14px;" onclick="setWinColor('bianco')">
   <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/BIANCO.jpg" width="250" height="250" class="imagebox" alt=""/>BIANCO</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
@@ -2003,7 +1991,7 @@ Breve testo<br />Descrittivo<br />
         <td style="width:2%"></td>
         <td style="vertical-align: top; width: 15%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
-  <button  id="grigio1" style="padding:5px; font-size: 14px;">
+  <button  id="grigio1" style="padding:5px; font-size: 14px;" onclick="setWinColor('grigio')">
   <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/GRIGIO.jpg" width="250" height="250" class="imagebox" alt=""/>GRIGIO</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
@@ -2023,7 +2011,7 @@ Breve testo<br />Descrittivo<br />
         <td style="width:2%"></td>
         <td style="vertical-align: top; width: 15%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
-  <button  id="noce1" style="padding:5px; font-size: 14px;">
+  <button  id="noce1" style="padding:5px; font-size: 14px;" onclick="setWinColor('marrone')">
   <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" width="250" height="250" class="imagebox" alt=""/>MARRONE</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
@@ -2033,7 +2021,7 @@ Breve testo<br />Descrittivo<br />
         <td style="width:2%"></td>
         <td style="vertical-align: top; width: 15%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
-<button  id="nero1" class="md-close" style="padding:5px; font-size: 14px;" >
+<button  id="nero1" class="md-close" style="padding:5px; font-size: 14px;" onclick="setWinColor('nero')">
 <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NERO.jpg" width="250" height="250" class="imagebox" alt=""/>NERO</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
@@ -2228,7 +2216,17 @@ Breve testo<br />Descrittivo<br />
     </table>
 
 </div> 
-</div></div></div></div></div></div></div></div></div></div><div id="maniglie" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494256006686" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-1494256006693" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><style type="text/css">
+</div></div></div></div></div></div></div></div></div></div>
+
+<div id="maniglie" class="sppb-section "  >
+    <div class="sppb-container-inner">
+        <div class="sppb-row">
+            <div class="sppb-col-md-12">
+                <div id="column-id-1494256006686" class="sppb-column " >
+                    <div class="sppb-column-addons">
+                        <div id="sppb-addon-1494256006693" class="clearfix" >
+                            <div class="sppb-addon sppb-addon-raw-html ">
+                                <div class="sppb-addon-content"><style type="text/css">
 div#cremonese{border:0px solid #ff3000}
 div#exens{border:0px solid #ff3000}
 div#martellina3{border:0px solid #ff3000}
@@ -2310,7 +2308,9 @@ if(document.getElementById){
     box-sizing: none;
     padding: 0;
     border:none;" 
-    onclick="mostranascondi11('cremonese', 'exens', 'martellina3', 'colore7', 'colore6', 'colore9'); return(false)"><div class="boxpuls" id="cremonese" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+    onclick="mostranascondi11('cremonese', 'exens', 'martellina3', 'colore7', 'colore6', 'colore9'); return(false)">
+<!-- maniglia 1 -->
+    <div class="boxpuls" id="cremonese" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
     color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;"><img src="/alwin3d2/images/MANIGLIE/CREMONESE/Cremonese-Grigio-perla.jpg" width="300" height="300" class="imagebox" alt=""/>CREMONESE
@@ -2329,6 +2329,7 @@ if(document.getElementById){
     padding: 0;
     border:none;" 
     onclick="mostranascondi22('cremonese', 'exens', 'martellina3', 'colore7', 'colore6', 'colore9'); return(false)">
+<!-- maniglia 2 -->
     <div class="boxpuls" id="exens" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
@@ -2349,6 +2350,7 @@ if(document.getElementById){
     padding: 0;
     border:none;" 
     onclick="mostranascondi33('cremonese', 'exens', 'martellina3', 'colore7', 'colore6', 'colore9'); return(false)">
+<!-- maniglia 3 -->
     <div class="boxpuls" id="martellina3" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
@@ -2525,49 +2527,16 @@ if(document.getElementById){
                     <div class="sppb-column-addons">
                         <div id="sppb-addon-1495228025257" class="clearfix" >
                             <div class="sppb-addon sppb-addon-raw-html ">
-                                <div class="sppb-addon-content"><div id="luceavorio">
-                                    <div class="sppb-addon-single-image-container">
-                                        <div class="sppb-addon-image-overlay"></div>
+                                <div class="sppb-addon-content">
+<div id="winType">
+<div class="sppb-addon-single-image-container">
 <a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/LUCE/MARTELLINA/Country-interno-3g-martellina-cerniere-Avorio-1013.jpg">+</a>
 <img class="sppb-img-responsive" src="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/LUCE/MARTELLINA/Country-interno-3g-martellina-cerniere-Avorio-1013.jpg" alt>
 </div>
 </div>
 
-<div id="lucebianco">
-<div class="sppb-addon-single-image-container">
-<div class="sppb-addon-image-overlay"></div>
-<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" 
-href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/LUCE/MARTELLINA/Country-interno-3g-martellina-cerniere-Bianco-9010.jpg">+</a>
-<img class="sppb-img-responsive" src="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/LUCE/MARTELLINA/Country-interno-3g-martellina-cerniere-Bianco-9010.jpg" alt>
-</div>
-</div>
 
-<div id="lucegrigio">
-<div class="sppb-addon-single-image-container">
-<div class="sppb-addon-image-overlay"></div>
-<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" 
-href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/LUCE/MARTELLINA/Country-interno-3g-martellina-cerniere-Grigio-9006.jpg">+</a>
-<img class="sppb-img-responsive" src="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/LUCE/MARTELLINA/Country-interno-3g-martellina-cerniere-Grigio-9006.jpg" alt>
-</div>
-</div>
-
-<div id="lucenoce">
-<div class="sppb-addon-single-image-container">
-<div class="sppb-addon-image-overlay"></div>
-<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" 
-href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/LUCE/MARTELLINA/Country-interno-3g-martellina-cerniere-Finto-legno-noce.jpg">+</a>
-<img class="sppb-img-responsive" src="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/LUCE/MARTELLINA/Country-interno-3g-martellina-cerniere-Finto-legno-noce.jpg" alt>
-</div>
-</div>
-
-<div id="lucenero">
-<div class="sppb-addon-single-image-container">
-<div class="sppb-addon-image-overlay"></div>
-<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" 
-href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/LUCE/MARTELLINA/Country-interno-3g-martellina-cerniere-Nero-top-slide-160.jpg">+</a>
-<img class="sppb-img-responsive" src="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/CHIARI/LUCE/MARTELLINA/Country-interno-3g-martellina-cerniere-Nero-top-slide-160.jpg" alt>
-</div>
-</div></div></div></div><div id="sppb-addon-1490777906390" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="width: 100%;">
+</div></div></div><div id="sppb-addon-1490777906390" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="width: 100%;">
 <table>
 <tbody>
 <tr>
@@ -2685,6 +2654,7 @@ $(document).ready(function() {
  //$("#vetrogrigio").show();
  //$("#vetronero").hide();
  //$("#vetrobianco").hide();
+ $("#luce").hide();
  $("#maniglie").show();
 });
  
@@ -3212,14 +3182,19 @@ function updateRender(renderPath) {
     var style = 'width:100%; height:500px; background-image:url(';
     $("#renderImg").attr("src", URL);
     $("#renderImgPopUp").attr("href", URL);
+    $("#column-id-1494256006686").attr("style", 'background-image:url(' + URL + ');');
+    $("#renderImgHandle").attr("src", URL);
+    $("#renderImgPopUpHandle").attr("href", URL);
     if ($("#baseok").css("display") == 'none') {
         style += URL + "); background-position: center center; background-size: contain; background-repeat: no-repeat;" + 'display: none;';
     } else {
         style += URL + "); background-position: center center; background-size: contain; background-repeat: no-repeat;"        
     }
     $("#baseok").attr("style", style);
-    $("#luceavorio").find('img').attr("src", URL);
-    $("#luceavorio").find('a').attr("href", URL);
+
+    $("#winType").find('img').attr("src", URL);
+    $("#winType").find('a').attr("href", URL);
+/*
     $("#lucebianco").find('img').attr("src", URL);
     $("#lucebianco").find('a').attr("href", URL);
     $("#lucegrigio").find('img').attr("src", URL);
@@ -3228,6 +3203,7 @@ function updateRender(renderPath) {
     $("#lucenoce").find('a').attr("href", URL);
     $("#lucenero").find('img').attr("src", URL);
     $("#lucenero").find('a').attr("href", URL);
+    */
 }
 </script>
 </form>
