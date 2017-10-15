@@ -853,18 +853,6 @@ div#colore5{display:none}
 
 <script type="text/javascript">
 
- // SMVC
-function setWinColor(theColor) {
- $("#luce").show(); // main container
- //$("#luceavorio").show();
- $("#baseok").hide(); // tipo infisso
- //$("#maniglie").hide();
- $("input[name=<?php echo $v_winColorParam ?>").attr("value", theColor);
- var tmp = smvcApplyFilter(smvcGetFilter());
- updateRender(tmp[0]);
- $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));    
-}
-
 
 function mostranascondi1(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11,id122,id133, id144,id155,id166){
 if(document.getElementById){
@@ -1170,17 +1158,18 @@ $("#nascostano").click(function(){
  $("#mostra").hide(); // mostra il bottone rosso
  $("#maniglie").hide();
   $("#martellina2").hide();
-  /*
- renderListFiltered = smvcApplyFilter(smvcGetFilter());
- var match = [];
- var colorList = [];
- for(var i=0; i < renderListFiltered.length; i++) {
-        match = renderListFiltered[i].match('/' + pattern +'/');
-        if (match != null)
-            results.push(renderList[i]);
+
+ types = ['luce', 'vetro', 'nathura', 'classic', 'invisio'];
+ for (var i = 0; i < types.length; i++) {
+    var filters = [];
+    filters.push(types[i])
+    if (smvcApplyFilter(filters).length > 0) {
+     $('#' + types[i] + "1").show();
+    } else {
+     $('#' + types[i] + "1").hide();        
     }
-    return results;
-    */
+ };
+
  });
 
 /*
@@ -1635,14 +1624,6 @@ $("#nero55").click(function(){
  $("#maniglie").hide();
 });
 */
-$("#perla1").click(function(){
- $("#martellina2").show();
- $("#divmaniglia").show();
-$("#manexens").hide();
-$("#manmartellina").hide();
- $("#baseok").hide();
- $("#maniglie").hide();
-});
 
 /*
 $("#perla11").click(function(){
@@ -1666,14 +1647,6 @@ $("#perla22").click(function(){
  $("#manmartellina").hide();
 });
 
-$("#perla3").click(function(){
- $("#martellina2").show();
- $("#divmaniglia").hide();
-$("#manexens").show();
-$("#manmartellina").hide();
- $("#baseok").hide();
- $("#maniglie").hide();
-});
 
 $("#perla33").click(function(){
  $("#divmaniglia").show();
@@ -1710,6 +1683,8 @@ $("#nascondimaniglie").click(function(){
  $("#martellina2").hide();
 });
 
+
+
 });
 // ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div>
 <a id="renderImgPopUp" class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a>
@@ -1734,7 +1709,7 @@ href="">+</a>
 </td>
 <tr>
 <td style="width:30%; height: 45px; border-bottom: 1px solid #858585;">
-<span style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px;">MANIGLIA - CREMONESE</span>
+<span id="handleNameLabel" style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px;"></span>
 </td>
 <td style="vertical-align: middle; width:10%; border-bottom: 1px solid #858585; text-align: right; margin-right: 10px; font-family: Helvetica, Arial, 'sans-serif'; font-weight: normal; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; padding-right:10px;">
 SCEGLI IL COLORE</td>
@@ -1823,7 +1798,7 @@ SCEGLI IL COLORE</td>
     box-sizing: none;
     padding: 0;
     border: none;" 
-onclick="winTypeClicked(); return(false)">
+onclick="setWinType('luce'); return(false)">
 <div class="boxpuls" id="luce1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/alwin3d2/images/PRODOTTI/PICCOLE/PICCOLA-STILLIFE-LUCE.jpg" class="imagebox" alt=""/>LUCE
     <div class="middlebox">
 Breve testo<br />Descrittivo<br />
@@ -2239,6 +2214,7 @@ div#colore9{display:none}
 <script type="text/javascript">
 function mostranascondi11(id18, id19, id20, id21, id22, id88){
 if(document.getElementById){
+   $("input[name=<?php echo $v_handleTypeParam ?>").attr("value", "cremonese");
    el18=document.getElementById(id18);  
    el19=document.getElementById(id19); 
    el20=document.getElementById(id20); 
@@ -2255,8 +2231,12 @@ if(document.getElementById){
         }
     }
 }
+
+
+/*
 function mostranascondi22(id18, id19, id20, id21, id22, id88){
 if(document.getElementById){
+   $("input[name=<?php echo $v_handleTypeParam ?>").attr("value", "exens");
    el18=document.getElementById(id18);  
    el19=document.getElementById(id19); 
    el20=document.getElementById(id20); 
@@ -2275,6 +2255,7 @@ if(document.getElementById){
 }
 function mostranascondi33(id18, id19, id20, id21, id22, id88){
 if(document.getElementById){
+   $("input[name=<?php echo $v_handleTypeParam ?>").attr("value", "martellina");
    el18=document.getElementById(id18);  
    el19=document.getElementById(id19); 
    el20=document.getElementById(id20); 
@@ -2291,6 +2272,7 @@ if(document.getElementById){
         }
     }
 }
+*/
 </script>
 
 <div style="width:100%; height: 600px;">
@@ -2308,7 +2290,8 @@ if(document.getElementById){
     box-sizing: none;
     padding: 0;
     border:none;" 
-    onclick="mostranascondi11('cremonese', 'exens', 'martellina3', 'colore7', 'colore6', 'colore9'); return(false)">
+    onclick="setHandleType('cremonese');return(false)">
+<!-- mostranascondi11('cremonese', 'exens', 'martellina3', 'colore7', 'colore6', 'colore9'); -->
 <!-- maniglia 1 -->
     <div class="boxpuls" id="cremonese" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
@@ -2328,7 +2311,8 @@ if(document.getElementById){
     box-sizing: none;
     padding: 0;
     border:none;" 
-    onclick="mostranascondi22('cremonese', 'exens', 'martellina3', 'colore7', 'colore6', 'colore9'); return(false)">
+    onclick="setHandleType('exens'); return(false)">
+<!-- mostranascondi22('cremonese', 'exens', 'martellina3', 'colore7', 'colore6', 'colore9'); -->
 <!-- maniglia 2 -->
     <div class="boxpuls" id="exens" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
@@ -2349,9 +2333,10 @@ if(document.getElementById){
     box-sizing: none;
     padding: 0;
     border:none;" 
-    onclick="mostranascondi33('cremonese', 'exens', 'martellina3', 'colore7', 'colore6', 'colore9'); return(false)">
+    onclick="setHandleType('martellina'); return(false)">
+<!-- mostranascondi33('cremonese', 'exens', 'martellina3', 'colore7', 'colore6', 'colore9'); -->
 <!-- maniglia 3 -->
-    <div class="boxpuls" id="martellina3" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+    <div class="boxpuls" id="martellina" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
     color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
@@ -2369,114 +2354,19 @@ if(document.getElementById){
     </tr>
     <tr>
     <td align="center" style="width:100%;" colspan="9">
-     <div style="margin-bottom: 30px" id="colore7">
+
+<!-- container colori maniglie -->
+<div style="margin-bottom: 30px; display: block;" id="handleColorDiv">
          <table width="100%">
          <tbody>
          <tr>
-        <td align="center" style="width:100%;"  colspan="9">
-        <div class="boxpuls" style="border:0px solid #878787; width:100%; text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 24px; background: rgba(255,255,255,0.8); color: #878787; padding: 3px; bottom:10px solid transparent; margin:10px 0; font-weight:normal; ">SCEGLI IL COLORE</div></td>
-             </tr>
-             <tr>
-        <td style="width: 18%">
-  <div class="boxpuls" style=" text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
-<button  id="perla1" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/CREMONESE/Cremonese-Grigio-perla.jpg" width="200" height="200" class="imagebox" alt=""/>GRIGIO PERLA</button>
-    <div class="middlebox">
-        <div style="margin-left:-10px" class="textbox">✔</div>
-  </div>
-  </div>
-  </td>
-        <td style="width:2%"></td>
-        <td style="width: 18%">
-  <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
-<button  id="ottone1" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/CREMONESE/Cremonese-Ottone2.jpg" width="200" height="200" class="imagebox" alt=""/>OTTONE</button>
-    <div class="middlebox">
-        <div style="margin-left:-10px" class="textbox">✔</div>
-  </div>
-  </div>
-  </td>
-        <td style="width:2%"></td>
-        <td style="width: 18%">
-  <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
-<button  id="nerom1" style="padding:5px; font-size: 14px;">
-<img src="/alwin3d2/images/MANIGLIE/CREMONESE/Cremonese-Inox-nero.jpg" width="200" height="200" class="imagebox" alt=""/>NERO</button>
-    <div class="middlebox">
-        <div style="margin-left:-10px" class="textbox">✔</div>
-  </div>
-  </div>
-        </td>
-<td style="width:2%"></td>
-        <td style="width: 18%"></td>
-<td style="width:2%"></td>
-        <td style="width: 18%"></td>
-    </tr>
-        </tbody>
-    </table>
-    </div>
-        </td>
-    </tr>
-    <tr>
         <td align="center" style="width:100%;" colspan="9">
-            <div style="margin-bottom: 30px" id="colore6">
-            <table width="100%">
-         <tbody>
-         <tr>
-        <td align="center" style="width:100%;"  colspan="9">
-        <div class="boxpuls" style="border:0px solid #878787; width:100%; text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 24px; background: rgba(255,255,255,0.8); color: #878787; padding: 3px; bottom:10px solid transparent; margin:10px 0; font-weight:normal; ">SCEGLI IL COLORE</div></td>
-             </tr>
-             <tr>
-<td style="width: 18%">
-  <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
-<button  id="perla2" style="padding:5px; font-size: 14px;">
-<img src="/alwin3d2/images/MANIGLIE/MARTELLINA/Martellina-Grigio-perla.jpg" width="200" height="200" class="imagebox" alt=""/>GRIGIO PERLA</button>
-    <div class="middlebox">
-        <div style="margin-left:-10px" class="textbox">✔</div>
-  </div>
-  </div>
-  </td>
-        <td style="width:2%"></td>
-        <td style="width: 18%">
-  <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
-<button  id="ottone2" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/MARTELLINA/Martellina-OttoneOK.jpg" width="200" height="200" class="imagebox" alt=""/>OTTONE</button>
-    <div class="middlebox">
-        <div style="margin-left:-10px" class="textbox">✔</div>
-  </div>
-  </div>
-  </td>
-        <td style="width:2%"></td>
-        <td style="width: 18%">
-  <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
-<button  id="nerom2" style="padding:5px; font-size: 14px;">
-<img src="/alwin3d2/images/MANIGLIE/MARTELLINA/Martellina-Inox-nero.jpg" width="200" height="200" class="imagebox" alt=""/>NERO</button>
-    <div class="middlebox">
-        <div style="margin-left:-10px" class="textbox">✔</div>
-  </div>
-  </div>
-        </td>
-</td>
-<td style="width:2%"></td>
-        <td style="width: 18%"></td>
-<td style="width:2%"></td>
-        <td style="width: 18%"></td>
-    </tr>
-        </tbody>
-    </table>
-            
-            </div>
-    </td>
-    </tr>
-    <tr>
-    <td align="center" style="width:100%;" colspan="9">
-     <div style="margin-bottom: 30px" id="colore9">
-         <table width="100%">
-         <tbody>
-         <tr>
-        <td align="center" style="width:100%;"  colspan="9">
         <div class="boxpuls" style="border:0px solid #878787; width:100%; text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 24px; background: rgba(255,255,255,0.8); color: #878787; padding: 3px; bottom:10px solid transparent; margin:10px 0; font-weight:normal; ">SCEGLI IL COLORE</div></td>
              </tr>
              <tr>
         <td style="width: 18%">
   <div class="boxpuls" style=" text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
-<button  id="perla3" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Grigio-perla.jpg" width="200" height="200" class="imagebox" alt=""/>GRIGIO PERLA</button>
+<button id="perla3" onclick="setHandleColor('perla')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Grigio-perla.jpg" width="200" height="200" class="imagebox" alt="">GRIGIO PERLA</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
   </div>
@@ -2485,7 +2375,7 @@ if(document.getElementById){
         <td style="width:2%"></td>
         <td style="width: 18%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
-<button  id="ottone3" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Ottone.jpg" width="200" height="200" class="imagebox" alt=""/>OTTONE</button>
+<button id="ottone3" onclick="setHandleColor('ottone')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Ottone.jpg" width="200" height="200" class="imagebox" alt="">OTTONE</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
   </div>
@@ -2494,8 +2384,8 @@ if(document.getElementById){
         <td style="width:2%"></td>
         <td style="width: 18%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
-<button  id="nerom3" style="padding:5px; font-size: 14px;">
-<img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Inox-nero.jpg" width="200" height="200" class="imagebox" alt=""/>NERO</button>
+<button id="nerom3" onclick="setHandleColor('nero')" style="padding:5px; font-size: 14px;">
+<img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Inox-nero.jpg" width="200" height="200" class="imagebox" alt="">NERO</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
   </div>
@@ -2509,6 +2399,8 @@ if(document.getElementById){
         </tbody>
     </table>
     </div>
+<!-- fine div colori maniglie -->
+
         </td>
     </tr>
     <tr>
@@ -2656,6 +2548,20 @@ $(document).ready(function() {
  //$("#vetrobianco").hide();
  $("#luce").hide();
  $("#maniglie").show();
+ $("#handleColorDiv").hide();
+
+ handleTypeList = ['cremonese', 'martellina' , 'exens'];
+ var filters = smvcGetFilter();
+ for (var i = 0; i < handleTypeList.length; i++) {
+    filters.push(handleTypeList[i]);
+    if (smvcApplyFilter(filters).length > 0) {
+        $("#" + handleTypeList[i]).show();
+    } else {
+        $("#" + handleTypeList[i]).hide();
+    }
+    filters.pop();
+ }; 
+
 });
  
  $("#grigiocon").click(function(){
@@ -3158,23 +3064,37 @@ function smvcApplyFilter(filterList) {
     pattern = '';
     for (var i = 0; i < filterList.length; i++) {
         if (filterList[i] !== "") {
-            pattern += filterList[i] + '\/.+';
+            pattern += filterList[i] + ".+";
+            //pattern += filterList[i] + '.*';
         }
     }
     var match = [];
     var results = [];
+    var myRe = new RegExp(pattern);
     for(var i=0; i < renderList.length; i++) {
-        match = renderList[i].match('/' + pattern +'/');
-        if (match != null)
+        //match = renderList[i].match('/' + pattern +'/g');
+        if (myRe.exec(renderList[i]) != null)
             results.push(renderList[i]);
     }
     return results;
 }
 
-function winTypeClicked() {
+function setWinType(type) {
     mostranascondi1('base', 'luce', 'vetro', 'nathura', 'classic', 'invisio', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1','colore1','colore2','colore3','colore4','colore5');
 
-    $("input[name=<?php echo $v_winTypeParam ?>").attr("value", "luce");    
+    $("input[name=<?php echo $v_winTypeParam ?>").attr("value", type);    
+}
+
+
+function setWinColor(theColor) {
+ $("#luce").show(); // main container
+ //$("#luceavorio").show();
+ $("#baseok").hide(); // tipo infisso
+ //$("#maniglie").hide();
+ $("input[name=<?php echo $v_winColorParam ?>").attr("value", theColor);
+ var tmp = smvcApplyFilter(smvcGetFilter());
+ updateRender(tmp[0]);
+ $("input[name=<?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));    
 }
 
 function updateRender(renderPath) {
@@ -3205,6 +3125,48 @@ function updateRender(renderPath) {
     $("#lucenero").find('a').attr("href", URL);
     */
 }
+
+function showHandleColor(handleName) {
+    var handleColors = ['perla', 'avorio', 'ottone', 'nero'];
+    for (var i = 0; i < handleColors.length; i++) {
+        $("#" + handleColors[i] + "3").hide();
+    };
+   var filters = smvcGetFilter();
+   //show all available color.Do not consider previously set color filter
+   filters.pop();
+   var options = smvcApplyFilter(filters);
+   var colors = [];
+   for (var i = 0; i < options.length; i++) {
+        var tmp = options[i].split("/");
+        colors.push(tmp[tmp.length - 2]);
+   };
+   $("#handleColorDiv").show();
+   for (var i = 0; i < colors.length; i++) {
+        $("#" + colors[i] + "3").show();
+   }
+   $("#handleNameLabel").text('MANIGLIA - ' + handleName);
+}
+
+function setHandleType(handleType) {
+   $("input[name=<?php echo $v_handleTypeParam ?>").attr("value", handleType);
+   showHandleColor(handleType);
+}
+
+function setHandleColor(color){
+ $("#martellina2").show();
+ $("#divmaniglia").show();
+ $("#manexens").hide();
+ $("#manmartellina").hide();
+ $("#baseok").hide();
+ $("#maniglie").hide();
+  // SMVC
+ $("input[name=<?php echo $v_handleColorParam ?>").attr("value", color);
+ var tmp = smvcApplyFilter(smvcGetFilter()); 
+ updateRender(tmp[0]);
+ $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));    
+}
+
+
 </script>
 </form>
                     

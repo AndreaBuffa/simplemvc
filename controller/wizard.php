@@ -15,7 +15,9 @@ abstract class State implements iState {
 	const WIN_COLOR_SESS = 'win-color';
 	const WIN_COLOR_DEF = 'avorio';
 	const HANDLE_TYPE = 'smvc-handle-type';
+	const HANDLE_TYPE_SESS = 'handle-type';
 	const HANDLE_COLOR = 'smvc-handle-color';
+	const HANDLE_COLOR_SESS = 'handle-color';
 	const WIN_COLOR_OUT = 'smvc-win-color-out';
 	const WIN_COLOR_OUT_SESS = 'win-color-out';
 	const WIN_COLOR_OUT_DEF = 'avorio';
@@ -33,6 +35,8 @@ class StartState extends State {
 		$_SESSION[self::WIN_TYPE_SESS] = self::WIN_TYPE_DEF;
 		$_SESSION[self::WIN_COLOR_SESS] = self::WIN_COLOR_DEF;
 		$_SESSION[self::WIN_COLOR_OUT_SESS] = self::WIN_COLOR_OUT_DEF;
+		$_SESSION[self::HANDLE_TYPE_SESS] = '';
+		$_SESSION[self::HANDLE_COLOR_SESS] = '';
 		$_SESSION['wizState'] = new StyleState();
 		return header(HEADER_PREFIX.StyleState::NAME);
 	}
@@ -161,6 +165,8 @@ class ConfigState extends State {
 			} else {
 				$p[self::WIN_TYPE] = '';
 			}
+			// non si possono filtrare interno-esterno a priori
+			$p['smvc-sideParam'] = 'interno';
 			$p[self::WIN_COLOR] = (isset($_SESSION[self::WIN_COLOR_SESS])) ? 
 				$_SESSION[self::WIN_COLOR_SESS] : 'avorio';
 
@@ -169,7 +175,7 @@ class ConfigState extends State {
 			$defaultRendering = '';
 			foreach ($renderingList as $key => $elem) {
 				if (preg_match('/'.$p[self::BRIGHTNESS].'.+' .
-					$p[self::WIN_TYPE] . '.+interno\/colore\/' .
+					$p[self::WIN_TYPE] . '\/interno\/colore\/' .
 					$p[self::WIN_COLOR] . '/', $elem)) {
 					$defaultRendering = $renderingList[$key];
 					break;
@@ -189,6 +195,9 @@ class ConfigState extends State {
 			$this->view->setTplParam('brightParam', self::BRIGHTNESS);
 			$this->view->setTplParam('winTypeParam', self::WIN_TYPE);
 			$this->view->setTplParam('winColorParam', self::WIN_COLOR);
+			$this->view->setTplParam('handleTypeParam', self::HANDLE_TYPE);
+			//ucwords($_SESSION[self::WIN_COLOR_SESS];
+			$this->view->setTplParam('handleColorParam', self::HANDLE_COLOR);
 			$this->view->setTplParam('currSelImg', self::CURR_IMG_SEL);
 			//$this->view->setTplParam('currSelImgVal', $defaultRendering);
 			return $this->view->config();
@@ -197,6 +206,7 @@ class ConfigState extends State {
 				$_SESSION[self::BRIGHTNESS_SESS_NAME] = $_POST[self::BRIGHTNESS];
 				$_SESSION[self::WIN_TYPE_SESS] = $_POST[self::WIN_TYPE];
 				$_SESSION[self::WIN_COLOR_SESS] = $_POST[self::WIN_COLOR];
+				$_SESSION[self::HANDLE_COLOR_SESS] = $_POST[self::HANDLE_COLOR];
 				if (isset($_POST[self::CURR_IMG_SEL])) {
 					$_SESSION[self::CURR_IMG_SEL_SESS] = $_POST[self::CURR_IMG_SEL];
 				}
@@ -231,8 +241,6 @@ class ConfigB extends State {
 		$this->view->setTplParam('color_outdoor', ucwords($_SESSION[self::WIN_COLOR_OUT_SESS]));
 		$this->view->setTplParam('handle', ucwords('exens'));
 		$this->view->setTplParam('handle_type', ucwords('a scomparsa'));
-		//@todo change me
-		$this->view->setTplParam('handle_color', ucwords($_SESSION[self::WIN_COLOR_SESS]));
 	}
 
 	public function process($method, $page) {
