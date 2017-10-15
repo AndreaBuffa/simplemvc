@@ -2553,6 +2553,13 @@ $(document).ready(function() {
  handleTypeList = ['cremonese', 'martellina' , 'exens'];
  var filters = smvcGetFilter();
  for (var i = 0; i < handleTypeList.length; i++) {
+    var index = filters.indexOf(handleTypeList[i]);
+    if (index >= 0) {
+        filters.splice(index);
+    } 
+ }
+
+ for (var i = 0; i < handleTypeList.length; i++) {
     filters.push(handleTypeList[i]);
     if (smvcApplyFilter(filters).length > 0) {
         $("#" + handleTypeList[i]).show();
@@ -3133,7 +3140,14 @@ function showHandleColor(handleName) {
     };
    var filters = smvcGetFilter();
    //show all available color.Do not consider previously set color filter
-   filters.pop();
+    for (var i = 0; i < handleColors.length; i++) {
+        var index = filters.indexOf(handleColors[i]);
+        if (index >= 0) {
+            filters.splice(index, 1);
+        } 
+     }
+
+
    var options = smvcApplyFilter(filters);
    var colors = [];
    for (var i = 0; i < options.length; i++) {
