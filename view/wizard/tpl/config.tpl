@@ -1172,7 +1172,15 @@ $("#nascostano").click(function(){
 
  });
 
+
 /*
+ $("#perla11").click(function(){
+  //$("#divmaniglia").show();
+  //$("#manexens").hide();
+  //$("#manmartellina").hide();
+ });
+
+
 $("#avorio1").click(function(){
  $("#luce").show();
  $("#luceavorio").show();
@@ -1626,12 +1634,6 @@ $("#nero55").click(function(){
 */
 
 /*
-$("#perla11").click(function(){
- $("#divmaniglia").show();
- $("#manexens").hide();
- $("#manmartellina").hide();
-});
-
 $("#perla2").click(function(){
  $("#martellina2").show();
  $("#divmaniglia").hide();
@@ -1716,19 +1718,19 @@ SCEGLI IL COLORE</td>
 <td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
 <div style="text-align: center; background: #ffffff;">
 <!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="GRIGIO PERLA" title="">
-<button id="perla11" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/GRIGIO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
+<button id="smallBtn_grigioperla" onclick="setHandleColor('grigioperla')" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/GRIGIO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
 </div>
 </td>
 <td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
 <div style="text-align: center; background: #ffffff;">
 <!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="OTTONE" title="">
-<button id="manottone11" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/OTTONE.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
+<button id="smallBtn_ottone" onclick="setHandleColor('ottone')" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/OTTONE.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
 </div>
 </td>
 <td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
 <div style="text-align: center; background: #ffffff;">
 <!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="NERO" title="">
-<button id="mannero11" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NERO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
+<button id="smallBtn_nero" onclick="setHandleColor('nero')" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NERO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
 </div>
 </td>
 </tr>
@@ -2357,16 +2359,17 @@ if(document.getElementById){
 
 <!-- container colori maniglie -->
 <div style="margin-bottom: 30px; display: block;" id="handleColorDiv">
-         <table width="100%">
-         <tbody>
-         <tr>
-        <td align="center" style="width:100%;" colspan="9">
-        <div class="boxpuls" style="border:0px solid #878787; width:100%; text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 24px; background: rgba(255,255,255,0.8); color: #878787; padding: 3px; bottom:10px solid transparent; margin:10px 0; font-weight:normal; ">SCEGLI IL COLORE</div></td>
-             </tr>
-             <tr>
-        <td style="width: 18%">
+ <table width="100%">
+  <tbody>
+    <tr>
+    <td align="center" style="width:100%;" colspan="9">
+        <div class="boxpuls" style="border:0px solid #878787; width:100%; text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 24px; background: rgba(255,255,255,0.8); color: #878787; padding: 3px; bottom:10px solid transparent; margin:10px 0; font-weight:normal; ">SCEGLI IL COLORE</div>
+    </td>
+    </tr>
+    <tr>
+    <td style="width: 18%">
   <div class="boxpuls" style=" text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
-<button id="perla3" onclick="setHandleColor('perla')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Grigio-perla.jpg" width="200" height="200" class="imagebox" alt="">GRIGIO PERLA</button>
+<button id="bigBtn_grigioperla" onclick="setHandleColor('grigioperla')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Grigio-perla.jpg" width="200" height="200" class="imagebox" alt="">GRIGIO PERLA</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
   </div>
@@ -2375,7 +2378,7 @@ if(document.getElementById){
         <td style="width:2%"></td>
         <td style="width: 18%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
-<button id="ottone3" onclick="setHandleColor('ottone')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Ottone.jpg" width="200" height="200" class="imagebox" alt="">OTTONE</button>
+<button id="bigBtn_ottone" onclick="setHandleColor('ottone')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Ottone.jpg" width="200" height="200" class="imagebox" alt="">OTTONE</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
   </div>
@@ -2384,7 +2387,7 @@ if(document.getElementById){
         <td style="width:2%"></td>
         <td style="width: 18%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
-<button id="nerom3" onclick="setHandleColor('nero')" style="padding:5px; font-size: 14px;">
+<button id="bigBtn_nero" onclick="setHandleColor('nero')" style="padding:5px; font-size: 14px;">
 <img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Inox-nero.jpg" width="200" height="200" class="imagebox" alt="">NERO</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
@@ -2540,34 +2543,34 @@ $(document).ready(function() {
  $("#sceglimanigliavetro").hide();
  
  $("#sceglimaniglie").click(function(){
- $("#sceglimanigliavetro").show();
- $("#martellinagrigiacon").show();
- $("#martellinagrigiasenza").show();
- //$("#vetrogrigio").show();
- //$("#vetronero").hide();
- //$("#vetrobianco").hide();
- $("#luce").hide();
- $("#maniglie").show();
- $("#handleColorDiv").hide();
+     $("#sceglimanigliavetro").show();
+     $("#martellinagrigiacon").show();
+     $("#martellinagrigiasenza").show();
+     //$("#vetrogrigio").show();
+     //$("#vetronero").hide();
+     //$("#vetrobianco").hide();
+     $("#luce").hide();
+     $("#maniglie").show();
+     $("#handleColorDiv").hide();
 
- handleTypeList = ['cremonese', 'martellina' , 'exens'];
- var filters = smvcGetFilter();
- for (var i = 0; i < handleTypeList.length; i++) {
-    var index = filters.indexOf(handleTypeList[i]);
-    if (index >= 0) {
-        filters.splice(index);
-    } 
- }
+     handleTypeList = ['cremonese', 'martellina' , 'exens'];
+     var filters = smvcGetFilter();
+     for (var i = 0; i < handleTypeList.length; i++) {
+        var index = filters.indexOf(handleTypeList[i]);
+        if (index >= 0) {
+            filters.splice(index);
+        } 
+     }
 
- for (var i = 0; i < handleTypeList.length; i++) {
-    filters.push(handleTypeList[i]);
-    if (smvcApplyFilter(filters).length > 0) {
-        $("#" + handleTypeList[i]).show();
-    } else {
-        $("#" + handleTypeList[i]).hide();
-    }
-    filters.pop();
- }; 
+     for (var i = 0; i < handleTypeList.length; i++) {
+        filters.push(handleTypeList[i]);
+        if (smvcApplyFilter(filters).length > 0) {
+            $("#" + handleTypeList[i]).show();
+        } else {
+            $("#" + handleTypeList[i]).hide();
+        }
+        filters.pop();
+     }; 
 
 });
  
@@ -3134,19 +3137,18 @@ function updateRender(renderPath) {
 }
 
 function showHandleColor(handleName) {
-    var handleColors = ['perla', 'avorio', 'ottone', 'nero'];
+    var handleColors = ['grigioperla', 'avorio', 'ottone', 'nero'];
     for (var i = 0; i < handleColors.length; i++) {
-        $("#" + handleColors[i] + "3").hide();
+        $("#bigBtn_" + handleColors[i]).hide();
+        $("#smallBtn_" + handleColors[i]).hide();
     };
    var filters = smvcGetFilter();
-   //show all available color.Do not consider previously set color filter
-    for (var i = 0; i < handleColors.length; i++) {
-        var index = filters.indexOf(handleColors[i]);
-        if (index >= 0) {
-            filters.splice(index, 1);
-        } 
-     }
-
+    //show all available color.Do not consider previously set color filter
+    var lastFilter = filters.pop();
+    if (handleColors.indexOf(lastFilter) == -1) {
+        //wasnt a color.. put it back
+        filters.push(lastFilter);
+    }
 
    var options = smvcApplyFilter(filters);
    var colors = [];
@@ -3156,7 +3158,8 @@ function showHandleColor(handleName) {
    };
    $("#handleColorDiv").show();
    for (var i = 0; i < colors.length; i++) {
-        $("#" + colors[i] + "3").show();
+        $("#bigBtn_" + colors[i]).show();
+        $("#smallBtn_" + colors[i]).show();
    }
    $("#handleNameLabel").text('MANIGLIA - ' + handleName);
 }

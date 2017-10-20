@@ -206,7 +206,9 @@ class ConfigState extends State {
 				$_SESSION[self::BRIGHTNESS_SESS_NAME] = $_POST[self::BRIGHTNESS];
 				$_SESSION[self::WIN_TYPE_SESS] = $_POST[self::WIN_TYPE];
 				$_SESSION[self::WIN_COLOR_SESS] = $_POST[self::WIN_COLOR];
+				$_SESSION[self::HANDLE_TYPE_SESS] = $_POST[self::HANDLE_TYPE];
 				$_SESSION[self::HANDLE_COLOR_SESS] = $_POST[self::HANDLE_COLOR];
+
 				if (isset($_POST[self::CURR_IMG_SEL])) {
 					$_SESSION[self::CURR_IMG_SEL_SESS] = $_POST[self::CURR_IMG_SEL];
 				}
@@ -239,8 +241,9 @@ class ConfigB extends State {
 		$this->view->setTplParam('type', strtoupper($_SESSION[self::WIN_TYPE_SESS]));
 		$this->view->setTplParam('color', ucwords($_SESSION[self::WIN_COLOR_SESS]));
 		$this->view->setTplParam('color_outdoor', ucwords($_SESSION[self::WIN_COLOR_OUT_SESS]));
-		$this->view->setTplParam('handle', ucwords('exens'));
+		$this->view->setTplParam('handle', ucwords($_SESSION[self::HANDLE_TYPE_SESS]));
 		$this->view->setTplParam('handle_type', ucwords('a scomparsa'));
+		$this->view->setTplParam('handle_color', ucwords($_SESSION[self::HANDLE_COLOR_SESS]));
 	}
 
 	public function process($method, $page) {
