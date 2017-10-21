@@ -1951,7 +1951,7 @@ Breve testo<br />Descrittivo<br />
              <tr>
         <td style="vertical-align: top; width: 15%">
          <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
-         <button  id="avorio1" style="padding:5px; font-size: 14px;" onclick="setWinColor('avorio')">
+         <button  id="avorio1" name="bigWnClrBtn" style="padding:5px; font-size: 14px;" onclick="setWinColor('avorio')">
          <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/AVORIO.jpg" width="250" height="250" class="imagebox" alt=""/>AVORIO</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
@@ -1961,7 +1961,7 @@ Breve testo<br />Descrittivo<br />
         <td style="width:2%"></td>
         <td style="vertical-align: top; width: 15%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
-  <button  id="bianco1" style="padding:5px; font-size: 14px;" onclick="setWinColor('bianco')">
+  <button  id="bianco1" name="bigWnClrBtn" style="padding:5px; font-size: 14px;" onclick="setWinColor('bianco')">
   <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/BIANCO.jpg" width="250" height="250" class="imagebox" alt=""/>BIANCO</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
@@ -1971,7 +1971,7 @@ Breve testo<br />Descrittivo<br />
         <td style="width:2%"></td>
         <td style="vertical-align: top; width: 15%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
-  <button  id="grigio1" style="padding:5px; font-size: 14px;" onclick="setWinColor('grigio')">
+  <button  id="grigio1" name="bigWnClrBtn" style="padding:5px; font-size: 14px;" onclick="setWinColor('grigio')">
   <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/GRIGIO.jpg" width="250" height="250" class="imagebox" alt=""/>GRIGIO</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
@@ -1980,9 +1980,9 @@ Breve testo<br />Descrittivo<br />
   </td>
         <td style="width:2%"></td>
         <td style="vertical-align: top; width: 15%">
-  <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;  display: none;">
-  <button  id="noce1" style="padding:5px; font-size: 14px;">
-  <img  style="padding-bottom:5px;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NOCE.jpg" width="250" height="250" class="imagebox" alt=""/>sarebbe noce</button>
+  <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
+  <button  id="noce1" name="bigWnClrBtn" style="padding:5px; font-size: 14px;">
+  <img  style="padding-bottom:5px;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NOCE.jpg" width="250" height="250" class="imagebox" alt=""/>NOCE</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
   </div>
@@ -1991,7 +1991,7 @@ Breve testo<br />Descrittivo<br />
         <td style="width:2%"></td>
         <td style="vertical-align: top; width: 15%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
-  <button  id="marrone1" style="padding:5px; font-size: 14px;" onclick="setWinColor('marrone')">
+  <button  id="marrone1" name="bigWnClrBtn" style="padding:5px; font-size: 14px;" onclick="setWinColor('marrone')">
   <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" width="250" height="250" class="imagebox" alt=""/>MARRONE</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
@@ -2001,7 +2001,7 @@ Breve testo<br />Descrittivo<br />
         <td style="width:2%"></td>
         <td style="vertical-align: top; width: 15%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; background: #ffffff; width:100%; height: auto; margin-bottom:10px;">
-<button  id="nero1" class="md-close" style="padding:5px; font-size: 14px;" onclick="setWinColor('colore\/nero')">
+<button  id="nero1" name="bigWnClrBtn" class="md-close" style="padding:5px; font-size: 14px;" onclick="setWinColor('nero')">
 <img  style="padding-bottom:5px" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NERO.jpg" width="250" height="250" class="imagebox" alt=""/>NERO</button>
     <div class="middlebox">
         <div style="margin-left:-10px" class="textbox">✔</div>
@@ -2442,27 +2442,27 @@ if(document.getElementById){
 <td style="vertical-align: middle; width: 12%; border-bottom: 1px solid #858585; text-align: right; margin-right: 10px; font-family: Helvetica, Arial, 'sans-serif'; font-weight: normal; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; padding-right: 10px;">SCEGLI IL COLORE</td>
 <td style="vertical-align: middle; width: 3%; border-bottom: 1px solid #858585;">
 <div style="text-align: center; background: #ffffff;"><!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="AVORIO" title=""> 
-    <button id="avorio11" name="smallWnClrBtn" data-color="colore\/avorio" style="padding: 5px; font-size: 14px; border: none; background: transparent; text-align: left;"> <img style="float: left; border: 1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/AVORIO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips --></div>
+    <button id="smallWnClrBtn_avorio" name="smallWnClrBtn" data-color="avorio" style="padding: 5px; font-size: 14px; border: none; background: transparent; text-align: left;"> <img style="float: left; border: 1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/AVORIO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips --></div>
 </td>
 <td style="vertical-align: middle; width: 3%; border-bottom: 1px solid #858585;">
 <div style="text-align: center; background: #ffffff;"><!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="BIANCO" title=""> 
-    <button id="bianco11" name="smallWnClrBtn" data-color="colore\/bianco" style="padding: 5px; font-size: 14px; border: none; background: transparent; text-align: left;"> <img style="float: left; border: 1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/BIANCO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips --></div>
+    <button id="smallWnClrBtn_bianco" name="smallWnClrBtn" data-color="bianco" style="padding: 5px; font-size: 14px; border: none; background: transparent; text-align: left;"> <img style="float: left; border: 1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/BIANCO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips --></div>
 </td>
 <td style="vertical-align: middle; width: 3%; border-bottom: 1px solid #858585;">
 <div style="text-align: center; background: #ffffff;"><!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="GRIGIO" title=""> 
-    <button id="grigio11" name="smallWnClrBtn" data-color="colore\/grigio" style="padding: 5px; font-size: 14px; border: none; background: transparent; text-align: left;"> <img style="float: left; border: 1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/GRIGIO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips --></div>
+    <button id="smallWnClrBtn_grigio" name="smallWnClrBtn" data-color="grigio" style="padding: 5px; font-size: 14px; border: none; background: transparent; text-align: left;"> <img style="float: left; border: 1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/GRIGIO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips --></div>
 </td>
 <td style="vertical-align: middle; width: 3%; border-bottom: 1px solid #858585;">
 <div style="text-align: center; background: #ffffff;"><!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="MARRONE GOTICO" title=""> 
-    <button id="marrone11" name="smallWnClrBtn" data-color="colore\/marrone" style="padding: 5px; font-size: 14px; border: none; background: transparent; text-align: left;"> <img style="float: left; border: 1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips --></div>
+    <button id="smallWnClrBtn_marrone" name="smallWnClrBtn" data-color="marrone" style="padding: 5px; font-size: 14px; border: none; background: transparent; text-align: left;"> <img style="float: left; border: 1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips --></div>
 </td>
 <td style="vertical-align: middle; width: 3%; border-bottom: 1px solid #858585;">
 <div style="text-align: center; background: #ffffff;"><!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="NOCE" title=""> 
-    <button id="noce11" name="smallWnClrBtn" data-color="colore\/noce" style="padding: 5px; font-size: 14px; border: none; background: transparent; text-align: left;"> <img style="float: left; border: 1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NOCE.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips --></div>
+    <button id="smallWnClrBtn_noce" name="smallWnClrBtn" data-color="noce" style="padding: 5px; font-size: 14px; border: none; background: transparent; text-align: left;"> <img style="float: left; border: 1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NOCE.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips --></div>
 </td>
 <td style="vertical-align: middle; width: 3%; border-bottom: 1px solid #858585;">
 <div style="text-align: center; background: #ffffff;"><!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="NERO" title=""> 
-    <button id="nero11" name="smallWnClrBtn" data-color="colore\/nero" style="padding: 5px; font-size: 14px; border: none; background: transparent; text-align: left;"> <img style="float: left; border: 1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NERO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips --></div>
+    <button id="smallWnClrBtn_nero" name="smallWnClrBtn" data-color="nero" style="padding: 5px; font-size: 14px; border: none; background: transparent; text-align: left;"> <img style="float: left; border: 1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/NERO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips --></div>
 </td>
 </tr>
 </tbody>
@@ -3073,10 +3073,20 @@ function wizPost(paramsList) {
     theForm.submit();
 };
 
-function smvcGetFilter() {
+function smvcGetFilter(nameList) {
+    if (nameList) {
+        res = [];
+        for (var i = 0; i < nameList.length; i++) {
+            var filterVal = $("input[name=" + nameList[i] + "]").val();
+            if (filterVal) {
+                res.push(filterVal);   
+            }
+        };
+        return res;
+    }
     return $("input[name^=smvc]").map(function() {
         return $( this ).val();
-      }).toArray();
+    }).toArray();
 }
 
 function smvcApplyFilter(filterList) {
@@ -3101,7 +3111,30 @@ function smvcApplyFilter(filterList) {
 function setWinType(type) {
     mostranascondi1('base', 'luce', 'vetro', 'nathura', 'classic', 'invisio', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1','colore1','colore2','colore3','colore4','colore5');
 
-    $("input[name=<?php echo $v_winTypeParam ?>").attr("value", type);    
+    $("input[name=<?php echo $v_winTypeParam ?>").attr("value", type);   
+    // update GUI
+    $("button[name=smallWnClrBtn]").hide();
+    $("button[name=bigWnClrBtn]").hide();
+
+    var winColors = ['avorio', 'bianco', 'grigio', 'noce', 'marrone', 'nero'];
+
+    var filters = smvcGetFilter(["mvc-bright", "smvc-win-type", "smvc-sideParam"]);
+    var options = smvcApplyFilter(filters);
+    var colors = [];
+    for (var i = 0; i < options.length; i++) {
+        var tmp = options[i].split("/");
+        var theColor = tmp[tmp.length - 5];
+        if ( -1 == colors.indexOf(theColor)) {
+            colors.push(theColor);
+        }
+    };
+
+    for (var i = 0; i < colors.length; i++) {
+        $("#" + colors[i] + "1").show();
+        $("#smallWnClrBtn_" + colors[i]).show();
+    }
+
+ 
 }
 
 
@@ -3112,8 +3145,21 @@ function setWinColor(theColor) {
  //$("#maniglie").hide();
  $("input[name=<?php echo $v_winColorParam ?>").attr("value", theColor);
  var tmp = smvcApplyFilter(smvcGetFilter());
- updateRender(tmp[0]);
- $("input[name=<?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));    
+ // fix filters and regexp or continue with this shit 
+ var res = "";
+ var myRe = new RegExp("colore\/" + theColor);
+ for (var i = 0; i < tmp.length; i++) {
+    if (myRe.exec(tmp[i]) != null) {
+        res = tmp[i];
+        break;
+    }
+ };
+ if (res === "") {
+    //allora di sicuro c'e' un filtro sulla maniglia 
+    //che non è possibile abbinare con questo colore.
+ }
+ updateRender(res);
+ $("input[name=<?php echo $v_currSelImg?>").attr("value", encodeURI(res));    
 }
 
 function updateRender(renderPath) {
@@ -3151,14 +3197,8 @@ function showHandleColor(handleName) {
         $("#bigBtn_" + handleColors[i]).hide();
         $("#smallBtn_" + handleColors[i]).hide();
     };
-   var filters = smvcGetFilter();
-    //show all available color.Do not consider previously set color filter
-    var lastFilter = filters.pop();
-    if (handleColors.indexOf(lastFilter) == -1) {
-        //wasnt a color.. put it back
-        filters.push(lastFilter);
-    }
 
+   var filters = smvcGetFilter(["mvc-bright", "smvc-win-type", "smvc-sideParam", "smvc-win-color", "smvc-handle-type"]);
    var options = smvcApplyFilter(filters);
    var colors = [];
    for (var i = 0; i < options.length; i++) {
