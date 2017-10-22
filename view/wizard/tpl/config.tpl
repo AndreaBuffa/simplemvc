@@ -1803,7 +1803,7 @@ SCEGLI IL COLORE</td>
     box-sizing: none;
     padding: 0;
     border: none;" 
-onclick="setWinType('luce'); return(false)">
+onclick="setWinType('luce');">
 <div class="boxpuls" id="luce1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/alwin3d2/images/PRODOTTI/PICCOLE/PICCOLA-STILLIFE-LUCE.jpg" class="imagebox" alt=""/>LUCE
     <div class="middlebox">
 Breve testo<br />Descrittivo<br />
@@ -1859,8 +1859,11 @@ Breve testo<br />Descrittivo<br />
     background-color: #ffffff; 
     box-sizing: none;
     padding: 0;
-    border:none;" 
-    onclick="mostranascondi4('base', 'luce', 'vetro', 'nathura', 'classic', 'invisio', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1','colore1','colore2','colore3','colore4','colore5'); return(false)"><div class="boxpuls" id="classic1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+    border:none;"
+    onclick="setWinType('classic'); " >
+    <!-- 
+     onclick="mostranascondi4('base', 'luce', 'vetro', 'nathura', 'classic', 'invisio', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1','colore1','colore2','colore3','colore4','colore5'); return(false)">  -->
+    <div class="boxpuls" id="classic1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
     color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/alwin3d2/images/PRODOTTI/PICCOLE/PICCOLA-STILLIFE-CLASSIC.jpg" width="250" height="250" class="imagebox" alt=""/>CLASSIC
@@ -2287,7 +2290,7 @@ if(document.getElementById){
     <td style="border:0px solid #878787; text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 24px; background: rgba(255,255,255,0.8); color: #878787; font-weight:normal; padding: 5px 0 0; border-bottom:10px solid transparent;" colspan="9">SCEGLI IL TIPO DI MANIGLIA</td>
     </tr>
 <tr>
-    <td style="vertical-align: top; width:18%;">
+<td id="handle1" style="vertical-align: top; width:18%;">
    <button style="width:100%;
     text-align: center;
     cursor: pointer;
@@ -2306,9 +2309,9 @@ if(document.getElementById){
         <div class="textbox">✔</div>
   </div>
   </div></button>
-    </td>
-    <td style="width:2%"></td>
-    <td align="center" style="width:18%;">
+</td>
+<td id="handleSpacer1" style="width:2%"></td>
+<td id="handle2" align="center" style="width:18%;">
     <button style="width:100%;
     text-align: center;
     cursor: pointer;
@@ -2329,8 +2332,8 @@ if(document.getElementById){
   </div>
   </div></button>
     </td>
-    <td style="width:2%"></td>
-    <td align="center" style="width:18%;">
+<td id="handleSpacer2" style="width:2%"></td>
+<td id="handle3" align="center" style="width:18%;">
     <button style="width:100%;
     text-align: center;
     cursor: pointer;
@@ -2338,7 +2341,7 @@ if(document.getElementById){
     box-sizing: none;
     padding: 0;
     border:none;" 
-    onclick="setHandleType('martellina'); return(false)">
+    onclick="setHandleType('martellina');">
 <!-- mostranascondi33('cremonese', 'exens', 'martellina3', 'colore7', 'colore6', 'colore9'); -->
 <!-- maniglia 3 -->
     <div class="boxpuls" id="martellina" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
@@ -2352,12 +2355,54 @@ if(document.getElementById){
   </div></button>
     </td>
 </td>
+<td id="cernieraVistaSpacer" style="width:2%; display:none;"></td>
+<td id="cernieraVista" style="vertical-align: top; width:18%; display:none;">
+   <button style="width:100%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f1f1f1; 
+    box-sizing: none;
+    padding: 0;
+    border:none;" 
+    onclick="setHingeType('vista')">
+    <div class="boxpuls" id="martellinacon" style="text-align: center; font-family: Helvetica, Arial, 'sans-serif';
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: #858585; font-size: 14px; line-height: 18px; background: #f1f1f1; width:100%; height: auto;">
+    <img id="cernieraVistaImg" style="margin-bottom:6px" src="/alwin3d2/images/MANIGLIE/MARTELLINA/Martellina-grigia-con.jpg" width="250" height="250" class="imagebox" alt=""/>MARTELLINA CON CERNIERE A VISTA
+    <div class="middlebox">
+        <div class="textbox">✔</div>
+  </div>
+  </div></button>
+</td>
+<td d="cernieraScomparsaSpacer" style="width:2%; display:none;"></td>
+<td id="cernieraScomparsa" align="center" style="width:18%;display:none;">
+    <button style="width:100%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f1f1f1; 
+    box-sizing: none;
+    padding: 0;
+    border:none;" 
+    onclick="setHingeType('scomparsa')">
+    <div class="boxpuls" id="martellinasenza" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: #858585; font-size: 14px; line-height: 18px; background: #f1f1f1; width:100%; height: auto;">
+    <img id="cernieraScomparsaImg" style="margin-bottom:6px" src="/alwin3d2/images/MANIGLIE/MARTELLINA/Martellina-grigia-senza.jpg" width="250" height="250" class="imagebox" alt=""/>MARTELLINA CON CERNIERE A SCOMPARSA
+    <div class="middlebox">
+        <div class="textbox">✔</div>
+  </div>
+  </div></button>
+</td>
+<td style="width: 18%"></td>
 <td style="width:2%"></td>
-        <td style="width: 18%"></td>
-<td style="width:2%"></td>
-        <td style="width: 18%"></td>
-    </tr>
-    <tr>
+<td style="width: 18%"></td>
+
+</tr>
+
+
+<tr>
     <td align="center" style="width:100%;" colspan="9">
 
 <!-- container colori maniglie -->
@@ -2438,7 +2483,8 @@ if(document.getElementById){
 <table>
 <tbody>
 <tr>
-<td style="width: 28%; height: 45px; border-bottom: 1px solid #858585;"><span style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px;">PORTAFINESTRA - MODELLO LUCE</span></td>
+<td style="width: 28%; height: 45px; border-bottom: 1px solid #858585;">
+<span id="winTypeLabel" style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px;"></span></td>
 <td style="vertical-align: middle; width: 12%; border-bottom: 1px solid #858585; text-align: right; margin-right: 10px; font-family: Helvetica, Arial, 'sans-serif'; font-weight: normal; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; padding-right: 10px;">SCEGLI IL COLORE</td>
 <td style="vertical-align: middle; width: 3%; border-bottom: 1px solid #858585;">
 <div style="text-align: center; background: #ffffff;"><!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="AVORIO" title=""> 
@@ -2514,37 +2560,6 @@ div#colorecon{display:none}
 div#coloresenza{display:none}
 </style>
 
-<script type="text/javascript">
-function mostranascondicon(id100, id200, id300, id400){
-if(document.getElementById){
-   el100=document.getElementById(id100);  
-   el200=document.getElementById(id200); 
-   el300=document.getElementById(id300); 
-   el400=document.getElementById(id400); 
-   if(el100.style.border="0px solid #ff3000"){
-        el100.style.border="3px solid #ff3000";
-        el200.style.border="0px solid #ff3000";
-        el300.style.display="block";
-        el400.style.display="none";
-        }
-    }
-}
-
-function mostranascondisenza(id100, id200, id300, id400){
-if(document.getElementById){
-   el100=document.getElementById(id100);  
-   el200=document.getElementById(id200); 
-   el300=document.getElementById(id300); 
-   el400=document.getElementById(id400); 
-   if(el200.style.border="0px solid #ff3000"){
-        el100.style.border="0px solid #ff3000";
-        el200.style.border="3px solid #ff3000";
-        el300.style.display="none";
-        el400.style.display="block";
-        }
-    }
-}
-</script>
 <script>// <![CDATA[
 $(document).ready(function() {
  $("#martellinagrigiacon").hide();
@@ -2561,6 +2576,7 @@ $(document).ready(function() {
      $("#luce").hide();
      $("#maniglie").show();
      $("#handleColorDiv").hide();
+     showHinge(false);
 
      handleTypeList = ['cremonese', 'martellina' , 'exens'];
      var filters = smvcGetFilter();
@@ -3110,6 +3126,42 @@ function smvcApplyFilter(filterList) {
 
 function setWinType(type) {
     mostranascondi1('base', 'luce', 'vetro', 'nathura', 'classic', 'invisio', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1','colore1','colore2','colore3','colore4','colore5');
+/*
+
+    $("#base").hide();
+    $('#luce').hide();
+    $('#vetro').hide();
+    $('#nathura').hide();
+    $('#classic').hide();
+    $('#invisio').hide();
+    $('#luce1').attr("style", $('#luce1').attr("style") + " 3px solid #ff3000");
+    $('#vetro1').attr("style", "3px solid #ff3000"); 
+    $('#nathura1').attr("style", "3px solid #ff3000");
+    $('#classic1').attr("style", "3px solid #ff3000");
+    $('#invisio1').attr("style", "3px solid #ff3000");
+    $('#colore1').hide();
+    $('#colore2').hide();
+    $('#colore3').hide();
+    $('#colore4').hide();
+    $('#colore5').hide();
+
+        el1.style.display="none";
+        el2.style.display="none";
+        el3.style.display="none";
+        el4.style.display="none";
+        el5.style.display="none";
+        el6.style.display="none";
+        el7.style.border="3px solid #ff3000";
+        el8.style.border="0px solid #ff3000";
+        el9.style.border="0px solid #ff3000";
+        el10.style.border="0px solid #ff3000";
+        el11.style.border="0px solid #ff3000";
+        el122.style.display="block";
+        el133.style.display="none";
+        el144.style.display="none";
+        el155.style.display="none";
+        el166.style.display="none"; */
+
 
     $("input[name=<?php echo $v_winTypeParam ?>").attr("value", type);   
     // update GUI
@@ -3133,8 +3185,7 @@ function setWinType(type) {
         $("#" + colors[i] + "1").show();
         $("#smallWnClrBtn_" + colors[i]).show();
     }
-
- 
+    $("#winTypeLabel").text('PORTAFINESTRA - MODELLO ' + type); 
 }
 
 
@@ -3157,6 +3208,18 @@ function setWinColor(theColor) {
  if (res === "") {
     //allora di sicuro c'e' un filtro sulla maniglia 
     //che non è possibile abbinare con questo colore.
+    $("input[name=smvc-handle-type").attr("value", "");
+    $("input[name=smvc-handle-color").attr("value", "");
+    tmp = smvcApplyFilter(smvcGetFilter());
+     // fix filters and regexp or continue with this shit 
+     var res = "";
+     var myRe = new RegExp("colore\/" + theColor);
+     for (var i = 0; i < tmp.length; i++) {
+        if (myRe.exec(tmp[i]) != null) {
+            res = tmp[i];
+            break;
+        }
+     };
  }
  updateRender(res);
  $("input[name=<?php echo $v_currSelImg?>").attr("value", encodeURI(res));    
@@ -3214,8 +3277,30 @@ function showHandleColor(handleName) {
 }
 
 function setHandleType(handleType) {
+    //extra check for hinge
+    var options = smvcApplyFilter(smvcGetFilter());
+    var flag = 1;
+    for (var i = 0; i < options.length; i++) {
+        var features =  options[i].split("/");
+        var theFeature = features[features.length - 3]
+        if ((theFeature === handleType + "-vista") | 
+            (theFeature === handleType + "-scomparsa")) {
+            showHinge(true);
+            flag = 0;
+            break;
+        } 
+    };
+
    $("input[name=<?php echo $v_handleTypeParam ?>").attr("value", handleType);
-   showHandleColor(handleType);
+   if (flag) {
+    showHandleColor(handleType);
+   }
+}
+
+function setHingeType(theType) {
+
+   var handleType = $("input[name=<?php echo $v_handleTypeParam ?>").attr("value");
+   showHandleColor(handleType);    
 }
 
 function setHandleColor(color){
@@ -3230,6 +3315,26 @@ function setHandleColor(color){
  var tmp = smvcApplyFilter(smvcGetFilter()); 
  updateRender(tmp[0]);
  $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));    
+}
+
+function showHinge(toggle) {
+    if (toggle) {
+        $("#handle1").hide();
+        $("#handle2").hide();
+        $("#handle3").hide();
+        $("#cernieraVista").show();
+        $("#cernieraVistaSpacer").show();
+        $("#cernieraScomparsa").show();
+        $("#cernieraScomparsaSpacer").show();
+    } else {
+        $("#handle1").show();
+        $("#handle2").show();
+        $("#handle3").show();
+        $("#cernieraVista").hide();
+        $("#cernieraVistaSpacer").hide();
+        $("#cernieraScomparsa").hide();
+        $("#cernieraScomparsaSpacer").hide();
+    }
 }
 
 
