@@ -32,7 +32,7 @@ class CustomDB extends DB {
                 throw new Exception('SMWC Invalid OActiveRecord (' + $type + ')');
         }
 
-        $path = $instance->getMethod();
+        $path = $instance::METHOD; //$instance->getMethod();
 
         if ($instance) {
             $queryData = array();
@@ -40,44 +40,32 @@ class CustomDB extends DB {
                 $queryData[$attr] = $reflect->getProperty($attr)->getValue($instance);
             }
             $path .= '?'.http_build_query($queryData);
-
+            result;
         } else {
             $instance = $type::getInstance($type, null);
         }
 
         $url = O_METHOD."://".O_HOST."/api/".$path;
-        var_dump($url);
+
         try {
             $response = file_get_contents($url);
         } catch (Exception $e) {
             echo 'SMVC error while querying O database';
         }
         //http_get($url, array("timeout"=>1), $info);
-/*
-        $response = <<<XML
-<styles>
-<style>
-<name>URBANO</name>
-<description>URBANO</description>
-<note>La città in tutto il suo splendore</note>
-<icon_URL>api/style_icon.php?style=URBANO</icon_URL>
-<img_URL>api/style_icon.php?style=URBANO&amp;background&amp;image_type=JPG&amp;image_quality=50
-</img_URL>
-</style>
-</styles>
-XML;
-*/
         if (!$response) {
             echo 'SMVC response from ODatabase is empty';
             return $results;
         }
+
         $root = new SimpleXMLElement($response);
         if (!is_object($root)) {
+            echo 'SMVC error parsing XML';
             return $results;
         }
         $queue = array();
-        if ($root->children() instanceof Traversable) {
-            $queue = $root->children();
+        if ($root instanceof Traversable) {
+            array_push($queue, $root);
         }
 
         foreach ($queue as $key => $node) {
@@ -96,6 +84,7 @@ XML;
                 }
                 array_push($results, $instance);
             }
+            //enquue $node->children
         }
 
         return $results;
