@@ -18,6 +18,8 @@ abstract class State implements iState {
 	const HANDLE_TYPE_SESS = 'handle-type';
 	const HANDLE_COLOR = 'smvc-handle-color';
 	const HANDLE_COLOR_SESS = 'handle-color';
+	const HINGE_TYPE = 'smvc-hinge-type';
+	const HINGE_TYPE_SESS = 'hinge-type';
 	const WIN_COLOR_OUT = 'smvc-win-color-out';
 	const WIN_COLOR_OUT_SESS = 'win-color-out';
 	const WIN_COLOR_OUT_DEF = 'avorio';
@@ -37,6 +39,7 @@ class StartState extends State {
 		$_SESSION[self::WIN_COLOR_OUT_SESS] = self::WIN_COLOR_OUT_DEF;
 		$_SESSION[self::HANDLE_TYPE_SESS] = '';
 		$_SESSION[self::HANDLE_COLOR_SESS] = '';
+		$_SESSION[self::HINGE_TYPE_SESS] = '';
 		$_SESSION['wizState'] = new StyleState();
 		return header(HEADER_PREFIX.StyleState::NAME);
 	}
@@ -178,7 +181,8 @@ class ConfigState extends State {
 				$_SESSION[self::WIN_COLOR_SESS] : 'avorio';
 
 			$p[self::HANDLE_TYPE] = '';
-			$p[self::HANDLE_COLOR] = '';			
+			$p[self::HINGE_TYPE] = '';
+			$p[self::HANDLE_COLOR] = '';		
 			$defaultRendering = '';
 			foreach ($renderingList as $key => $elem) {
 				if (preg_match('/'.$p[self::BRIGHTNESS].'.+' .
@@ -203,6 +207,7 @@ class ConfigState extends State {
 			$this->view->setTplParam('winTypeParam', self::WIN_TYPE);
 			$this->view->setTplParam('winColorParam', self::WIN_COLOR);
 			$this->view->setTplParam('handleTypeParam', self::HANDLE_TYPE);
+			$this->view->setTplParam('hingeTypeParam', self::HINGE_TYPE);
 			//ucwords($_SESSION[self::WIN_COLOR_SESS];
 			$this->view->setTplParam('handleColorParam', self::HANDLE_COLOR);
 			$this->view->setTplParam('currSelImg', self::CURR_IMG_SEL);
@@ -215,6 +220,7 @@ class ConfigState extends State {
 				$_SESSION[self::WIN_COLOR_SESS] = $_POST[self::WIN_COLOR];
 				$_SESSION[self::HANDLE_TYPE_SESS] = $_POST[self::HANDLE_TYPE];
 				$_SESSION[self::HANDLE_COLOR_SESS] = $_POST[self::HANDLE_COLOR];
+				$_SESSION[self::HINGE_TYPE_SESS] = $_POST[self::HINGE_TYPE];
 
 				if (isset($_POST[self::CURR_IMG_SEL])) {
 					$_SESSION[self::CURR_IMG_SEL_SESS] = $_POST[self::CURR_IMG_SEL];
@@ -249,8 +255,8 @@ class ConfigB extends State {
 		$this->view->setTplParam('color', ucwords($_SESSION[self::WIN_COLOR_SESS]));
 		$this->view->setTplParam('color_outdoor', ucwords($_SESSION[self::WIN_COLOR_OUT_SESS]));
 		$this->view->setTplParam('handle', ucwords($_SESSION[self::HANDLE_TYPE_SESS]));
-		$this->view->setTplParam('handle_type', ucwords('a scomparsa'));
 		$this->view->setTplParam('handle_color', ucwords($_SESSION[self::HANDLE_COLOR_SESS]));
+		$this->view->setTplParam('hinge_type', ucwords('A '.$_SESSION[self::HINGE_TYPE_SESS]));
 	}
 
 	public function process($method, $page) {

@@ -1085,7 +1085,7 @@ var polyfilter_scriptpath = '/js/';
 <tr>
 <td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">CERNIERE</td>
 <td style="width: 10px;">&nbsp;</td>
-<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;"><?php echo $v_handle_type?></td>
+<td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;"><?php echo $v_hinge_type?></td>
 </tr>
 <tr>
 <td style="font-size: 12px; line-height: 14px; padding: 8px 0px; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">COLORE CERNIERE</td>

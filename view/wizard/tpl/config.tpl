@@ -2815,7 +2815,7 @@ function setHandleType(handleType) {
 }
 
 function setHingeType(theType) {
-
+   $("input[name=<?php echo $v_hingeTypeParam ?>").attr("value", theType);
    var handleType = $("input[name=<?php echo $v_handleTypeParam ?>").attr("value");
    showHandleColor(handleType);    
 }
