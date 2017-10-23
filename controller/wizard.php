@@ -261,7 +261,11 @@ class ConfigB extends State {
 		$this->view->setTplParam('color_outdoor', ucwords($_SESSION[self::WIN_COLOR_OUT_SESS]));
 		$this->view->setTplParam('handle', ucwords($_SESSION[self::HANDLE_TYPE_SESS]));
 		$this->view->setTplParam('handle_color', ucwords($_SESSION[self::HANDLE_COLOR_SESS]));
-		$this->view->setTplParam('hinge_type', ucwords('A '.$_SESSION[self::HINGE_TYPE_SESS]));
+		if ($_SESSION[self::HINGE_TYPE_SESS]) {
+			$this->view->setTplParam('hinge_type', ucwords('A '.$_SESSION[self::HINGE_TYPE_SESS]));
+		} else {
+			$this->view->setTplParam('hinge_type', "");
+		}
 	}
 
 	public function process($method, $page) {
