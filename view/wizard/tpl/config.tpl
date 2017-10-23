@@ -2711,6 +2711,8 @@ function setWinColor(theColor) {
  //$("#luceavorio").show();
  $("#baseok").hide(); // tipo infisso
  //$("#maniglie").hide();
+ // @todo si potrebbe resettare di base,  maniglia, colore e cerniera 
+ // invece che tentare e poi eventualemnte resettare
  $("input[name=<?php echo $v_winColorParam ?>").attr("value", theColor);
  var tmp = smvcApplyFilter(smvcGetFilter());
  // fix filters and regexp or continue with this shit 
@@ -2726,6 +2728,7 @@ function setWinColor(theColor) {
     //allora di sicuro c'e' un filtro sulla maniglia 
     //che non è possibile abbinare con questo colore.
     $("input[name=smvc-handle-type").attr("value", "");
+    $("input[name=smvc-hinge-type").attr("value", "");
     $("input[name=smvc-handle-color").attr("value", "");
     tmp = smvcApplyFilter(smvcGetFilter());
      // fix filters and regexp or continue with this shit 
@@ -2772,13 +2775,21 @@ function updateRender(renderPath) {
 }
 
 function showHandleColor(handleName) {
+    var asset = {
+        'exens': {'avorio' : {'OTTONE':  'exens-ottone.jpg'},
+                  'bianco' : {'BIANCO':  'exens-bianco.jpg'},
+                  'marrone': {'MARRONE': 'exens-marrone.jpg'}},
+    'cremonese': {'avorio' : {'OTTONE':  'cremonese-ottone.jpg'},
+                  'bianco' : {'BIANCO':  'cremonese-bianco.jpg'},
+                  'marrone': {'MARRONE': 'cremonese-marrone.jpg'}}
+    };
     var handleColors = ['grigioperla', 'avorio', 'ottone', 'nero'];
     for (var i = 0; i < handleColors.length; i++) {
         $("#bigBtn_" + handleColors[i]).hide();
         $("#smallBtn_" + handleColors[i]).hide();
     };
 
-   var filters = smvcGetFilter(["mvc-bright", "smvc-win-type", "smvc-sideParam", "smvc-win-color", "smvc-handle-type"]);
+   var filters = smvcGetFilter(["mvc-bright", "smvc-indoor-style", "smvc-win-type", "smvc-sideParam", "smvc-win-color", "smvc-handle-type"]);
    var options = smvcApplyFilter(filters);
    var colors = [];
    for (var i = 0; i < options.length; i++) {
