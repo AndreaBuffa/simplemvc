@@ -8,6 +8,7 @@ abstract class State implements iState {
 	const BRIGHTNESS_DEF_VAL = 'chiari';
 	const BRIGHTNESS_SESS_NAME = 'room-brightness';
 	const BRIGHTNESS = 'smvc-bright';
+	const INDOOR_STYLE = 'smvc-indoor-style';
 	const WIN_TYPE = 'smvc-win-type';
 	const WIN_TYPE_SESS = 'win-type';
 	const WIN_TYPE_DEF = '';
@@ -170,6 +171,10 @@ class ConfigState extends State {
 			} else {
 				$p[self::BRIGHTNESS] = self::BRIGHTNESS_DEF_VAL;
 			}
+
+			// this is to avoid a false positive style/window type
+			$p[self::INDOOR_STYLE] = $criteria["style"];
+
 			if (isset($_SESSION[self::WIN_TYPE_SESS])) {
 				$p[self::WIN_TYPE] = $_SESSION[self::WIN_TYPE_SESS];
 			} else {
