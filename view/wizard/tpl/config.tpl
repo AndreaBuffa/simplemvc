@@ -2687,7 +2687,7 @@ function setWinType(type) {
 
     var winColors = ['avorio', 'bianco', 'grigio', 'noce', 'marrone', 'nero'];
 
-    var filters = smvcGetFilter(["mvc-bright", "smvc-win-type", "smvc-sideParam"]);
+    var filters = smvcGetFilter(["mvc-bright", "smvc-indoor-style", "smvc-win-type", "smvc-sideParam"]);
     var options = smvcApplyFilter(filters);
     var colors = [];
     for (var i = 0; i < options.length; i++) {
