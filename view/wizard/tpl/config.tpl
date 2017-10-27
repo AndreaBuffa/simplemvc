@@ -1172,7 +1172,7 @@ $("#nascostano").click(function(){
      $('#' + types[i] + "1").hide();        
     }
  };
-
+// 3px solid rgb(255, 48, 0); bordo 
  });
 
 
@@ -1219,7 +1219,7 @@ $("#nascondimaniglie").click(function(){
 <table>
 <tbody>
 <tr>
-<td colspan="5">
+<td colspan="7">
 <div>
 <div class="sppb-addon-single-image-container">
 <div class="sppb-addon-image-overlay"></div>
@@ -1239,6 +1239,19 @@ SCEGLI IL COLORE</td>
 <div style="text-align: center; background: #ffffff;">
 <!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="GRIGIO PERLA" title="">
 <button id="smallBtn_grigioperla" onclick="setHandleColor('grigioperla')" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/GRIGIO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
+</div>
+</td>
+<td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
+<div style="text-align: center; background: #ffffff;">
+<!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="AVORIO" title="">
+<button id="smallBtn_avorio" onclick="setHandleColor('avorio')" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/AVORIO.jpg" alt="" width="35" height="35" /></button></span>
+<!-- END: Tooltips -->
+</div>
+</td>
+<td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
+<div style="text-align: center; background: #ffffff;">
+<!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="MARRONE" title="">
+<button id="smallBtn_marrone" onclick="setHandleColor('marrone')" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
 </div>
 </td>
 <td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
@@ -1886,7 +1899,8 @@ if(document.getElementById){
     font-weight: bold;
     letter-spacing: 0.3px;
     color: #858585; font-size: 14px; line-height: 18px; background: #f1f1f1; width:100%; height: auto;">
-    <img id="cernieraVistaImg" style="margin-bottom:6px" src="/alwin3d2/images/MANIGLIE/MARTELLINA/Martellina-grigia-con.jpg" width="250" height="250" class="imagebox" alt=""/>MARTELLINA CON CERNIERE A VISTA
+    <img id="cernieraVistaImg" style="margin-bottom:6px" src="/alwin3d2/images/MANIGLIE/MARTELLINA/Martellina-grigia-con.jpg" width="250" height="250" class="imagebox" alt=""/>
+    <span></span>
     <div class="middlebox">
         <div class="textbox">✔</div>
   </div>
@@ -1906,7 +1920,8 @@ if(document.getElementById){
     font-weight: bold;
     letter-spacing: 0.3px;
     color: #858585; font-size: 14px; line-height: 18px; background: #f1f1f1; width:100%; height: auto;">
-    <img id="cernieraScomparsaImg" style="margin-bottom:6px" src="/alwin3d2/images/MANIGLIE/MARTELLINA/Martellina-grigia-senza.jpg" width="250" height="250" class="imagebox" alt=""/>MARTELLINA CON CERNIERE A SCOMPARSA
+    <img id="cernieraScomparsaImg" style="margin-bottom:6px" src="/alwin3d2/images/MANIGLIE/MARTELLINA/Martellina-grigia-senza.jpg" width="250" height="250" class="imagebox" alt=""/>
+    <span></span>
     <div class="middlebox">
         <div class="textbox">✔</div>
   </div>
@@ -1932,6 +1947,14 @@ if(document.getElementById){
     </td>
     </tr>
     <tr>
+   <td style="">
+  <div class="boxpuls" style=" text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
+<button id="bigBtn_avorio" onclick="setHandleColor('avorio')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Avorio.jpg" width="200" height="200" class="imagebox" alt="">AVORIO</button>
+    <div class="middlebox">
+        <div style="margin-left:-10px" class="textbox">✔</div>
+  </div>
+  </div>
+  </td>
     <td style="width: 18%">
   <div class="boxpuls" style=" text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
 <button id="bigBtn_grigioperla" onclick="setHandleColor('grigioperla')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Grigio-perla.jpg" width="200" height="200" class="imagebox" alt="">GRIGIO PERLA</button>
@@ -1940,8 +1963,17 @@ if(document.getElementById){
   </div>
   </div>
   </td>
-        <td style="width:2%"></td>
-        <td style="width: 18%">
+<td style="width:2%"></td>
+ <td style="width: 18%">
+  <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
+<button id="bigBtn_marrone" onclick="setHandleColor('marrone')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Marrone.jpg" width="200" height="200" class="imagebox" alt="">MARRONE</button>
+    <div class="middlebox">
+        <div style="margin-left:-10px" class="textbox">✔</div>
+  </div>
+  </div>
+  </td>
+ <td style="width:2%"></td>
+ <td style="width: 18%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
 <button id="bigBtn_ottone" onclick="setHandleColor('ottone')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Ottone.jpg" width="200" height="200" class="imagebox" alt="">OTTONE</button>
     <div class="middlebox">
@@ -2093,7 +2125,7 @@ $(document).ready(function() {
      $("#luce").hide();
      $("#maniglie").show();
      $("#handleColorDiv").hide();
-     showHinge(false);
+     showHinge(false, "");
 
      handleTypeList = ['cremonese', 'martellina' , 'exens'];
      var filters = smvcGetFilter();
@@ -2572,7 +2604,7 @@ href="http://frontend6.orchestraweb.net/alwin3d2/images/PRODOTTI/GRANDI/COUNTRY/
                                             <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
 
 <form id='thisForm' method="POST" action="<?php echo $v_action?>">
-<input type="hidden" name="<?php echo $v_currSelImg?>" value="<?php echo $v_rendering?>">";
+<input type="hidden" name="<?php echo $v_currSelImg?>" value="<?php echo $v_rendering?>">
 <?php
 foreach ($v_parameters as $name => $value) {
  echo "<input type=\"hidden\" name=\"$name\" value=\"$value\">\n";
@@ -2783,11 +2815,16 @@ function showHandleColor(handleName) {
                   'bianco' : {'BIANCO':  'cremonese-bianco.jpg'},
                   'marrone': {'MARRONE': 'cremonese-marrone.jpg'}}
     };
+    /*
     var handleColors = ['grigioperla', 'avorio', 'ottone', 'nero'];
     for (var i = 0; i < handleColors.length; i++) {
         $("#bigBtn_" + handleColors[i]).hide();
+        $("#bigBtn_" + handleColors[i]).next().hide();
         $("#smallBtn_" + handleColors[i]).hide();
     };
+    */
+    $("button[id^=bigBtn_]").hide();
+    $("button[id^=smallBtn_]").hide();
 
    var filters = smvcGetFilter(["mvc-bright", "smvc-indoor-style", "smvc-win-type", "smvc-sideParam", "smvc-win-color", "smvc-handle-type"]);
    var options = smvcApplyFilter(filters);
@@ -2799,6 +2836,7 @@ function showHandleColor(handleName) {
    $("#handleColorDiv").show();
    for (var i = 0; i < colors.length; i++) {
         $("#bigBtn_" + colors[i]).show();
+        $("#bigBtn_" + colors[i]).next().show();
         $("#smallBtn_" + colors[i]).show();
    }
    $("#handleNameLabel").text('MANIGLIA - ' + handleName);
@@ -2806,14 +2844,17 @@ function showHandleColor(handleName) {
 
 function setHandleType(handleType) {
     //extra check for hinge
-    var options = smvcApplyFilter(smvcGetFilter());
+    var options = smvcApplyFilter(smvcGetFilter(
+        ["mvc-bright", "smvc-indoor-style", "smvc-win-type", 
+        "smvc-sideParam", "smvc-win-color"]));
+
     var flag = 1;
     for (var i = 0; i < options.length; i++) {
         var features =  options[i].split("/");
         var theFeature = features[features.length - 3]
         if ((theFeature === handleType + "-vista") | 
             (theFeature === handleType + "-scomparsa")) {
-            showHinge(true);
+            showHinge(true, handleType);
             flag = 0;
             break;
         } 
@@ -2845,14 +2886,16 @@ function setHandleColor(color){
  $("input[name= <?php echo $v_currSelImg?>").attr("value", encodeURI(tmp[0]));    
 }
 
-function showHinge(toggle) {
+function showHinge(toggle, handleType) {
     if (toggle) {
         $("#handle1").hide();
         $("#handle2").hide();
         $("#handle3").hide();
         $("#cernieraVista").show();
+        $("#cernieraVistaImg").next().text(handleType.toUpperCase() + ' CON CERNIERE A VISTA');
         $("#cernieraVistaSpacer").show();
         $("#cernieraScomparsa").show();
+        $("#cernieraScomparsaImg").next().text(handleType.toUpperCase() + ' CON CERNIERE A SCOMPARSA');
         $("#cernieraScomparsaSpacer").show();
     } else {
         $("#handle1").show();
