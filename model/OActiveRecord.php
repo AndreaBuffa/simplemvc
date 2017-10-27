@@ -24,7 +24,6 @@ abstract class OActiveRecord extends ActiveRecord {
 
     abstract function getAttrToSave();
 
-
 }
 
 ?>

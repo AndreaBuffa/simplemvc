@@ -132,11 +132,15 @@ class ConfigState extends State {
 
 	private function saveConf() {
 		//http://alwin.orchestraweb.net/api/modify_window.php?job_token=89ddd4c28166&category=CTG-PORTAFINESTRA-SCORREVOLE-2ANTE&window_id=new
-		require_once(__DIR__.'/../model/wizard/Result.php');
+		require_once(__DIR__.'/../model/wizard/job.php');
+		$job = new Job();
+		$job->save();
+		require_once(__DIR__.'/../model/wizard/result.php');
 		$jobWindow = new Result();
-		$jobWindow->job_token = '89ddd4c28166';
-		//$jobWindow->save();
-		$jobWindow->category = "CTG-PORTAFINESTRA-SCORREVOLE-2ANTE";//$_SESSION['category'];
+		$jobWindow->job_token = $job->token;
+		//$_SESSION['category'];
+		$jobWindow->category = "CTG-PORTAFINESTRA-SCORREVOLE-2ANTE";
+		$jobWindow->preset= strtoupper(strtolower($_SESSION["style"]));
 		//$jobWindow->window_id = 3;
 		$jobWindow->save();
 		if ($jobWindow->error_code == "0") {
@@ -144,9 +148,12 @@ class ConfigState extends State {
 				//test only
 				$jobWindow->window_id = $jobWindow->new_window_id;
 			}
-			$jobWindow->preset='GIACARTA';
-			$jobWindow->save();
 		}
+		require_once(__DIR__.'/../model/wizard/jobPrice.php');
+		$jobPrice = new JobPrice();
+		$jobPrice->job_token = $jobWindow->job_token;
+		$jobPrice->save();
+		var_dump($jobPrice);
 		//$r = new ReflectionClass('JobWindow');
         //var_dump($r->getDocComment());
 	}
