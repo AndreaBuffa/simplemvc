@@ -85,7 +85,6 @@ class CustomDB extends DB {
                                 foreach ($reflectRelObj->getProperties(ReflectionProperty::IS_PUBLIC) as $relObjProp) {
                                     foreach ($valueNode->children() as $child) {
                                         foreach ($child as $subName => $subValue) {
-                                            print($subName);
                                             if ($relObjProp->getName() == $subName) {
 
                                                 $relObj->$subName = $subValue->__toString();

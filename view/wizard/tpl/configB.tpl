@@ -730,10 +730,12 @@ if(document.getElementById){
 <td style="font-size: 12px; height: 24px; font-weight: 500; text-align: left; padding: 3px 0; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede;">inserisci le misure e le quantit&agrave;</td>
 </tr>
 <tr>
-<td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">BASE CM <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" value="100"/></td>
+<td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">BASE CM <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text"
+	value="<?php echo $v_windows[0]->w?>"/></td>
 </tr>
 <tr>
-<td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">ALTEZZA CM <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" value="200"/></td>
+<td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">ALTEZZA CM <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" 
+	value="<?php echo $v_windows[0]->h?>"/></td>
 </tr>
 <tr>
 <td style="font-size: 12px; height: 24px; text-align: justify; padding: 3px 0; border-bottom: 1px solid #dedede;">QUANTITA <input style="width: 70px; height: 24px; float: right;" maxlength="5" size="2" type="text" /></td>
@@ -1162,7 +1164,7 @@ style="width:30px;
     </div>
     </div>				
  <div class="md-overlay"></div></td>
-<td style="width:10%; text-align: right; border-top: 1px solid #dedede; border-bottom: 1px solid #dedede;" colspan="1"><input style="width: 70px; height: 24px; float: right;" maxlength="18" size="5" type="text" value="<?php echo $v_price?>"/></td>
+<td style="width:10%; text-align: right; border-top: 1px solid #dedede; border-bottom: 1px solid #dedede;" colspan="1"><input style="width: 70px; height: 24px; float: right;" maxlength="18" size="5" type="text" value="<?php echo $v_windows[0]->price?>"/></td>
 </tr>
 </tbody>
 </table>
@@ -1733,7 +1735,8 @@ style="width:30px;
     </div>
     </div>				
  <div class="md-overlay"></div></td>
-<td style="width:10%; text-align: right; border-bottom: 2px solid #c90000; border-top: 2px solid #c90000;" colspan="1"><input style="width: 70px; height: 24px; float: right;" maxlength="18" size="5" type="text" /></td>
+<td style="width:10%; text-align: right; border-bottom: 2px solid #c90000; border-top: 2px solid #c90000;" colspan="1"><input style="width: 70px; height: 24px; float: right;" maxlength="18" size="5" type="text"
+	value="<?php echo $v_price?>" /></td>
 </tr>
 </tbody>
 </table>
