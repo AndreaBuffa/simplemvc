@@ -815,7 +815,7 @@ $("#XLTermico").show();
     font-size: 14px;
     line-height: 24px;
     border-radius: 15px; 
-    text-decoration:none;" class="md-trigger" data-modal="infoante"><i style="font-size:24px; color:#ce0000" class="fa fa-question-circle"></i></button>
+    text-decoration:none;" class="md-trigger" data-modal="infoante"><i style="font-size:24px; color:#005cff" class="fa fa-info-circle"></i></button>
 
 <div class="md-modal md-effect-10" id="infoante">
 <div style="width:60%; padding:10px; font-size:15px; line-height:24px; text-align:left;" class="md-content">			
@@ -885,7 +885,7 @@ style="width:30px;
     font-size: 14px;
     line-height: 24px;
     border-radius: 15px; 
-    text-decoration:none;" class="md-trigger" data-modal="infotermiche"><i style="font-size:24px; color:#ce0000" class="fa fa-question-circle"></i></button>
+    text-decoration:none;" class="md-trigger" data-modal="infotermiche"><i style="font-size:24px; color:#005cff" class="fa fa-info-circle"></i></button>
 
 <div class="md-modal md-effect-10" id="infotermiche">
 <div style="width:60%; padding:10px; font-size:15px; line-height:24px; text-align:left;" class="md-content">			
@@ -993,7 +993,7 @@ FERRAMENTA CERNIERA</td>
     font-size: 14px;
     line-height: 24px;
     border-radius: 15px; 
-     text-decoration:none;" class="md-trigger" data-modal="infocerniera"><i style="font-size:24px; color:#ce0000" class="fa fa-question-circle"></i></button>
+     text-decoration:none;" class="md-trigger" data-modal="infocerniera"><i style="font-size:24px; color:#005cff" class="fa fa-info-circle"></i></button>
 
 <div class="md-modal md-effect-10" id="infocerniera">
 <div style="width:60%; padding:10px; font-size:15px; line-height:24px; text-align:left;" class="md-content">			
@@ -1117,7 +1117,7 @@ var polyfilter_scriptpath = '/js/';
     font-size: 14px;
     line-height: 24px;
     border-radius: 15px; 
-    text-decoration:none;" class="md-trigger" data-modal="totaleparziale"><i style="font-size:24px; color:#ce0000" class="fa fa-question-circle"></i></button>
+    text-decoration:none;" class="md-trigger" data-modal="totaleparziale"><i style="font-size:24px; color:#005cff" class="fa fa-info-circle"></i></button>
 
 <div class="md-modal md-effect-10" id="totaleparziale">
 <div style="width:60%; padding:10px; font-size:15px; line-height:24px; text-align:left;" class="md-content">			
@@ -1303,7 +1303,7 @@ $("#XLTermico2").show();
     font-size: 14px;
     line-height: 24px;
     border-radius: 15px; 
-    text-decoration:none;" class="md-trigger" data-modal="infoante2"><i style="font-size:24px; color:#ce0000" class="fa fa-question-circle"></i></button>
+    text-decoration:none;" class="md-trigger" data-modal="infoante2"><i style="font-size:24px; color:#005cff" class="fa fa-info-circle"></i></button>
 
 <div class="md-modal md-effect-10" id="infoante2">
 <div style="width:60%; padding:10px; font-size:15px; line-height:24px; text-align:left;" class="md-content">			
@@ -1373,7 +1373,7 @@ style="width:30px;
     font-size: 14px;
     line-height: 24px;
     border-radius: 15px; 
-    text-decoration:none;" class="md-trigger" data-modal="infotermiche2"><i style="font-size:24px; color:#ce0000" class="fa fa-question-circle"></i></button>
+    text-decoration:none;" class="md-trigger" data-modal="infotermiche2"><i style="font-size:24px; color:#005cff" class="fa fa-info-circle"></i></button>
 
 <div class="md-modal md-effect-10" id="infotermiche2">
 <div style="width:60%; padding:10px; font-size:15px; line-height:24px; text-align:left;" class="md-content">			
@@ -1605,7 +1605,7 @@ var polyfilter_scriptpath = '/js/';
     font-size: 14px;
     line-height: 24px;
     border-radius: 15px; 
-    text-decoration:none;" class="md-trigger" data-modal="totaleparziale2"><i style="font-size:24px; color:#ce0000" class="fa fa-question-circle"></i></button>
+    text-decoration:none;" class="md-trigger" data-modal="totaleparziale2"><i style="font-size:24px; color:#005cff" class="fa fa-info-circle"></i></button>
 
 <div class="md-modal md-effect-10" id="totaleparziale2">
 <div style="width:60%; padding:10px; font-size:15px; line-height:24px; text-align:left;" class="md-content">			
@@ -1688,7 +1688,7 @@ var polyfilter_scriptpath = '/js/';
     font-size: 14px;
     line-height: 24px;
     border-radius: 15px; 
-    text-decoration:none;" class="md-trigger" data-modal="totalefinale"><i style="font-size:24px; color:#ce0000" class="fa fa-question-circle"></i></button>
+    text-decoration:none;" class="md-trigger" data-modal="totalefinale"><i style="font-size:24px; color:#005cff" class="fa fa-info-circle"></i></button>
 
 <div class="md-modal md-effect-10" id="totalefinale">
 <div style="width:60%; padding:10px; font-size:15px; line-height:24px; text-align:left;" class="md-content">			
