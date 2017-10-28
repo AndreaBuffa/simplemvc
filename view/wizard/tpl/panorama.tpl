@@ -155,7 +155,7 @@ margin: 0 0 0 -20px;
 	background-color: rgba(241, 241, 241, 1);
 margin: 0 0 0 -15px;
 }
-.sp-page-builder .page-content #section-id-1494080026687{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}
+.sp-page-builder .page-content #section-id-1494080026687{margin:10px 0px 0px 0px;padding:0px 0px 0px 0px;}
 #column-id-1494080026688{padding:0 0 0 0;}
 #column-id-1494160813209{padding:0 0 0 0;}
 .rl_tooltips.popover {max-width: 400px;z-index: 10000;}

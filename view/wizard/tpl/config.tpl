@@ -160,7 +160,7 @@ margin: 0 0 0 0;
 margin: 0 0 0 -8px;
 padding: 0 0 0 0;
 }
-.sp-page-builder .page-content #section-id-1490355666609{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}
+.sp-page-builder .page-content #section-id-1490355666609{margin:10px 0px 0px 0px;padding:0px 0px 0px 0px;}
 #column-id-1490355666610{padding:0 0 0 0;}
 #sppb-addon-1490375998889 {
 padding: 5px 0 5px 5px;

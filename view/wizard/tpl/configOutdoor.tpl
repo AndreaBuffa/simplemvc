@@ -115,7 +115,8 @@ z-index:100
 }
 
 
-.sp-page-builder .page-content #section-id-1494172944745{margin:0px 0px 0px 0px;padding:15px 0px 10px 0px;}
+#section-id-1494172944745{margin: 0px 20px 10px 20px;padding:15px 15px 10px 15px;}
+#section-id-1490355666609{margin: 0px 0px 0px 30px;padding:20px 0px 0px 10px;}
 #column-id-1494085957782{padding:0 10px 0 -10px;background-color:rgba(241, 241, 241, 1);}
 #sppb-addon-1494080026683 {
 margin: 0 -10px 0 0;
@@ -157,7 +158,7 @@ margin: 0 0 0 0;
 margin: 0 0 0 -8px;
 padding: 0 0 0 0;
 }
-.sp-page-builder .page-content #section-id-1490355666609{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}
+
 #sppb-addon-1490375998889 {
 margin: 0 0 10px 0;
 padding: 0 0 0 0;
@@ -1124,7 +1125,7 @@ onclick="mostranascondi1('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', '
     onclick="mostranascondi4('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)"><div class="boxpuls" id="classic1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
-    color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/NOCE.jpg" width="250" height="250" class="imagebox" alt=""/>NOCE
+    color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" width="250" height="250" class="imagebox" alt=""/>NOCE
 	<div class="middlebox">
 		<div class="textbox">✔</div>
   </div>
