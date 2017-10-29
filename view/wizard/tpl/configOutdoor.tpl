@@ -1125,7 +1125,7 @@ onclick="mostranascondi1('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', '
     onclick="mostranascondi4('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)"><div class="boxpuls" id="classic1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
-    color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" width="250" height="250" class="imagebox" alt=""/>NOCE
+    color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" width="250" height="250" class="imagebox" alt=""/>MARRONE GOTICO
 	<div class="middlebox">
 		<div class="textbox">✔</div>
   </div>

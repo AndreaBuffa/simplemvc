@@ -1219,7 +1219,7 @@ $("#nascondimaniglie").click(function(){
 <table>
 <tbody>
 <tr>
-<td colspan="7">
+<td colspan="8">
 <div>
 <div class="sppb-addon-single-image-container">
 <div class="sppb-addon-image-overlay"></div>
@@ -1235,12 +1235,7 @@ href="">+</a>
 </td>
 <td style="vertical-align: middle; width:10%; border-bottom: 1px solid #858585; text-align: right; margin-right: 10px; font-family: Helvetica, Arial, 'sans-serif'; font-weight: normal; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 20px; padding-right:10px;">
 SCEGLI IL COLORE</td>
-<td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
-<div style="text-align: center; background: #ffffff;">
-<!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="GRIGIO PERLA" title="">
-<button id="smallBtn_grigioperla" onclick="setHandleColor('grigioperla')" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/GRIGIO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
-</div>
-</td>
+
 <td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
 <div style="text-align: center; background: #ffffff;">
 <!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="AVORIO" title="">
@@ -1248,6 +1243,24 @@ SCEGLI IL COLORE</td>
 <!-- END: Tooltips -->
 </div>
 </td>
+
+<td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
+<div style="text-align: center; background: #ffffff;">
+<!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="BIANCO" title="">
+<button id="smallBtn_bianco" onclick="setHandleColor('bianco')" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/BIANCO.jpg" alt="" width="35" height="35" /></button></span>
+<!-- END: Tooltips -->
+</div>
+</td>
+
+<td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
+<div style="text-align: center; background: #ffffff;">
+<!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="GRIGIO PERLA" title="">
+<button id="smallBtn_grigioperla" onclick="setHandleColor('grigioperla')" style="padding: 5px; font-size: 14px; border:none; background: transparent; text-align: left; "> <img style="float:left; border:1px solid #858585;" src="/alwin3d2/images/PRODOTTI/COLORI-PRODOTTI/GRIGIO.jpg" alt="" width="35" height="35" /></button></span><!-- END: Tooltips -->
+</div>
+</td>
+
+
+
 <td style="vertical-align: middle; width:3%; border-bottom: 1px solid #858585;">
 <div style="text-align: center; background: #ffffff;">
 <!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="MARRONE" title="">
@@ -1322,7 +1335,7 @@ SCEGLI IL COLORE</td>
 <table width="100%">
 <tbody>
 <tr>
-    <td style="border:0px solid #878787; text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 24px; background: rgba(255,255,255,0.8); color: #878787; font-weight:normal; padding: 5px 0 0; border-bottom:10px solid transparent;" colspan="9">SELEZIONA LA TIPOLOGIA</td>
+    <td style="border:0px solid #878787; text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 24px; background: rgba(255,255,255,0.8); color: #878787; font-weight:normal; padding: 5px 0 0; border-bottom:10px solid transparent;" colspan="12">SELEZIONA LA TIPOLOGIA</td>
     </tr>
 <tr>
 <td style="vertical-align: top; width:18%;">
@@ -1942,12 +1955,23 @@ if(document.getElementById){
  <table width="100%">
   <tbody>
     <tr>
-    <td align="center" style="width:100%;" colspan="9">
+    <td align="center" style="width:100%;" colspan="12">
         <div class="boxpuls" style="border:0px solid #878787; width:100%; text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 24px; background: rgba(255,255,255,0.8); color: #878787; padding: 3px; bottom:10px solid transparent; margin:10px 0; font-weight:normal; ">SCEGLI IL COLORE</div>
     </td>
     </tr>
     <tr>
-   <td style="">
+<td style="width:2%"></td>
+   <td style="width: 14%">
+  <div class="boxpuls" style=" text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
+<button id="bigBtn_bianco" onclick="setHandleColor('bianco')" style="padding:5px; font-size: 14px;">
+    <img src="" width="200" height="200" class="imagebox" alt="">BIANCO</button>
+    <div class="middlebox">
+        <div style="margin-left:-10px" class="textbox">✔</div>
+  </div>
+  </div>
+  </td>
+    <td style="width: 2%">
+   <td style="width: 14%">
   <div class="boxpuls" style=" text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
 <button id="bigBtn_avorio" onclick="setHandleColor('avorio')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Avorio.jpg" width="200" height="200" class="imagebox" alt="">AVORIO</button>
     <div class="middlebox">
@@ -1955,7 +1979,8 @@ if(document.getElementById){
   </div>
   </div>
   </td>
-    <td style="width: 18%">
+    <td style="width: 2%">
+    <td style="width: 14%">
   <div class="boxpuls" style=" text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
 <button id="bigBtn_grigioperla" onclick="setHandleColor('grigioperla')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Grigio-perla.jpg" width="200" height="200" class="imagebox" alt="">GRIGIO PERLA</button>
     <div class="middlebox">
@@ -1964,7 +1989,7 @@ if(document.getElementById){
   </div>
   </td>
 <td style="width:2%"></td>
- <td style="width: 18%">
+ <td style="width: 14%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
 <button id="bigBtn_marrone" onclick="setHandleColor('marrone')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Marrone.jpg" width="200" height="200" class="imagebox" alt="">MARRONE</button>
     <div class="middlebox">
@@ -1973,7 +1998,7 @@ if(document.getElementById){
   </div>
   </td>
  <td style="width:2%"></td>
- <td style="width: 18%">
+ <td style="width: 14%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
 <button id="bigBtn_ottone" onclick="setHandleColor('ottone')" style="padding:5px; font-size: 14px;"><img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Ottone.jpg" width="200" height="200" class="imagebox" alt="">OTTONE</button>
     <div class="middlebox">
@@ -1981,8 +2006,8 @@ if(document.getElementById){
   </div>
   </div>
   </td>
-        <td style="width:2%"></td>
-        <td style="width: 18%">
+<td style="width:2%"></td>
+        <td style="width: 14%">
   <div class="boxpuls" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #f1f1f1; width:100%; height: auto; margin-bottom:10px;">
 <button id="bigBtn_nero" onclick="setHandleColor('nero')" style="padding:5px; font-size: 14px;">
 <img src="/alwin3d2/images/MANIGLIE/EXENS/Exens-Inox-nero.jpg" width="200" height="200" class="imagebox" alt="">NERO</button>
@@ -1991,10 +2016,6 @@ if(document.getElementById){
   </div>
   </div>
         </td>
-<td style="width:2%"></td>
-        <td style="width: 18%"></td>
-<td style="width:2%"></td>
-        <td style="width: 18%"></td>
     </tr>
         </tbody>
     </table>
@@ -2808,22 +2829,27 @@ function updateRender(renderPath) {
 
 function showHandleColor(handleName) {
     var asset = {
-        'exens': {'avorio' : {'OTTONE':  'exens-ottone.jpg'},
-                  'bianco' : {'BIANCO':  'exens-bianco.jpg'},
-                  'marrone': {'MARRONE': 'exens-marrone.jpg'}},
-    'cremonese': {'avorio' : {'OTTONE':  'cremonese-ottone.jpg'},
-                  'bianco' : {'BIANCO':  'cremonese-bianco.jpg'},
-                  'marrone': {'MARRONE': 'cremonese-marrone.jpg'}}
+        'exens': {'avorio' : {'label': 'OTTONE', 'img': 'EXENS/Exens-Avorio.jpg'},
+                  'bianco' : {'label': 'BIANCO', 'img': 'EXENS/exensbianco.jpg'},
+                  'grigioperla' : {'label': '', 'img': 'EXENS/Exens-Grigio-perla.jpg'},
+                  'ottone' : {'label': 'OTTONE', 'img': 'EXENS/Exens-Ottone.jpg'},
+                  'nero' : {'label': 'NERO', 'img': 'EXENS/Exens-Inox-nero.jpg'},
+                  'marrone': {'label': 'MARRONE', 'img': 'EXENS/Exens-Marrone.jpg'}},
+    'cremonese': {'avorio' : {'label': 'OTTONE', 'img': 'CREMONESE/cremoneseavorio.jpg'},
+                  'bianco' : {'label': 'BIANCO', 'img': 'CREMONESE/cremonesebianco.jpg'},
+                  'ottone':    {'label': 'OTTONE', 'img': 'CREMONESE/Cremonese-Ottone2.jpg'},
+                  'marrone': {'label': 'MARRONE GOTICO', 'img': 'CREMONESE/cremonesemarronegotico.jpg'},
+                  'nero':    {'label': 'NERO', 'img': 'CREMONESE/Cremonese-Inox-nero.jpg'}},
+    'martellina': {'avorio' : {'label': 'AVORIO', 'img': 'MARTELLINA/martellinaavorio.jpg'},
+                  'bianco' : {'label': 'BIANCO', 'img': 'MARTELLINA/martellinabianco.jpg'},
+                  'grigioperla' : {'label': 'GRIGIO', 'img': 'MARTELLINA/Martellina-Grigio-perla.jpg'},
+                  'ottone' : {'label': 'OTTONE', 'img': 'MARTELLINA/Martellina-OttoneOK.jpg'},
+                  'marrone': {'label': 'MARRONE', 'img': 'MARTELLINA/martellinamarronegotico.jpg'},
+                  'nero': {'label': 'MARRONE', 'img': 'MARTELLINA/Martellina-Inox-nero.jpg'}   }
     };
-    /*
-    var handleColors = ['grigioperla', 'avorio', 'ottone', 'nero'];
-    for (var i = 0; i < handleColors.length; i++) {
-        $("#bigBtn_" + handleColors[i]).hide();
-        $("#bigBtn_" + handleColors[i]).next().hide();
-        $("#smallBtn_" + handleColors[i]).hide();
-    };
-    */
+
     $("button[id^=bigBtn_]").hide();
+    $("button[id^=bigBtn_]").next().hide();
     $("button[id^=smallBtn_]").hide();
 
    var filters = smvcGetFilter(["mvc-bright", "smvc-indoor-style", "smvc-win-type", "smvc-sideParam", "smvc-win-color", "smvc-handle-type"]);
@@ -2831,10 +2857,14 @@ function showHandleColor(handleName) {
    var colors = [];
    for (var i = 0; i < options.length; i++) {
         var tmp = options[i].split("/");
-        colors.push(tmp[tmp.length - 2]);
+        if (colors.indexOf(tmp[tmp.length - 2]) == -1) {
+          colors.push(tmp[tmp.length - 2]);
+        }
    };
    $("#handleColorDiv").show();
    for (var i = 0; i < colors.length; i++) {
+        $("#bigBtn_"  + colors[i]).children("img").attr("src",
+            "/alwin3d2/images/MANIGLIE/" + asset[handleName][colors[i]]['img']);
         $("#bigBtn_" + colors[i]).show();
         $("#bigBtn_" + colors[i]).next().show();
         $("#smallBtn_" + colors[i]).show();
@@ -2887,15 +2917,22 @@ function setHandleColor(color){
 }
 
 function showHinge(toggle, handleType) {
+    var asset = {
+        'exens': 'EXENS/Exens-Grigio-perla.jpg',
+        'cremonese': 'CREMONESE/Cremonese-Grigio-perla.jpg',
+        'martellina': 'MARTELLINA/Martellina-Grigio-perla.jpg',
+    };
     if (toggle) {
         $("#handle1").hide();
         $("#handle2").hide();
         $("#handle3").hide();
         $("#cernieraVista").show();
         $("#cernieraVistaImg").next().text(handleType.toUpperCase() + ' CON CERNIERE A VISTA');
+        $("#cernieraVistaImg").attr("src", "/alwin3d2/images/MANIGLIE/" + asset[handleType]);
         $("#cernieraVistaSpacer").show();
         $("#cernieraScomparsa").show();
         $("#cernieraScomparsaImg").next().text(handleType.toUpperCase() + ' CON CERNIERE A SCOMPARSA');
+        $("#cernieraScomparsaImg").attr("src", "/alwin3d2/images/MANIGLIE/" + asset[handleType]);
         $("#cernieraScomparsaSpacer").show();
     } else {
         $("#handle1").show();
