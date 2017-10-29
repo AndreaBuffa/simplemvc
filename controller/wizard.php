@@ -56,6 +56,13 @@ class StyleState extends State {
 		if ($page !== self::NAME) {
 				return header(HEADER_PREFIX.self::NAME);
 		}
+		$_SESSION[self::BRIGHTNESS_SESS_NAME] = self::BRIGHTNESS_DEF_VAL;
+		$_SESSION[self::WIN_TYPE_SESS] = self::WIN_TYPE_DEF;
+		$_SESSION[self::WIN_COLOR_SESS] = self::WIN_COLOR_DEF;
+		$_SESSION[self::WIN_COLOR_OUT_SESS] = self::WIN_COLOR_OUT_DEF;
+		$_SESSION[self::HANDLE_TYPE_SESS] = '';
+		$_SESSION[self::HANDLE_COLOR_SESS] = '';
+		$_SESSION[self::HINGE_TYPE_SESS] = '';
 		if ($method === 'GET') {
 			require_once(__DIR__.'/../view/wizard/wizView.php');
 			$this->view = new WizView();
@@ -91,6 +98,14 @@ class PanoramaState extends State {
 					break;
 			}	
 		}
+
+		$_SESSION[self::BRIGHTNESS_SESS_NAME] = self::BRIGHTNESS_DEF_VAL;
+		$_SESSION[self::WIN_TYPE_SESS] = self::WIN_TYPE_DEF;
+		$_SESSION[self::WIN_COLOR_SESS] = self::WIN_COLOR_DEF;
+		$_SESSION[self::WIN_COLOR_OUT_SESS] = self::WIN_COLOR_OUT_DEF;
+		$_SESSION[self::HANDLE_TYPE_SESS] = '';
+		$_SESSION[self::HANDLE_COLOR_SESS] = '';
+		$_SESSION[self::HINGE_TYPE_SESS] = '';
 	
 		if ($method === 'GET') {
 			require_once(__DIR__.'/../view/wizard/wizView.php');
