@@ -456,19 +456,19 @@ if(document.getElementById){
 <tr>
 <td style="width:50%; height:85px;">
 <div style="margin-left:15px; margin-right:30px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
-<a style="padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);"  class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/alwin3d2/index.php/country-portafinestra-battente">
+<a style="padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);"  class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in"  href="<?php echo "$v_METHOD://$v_HOST/$v_APP/index.php?page=config"?>">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-search"></i>
 </span></a>
 </div>
 <div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);" >
-<a style="padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/alwin3d2/index.php/country-montagna">
+<a style="padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/index.php?page=opening"?>">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-pencil"></i>
 </span></a>
 </div>
 <div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
-<a style="padding-left: 13px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="/alwin3d2/index.php/country-panorami">
+<a style="padding-left: 13px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/index.php?page=panorama"?>">
 <span class="sppb-icon-inner">
 <i style="color:#ffffff; padding-top:10px;" class="fa fa-map-marker"></i>
 </span></a>

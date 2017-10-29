@@ -52,7 +52,7 @@ class StyleState extends State {
 
 	public function process($method, $page) {
 		if ($page !== self::NAME) {
-			return header(HEADER_PREFIX.self::NAME);
+				return header(HEADER_PREFIX.self::NAME);
 		}
 		if ($method === 'GET') {
 			require_once(__DIR__.'/../view/wizard/wizView.php');
@@ -79,8 +79,17 @@ class PanoramaState extends State {
 
 	public function process($method, $page) {
 		if ($page !== self::NAME) {
-			return header(HEADER_PREFIX.self::NAME);
-		}		
+			switch ($page) {
+				case StyleState::NAME:
+					$_SESSION['wizState'] = new StyleState();
+					return header(HEADER_PREFIX.$page);
+					break;
+				default:
+					return header(HEADER_PREFIX.self::NAME);
+					break;
+			}	
+		}
+	
 		if ($method === 'GET') {
 			require_once(__DIR__.'/../view/wizard/wizView.php');
 			$this->view = new WizView();
@@ -105,9 +114,22 @@ class OpeningState extends State {
 	const NAME = 'opening';
 
 	public function process($method, $page) {
-		if ($page !== self::NAME) {
-			return header(HEADER_PREFIX.self::NAME);
-		}
+		switch ($page) {
+			case self::NAME:
+				break;
+			case StyleState::NAME:
+				$_SESSION['wizState'] = new StyleState();
+				return header(HEADER_PREFIX.$page);
+				break;
+			case PanoramaState::NAME:
+				$_SESSION['wizState'] = new PanoramaState();
+				return header(HEADER_PREFIX.$page);
+				break;
+			default:
+				return header(HEADER_PREFIX.self::NAME);
+				break;
+		}	
+		
 		if ($method === 'GET') {
 			require_once(__DIR__.'/../view/wizard/wizView.php');
 			$this->view = new WizView();
@@ -137,8 +159,28 @@ class Outdoor extends State {
 	const NAME = 'outdoor';
 
 	public function process($method, $page) {
-		if ($page !== self::NAME) {
-			return header(HEADER_PREFIX.self::NAME);
+		switch ($page) {
+			case self::NAME:
+				break;
+			case StyleState::NAME:
+				$_SESSION['wizState'] = new StyleState();
+				return header(HEADER_PREFIX.$page);
+				break;
+			case PanoramaState::NAME:
+				$_SESSION['wizState'] = new PanoramaState();
+				return header(HEADER_PREFIX.$page);
+				break;
+			case OpeningState::NAME:
+				$_SESSION['wizState'] = new OpeningState();
+				return header(HEADER_PREFIX.$page);
+				break;
+			case ConfigState::NAME:
+				$_SESSION['wizState'] = new ConfigState();
+				return header(HEADER_PREFIX.$page);
+				break;
+			default:
+				return header(HEADER_PREFIX.self::NAME);
+				break;
 		}
 		if ($method === 'GET') {
 			require_once(__DIR__.'/../model/wizard/rendering.php');
