@@ -2837,6 +2837,7 @@ function showHandleColor(handleName) {
                   'marrone': {'label': 'MARRONE', 'img': 'EXENS/Exens-Marrone.jpg'}},
     'cremonese': {'avorio' : {'label': 'OTTONE', 'img': 'CREMONESE/cremoneseavorio.jpg'},
                   'bianco' : {'label': 'BIANCO', 'img': 'CREMONESE/cremonesebianco.jpg'},
+                  'grigioperla' : {'label': '', 'img': 'CREMONESE/Cremonese-Grigio-perla.jpg'},
                   'ottone':    {'label': 'OTTONE', 'img': 'CREMONESE/Cremonese-Ottone2.jpg'},
                   'marrone': {'label': 'MARRONE GOTICO', 'img': 'CREMONESE/cremonesemarronegotico.jpg'},
                   'nero':    {'label': 'NERO', 'img': 'CREMONESE/Cremonese-Inox-nero.jpg'}},
