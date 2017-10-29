@@ -26,6 +26,7 @@ abstract class State implements iState {
 	const WIN_COLOR_OUT_DEF = 'avorio';
 	const CURR_IMG_SEL = 'currSelImg';
 	const CURR_IMG_SEL_SESS = 'currSelImg'; 
+	const JOB_PRICE_SESS = 'job-price';
 }
 
 class StartState extends State {
@@ -41,6 +42,7 @@ class StartState extends State {
 		$_SESSION[self::HANDLE_TYPE_SESS] = '';
 		$_SESSION[self::HANDLE_COLOR_SESS] = '';
 		$_SESSION[self::HINGE_TYPE_SESS] = '';
+		$_SESSION[self::JOB_PRICE_SESS] = '';
 		$_SESSION["token"] = "";
 		$_SESSION['wizState'] = new StyleState();
 		return header(HEADER_PREFIX.StyleState::NAME);

@@ -18,7 +18,7 @@ class ConfigState extends State {
 		}
 		$jobWindow->category = ($_SESSION['category'] == 'scorrevole')  ? 
 			"CTG-PORTAFINESTRA-SCORREVOLE-2ANTE" : "CTG-FINESTRA-SCORREVOLE-2ANTE";
-		$jobWindow->preset= strtoupper(strtolower($_SESSION["style"]));
+		$jobWindow->preset = strtoupper(strtolower($_SESSION["style"]));
 		$jobWindow->save();
 		if ($jobWindow->error_code == "0") {
 			if ($jobWindow->new_window_id) {
