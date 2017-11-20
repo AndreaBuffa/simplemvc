@@ -35,24 +35,13 @@
 .margini1 {
     margin-right: -15px;
 }
-.margini1bis {
-margin-left: -20px;
-margin-right: -15px;
-}
 .margini2 {
-margin-left: -20px;
-margin-right: -15px;
-}
-.margini2bis {
-margin-left: -35px;
-margin-right: -15px;
-}
-.margini2tris {
-margin-left: -20px;
-margin-right: -8px;
+float:right;
+margin-right: -10px;
 }
 .margini3 {
-    margin-left: -15px;
+    width: 111%;
+    float:right;
     border-left: 1px solid #858585;
 }
 .margini4 {
@@ -60,7 +49,11 @@ margin-right: -8px;
    padding-left: 5px;
     border-left: 1px solid #858585;
 }
-
+.paddingzero2 {
+margin-right:-10px;
+float:right;
+width:120%;
+}
 #sppb-addon-1494148931288 a {
     color: rgba(135, 135, 135, 1);
 }
@@ -113,10 +106,19 @@ z-index:1
 .posizione2 {
 z-index:100
 }
-
+.marginia2 {
+    margin-left: -10px;
+    margin-right: 0px;
+    margin-bottom:-15px;
+}
+.marginib2 {
+    margin-left: 0px;
+    margin-right: -10px;
+    margin-bottom:-15px;
+}
 
 #section-id-1494172944745{margin: 0px 20px 10px 20px;padding:15px 15px 10px 15px;}
-#section-id-1490355666609{margin: 0px 0px 0px 30px;padding:20px 0px 0px 10px;}
+#section-id-1490355666609{margin: 0px 0px 0px 0px;padding:0px 0px 0px 0px;}
 #column-id-1494085957782{padding:0 10px 0 -10px;background-color:rgba(241, 241, 241, 1);}
 #sppb-addon-1494080026683 {
 margin: 0 -10px 0 0;
@@ -184,7 +186,7 @@ padding: 0 0px 0 0px;
 }
 #sppb-addon-1490355890066 .sppb-addon-image-overlay{background-color: rgba(255, 255, 255, 0.51);}
 .sp-page-builder .page-content #section-id-1494256006413{margin:0px 0px 0px -15px;padding:0px 0px 0px 0px;}
-#column-id-1494256006414{padding:0 5px 0 5px;background-image:url(<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>);background-repeat:no-repeat;background-size:cover;background-attachment:scroll;background-position:0 0;}
+#column-id-1494256006414{margin-left:-15px; padding:0; background-image:url(<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>);background-repeat:no-repeat;background-size:cover;background-attachment:scroll;background-position:0 0;}
 .sp-page-builder .page-content #avorio{margin:0px 5px 0px -5px;padding:0px 0px 0px 0px;}
 #sppb-addon-1490731691299 {
 margin: 0 -5px 0 -8px;
@@ -384,7 +386,6 @@ text-align: center;
 	<script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
 	<script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
 	<script src="/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
-	<script src="/components/com_sppagebuilder/assets/js/parallax.min.js" type="text/javascript"></script>
 	<script src="/components/com_sppagebuilder/assets/js/sppagebuilder.js" type="text/javascript"></script>
 	<script src="/components/com_sppagebuilder/assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
 	<script src="/media/tooltips/js/script.min.js?v=6.0.3" type="text/javascript"></script>
@@ -728,7 +729,25 @@ var sp_offanimation = 'default';
             </div>
     <div class="clearfix"></div>
 </div>
-</div></div></div></div></div></div></div></div></div><section id="section-id-1490355666609" class="sppb-section "  ><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-3 sppb-col-sm-3"><div id="column-id-1490355666610" class="sppb-column  posizione2 margini2tris" ><div class="sppb-column-addons"><div id="sppb-addon-1490375998889" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="section-id-1490355666609" class="sppb-section">
+<div class="sppb-row-container">
+<div class="sppb-row">
+<div class="sppb-col-md-3 sppb-col-sm-3">
+<div id="column-id-1490355666610" class="sppb-column " >
+<div class="sppb-column-addons">
+<div id="sppb-addon-1490375998889" class="clearfix" >
+<div class="sppb-addon sppb-addon-text-block sppb-text-left ">
+<div class="sppb-addon-content">
+<div>
 <table width="100%">
 <tbody>
 <tr>
@@ -738,16 +757,67 @@ var sp_offanimation = 'default';
 </tr>
 </tbody>
 </table>
-</div></div></div></div><div id="sppb-addon-1494247615170" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><button style="background: #ffffff; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="mostra">
-<div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">Scegli il colore dell'esterno</div> <div style="float:right; margin-right:5px"><i class="fa fa-plus"></i></div></div></button>
+</div>
+</div>
+</div>
+</div>
+<div id="sppb-addon-1494247615170" class="clearfix" >
+<div class="sppb-addon sppb-addon-raw-html ">
+<div class="sppb-addon-content">
+<button style="background: #ffffff; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="mostra">
+<div>
+<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">Scegli il colore dell'esterno</div> 
+<div style="float:right; margin-right:5px"><i class="fa fa-plus"></i>
+</div>
+</div>
+</button>
 <button style="background: #ce0000; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="nascondi">
-<div><div style="float:left; vertical-align: middle; padding-top:7px; color:#ffffff;">Scegli il colore dell'esterno</div> <div style="float:right; margin-right:5px"><i style="color:#ffffff" class="fa fa-plus"></i></div></div></button></div></div></div><div id="sppb-addon-1494174149873" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content">
+<div>
+<div style="float:left; vertical-align: middle; padding-top:7px; color:#ffffff;">Scegli il colore dell'esterno</div> 
+<div style="float:right; margin-right:5px"><i style="color:#ffffff" class="fa fa-plus"></i>
+</div>
+</div>
+</button>
+</div>
+</div>
+</div>
+<div id="sppb-addon-1494174149873" class="clearfix" >
+<div class="sppb-addon sppb-addon-raw-html ">
+<div class="sppb-addon-content">
 <a href="javascript: wizPost([{name: 'action', value:'config'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
-<div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFIGURA INTERNO</div> <div style="float:right; margin-right:5px"><i class="fa fa-pencil-square-o"></i></div></div>
-</a></div></div></div><div id="sppb-addon-1494509008898" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content">
+<div>
+<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFIGURA INTERNO</div> 
+<div style="float:right; margin-right:5px"><i class="fa fa-pencil-square-o"></i>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div id="sppb-addon-1494509008898" class="clearfix" >
+<div class="sppb-addon sppb-addon-raw-html ">
+<div class="sppb-addon-content">
 <a href="javascript: wizPost([{name: 'action', value:'configB'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
-<div><div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFERMA E PROSEGUI</div> <div style="float:right; margin-right:5px"><i class="fa fa-floppy-o"></i></div></div>
-</a></div></div></div></div></div></div><div class="sppb-col-md-9 sppb-col-sm-9"><div id="column-id-1490355666611" class="sppb-column  posizione1" ><div class="sppb-column-addons"><div id="sppb-addon-1494256006468" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><link rel="stylesheet" type="text/css" href="/css/component.css" />
+<div>
+<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFERMA E PROSEGUI
+</div> 
+<div style="float:right; margin-right:5px"><i class="fa fa-floppy-o"></i>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sppb-col-md-9 sppb-col-sm-9">
+<div id="column-id-1490355666611" class="sppb-column" >
+<div class="sppb-column-addons">
+<div id="sppb-addon-1494256006468" class="clearfix" >
+<div class="sppb-addon sppb-addon-raw-html ">
+<div class="sppb-addon-content">
+<link rel="stylesheet" type="text/css" href="/css/component.css" />
 <script src="/js/modernizr.custom.js"></script>
 
 <style type="text/css">
@@ -1050,105 +1120,122 @@ $("#nero1").click(function(){
  updateRender(tmp[0]);
 });
 });
-// ]]></script></div></div></div><div id="base" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1490355666617" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1490355890066" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div>
+// ]]>
+</script>
+</div>
+</div>
+</div>
+
+<div id="base" class="sppb-section "  >
+<div class="sppb-container-inner">
+<div class="sppb-row">
+<div class="sppb-col-md-12">
+<div id="column-id-1490355666617" class="sppb-column z-index:2" >
+<div class="sppb-column-addons">
+<div id="sppb-addon-1490355890066" class="clearfix" >
+<div class="sppb-addon sppb-addon-single-image sppb-text-center ">
+<div class="sppb-addon-content">
+<div class="sppb-addon-single-image-container">
+<div class="sppb-addon-image-overlay"></div>
 <a id="renderImg" class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a>
-<img id="renderImgPopUp" class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="" title=""></div></div></div></div></div></div></div></div></div></div><div id="section-id-1494256006413" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494256006414" class="sppb-column z-index:2" ><div class="sppb-column-addons"><div id="sppb-addon-1494247615153" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><div id="baseok" style="width:100%; height:500px; ">
+<img id="renderImgPopUp" class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="" title="">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="section-id-1494256006413" class="sppb-section "  >
+<div class="sppb-container-inner">
+<div class="sppb-row">
+<div class="sppb-col-md-12">
+<div id="column-id-1494256006414" class="sppb-column z-index:2" >
+<div class="sppb-column-addons">
+<div id="sppb-addon-1494247615153" class="clearfix" >
+<div class="sppb-addon sppb-addon-raw-html ">
+<div class="sppb-addon-content">
+<div id="baseok" style="width:100%; height:500px; ">
 <div id="scelta1" style="width:100%; ">
 <table width="100%">
 <tbody>
 <tr>
-	<td style="border:0px solid #878787; text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 24px; background: rgba(255,255,255,0.8); color: #878787; font-weight:normal; padding: 5px 0 0; border-bottom:10px solid transparent;" colspan="9">SCEGLI IL COLORE</td>
+	<td style="border:0px solid #878787; text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 24px; background: rgba(255,255,255,0.8); color: #878787; font-weight:normal; padding: 5px 0 0; border-bottom:10px solid transparent;" colspan="12">
+	SCEGLI IL COLORE
+	</td>
 	</tr>
 <tr>
-	<td style="vertical-align: top; width:18%;">
-   <button style="width:100%;
-    text-align: center;
-    cursor: pointer;
-    background-color: #ffffff; 
-    box-sizing: none;
-    padding: 0;
-    border: none;" 
+<td style="width:1%"></td>
+	<td style="vertical-align: top; width:15%;">
+   <button style="width: 100%; text-align: center; cursor: pointer; background-color: #ffffff; padding: 5px 5px 0; border: none; border-radius: 0;" 
 onclick="mostranascondi1('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)">
-<div class="boxpuls" id="luce1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/AVORIO.jpg" class="imagebox" alt=""/>AVORIO
+<div class="boxpuls" id="luce1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;">
+<img src="/images/PRODOTTI/COLORI-PRODOTTI/AVORIO.jpg" class="imagebox" alt=""/>
+AVORIO
 	<div class="middlebox">
 		<div class="textbox">✔</div>
   </div>
   </div></button>
 	</td>
 	<td style="width:1%"></td>
-	<td align="center" style="width:18%;">
-	<button style="width:100%;
-    text-align: center;
-    cursor: pointer;
-    background-color: #ffffff; 
-    box-sizing: none;
-    padding: 0;
-    border:none;" 
+	<td align="center" style="width:15%;">
+	<button style="width: 100%; text-align: center; cursor: pointer; background-color: #ffffff; padding: 5px 5px 0; border: none; border-radius: 0;" 
     onclick="mostranascondi2('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)">
     <div class="boxpuls" id="vetro1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
-    color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/BIANCO.jpg" width="250" height="250" class="imagebox" alt=""/>BIANCO
+    color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/BIANCO.jpg" width="250" height="250" class="imagebox" alt=""/>
+    BIANCO
 	<div class="middlebox">
 		<div class="textbox">✔</div>
   </div>
   </div></button>
 	</td>
 	<td style="width:1%"></td>
-	<td align="center" style="width:18%;">
-	<button style="width:100%;
-    text-align: center;
-    cursor: pointer;
-    background-color: #ffffff; 
-    box-sizing: none;
-    padding: 0;
-    border:none;" 
+	<td align="center" style="width:15%;">
+	<button style="width: 100%; text-align: center; cursor: pointer; background-color: #ffffff; padding: 5px 5px 0; border: none; border-radius: 0;" 
     onclick="mostranascondi3('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)">
     <div class="boxpuls" id="nathura1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
-    color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/GRIGIO.jpg" width="250" height="250" class="imagebox" alt=""/>GRIGIO
+    color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/GRIGIO.jpg" width="250" height="250" class="imagebox" alt=""/>
+    GRIGIO
 	<div class="middlebox">
 		<div class="textbox">✔</div>
   </div>
   </div></button>
 	</td>
 	<td style="width:1%"></td>
-		<td align="center" style="width:18%;">
-		<button style="width:100%;
-    text-align: center;
-    cursor: pointer;
-    background-color: #ffffff; 
-    box-sizing: none;
-    padding: 0;
-    border:none;" 
+		<td align="center" style="width:15%;">
+		<button style="width: 100%; text-align: center; cursor: pointer; background-color: #ffffff; padding: 5px 5px 0; border: none; border-radius: 0;" 
     onclick="mostranascondi4('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)"><div class="boxpuls" id="classic1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
-    color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" width="250" height="250" class="imagebox" alt=""/>MARRONE GOTICO
+    color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" width="250" height="250" class="imagebox" alt=""/>
+    MARRONE
 	<div class="middlebox">
 		<div class="textbox">✔</div>
   </div>
   </div></button>
 	</td>
 	<td style="width:1%"></td>
-		<td align="center" style="width:18%;">
-		<button style="width:100%;
-    text-align: center;
-    cursor: pointer;
-    background-color: #ffffff; 
-    box-sizing: none;
-    padding: 0;
-    border:none;" 
+		<td align="center" style="width:15%;">
+		<button style="width: 100%; text-align: center; cursor: pointer; background-color: #ffffff; padding: 5px 5px 0; border: none; border-radius: 0;" 
     onclick="mostranascondi5('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)"><div class="boxpuls" id="invisio1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
-    color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/NERO.jpg" width="250" height="250" class="imagebox" alt=""/>NERO
+    color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/NERO.jpg" width="250" height="250" class="imagebox" alt=""/>
+    NERO
 	<div class="middlebox">
 		<div class="textbox">✔</div>
   </div>
   </div></button>
 	</td>
+	<td style="width:1%"></td>
+		<td align="center" style="width:15%;"></td>
 </tr>
 	</tbody>
   </table>

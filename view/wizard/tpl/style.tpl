@@ -36,41 +36,25 @@
     <link href="/templates/shaper_helix3/css/presets/preset4.css" rel="stylesheet" type="text/css" class="preset" />
     <link href="/plugins/system/helix3/assets/css/pagebuilder.css" rel="stylesheet" type="text/css" />
     <link href="/templates/shaper_helix3/css/frontend-edit.css" rel="stylesheet" type="text/css" />
-<!--
-.margini1 {
-    margin-right: -15px;
-}
-.margini2 {
-margin-left: -15px;
-margin-right: -15px;
-}
-.margini3 {
-    margin-left: -15px;
-    border-left: 1px solid #858585;
-}
-.margini4 {
-   margin-left: -20px;
-   padding-left: 5px;
-    border-left: 1px solid #858585;
-}
--->
+
     <style type="text/css">
 .margini1 {
     margin-right: -15px;
 }
 .margini2 {
-float:right;
-margin-right: -30px;
+	float:right;
+	margin-right: -30px;
+	width:111%;
 }
 .margini3 {
-width:111%;
+	width:111%;
     float:right;
     border-left: 1px solid #858585;
 }
 .margini4 {
    margin-left: -20px;
    padding-left: 5px;
-    border-left: 1px solid #858585;
+	border-left: 1px solid #858585;
 }
 .mfp-close-btn-in .mfp-content .mfp-close {
 color:#333;
@@ -94,18 +78,12 @@ height:85px;
 padding: 10px;
 }
 
-
 #column-id-1494085957783{padding:17px 0px 0px 0px;background-color:rgba(241, 241, 241, 1);}
 #sppb-modal-1506011208213.white-popup-block {width: 500px; height: 680px;}
-#sppb-addon-1506011208213 #sppb-modal-1506011208213-selector.sppb-btn-custom { background-color: rgba(201, 0, 0, 1); color: #ffffff;}
-#sppb-addon-1506011208213 #sppb-modal-1506011208213-selector.sppb-btn-custom:hover { background-color: rgba(184, 0, 0, 1); color: #ffffff;}
+#sppb-addon-1506011208213 #sppb-modal-1506011208213-selector.sppb-btn-custom { background-color: rgba(201, 0, 0, 1); color: #ffffff; padding:5px 10px; margin-top:17px; white-space:normal;}
+#sppb-addon-1506011208213 #sppb-modal-1506011208213-selector.sppb-btn-custom:hover { background-color: rgba(184, 0, 0, 1); color: #ffffff; padding:5px 10px; margin-top:17px; white-space:normal;}
 #column-id-1494085957784{background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494169781290 {
-    background-color: rgba(241, 241, 241, 1);
-padding: 31px 5px 8px 5px;
-}
-
-
+#sppb-addon-1494169781290 {background-color: rgba(241, 241, 241, 1); padding: 31px 5px 8px 5px;}
 
 #column-id-1506011208205 {
 background-color: rgba(241, 241, 241, 1);
@@ -150,6 +128,7 @@ background-color: rgba(241, 241, 241, 1);
     margin-left: 0px;
     margin-right: -10px;
 }
+
 #sppb-addon-1505897235724 a {
     color: rgba(135, 135, 135, 1);
 }
@@ -178,45 +157,6 @@ margin-right: -35px;
 height:85px;
 }
 
-#sppb-addon-1494148931288 a {
-    color: rgba(135, 135, 135, 1);
-}
-
-#sppb-addon-1494148931288 a:hover {
-   color: #ce0000;
-}
-
-#sppb-addon-1494158935833 a {
-    color: rgba(135, 135, 135, 1);
-}
-
-#sppb-addon-1494158935833 a:hover {
-   color: #ce0000;
-}
-
-#sppb-addon-1494159618661 a {
-    color: rgba(135, 135, 135, 1);
-}
-
-#sppb-addon-1494159618661 a:hover {
-   color: #ce0000;
-}
-#sppb-addon-1494169577394 a {
-    color: rgba(135, 135, 135, 1);
-}
-
-#sppb-addon-1494169577394 a:hover {
-   color: #ce0000;
-}
-
-.marginia {
-    margin-left: -10px;
-    margin-right: 0px;
-}
-.marginib {
-    margin-left: 0px;
-    margin-right: -10px;
-}
 #sppb-addon-1494169999418 a {
     color: rgba(135, 135, 135, 1);
 }
@@ -225,57 +165,28 @@ height:85px;
    color: #ce0000;
 }
 
-.marginia2 {
-    margin-left: -10px;
-    margin-right: 0px;
-    margin-bottom:-15px;
-}
-.marginib2 {
-    margin-left: 0px;
-    margin-right: -10px;
-    margin-bottom:-15px;
-}
-.marginic2 {
-margin-left: -15px;
-margin-right: -35px;
-height:85px;
-}
 .sp-page-builder .page-content #section-id-1494085957781{margin:0px 0px 0px 0px;padding:15px 0px 10px 0px;}
 #column-id-1494085957782{padding:0 10px 0 0;background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494080026683 {
-margin: 0 -15px 0 0;
-}
+#sppb-addon-1494080026683 {margin: 0 -15px 0 0;}
 #column-id-1494085957783{padding:0 0 0 0;background-color:rgba(241, 241, 241, 1);}
 #column-id-1494085957784{padding:0px 0 0px 0;background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494861475393 .sppb-modal-selector span {display:inline-block;line-height:1;color:rgba(135, 135, 135, 1);}#sppb-addon-1494861475393 .sppb-modal-selector span > i {font-size:26px;width:26px;height:26px;line-height:26px;}#sppb-modal-1494861475393 {max-width: 1000px; max-height: 600px;}
+#sppb-addon-1494861475393 .sppb-modal-selector span {display:inline-block;line-height:1;color:rgba(135, 135, 135, 1);}
+#sppb-addon-1494861475393 .sppb-modal-selector span > i {font-size:26px;width:26px;height:26px;line-height:26px;}
+#sppb-modal-1494861475393 {max-width: 1000px; max-height: 600px;}
 #column-id-1494861475404{background-color:rgba(241, 241, 241, 1);}
-
 #column-id-1494861475405{background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494169781290 {
-padding: 31px 5px 8px 5px;
-}
+#sppb-addon-1494169781290 {padding: 31px 5px 8px 5px;}
 .sp-page-builder .page-content #section-id-1494158935829{margin:0px 0px 0px 0px;padding:0px 0px 10px 0px;}
 #column-id-1494158935830{padding:0 10px 0 0;background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494158935831 {
-margin: 0 -15px 0 0;
-}
+#sppb-addon-1494158935831 {margin: 0 -15px 0 0;}
 #column-id-1494158935832{padding:0 0 0 0;background-color:rgba(241, 241, 241, 1);}
-
 #column-id-1494158935834{background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494169999418 {
-    background-color: rgba(241, 241, 241, 1);
-margin: 0 0 0 0;
-padding: 13px 5px 13px 5px;
-}
+#sppb-addon-1494169999418 {background-color: rgba(241, 241, 241, 1);margin: 0 0 0 0;padding: 7px 5px 0px 15px;border-left:1px solid #858585;}
 .sp-page-builder .page-content #section-id-1494085957868{margin:0px 0px 5px 0px;padding:0px 0px 0px 0px;background-color:rgba(241, 241, 241, 1);}
 #column-id-1494085957869{background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494085957870 {
-margin: 0 0px 0 0;
-}
+#sppb-addon-1494085957870 {margin: 0 0px 0 0;}
 #column-id-1494085957871{padding:0 0 0 0;background-color:rgba(241, 241, 241, 1);}
-
 #column-id-1494085957873{background-color:rgba(241, 241, 241, 1);}
-
 .sp-page-builder .page-content #section-id-1494080026687{margin:10px 0px 0px 0px;padding:0px 0px 0px 0px;}
 #column-id-1494080026688{padding:0 0 0 0;}
 #column-id-1494160813209{padding:0 0 0 0;}
@@ -432,7 +343,6 @@ margin-left:-20px;
 .centro {
 text-align: center;
 }
-#sp-top-bar{ background-color:#f5f5f5;color:#999999; }
     </style>
     <script src="/media/system/js/core.js" type="text/javascript"></script>
     <script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
@@ -464,347 +374,449 @@ var sp_offanimation = 'default';
     <meta content="website" property="og:type"/>
     <meta content="http://94.177.177.252/index.php/stili" property="og:url" />
     <meta content="stili" property="og:title" />
+</head>
+<body class="site com-sppagebuilder view-page no-layout no-task itemid-115 it-it ltr  layout-fluid off-canvas-menu-init">
+    <div class="body-wrapper">
+        <div class="body-innerwrapper">
+            <div class="sp-pre-loader">
+                <div class="sp-loader-bubble-loop"></div>
+            </div>
 
-                                </head>
-                <body class="site com-sppagebuilder view-page no-layout no-task itemid-115 it-it ltr  layout-fluid off-canvas-menu-init">
-
-                    <div class="body-wrapper">
-                        <div class="body-innerwrapper">
-                            <div class="sp-pre-loader"><div class="sp-loader-bubble-loop"></div></div><section id="sp-top-bar"><div class="container"><div class="row"><div id="sp-top1" class="col-sm-6 col-md-6 hidden-md hidden-lg hidden-sm hidden-xs"><div class="sp-column "></div></div><div id="sp-top2" class="col-sm-6 col-md-6 hidden-md hidden-lg hidden-sm hidden-xs"><div class="sp-column "></div></div></div></div></section><header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-3 col-md-3 hidden-md hidden-lg hidden-sm hidden-xs"><div class="sp-column "><div class="logo"><a href="/"><img class="sp-default-logo" src="/templates/shaper_helix3/images/presets/preset4/logo.png" alt="alwin3d"><img class="sp-retina-logo" src="/templates/shaper_helix3/images/presets/preset4/logo@2x.png" alt="alwin3d" width="145" height="48"></a></div></div></div><div id="sp-menu" class="col-xs-4 col-sm-9 col-md-9 hidden-md hidden-lg hidden-sm hidden-xs"><div class="sp-column ">            <div class='sp-megamenu-wrapper'>
-                <a id="offcanvas-toggler" class="visible-sm visible-xs" href="#"><i class="fa fa-bars"></i></a>
-                <ul class="sp-megamenu-parent menu-fade hidden-sm hidden-xs"><li class="sp-menu-item"></li><li class="sp-menu-item current-item active"><a  href="/index.php/stili" >stili</a></li><li class="sp-menu-item"><a  href="/index.php/country-panorami" >country panorami</a></li><li class="sp-menu-item"><a  href="/index.php/country-montagna" >country montagna</a></li><li class="sp-menu-item"><a  href="/index.php/country-portafinestra-battente" >country portafinestra battente</a></li><li class="sp-menu-item"><a  href="/index.php/country-portafinestra-battente-2" >country portafinestra battente2</a></li><li class="sp-menu-item"><a  href="/index.php/country-portafinestra-battente-esterno" >country portafinestra battente esterno</a></li><li class="sp-menu-item"><a  href="/index.php/countryfinale" >countryfinale</a></li><li class="sp-menu-item"><a  href="/index.php/pagina-utente-finale" >pagina utente finale</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-panorami" >moderno panorami</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-citta" >moderno citta</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-portafinestra-scorrevole" >moderno portafinestra scorrevole</a></li><li class="sp-menu-item"><a  href="/index.php/moderno-portafinestra-scorrevole-esterno" >moderno portafinestra scorrevole esterno</a></li><li class="sp-menu-item"><a  href="/index.php/modernofinale" >modernofinale</a></li></ul>           </div>
-        </div></div></div></div></header><section id="sp-page-title"><div class="row"><div id="sp-title" class="col-sm-12 col-md-12"><div class="sp-column "></div></div></div></section><section id="sp-main-body"><div class="row"><div id="sp-component" class="col-sm-12 col-md-12"><div class="sp-column "><div id="system-message-container">
-    </div>
-<div id="sp-page-builder" class="sp-page-builder  page-14">
-
-    
-    <div class="page-content">
+        
+	<section id="sp-main-body">
+        <div class="row">
+        	<div id="sp-component" class="col-sm-12 col-md-12">
+        		<div class="sp-column ">
+        			<div id="system-message-container">
+        			</div>
+						<div id="sp-page-builder" class="sp-page-builder  page-14">
+    						<div class="page-content">
 <!-- header -->
-<section id="section-id-1494085957781" class="sppb-section  sppb-hidden-sm sppb-hidden-xs"><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-4"><div id="column-id-1494085957782" class="sppb-column margini1"><div class="sppb-column-addons"><div id="sppb-addon-1494080026683" class="clearfix"><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
-<tbody>
-<tr>
-<td><img style="width:85px; height: 85px;" src="/images/2017/05/06/logo_alsistem150x150.png"></td>
-<td style="width:10px"></td>
-<td style="padding-left:10px; width: 182px; height: 85px; background: #f1f1f1;"><div style="padding-top: 10px; font-family: Aldrich; font-size: 28px; color: #ce0000; line-height: 75px; vertical-align: middle; text-align: center; margin-right:12px;">ALWIN3D</div></td>
-<td style="width:10px; background: #ffffff;"></td>
-</tr>
-</tbody>
-</table></div></div></div></div></div></div><div class="sppb-col-md-2"><div id="column-id-1494085957783" class="sppb-column paddingzero3"><div class="sppb-column-addons"><div id="sppb-addon-1506011208213" class="clearfix"><div id="sppb-modal-1506011208213" class="mfp-hide white-popup-block"><div class="modal-inner-block"><div style="margin: 15px; text-align: center; font-size: 16px; line-height: 22px;">SELEZIONA O INSERISCI CLIENTE<br>
-<div style="margin-bottom: 6px; text-align: left; width: 98%; padding: 15px 5px 0; font-size: 16px;">Seleziona un cliente già registrato</div>
-<select class="mdl-card__supporting-text" style="width: 98%;">
-<option>Sergio Viola</option>
-<option>Mario Rossi</option>
-<option>Giorgio Verdi</option>
-<option>Maria Bianchi</option>
-<option>Paolo Neri</option>
-</select>
-<div style="margin-bottom: 6px; text-align: left; width: 98%; padding: 15px 5px 0; font-size: 16px;">Inserisci un nuovo cliente</div>
-<table width="100%">
-<tbody>
-<tr style="text-align: left;">
-<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Nome <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci il nome del cliente"></td>
-</tr>
-<tr style="text-align: left;">
-<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Utente <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci il suo username"></td>
-</tr>
-<tr style="text-align: left;">
-<td style="width: 20%; height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;">CAP <input style="width: 110px; height: 30px; float: left;" maxlength="5" size="5" type="text" placeholder="Inserire CAP"></td>
-<td style="width: 1%;">&nbsp;</td>
-<td style="width: 79%; height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;">Città <input style="width: 295px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci la città"></td>
-</tr>
-<tr style="text-align: left;">
-<td style="width: 20%; height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;">Prov. <input style="width: 110px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Prov"></td>
-<td style="width: 1%;">&nbsp;</td>
-<td style="width: 79%; height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;">Nazione <input style="width: 295px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci la nazione"></td>
-</tr>
-<tr style="text-align: left;">
-<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Partita IVA <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci la Partita IVA"></td>
-</tr>
-<tr style="text-align: left;">
-<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Codice Fiscale <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci il codice fiscale"></td>
-</tr>
-<tr style="text-align: left;">
-<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Email <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci email"></td>
-</tr>
-<tr>
-<td style="height: 28px; padding: 5px 10px 5px 20px; border-bottom: 1px solid #dedede; text-align: left;" colspan="3">&nbsp;<a class="sppb-btn  sppb-btn-primary sppb-btn-rounded" style="padding: 10px; float: right;" href="/alwin3d2/index.php/pagina-utente-finale">SALVA</a></td>
-</tr>
-</tbody>
-</table>
-</div></div></div><div class=" sppb-text-left"><a class="sppb-btn  sppb-btn-custom sppb-btn-rounded sppb-magnific-popup sppb-modal-selector" data-popup_type="inline" data-mainclass="mfp-no-margins mfp-with-zoom" href="#sppb-modal-1506011208213" id="sppb-modal-1506011208213-selector"><i class="fa fa-user-plus"></i> SELEZIONA O INSERISCI CLIENTE</a></div></div></div></div></div><div class="sppb-col-md-4"><div id="column-id-1494085957784" class="sppb-column paddingzero2"><div class="sppb-column-addons"><div id="sppb-addon-1505897235724" class="clearfix"><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
-<tbody>
-<tr>
-<td style="width:60%; height:85px;">
-<div style="margin-left:15px; margin-right:30px; float:right; height: 36px; width: 36px; background-color: rgba(132, 132, 132, 1);">
-<a style="pointer-events: none; cursor: default; padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" >
-<span class="sppb-icon-inner">
-<i style="color:#ffffff; padding-top:10px;" class="fa fa-search"></i>
-</span></a>
+<section id="section-id-1494085957781" class="sppb-section  sppb-hidden-sm sppb-hidden-xs">
+	<div class="sppb-row-container">
+		<div class="sppb-row">
+			<div class="sppb-col-md-4">
+				<div id="column-id-1494085957782" class="sppb-column margini1">
+					<div class="sppb-column-addons">
+						<div id="sppb-addon-1494080026683" class="clearfix">
+							<div class="sppb-addon sppb-addon-raw-html ">
+								<div class="sppb-addon-content">
+									<table>
+										<tbody>
+											<tr>
+												<td><img style="width:85px; height: 85px;" src="/images/2017/05/06/logo_alsistem150x150.png"></td>
+												<td style="width:10px"></td>
+												<td style="padding-left:10px; width: 182px; height: 85px; background: #f1f1f1;">
+												<div style="padding-top: 10px; font-family: Aldrich; font-size: 28px; color: #ce0000; line-height: 75px; vertical-align: middle; text-align: center; margin-right:12px;">
+												ALWIN3D</div></td>
+												<td style="width:10px; background: #ffffff;"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="sppb-col-md-2">
+			<div id="column-id-1494085957783" class="sppb-column paddingzero3">
+				<div class="sppb-column-addons">
+					<div id="sppb-addon-1506011208213" class="clearfix">
+						<div id="sppb-modal-1506011208213" class="mfp-hide white-popup-block">
+							<div class="modal-inner-block">
+								<div style="margin: 15px; text-align: center; font-size: 16px; line-height: 22px;">SELEZIONA O INSERISCI CLIENTE<br>
+								<div style="margin-bottom: 6px; text-align: left; width: 98%; padding: 15px 5px 0; font-size: 16px;">Seleziona un cliente già registrato</div>
+								<select class="mdl-card__supporting-text" style="width: 98%;">
+									<option>Sergio Viola</option>
+									<option>Mario Rossi</option>
+									<option>Giorgio Verdi</option>
+									<option>Maria Bianchi</option>
+									<option>Paolo Neri</option>
+								</select>
+								<div style="margin-bottom: 6px; text-align: left; width: 98%; padding: 15px 5px 0; font-size: 16px;">Inserisci un nuovo cliente</div>
+									<table width="100%">
+										<tbody>
+											<tr style="text-align: left;">
+												<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Nome <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci il nome del cliente"></td>
+											</tr>
+											<tr style="text-align: left;">
+												<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Utente <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci il suo username"></td>
+											</tr>
+											<tr style="text-align: left;">
+												<td style="width: 20%; height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;">CAP <input style="width: 110px; height: 30px; float: left;" maxlength="5" size="5" type="text" placeholder="Inserire CAP"></td>
+												<td style="width: 1%;">&nbsp;</td>
+												<td style="width: 79%; height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;">Città <input style="width: 295px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci la città"></td>
+											</tr>
+											<tr style="text-align: left;">
+												<td style="width: 20%; height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;">Prov. <input style="width: 110px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Prov"></td>
+												<td style="width: 1%;">&nbsp;</td>
+												<td style="width: 79%; height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;">Nazione <input style="width: 295px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci la nazione"></td>
+											</tr>
+											<tr style="text-align: left;">
+												<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Partita IVA <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci la Partita IVA"></td>
+											</tr>
+											<tr style="text-align: left;">
+												<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Codice Fiscale <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci il codice fiscale"></td>
+											</tr>
+											<tr style="text-align: left;">
+												<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Email <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci email"></td>
+											</tr>
+											<tr>
+												<td style="height: 28px; padding: 5px 10px 5px 20px; border-bottom: 1px solid #dedede; text-align: left;" colspan="3">&nbsp;<a class="sppb-btn  sppb-btn-primary sppb-btn-rounded" style="padding: 10px; float: right;" href="/alwin3d2/index.php/pagina-utente-finale">SALVA</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					<div class=" sppb-text-left"><a class="sppb-btn  sppb-btn-custom sppb-btn-rounded sppb-magnific-popup sppb-modal-selector" data-popup_type="inline" data-mainclass="mfp-no-margins mfp-with-zoom" href="#sppb-modal-1506011208213" id="sppb-modal-1506011208213-selector">
+					<i class="fa fa-user-plus"></i> SELEZIONA<br/>O INSERISCI CLIENTE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sppb-col-md-4">
+		<div id="column-id-1494085957784" class="sppb-column paddingzero2">
+			<div class="sppb-column-addons"><div id="sppb-addon-1505897235724" class="clearfix">
+				<div class="sppb-addon sppb-addon-raw-html ">
+					<div class="sppb-addon-content">
+						<table>
+							<tbody>
+								<tr>
+									<td style="width:60%; height:85px;">
+									<div style="margin-left:15px; margin-right:30px; float:right; height: 36px; width: 36px; background-color: rgba(132, 132, 132, 1);">
+									<a style="pointer-events: none; cursor: default; padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" >
+									<span class="sppb-icon-inner">
+									<i style="color:#ffffff; padding-top:10px;" class="fa fa-search"></i>
+									</span></a>
+									</div>
+									<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(132, 132, 132, 1);">
+									<a style="pointer-events: none; cursor: default; padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" >
+									<span class="sppb-icon-inner">
+									<i style="color:#ffffff; padding-top:10px;" class="fa fa-pencil"></i>
+									</span></a>
+									</div>
+									<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(132, 132, 132, 1);">
+									<a style="pointer-events: none; cursor: default; padding-left: 13px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center;">
+									<span class="sppb-icon-inner">
+									<i style="color:#ffffff; padding-top:10px;" class="fa fa-map-marker"></i>
+									</span></a>
+									</div>
+									<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
+									<a style="padding-left: 10px; cursor: pointer; width: 36px; color: rgba(201, 0, 0, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/index.php?page=start"?>">
+									<span class="sppb-icon-inner">
+									<i style="color:#ffffff; padding-top:10px;" class="fa fa-home"></i>
+									</span></a>
+									</div>
+									</td>
+									<td style="width:6%">
+									<a href="#" style="padding: 0px 5px; font-size: 27px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+									<!-- START: Tooltips -->
+									<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="<div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;><div class=&quot;arrow&quot;></div><div class=&quot;popover-inner&quot;><h3 class=&quot;popover-title&quot;></h3><div class=&quot;popover-content&quot;><p></p></div></div></div>" data-placement="top" data-content="Guarda la guida tutorial" title="" data-original-title="">
+									<i class="fa fa-youtube-play"></i></span>
+									<!-- END: Tooltips -->
+									</a>
+									</td>
+									<td style="width:1%"></td>
+									<td style="width:4%">
+									<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
+									<!-- START: Tooltips -->
+									<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="<div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;><div class=&quot;arrow&quot;></div><div class=&quot;popover-inner&quot;><h3 class=&quot;popover-title&quot;></h3><div class=&quot;popover-content&quot;><p></p></div></div></div>" data-placement="top" data-content="Salva il percorso" title="" data-original-title="">
+									<i class="fa fa-floppy-o"></i></span>
+									<!-- END: Tooltips -->
+									</a>
+									</td>
+									<td style="width:1%"></td>
+									<td style="width:1%; padding-right:8px;"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(132, 132, 132, 1);">
-<a style="pointer-events: none; cursor: default; padding-left: 10px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" >
-<span class="sppb-icon-inner">
-<i style="color:#ffffff; padding-top:10px;" class="fa fa-pencil"></i>
-</span></a>
+<div class="sppb-col-md-2">
+	<div id="column-id-1506011208205" class="sppb-column margini3">
+		<div class="sppb-column-addons">
+			<div id="sppb-addon-1494169781290" class="clearfix">
+				<div class="sppb-addon sppb-addon-module ">
+					<div class="sppb-addon-content">
+						<div class="sclogin sourcecoast">
+    						<div class="sclogout-button">
+        						<div class="sclogin-joomla-login">
+            						<form action="/alwin3d2/index.php/stili" method="post" id="sclogin-form">
+                						<div class="logout-button" id="scLogoutButton">
+                    						<input type="submit" name="Submit" class="logout-link" value="Esci">
+											<input type="hidden" name="option" value="com_users">
+                    						<input type="hidden" name="task" value="user.logout">
+											<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDE=">
+											<input type="hidden" name="90cfdbb2d3ef58964dfc40b82ab40718" value="1">
+										</div>
+           							</form>
+        						</div>
+    						</div>
+    					<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(132, 132, 132, 1);">
-<a style="pointer-events: none; cursor: default; padding-left: 13px; cursor: pointer; height: 36px; width: 36px; color: rgba(255, 255, 255, 1);" class="sppb-icon sppb-text-center;">
-<span class="sppb-icon-inner">
-<i style="color:#ffffff; padding-top:10px;" class="fa fa-map-marker"></i>
-</span></a>
 </div>
-<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
-<a style="padding-left: 10px; cursor: pointer; width: 36px; color: rgba(201, 0, 0, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/index.php?page=start"?>">
-<span class="sppb-icon-inner">
-<i style="color:#ffffff; padding-top:10px;" class="fa fa-home"></i>
-</span></a>
-</div></td>
-<td style="width:6%">
-<a href="#" style="padding: 0px 5px; font-size: 27px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
-<!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="<div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;><div class=&quot;arrow&quot;></div><div class=&quot;popover-inner&quot;><h3 class=&quot;popover-title&quot;></h3><div class=&quot;popover-content&quot;><p></p></div></div></div>" data-placement="top" data-content="Guarda la guida tutorial" title="" data-original-title="">
-<i class="fa fa-youtube-play"></i></span><!-- END: Tooltips -->
-</a>
-</td>
-<td style="width:1%"></td>
+</div>
+</div>
+</section>
+	<div id="section-id-1494158935829" class="sppb-section  sppb-hidden-md sppb-hidden-lg sppb-hidden-xs"  >
+		<div class="sppb-container-inner">
+			<div class="sppb-row">
+				<div class="sppb-col-md-3 sppb-col-sm-3">
+					<div id="column-id-1494158935830" class="sppb-column  margini1" >
+						<div class="sppb-column-addons">
+							<div id="sppb-addon-1494158935831" class="clearfix" >
+								<div class="sppb-addon sppb-addon-raw-html ">
+									<div class="sppb-addon-content">
+										<table>
+											<tbody>
+												<tr>
+													<td><img style="width:50px; height: 50px;" src="/images/2017/05/06/logo_alsistem150x150.png"></td>
+													<td style="width:5px"></td>
+													<td style="padding-left:10px;; height: 50px; background: #f1f1f1;">
+													<div style="padding-top: 4px; font-family: Aldrich; font-size: 20px; color: #ce0000; line-height: 48px; vertical-align: middle; text-align: center; margin-right: 10px;">
+													ALWIN3D</div></td>
+													<td style="width:5px; background: #ffffff;"></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="sppb-col-md-7 sppb-col-sm-7">
+				<div id="column-id-1494158935832" class="sppb-column  margini2" >
+					<div class="sppb-column-addons">
+						<div id="sppb-addon-1494158935833" class="clearfix" >
+							<div class="sppb-addon sppb-addon-raw-html ">
+								<div class="sppb-addon-content">
+									<table>
+										<tbody>
+											<tr>
+												<td style="width:50%; height:52px;">
+													<div style="float:right; height: 36px; width: 36px; color: rgba(255, 255, 255, 1); background-color: rgba(132, 132, 132, 1); margin-left:15px;margin-right:30px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
+														<span class="sppb-icon-inner">
+														<i style="padding-top:10px;" class="fa fa-search"></i>
+														</span>
+													</div>
+													<div style="float:right; height: 36px; width: 36px; color: rgba(255, 255, 255, 1); background-color: rgba(132, 132, 132, 1); margin-left:15px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
+														<span class="sppb-icon-inner">
+															<i style="padding-top:10px;" class="fa fa-pencil"></i>
+														</span>
+													</div>
+													<div style="float:right; height: 36px; width: 36px; color: rgba(255, 255, 255, 1); background-color: rgba(132, 132, 132, 1); margin-left:15px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
+														<span class="sppb-icon-inner">
+															<i style="padding-top:10px;" class="fa fa-map-marker"></i>
+														</span>
+													</div>
+													<div style="margin-left:15px; float:right; height: 36px; width: 36px; background-color: rgba(201, 0, 0, 1);">
+														<a style="padding-left: 10px; cursor: pointer; width: 36px; color: rgba(201, 0, 0, 1);" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/index.php?page=start"?>">
+														<span class="sppb-icon-inner">
+														<i style="color:#ffffff; padding-top:10px;" class="fa fa-home"></i>
+														</span></a>
+													</div>
+												</td>
+												<td style="width:5%">
+													<a href="#" style="padding: 0px 5px; font-size: 27px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+													<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Guarda la guida tutorial" title="Titolo Suggerimento">
+													<i class="fa fa-youtube-play"></i></span>
+													</a>
+												</td>
+												<td style="width:1%"></td>
+												<td style="width:5%">
+													<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
+													<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Salva il percorso" title="Titolo Suggerimento">
+													<i class="fa fa-floppy-o"></i></span>
+													</a>
+												</td>
+											</tr>
+										</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="sppb-col-md-2 sppb-col-sm-2">
+		<div id="column-id-1494158935834" class="sppb-column " >
+			<div class="sppb-column-addons">
+				<div id="sppb-addon-1494169999418" class="clearfix" >
+					<div class="sppb-addon sppb-addon-raw-html ">
+						<div class="sppb-addon-content">
+							<div class="sclogin sourcecoast">
+    							<div class="sclogout-button">
+        							<div class="sclogin-joomla-login">
+            							<form style="margin:8px 0 11px 0;" action="/alwin3d2/index.php/stili" method="post" id="sclogin-form">
+                							<div class="logout-button" id="scLogoutButton">
+                    							<input type="submit" name="Submit" class="logout-link" value="Esci">
+												<input type="hidden" name="option" value="com_users">
+                    							<input type="hidden" name="task" value="user.logout">
+												<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDE=">
+												<input type="hidden" name="90cfdbb2d3ef58964dfc40b82ab40718" value="1">
+											</div>
+           								</form>
+        							</div>
+    							</div>
+    						<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
 
-<td style="width:4%">
-<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<!-- START: Tooltips --><span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="<div class=&quot;popover rl_tooltips nn_tooltips notitle&quot;><div class=&quot;arrow&quot;></div><div class=&quot;popover-inner&quot;><h3 class=&quot;popover-title&quot;></h3><div class=&quot;popover-content&quot;><p></p></div></div></div>" data-placement="top" data-content="Salva il percorso" title="" data-original-title="">
-<i class="fa fa-floppy-o"></i></span><!-- END: Tooltips -->
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:1%; padding-right:8px;"></td>
-</tr>
-</tbody>
-</table></div></div></div></div></div></div><div class="sppb-col-md-2"><div id="column-id-1506011208205" class="sppb-column margini3"><div class="sppb-column-addons"><div id="sppb-addon-1494169781290" class="clearfix"><div class="sppb-addon sppb-addon-module "><div class="sppb-addon-content"><div class="sclogin sourcecoast">
+<div id="section-id-1494085957868" class="sppb-section  sppb-equalize-columns sppb-hidden-md sppb-hidden-lg sppb-hidden-sm"  >
+	<div class="sppb-container-inner">
+		<div class="sppb-row">
+			<div class="sppb-col-md-4 sppb-col-xs-4">
+				<div id="column-id-1494085957869" class="sppb-column ">
+					<div class="sppb-column-addons">
+						<div id="sppb-addon-1494085957870" class="clearfix">
+							<div class="sppb-addon sppb-addon-raw-html">
+								<div class="sppb-addon-content">
+									<table>
+										<tbody>
+											<tr>
+												<td><img style="width:25px; height: 25px;" src="/images/2017/05/06/logo_alsistem150x150.png"></td>
+												<td style="width:2px; background: #ffffff;"></td>
+												<td style="padding-left:5px; height: 25px; background: #f1f1f1;">
+												<div style="padding-top: 4px; font-family: Aldrich; font-size: 14px; color: #ce0000; line-height: 20px; vertical-align: middle; text-align: center; margin-right: 5px;">
+												ALWIN3D
+												</div>
+												</td>
+												<td style="width:2px; background: #ffffff;"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="sppb-col-md-6 sppb-col-xs-6">
+			<div id="column-id-1494085957871" class="sppb-column  margini2">
+				<div class="sppb-column-addons">
+					<div id="sppb-addon-1494159618661" class="clearfix">
+						<div class="sppb-addon sppb-addon-raw-html ">
+							<div class="sppb-addon-content">
+								<table>
+									<tbody>
+										<tr>
+											<td style="width:60%; height:25px;">
+												<div style="float:right; height: 18px;width: 18px;color: rgba(255, 255, 255, 1);background-color: rgba(132, 132, 132, 1); margin-left:5px;margin-right:5px; line-height: 15px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
+												<span class="sppb-icon-inner">
+												<i style="font-size:13px;" class="fa fa-search"></i>
+												</span>
+												</div>
+												<div style="float:right; height: 18px;width: 18px;color: rgba(255, 255, 255, 1);background-color: rgba(132, 132, 132, 1); margin-left:5px; line-height: 15px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
+												<span class="sppb-icon-inner"><i style="font-size:13px;" class="fa fa-pencil"></i></span>
+												</div>
+												<div style="float:right; height: 18px;width: 18px;color: rgba(255, 255, 255, 1);background-color: rgba(132, 132, 132, 1); margin-left:5px; line-height: 15px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
+												<span class="sppb-icon-inner">
+												<i style="font-size:13px;" class="fa fa-map-marker"></i>
+												</span>
+												</div>
+												<div style="float:right; height: 18px; width: 18px; color: rgba(255, 255, 255, 1);background-color: rgba(201, 0, 0, 1); margin-left:5px;">
+												<a style="    cursor: pointer; display: inline-block; font-size: 13px; line-height: 20px; padding-left: 3px; vertical-align: top;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/index.php?page=start"?>">
+												<span class="sppb-icon-inner">
+												<i style="color:#ffffff; font-size:13px;" class="fa fa-home"></i>
+												</span>
+												</a>
+												</div>
+												</td>
+												<td style="width:4%">
+												<a href="#" style="padding: 0px 2px; font-size: 13px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+												<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Guarda la guida tutorial" title="Titolo Suggerimento">
+												<i class="fa fa-youtube-play"></i></span>
+												</a>
+												</td>
+												<td style="width:1%"></td>
+												<td style="width:4%">
+												<a href="#" style="padding: 0px 2px; font-size: 12px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
+												<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Salva il percorso" title="Titolo Suggerimento">
+												<i class="fa fa-floppy-o"></i></span>
+												</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="sppb-col-md-2 sppb-col-xs-2">
+			<div id="column-id-1494085957873" class="sppb-column">
+				<div class="sppb-column-addons">
+					<div id="sppb-addon-1494169577394" class="clearfix">
+						<div class="sppb-addon sppb-addon-raw-html">
+							<div class="sppb-addon-content">
+								<div class="sclogin sourcecoast">
+    								<div class="sclogout-button">
+        								<div class="sclogin-joomla-login">
+            								<form style="margin:0;" action="/alwin3d2/index.php/stili" method="post" id="sclogin-form">
+                								<div class="logout-button" id="scLogoutButton">
+                    								<input style="font-size:10px" type="submit" name="Submit" class="logout-link" value="Esci">
+													<input type="hidden" name="option" value="com_users">
+                    								<input type="hidden" name="task" value="user.logout">
+													<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDE=">
+													<input type="hidden" name="90cfdbb2d3ef58964dfc40b82ab40718" value="1">
+												</div>
+           									</form>
+        									</div>
+    									</div>
+    								<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
 
-    <div class="sclogout-button">
-        <div class="sclogin-joomla-login">
-            <form action="/alwin3d2/index.php/stili" method="post" id="sclogin-form">
-                <div class="logout-button" id="scLogoutButton">
-                    <input type="submit" name="Submit" class="logout-link" value="Esci">
-
-                                                            <input type="hidden" name="option" value="com_users">
-                    <input type="hidden" name="task" value="user.logout">
-                    
-                    <input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDE=">
-                    <input type="hidden" name="90cfdbb2d3ef58964dfc40b82ab40718" value="1">                </div>
-            </form>
-        </div>
-    </div>
-    <div class="clearfix"></div>
-</div>
-</div></div></div></div></div></div></div></div></section>
-
-<div id="section-id-1494158935829" class="sppb-section  sppb-hidden-md sppb-hidden-lg sppb-hidden-xs"  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-3 sppb-col-sm-3"><div id="column-id-1494158935830" class="sppb-column  margini1" ><div class="sppb-column-addons"><div id="sppb-addon-1494158935831" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
-<tbody>
-<tr>
-<td><img style="width:50px; height: 50px;" src="/images/2017/05/06/logo_alsistem150x150.png"></td>
-<td style="width:5px"></td>
-<td style="padding-left:10px;; height: 50px; background: #f1f1f1;"><div style="padding-top: 4px; font-family: Aldrich; font-size: 20px; color: #ce0000; line-height: 48px; vertical-align: middle; text-align: center; margin-right: 10px;">ALWIN3D</div></td>
-<td style="width:5px; background: #ffffff;"></td>
-</tr>
-</tbody>
-</table></div></div></div></div></div></div><div class="sppb-col-md-7 sppb-col-sm-7"><div id="column-id-1494158935832" class="sppb-column  margini2" ><div class="sppb-column-addons"><div id="sppb-addon-1494158935833" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
-<tbody>
-<tr>
-<td style="width:50%; height:50px;"><div style="float:right; height: 36px;
-    width: 36px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(132, 132, 132, 1); margin-left:15px;margin-right:30px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
-<span class="sppb-icon-inner">
-<i style="padding-top:10px;" class="fa fa-search"></i>
-</span>
-</div>
-<div style="float:right; height: 36px;
-    width: 36px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(132, 132, 132, 1); margin-left:15px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
-<span class="sppb-icon-inner">
-<i style="padding-top:10px;" class="fa fa-pencil"></i>
-</span>
-</div>
-<div style="float:right; height: 36px;
-    width: 36px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(132, 132, 132, 1); margin-left:15px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
-<span class="sppb-icon-inner">
-<i style="padding-top:10px;" class="fa fa-map-marker"></i>
-</span>
-</div>
-<div style="float:right; height: 36px;
-    width: 36px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(201, 0, 0, 1); margin-left:15px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
-<span class="sppb-icon-inner">
-<i style="padding-top:10px;" class="fa fa-home"></i>
-</span>
-</div>
-</td>
-<td style="width:5%">
-<a href="#" style="padding: 0px 5px; font-size: 27px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Guarda la guida tutorial" title="Titolo Suggerimento">
-<i class="fa fa-youtube-play"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:5%">
-<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Chiamaci" title="Titolo Suggerimento">
-<i class="fa fa fa-phone"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:5%">
-<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Salva il percorso" title="Titolo Suggerimento">
-<i class="fa fa-floppy-o"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:5%">
-<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Avvia la chat di supporto" title="Titolo Suggerimento">
-<i class="fa fa-weixin"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:5%">
-<a href="#"style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Stampa" title="Titolo Suggerimento">
-<i class="fa fa-print"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:5%">
-<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Condividi sui social la configurazione" title="Titolo Suggerimento">
-<i class="fa fa-share-alt"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:5%">
-<a href="#" style="padding: 0px 5px; font-size: 20px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Scrivici" title="Titolo Suggerimento">
-<i class="fa fa-at"></i></span>
-</a>
-</td>
-<td style="width:1%;"></td>
-</tr>
-</tbody>
-</table></div></div></div></div></div></div><div class="sppb-col-md-2 sppb-col-sm-2"><div id="column-id-1494158935834" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-1494169999418" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="#login-modal" style="text-align:left; color:878787; padding: 0px 5px; font-size: 11px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" role="button" data-toggle="modal" title="">
-<i style="font-size:12px" class="fa fa-user"></i> Login</a></div></div></div></div></div></div></div></div></div><div id="section-id-1494085957868" class="sppb-section  sppb-equalize-columns sppb-hidden-md sppb-hidden-lg sppb-hidden-sm"  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-4 sppb-col-xs-4"><div id="column-id-1494085957869" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-1494085957870" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
-<tbody>
-<tr>
-<td><img style="width:25px; height: 25px;" src="/images/2017/05/06/logo_alsistem150x150.png"></td>
-<td style="width:2px; background: #ffffff;"></td>
-<td style="padding-left:5px; height: 25px; background: #f1f1f1;"><div style="padding-top: 4px; font-family: Aldrich; font-size: 14px; color: #ce0000; line-height: 20px; vertical-align: middle; text-align: center; margin-right: 5px;">ALWIN3D</div></td>
-<td style="width:2px; background: #ffffff;"></td>
-</tr>
-</tbody>
-</table></div></div></div></div></div></div><div class="sppb-col-md-6 sppb-col-xs-6"><div id="column-id-1494085957871" class="sppb-column  margini2" ><div class="sppb-column-addons"><div id="sppb-addon-1494159618661" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
-<tbody>
-<tr>
-<td style="width:60%; height:25px;"><div style="float:right; height: 18px;
-    width: 18px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(132, 132, 132, 1); margin-left:5px;margin-right:5px; line-height: 15px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
-<span class="sppb-icon-inner">
-<i style="font-size:13px;" class="fa fa-search"></i>
-</span>
-</div>
-<div style="float:right; height: 18px;
-    width: 18px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(132, 132, 132, 1); margin-left:5px; line-height: 15px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
-<span class="sppb-icon-inner">
-<i style="font-size:13px;" class="fa fa-pencil"></i>
-</span>
-</div>
-<div style="float:right; height: 18px;
-    width: 18px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(132, 132, 132, 1); margin-left:5px; line-height: 15px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
-<span class="sppb-icon-inner">
-<i style="font-size:13px;" class="fa fa-map-marker"></i>
-</span>
-</div>
-<div style="float:right; height: 18px;
-    width: 18px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(201, 0, 0, 1); margin-left:5px; line-height: 15px;" class="sppb-icon sppb-text-center sppb-icon-hover-effect-zoom-in">
-<span class="sppb-icon-inner">
-<i style="font-size:13px;" class="fa fa-home"></i>
-</span>
-</div></td>
-<td style="width:4%">
-<a href="#" style="padding: 0px 2px; font-size: 13px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Guarda la guida tutorial" title="Titolo Suggerimento">
-<i class="fa fa-youtube-play"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:4%">
-<a href="#" style="padding: 0px 2px; font-size: 12px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Chiamaci" title="Titolo Suggerimento">
-<i class="fa fa fa-phone"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:4%">
-<a href="#" style="padding: 0px 2px; font-size: 12px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Salva il percorso" title="Titolo Suggerimento">
-<i class="fa fa-floppy-o"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:4%">
-<a href="#" style="padding: 0px 2px; font-size: 12px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Avvia la chat di supporto" title="Titolo Suggerimento">
-<i class="fa fa-weixin"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:4%">
-<a href="#"style="padding: 0px 2px; font-size: 12px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Stampa" title="Titolo Suggerimento">
-<i class="fa fa-print"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:4%">
-<a href="#" style="padding: 0px 2px; font-size: 12px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&qquot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Condividi sui social la configurazione" title="Titolo Suggerimento">
-<i class="fa fa-share-alt"></i></span>
-</a>
-</td>
-<td style="width:1%"></td>
-<td style="width:4%">
-<a href="#" style="padding: 0px 2px; font-size: 12px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" title="">
-<span class="rl_tooltips-link nn_tooltips-link hover top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips &quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Scrivici" title="Titolo Suggerimento">
-<i class="fa fa-at"></i></span>
-</a>
-</td>
-<td style="width:1%; padding-right:2px;"></td>
-</tr>
-</tbody>
-</table></div></div></div></div></div></div><div class="sppb-col-md-2 sppb-col-xs-2"><div id="column-id-1494085957873" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-1494169577394" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><a href="#login-modal" style="text-align:left; color:878787; padding: 0px 5px; font-size: 11px; line-height: 1px;" class="sppb-btn  sppb-btn-lg sppb-btn-square" role="button" data-toggle="modal" title="">
-<i style="font-size:12px" class="fa fa-user"></i> Login</a></div></div></div></div></div></div></div></div></div><section id="section-id-1494080026687" class="sppb-section "  ><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-6"><div id="column-id-1494080026688" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-1494160813212" class="clearfix" ><div class="sppb-addon sppb-addon-module  marginib"><div class="sppb-addon-content">
-
-  <script type="text/javascript">
-    jQuery(document).ready(function() {
-    jQuery('#favimagehover-13859 .layout-effect').addClass("favhide").viewportChecker({
-      classToAdd: 'favshow layout-effect1', // Class to add to the elements when they are visible
-      offset: 100
-      });
-    });
-  </script>
-
+<section id="section-id-1494080026687" class="sppb-section ">
+	<div class="sppb-row-container">
+		<div class="sppb-row">
+			<div class="sppb-col-md-6">
+				<div id="column-id-1494080026688" class="sppb-column " >
+					<div class="sppb-column-addons">
+						<div id="sppb-addon-1494160813212" class="clearfix" >
+							<div class="sppb-addon sppb-addon-module  marginib">
+								<div class="sppb-addon-content">
+<script type="text/javascript">
+jQuery(document).ready(function() {
+jQuery('#favimagehover-13859 .layout-effect').addClass("favhide").viewportChecker({
+classToAdd: 'favshow layout-effect1', // Class to add to the elements when they are visible
+	offset: 100
+  });
+ });
+</script>
 
 <script type="text/javascript">
-
-function wizPost(paramsList) {
+	function wizPost(paramsList) {
     var theForm = document.getElementById('thisForm');
     for (var param of paramsList) {
         //<input type="hidden" name="country" value="Norway">
@@ -818,102 +830,35 @@ function wizPost(paramsList) {
 };
 </script>
 
-<form id='thisForm' method="POST" action="<?php echo $v_action?>">
-
-
-<div id="favimagehover-13859" class="favth-row">
-
-  <div style="position: relative;
-    margin-bottom: -50px;
-    z-index: 9;
-    padding: 0 5px;
-    margin-left: 10px;
-    margin-right: 10px;">
-          <h4 id="favimagehover-title1"
-          style="color: #FFFFFF;
-                background-color: #111111;
-                opacity: 0.5;
-                font-family: Raleway;
-                font-weight: 400;
-                font-style: normal;
-                padding: 10px 20px;
-                font-size: 18px;
-                line-height: 1.4em;
-                text-align: left;
-                margin-bottom: 0;">
-
-            <i class="fa fa-arrow"
-               style="color: #FFFFFF;
-                     font-size: 18px;
-                     vertical-align: top">
-            </i>
-
-            Classico
-          </h4>
-        </div>
-  <div style="z-index:8" class="favimagehover favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
-
-    <div id="favimagehover-box1"
-        class="favimagehover1 layout-effect"
-        style="-webkit-border-radius: 0px;
-              -moz-border-radius: 0px;
-              border-radius: 0px;">
-
-          <div id="favimagehover-image-container1">
-
-            <div id="favimagehover-image1"
-                 style="height: 100%;">
-
-                                  <img src="/images/STILI/cover/Classico-interno.jpg"
-                      alt=""/>
-                
-            </div>
-
-            <div id="favimagehover-overlay1">
-
-              <p id="favimagehover-description1"
-              style="color: #FFFFFF;
-                    font-size: 16px;
-                    line-height: 26px;
-                    text-align: center;">
-
-                Sobrietà ed eleganza, caratteristiche di uno stile senza tempo.
-              </p>
-
-              <div id="favimagehover-readmore1"
-                   class="favimagehover-readmore"
-                   style="text-align: center;">
-
-                <a class="btn" href="javascript: wizPost([{name: 'style', value:'classico'}]);"
-                  target="_self"
-                  style="color: #FFFFFF;
-                        background-color: #C20000;
-                        padding: 11px 16px 9px;
-                        -webkit-border-radius: 4px;
-                        -moz-border-radius: 4px;
-                        border-radius: 4px;
-                        margin: 0; ">
-
-                  <i class="fa fa-arrow-right"
-                     style="font-size: 16px; padding-right: 0.4em;"></i>
-
-                  Scegli il tuo stile +
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-        
-    </div>
-
-  </div>
-
-  
-</div>
-</div></div></div><div id="sppb-addon-1494160813218" class="clearfix" ><div class="sppb-addon sppb-addon-module  marginib2"><div class="sppb-addon-content">
-
+	<form id='thisForm' method="POST" action="<?php echo $v_action?>">
+		<div id="favimagehover-13859" class="favth-row">
+			<div style="position: relative; margin-bottom: -50px; z-index: 9; padding: 0 5px; margin-left: 10px; margin-right: 10px;">
+          		<h4 id="favimagehover-title1" style="color: #FFFFFF; background-color: #111111; opacity: 0.5; font-family: Raleway; font-weight: 400; font-style: normal; padding: 10px 20px; font-size: 18px; line-height: 1.4em; text-align: left; margin-bottom: 0;">
+            		<i class="fa fa-arrow" style="color: #FFFFFF; font-size: 18px; vertical-align: top"></i>Classico</h4>
+        	</div>
+  				<div style="z-index:8" class="favimagehover favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
+					<div id="favimagehover-box1" class="favimagehover1 layout-effect" style="-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;">
+						<div id="favimagehover-image-container1">
+							<div id="favimagehover-image1" style="height: 100%;">
+								<img src="/images/STILI/cover/Classico-interno.jpg" alt=""/>
+                			</div>
+								<div id="favimagehover-overlay1">
+									<p id="favimagehover-description1" style="color: #FFFFFF; font-size: 16px; line-height: 26px; text-align: center;">Sobrietà ed eleganza, caratteristiche di uno stile senza tempo.</p>
+										<div id="favimagehover-readmore1" class="favimagehover-readmore" style="text-align: center;">
+											<a class="btn" href="javascript: wizPost([{name: 'style', value:'classico'}]);" target="_self"	style="color: #FFFFFF; background-color: #C20000; padding: 11px 16px 9px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; margin: 0; ">
+												<i class="fa fa-arrow-right" style="font-size: 16px; padding-right: 0.4em;"></i>Scegli il tuo stile +</a>
+										</div>
+								</div>
+        					</div> 
+    					</div>
+  					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+<div id="sppb-addon-1494160813218" class="clearfix" >
+	<div class="sppb-addon sppb-addon-module  marginib2">
+		<div class="sppb-addon-content">
   <script type="text/javascript">
     jQuery(document).ready(function() {
     jQuery('#favimagehover-18471 .layout-effect').addClass("favhide").viewportChecker({
@@ -922,101 +867,42 @@ function wizPost(paramsList) {
       });
     });
   </script>
-
-
-<div id="favimagehover-18471" class="favth-row">
-
-  <div style="position: relative;
-    margin-bottom: -50px;
-    z-index: 9;
-    padding: 0 5px;
-    margin-left: 10px;
-    margin-right: 10px;">
-          <h4 id="favimagehover-title3"
-          style="color: #FFFFFF;
-                background-color: #111111;
-                opacity: 0.5;
-                font-family: Open Sans;
-                font-weight: 400;
-                font-style: normal;
-                padding: 10px 20px;
-                font-size: 18px;
-                line-height: 1.4em;
-                text-align: left;
-                margin-bottom: 0;">
-
-            <i class="fa fa-arrow"
-               style="color: #FFFFFF;
-                     font-size: 18px;
-                     vertical-align: top">
-            </i>
-
-            Country
-          </h4>
-        </div>
-  <div style="z-index:8" class="favimagehover favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
-
-    <div id="favimagehover-box3"
-        class="favimagehover3 layout-effect"
-        style="-webkit-border-radius: 0px;
-              -moz-border-radius: 0px;
-              border-radius: 0px;">
-
-          <div id="favimagehover-image-container3">
-
-            <div id="favimagehover-image3"
-                 style="height: 100%;">
-
-                                  <img src="/images/STILI/cover/Country.jpg"
-                      alt=""/>
-                
-            </div>
-
-            <div id="favimagehover-overlay3">
-
-              <p id="favimagehover-description3"
-              style="color: #FFFFFF;
-                    font-size: 16px;
-                    line-height: 26px;
-                    text-align: center;">
-
-                Tradizione e materiali naturali,<br />per un’atmosfera irresistibilmente calda e accogliente.
-              </p>
-
-              <div id="favimagehover-readmore3"
-                   class="favimagehover-readmore"
-                   style="text-align: center;">
-
-                <a class="btn" href="javascript: wizPost([{name: 'style', value:'country'}]);"
-                  target="_self"
-                  style="color: #FFFFFF;
-                        background-color: #C20000;
-                        padding: 11px 16px 9px;
-                        -webkit-border-radius: 4px;
-                        -moz-border-radius: 4px;
-                        border-radius: 4px;
-                        margin: 0; ">
-
-                  <i class="fa fa-arrow-right"
-                     style="font-size: 16px; padding-right: 0.4em;"></i>
-
-                  Scegli il tuo stile +
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-        
-    </div>
-
-  </div>
-
-  
+		<div id="favimagehover-18471" class="favth-row">
+  			<div style="position: relative; margin-bottom: -50px; z-index: 9; padding: 0 5px; margin-left: 10px; margin-right: 10px;">
+          		<h4 id="favimagehover-title3" style="color: #FFFFFF; background-color: #111111; opacity: 0.5; font-family: Open Sans; font-weight: 400; font-style: normal; padding: 10px 20px; font-size: 18px; line-height: 1.4em; text-align: left; margin-bottom: 0;">
+            		<i class="fa fa-arrow" style="color: #FFFFFF; font-size: 18px; vertical-align: top"></i>Country</h4>
+        	</div>
+  				<div style="z-index:8" class="favimagehover favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
+				    <div id="favimagehover-box3" class="favimagehover3 layout-effect" style="-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;">
+						<div id="favimagehover-image-container3">
+							<div id="favimagehover-image3" style="height: 100%;">
+								<img src="/images/STILI/cover/Country.jpg" alt=""/> 
+            				</div>
+            					<div id="favimagehover-overlay3">
+              						<p id="favimagehover-description3" style="color: #ffffff; font-size: 16px; line-height: 26px; text-align: center;">
+                						Tradizione e materiali naturali,<br />per un’atmosfera irresistibilmente calda e accogliente.
+              						</p>
+									<div id="favimagehover-readmore3" class="favimagehover-readmore" style="text-align: center;">
+										<a class="btn" href="javascript: wizPost([{name: 'style', value:'country'}]);" target="_self" style="color: #FFFFFF; background-color: #C20000; padding: 11px 16px 9px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; margin: 0; ">
+                  						<i class="fa fa-arrow-right" style="font-size: 16px; padding-right: 0.4em;"></i>Scegli il tuo stile +</a>
+									</div>
+            					</div>
+          					</div>      
+    					</div>
+  					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-</div></div></div></div></div></div><div class="sppb-col-md-6"><div id="column-id-1494160813209" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-1494160813215" class="clearfix" ><div class="sppb-addon sppb-addon-module  marginia"><div class="sppb-addon-content">
-
+</div>
+</div>
+	<div class="sppb-col-md-6">
+		<div id="column-id-1494160813209" class="sppb-column " >
+			<div class="sppb-column-addons">
+				<div id="sppb-addon-1494160813215" class="clearfix" >
+					<div class="sppb-addon sppb-addon-module  marginia">
+						<div class="sppb-addon-content">
   <script type="text/javascript">
     jQuery(document).ready(function() {
     jQuery('#favimagehover-14073 .layout-effect').addClass("favhide").viewportChecker({
@@ -1025,100 +911,32 @@ function wizPost(paramsList) {
       });
     });
   </script>
-
-
-<div id="favimagehover-14073" class="favth-row">
-
-  <div style="position: relative;
-    margin-bottom: -50px;
-    z-index: 9;
-    padding: 0 5px;
-    margin-left: 10px;
-    margin-right: 10px;">
-          <h4 id="favimagehover-title2"
-          style="color: #FFFFFF;
-                background-color: #111111;
-                opacity: 0.5;
-                font-family: Open Sans;
-                font-weight: 400;
-                font-style: normal;
-                padding: 10px 20px;
-                font-size: 18px;
-                line-height: 1.4em;
-                text-align: left;
-                margin-bottom: 0;">
-
-            <i class="fa fa-arrow"
-               style="color: #FFFFFF;
-                     font-size: 18px;
-                     vertical-align: top">
-            </i>
-
-            Moderno
-          </h4>
-        </div>
+	<div id="favimagehover-14073" class="favth-row">
+ 	 <div style="position: relative;margin-bottom: -50px;z-index: 9;padding: 0 5px;margin-left: 10px;margin-right: 10px;">
+          <h4 id="favimagehover-title2" style="color: #FFFFFF; background-color: #111111; opacity: 0.5; font-family: Open Sans; font-weight: 400; font-style: normal; padding: 10px 20px; font-size: 18px; line-height: 1.4em; text-align: left; margin-bottom: 0;">
+			<i class="fa fa-arrow" style="color: #FFFFFF; font-size: 18px; vertical-align: top"></i>Moderno</h4>
+     </div>
   <div style="z-index:8" class="favimagehover favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
-
-    <div id="favimagehover-box2"
-        class="favimagehover2 layout-effect"
-        style="-webkit-border-radius: 0px;
-              -moz-border-radius: 0px;
-              border-radius: 0px;">
-
-          <div id="favimagehover-image-container2">
-
-            <div id="favimagehover-image2"
-                 style="height: 100%;">
-
-                                  <img src="/images/STILI/cover/Moderno.jpg"
-                      alt=""/>
-                
-            </div>
-
-            <div id="favimagehover-overlay2">
-
-              <p id="favimagehover-description2"
-              style="color: #FFFFFF;
-                    font-size: 16px;
-                    line-height: 26px;
-                    text-align: center;">
-
-                Razionalità e purezza delle forme,<br />elementi distintivi di uno stile fatto di leggerezza e rigore.
-              </p>
-
-              <div id="favimagehover-readmore2"
-                   class="favimagehover-readmore"
-                   style="text-align: center;">
-
-                <a class="btn" href="javascript: wizPost([{name: 'style', value:'moderno'}]);"
-                  target="_self"
-                  style="color: #FFFFFF;
-                        background-color: #C20000;
-                        padding: 11px 16px 9px;
-                        -webkit-border-radius: 4px;
-                        -moz-border-radius: 4px;
-                        border-radius: 4px;
-                        margin: 0; ">
-
-                  <i class="fa fa-arrow-right"
-                     style="font-size: 16px; padding-right: 0.4em;"></i>
-
-                  Scegli il tuo stile +
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-        
-    </div>
-
-  </div>
-
-  
+	<div id="favimagehover-box2" class="favimagehover2 layout-effect" style="-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;">
+		<div id="favimagehover-image-container2">
+			<div id="favimagehover-image2" style="height: 100%;"><img src="/images/STILI/cover/Moderno.jpg" alt=""/></div>
+				<div id="favimagehover-overlay2">
+					<p id="favimagehover-description2" style="color: #FFFFFF; font-size: 16px; line-height: 26px; text-align: center;"></p>
+						<div id="favimagehover-readmore2" class="favimagehover-readmore" style="text-align: center;">
+							<a class="btn" href="javascript: wizPost([{name: 'style', value:'moderno'}]);" target="_self" style="color: #ffffff; background-color: #C20000; padding: 11px 16px 9px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; margin: 0; ">
+								<i class="fa fa-arrow-right" style="font-size: 16px; padding-right: 0.4em;"></i>Scegli il tuo stile +</a>
+						</div>
+					</div>
+				</div>
+        	</div>
+		</div>
+	</div>
 </div>
-</div></div></div><div id="sppb-addon-1494160813221" class="clearfix" ><div class="sppb-addon sppb-addon-module  marginia2"><div class="sppb-addon-content">
+</div>
+</div>
+	<div id="sppb-addon-1494160813221" class="clearfix" >
+		<div class="sppb-addon sppb-addon-module  marginia2">
+			<div class="sppb-addon-content">
 
   <script type="text/javascript">
     jQuery(document).ready(function() {
@@ -1128,119 +946,72 @@ function wizPost(paramsList) {
       });
     });
   </script>
-
-
-<div id="favimagehover-14544" class="favth-row">
-
-  <div style="position: relative;
-    margin-bottom: -50px;
-    z-index: 9;
-    padding: 0 5px;
-    margin-left: 10px;
-    margin-right: 10px;">
-          <h4 id="favimagehover-title4"
-          style="color: #FFFFFF;
-                background-color: #111111;
-                opacity: 0.5;
-                font-family: Open Sans;
-                font-weight: 400;
-                font-style: normal;
-                padding: 10px 20px;
-                font-size: 18px;
-                line-height: 1.4em;
-                text-align: left;
-                margin-bottom: 0;">
-
-            <i class="fa fa-arrow"
-               style="color: #FFFFFF;
-                     font-size: 18px;
-                     vertical-align: top">
-            </i>
-
-            Uffici
-          </h4>
-        </div>
-  <div style="z-index:8" class="favimagehover favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
-
-    <div id="favimagehover-box4"
-        class="favimagehover4 layout-effect"
-        style="-webkit-border-radius: 0px;
-              -moz-border-radius: 0px;
-              border-radius: 0px;">
-
-          <div id="favimagehover-image-container4">
-
-            <div id="favimagehover-image4"
-                 style="height: 100%;">
-
-                                  <img src="/images/STILI/cover/Ufficio-ambiente.jpg"
-                      alt=""/>
-                
-            </div>
-
-            <div id="favimagehover-overlay4">
-
-              <p id="favimagehover-description4"
-              style="color: #FFFFFF;
-                    font-size: 16px;
-                    line-height: 26px;
-                    text-align: center;">
-
-                … non solo casa, progetta al meglio il tuo spazio di lavoro.
-              </p>
-
-              <div id="favimagehover-readmore4"
-                   class="favimagehover-readmore"
-                   style="text-align: center;">
-
-                <a class="btn" href="javascript: wizPost([{name: 'style', value:'ufficio'}]);"
-                  target="_self"
-                  style="color: #FFFFFF;
-                        background-color: #C20000;
-                        padding: 11px 16px 9px;
-                        -webkit-border-radius: 4px;
-                        -moz-border-radius: 4px;
-                        border-radius: 4px;
-                        margin: 0; ">
-
-                  <i class="fa fa-arrow-right"
-                     style="font-size: 16px; padding-right: 0.4em;"></i>
-
-                  Scegli il tuo stile +
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-        
-    </div>
-
-  </div>
-</form>
-
-  
+			<div id="favimagehover-14544" class="favth-row">
+				<div style="position: relative; margin-bottom: -50px; z-index: 9; padding: 0 5px; margin-left: 10px; margin-right: 10px;">
+          			<h4 id="favimagehover-title4" style="color: #FFFFFF; background-color: #111111; opacity: 0.5; font-family: Open Sans; font-weight: 400; font-style: normal; padding: 10px 20px; font-size: 18px; line-height: 1.4em; text-align: left; margin-bottom: 0;">
+						<i class="fa fa-arrow" style="color: #FFFFFF; font-size: 18px; vertical-align: top"></i>Uffici</h4>
+        		</div>
+ 					 <div style="z-index:8" class="favimagehover favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
+						<div id="favimagehover-box4" class="favimagehover4 layout-effect" style="-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;">
+							<div id="favimagehover-image-container4">
+								<div id="favimagehover-image4" style="height: 100%;">
+									<img src="/images/STILI/cover/Ufficio-ambiente.jpg"	alt=""/>
+								</div>
+									<div id="favimagehover-overlay4">
+										<p id="favimagehover-description4" style="color: #FFFFFF; font-size: 16px; line-height: 26px; text-align: center;">
+											… non solo casa, progetta al meglio il tuo spazio di lavoro.</p>
+												<div id="favimagehover-readmore4"	class="favimagehover-readmore" style="text-align: center;">
+													<a class="btn" href="javascript: wizPost([{name: 'style', value:'ufficio'}]);" target="_self" style="color: #FFFFFF; background-color: #C20000; padding: 11px 16px 9px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; margin: 0; ">
+                  									<i class="fa fa-arrow-right" style="font-size: 16px; padding-right: 0.4em;"></i>Scegli il tuo stile +</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-</div></div></div></div></div></div></div></div></section>          </div>
-</div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer2" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright">All Rights Reserved 2017 © ALsistem Scrl</span></div></div></div></div></footer>                        </div> <!-- /.body-innerwrapper -->
-                    </div> <!-- /.body-innerwrapper -->
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-                    <!-- Off Canvas Menu -->
-                    <div class="offcanvas-menu">
-                        <a href="#" class="close-offcanvas"><i class="fa fa-remove"></i></a>
-                        <div class="offcanvas-inner">
-                                                          <p class="alert alert-warning">
-                                Please publish modules in <strong>offcanvas</strong> position.                              </p>
-                                                    </div> <!-- /.offcanvas-inner -->
-                    </div> <!-- /.offcanvas-menu -->
-
-                    
-                    
-                    <!-- Preloader -->
-                    
-                    <!-- Go to top -->
-                                            <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
-                    
-                </body>
-                </html>
+<footer id="sp-footer">
+	<div class="container">
+		<div class="row">
+			<div id="sp-footer2" class="col-sm-12 col-md-12">
+				<div class="sp-column ">
+				<span class="sp-copyright">Tutti i diritti riservati 2017 © ALsistem Scrl</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div> 
+<!-- /.body-innerwrapper -->
+</div>
+<!-- /.body-innerwrapper -->
+<!-- Off Canvas Menu -->
+<div class="offcanvas-menu">
+	<a href="#" class="close-offcanvas"><i class="fa fa-remove"></i></a>
+<div class="offcanvas-inner">
+	<p class="alert alert-warning">Pubblicare un modulo in posizione<strong>offcanvas</strong>.</p>
+</div>
+<!-- /.offcanvas-inner -->
+</div> 
+<!-- /.offcanvas-menu -->
+<!-- Preloader -->
+<!-- Go to top -->
+<a href="javascript:void(0)" class="scrollup">&nbsp;</a>
+</body>
+</html>

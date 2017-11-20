@@ -1674,15 +1674,15 @@ var polyfilter_scriptpath = '/js/';
 <table width="100%">
 <tbody>
 <tr>
-<td>
+<td style="width:33%">
 <a href="javascript: wizPost([{name: 'action', value:'submitForPrice'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 15px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
 <div>
-	<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">Definisci preventivo tecnico</div> 
+	<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">Calcola prezzo indicativo</div> 
 	<div style="float:right; margin-right:5px"><i class="fa fa-calculator"></i> </div>
 </div>
 </a></td>
-<td style="width:5%;" ></td>
-<td style="width:55%; font-size: 12px; font-weight: bold; height: 24px; text-align:right; padding: 3px 0; border-bottom: 2px solid #c90000; border-top: 2px solid #c90000;" colspan="3">PREZZO INDICATIVO FINALE</td>
+<td style="width:4%;" ></td>
+<td style="width:57%; font-size: 12px; font-weight: bold; height: 24px; text-align:right; padding: 3px 0; border-bottom: 2px solid #c90000; border-top: 2px solid #c90000;" colspan="3">PREZZO INDICATIVO FINALE</td>
 <td style="width:5%; text-align:right; width: 25px; border-bottom: 2px solid #c90000; border-top: 2px solid #c90000;"><button style="
     margin:1 0 0 5px;
     width:30px;
