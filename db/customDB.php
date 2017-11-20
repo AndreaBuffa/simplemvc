@@ -64,46 +64,42 @@ class CustomDB extends DB {
             echo 'SMVC error parsing XML';
             return $results;
         }
+        return $this->xmlToObj($root, $type, $instance);
+    }
+
+    protected function xmlToObj(Traversable $root, $type, &$instance) {
+        $results = array();
+        $reflect = new ReflectionClass($type);
         $queue = array();
         if ($root instanceof Traversable) {
             array_push($queue, $root);
         }
 
         foreach ($queue as $key => $node) {
-            # ActiveRecord class name and tag name must be the same
             //if (strtolower($type) == $node->getName()) {
-            if (strtolower($type::MAP_NAME) == $node->getName()) {
+            if (strtolower($type::MAP_NAME) === $node->getName()) {
                 // now each children elem is an ActiveRecord Object
-
                 $props = $reflect->getProperties(ReflectionProperty::IS_PUBLIC);
                 foreach ($props as $prop) {
                     foreach ($node->children() as $name => $valueNode) {
-                        if ($prop->getName() == $name) {
+                        if ($prop->getName() == $name) {   
                             if (is_array($instance->$name)) {
-                                $relObj = $instance->getRelatedObject($name);
-                                $reflectRelObj = new ReflectionClass($relObj);
-                                foreach ($reflectRelObj->getProperties(ReflectionProperty::IS_PUBLIC) as $relObjProp) {
-                                    foreach ($valueNode->children() as $child) {
-                                        foreach ($child as $subName => $subValue) {
-                                            if ($relObjProp->getName() == $subName) {
+                                // use recursion with the new child type
+                                $childType = $instance->getRelatedObject($name);
 
-                                                $relObj->$subName = $subValue->__toString();
-                                            }
-                                        }
-                                    }
-                                }
-                                array_push($instance->$name, $relObj);
+                                $instance->$name = $this->xmlToObj($valueNode->children(),
+                                    $childType, $childType::getInstance($childType, null));
                             } else {
                                 $instance->$name = $valueNode->__toString();
-                            }
+                            }   
                         }
                     }
                 }
                 array_push($results, $instance);
-            }
-            //enquue $node->children
+            } else {
+                array_push($queue, $node->children());
+            }    
         }
-
         return $results;
     }
 }
