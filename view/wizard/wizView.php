@@ -16,6 +16,7 @@ class WizView extends ViewBase {
 	}
 
 	public function choosePanorama() {
+		$this->setTplParam('metro', $_SESSION["style"] == 'ufficio' ? 'true' : 'false');
 		return $this->fetch('panorama');
 	}
 

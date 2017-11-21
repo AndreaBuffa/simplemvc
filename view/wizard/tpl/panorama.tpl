@@ -375,6 +375,22 @@ var sp_offanimation = 'default';
 	<meta content="website" property="og:type"/>
 	<meta content="http://94.177.177.252/index.php/country-panorami" property="og:url" />
 	<meta content="country panorami" property="og:title" />
+	<script type="text/javascript">// <![CDATA[
+    	jQuery(document).ready(function() {
+    		var metropoli = <?php echo $v_metro ?>;
+    		if (metropoli) {
+				jQuery("#lago").hide();
+				jQuery("#montagna").hide();
+				jQuery("#mare").hide();
+				jQuery("#citta").hide()
+    		} else {
+    			jQuery("#metropoli").hide()
+    		}
+
+		});
+
+// ]]>
+	</script>
 </head>
 
 <body class="site com-sppagebuilder view-page no-layout no-task itemid-104 it-it ltr  layout-fluid off-canvas-menu-init">
