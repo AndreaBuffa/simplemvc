@@ -204,6 +204,7 @@ class Outdoor extends State {
 			$criteria["style"] = strtolower($_SESSION["style"]);
 			$criteria["panorama"] = strtolower($_SESSION["panorama"]);
 			$criteria["category"] = strtolower($_SESSION["category"]);
+			$criteria["type"] = strtolower($_SESSION[self::WIN_TYPE_SESS]);
 			$renderingList = Rendering::findAll($criteria);
 			if (count($renderingList) == 0) {
 				$_SESSION['wizState'] = new StartState();
@@ -228,6 +229,8 @@ class Outdoor extends State {
 			$this->view->setTplParam('indoorColor', (isset($_SESSION[self::WIN_COLOR_SESS])) ? 
 				$_SESSION[self::WIN_COLOR_SESS] : 'avorio');
 			$this->view->setTplParam('winColorOutdoorParam', self::WIN_COLOR_OUT);
+
+
 			$p = [];
 			$p[self::WIN_COLOR_OUT] = (isset($_SESSION[self::WIN_COLOR_OUT_SESS])) ? 
 				$_SESSION[self::WIN_COLOR_OUT_SESS] : 'avorio';

@@ -60,8 +60,6 @@ class ImageDB extends DB {
         }
         $basePath = ltrim($basePath, '/');
 
-//montagna/chiari/stili/classico/battente/sistemi/luce/interno/colore/avorio/maniglie/cremonese/
-
         $builder = new PathBuilder($basePath, $criteria);
         $pathList = $builder->getPathList();
         $records = array();
@@ -91,23 +89,26 @@ class PathBuilder {
     const STYLE_DIR = 'stili';
     const BRIGHT_DIR = 'chiari';
     const DARK_DIR = 'scuri';
+    const TYPE_DIR = 'sistemi';
     private $pathList = array();
 
     function __construct($basePath='', $criteria=array()) {
-        //$criteria["panorama"]/*/stili///$criteria["style"]//$criteria["category"]/
+        $win_type = (isset($criteria["type"])) ? '/' . self::TYPE_DIR . '/' . $criteria["type"] : "";
+//$criteria["panorama"]/*/stili///$criteria["style"]//$criteria["category"]/
+//montagna/chiari/stili/classico/battente/sistemi/luce/interno/colore/avorio/maniglie/cremonese/
 
         array_push(
             $this->pathList,
             $basePath . '/' . $criteria["panorama"] . '/' . PathBuilder::BRIGHT_DIR .
             '/' . PathBuilder::STYLE_DIR . '/' . $criteria["style"] . '/' .
-            $criteria["category"]
+            $criteria["category"] . $win_type
             );
 
         array_push(
             $this->pathList,
             $basePath . '/' . $criteria["panorama"] . '/' . PathBuilder::DARK_DIR .
             '/' . PathBuilder::STYLE_DIR . '/' . $criteria["style"] . '/' .
-            $criteria["category"]
+            $criteria["category"] . $win_type
             );
 
         //echo $rootPath;
