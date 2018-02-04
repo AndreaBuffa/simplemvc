@@ -71,6 +71,7 @@ class ImageDB extends DB {
                     }
                 } else {
                     echo "SMVC: cannot create inventory";
+                    var_dump($path);
                     return $records;
                 }
             }
@@ -90,12 +91,22 @@ class PathBuilder {
     const BRIGHT_DIR = 'chiari';
     const DARK_DIR = 'scuri';
     const TYPE_DIR = 'sistemi';
+    const COLOR_DIR = 'colore';
     private $pathList = array();
 
     function __construct($basePath='', $criteria=array()) {
-        $win_type = (isset($criteria["type"])) ? '/' . self::TYPE_DIR . '/' . $criteria["type"] : "";
+        if ($criteria["type"]) {
+            $win_type = '/' . self::TYPE_DIR . '/' . $criteria["type"];
+
+            if ($criteria["side"]) {
+                $win_type .= '/' . $criteria["side"];
+                $win_type .= ($criteria["color"]) ? '/' . self::COLOR_DIR . '/'  . $criteria["color"] : "";
+            }
+        }
+
 //$criteria["panorama"]/*/stili///$criteria["style"]//$criteria["category"]/
 //montagna/chiari/stili/classico/battente/sistemi/luce/interno/colore/avorio/maniglie/cremonese/
+//montagna/chiari/stili/classico/battente/sistemi/luce/esterno/colore
 
         array_push(
             $this->pathList,

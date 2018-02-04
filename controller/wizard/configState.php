@@ -113,7 +113,12 @@ class ConfigState extends State {
 		} else {
 			if (isset($_POST['action'])) {
 				$_SESSION[self::BRIGHTNESS_SESS_NAME] = $_POST[self::BRIGHTNESS];
-				$_SESSION[self::WIN_TYPE_SESS] = $_POST[self::WIN_TYPE];
+				if ($_SESSION[self::WIN_TYPE_SESS] !== $_POST[self::WIN_TYPE])
+				{
+					$_SESSION[self::WIN_TYPE_SESS] = $_POST[self::WIN_TYPE];
+					//reset others
+					$_SESSION[self::WIN_COLOR_OUT_SESS] = '';
+				}
 				$_SESSION[self::WIN_COLOR_SESS] = $_POST[self::WIN_COLOR];
 				$_SESSION[self::HANDLE_TYPE_SESS] = $_POST[self::HANDLE_TYPE];
 				$_SESSION[self::HANDLE_COLOR_SESS] = $_POST[self::HANDLE_COLOR];

@@ -33,8 +33,9 @@ class StartState extends State {
 	const NAME = 'start';
 
 	public function process($method, $page) {
-		//@todo add a class for managing the sesion
+		//@todo add a class for managing the session
 		//reset all session data
+		$_SESSION[self::CURR_IMG_SEL_SESS] = '';
 		$_SESSION[self::BRIGHTNESS_SESS_NAME] = self::BRIGHTNESS_DEF_VAL;
 		$_SESSION[self::WIN_TYPE_SESS] = self::WIN_TYPE_DEF;
 		$_SESSION[self::WIN_COLOR_SESS] = self::WIN_COLOR_DEF;
@@ -205,19 +206,17 @@ class Outdoor extends State {
 			$criteria["panorama"] = strtolower($_SESSION["panorama"]);
 			$criteria["category"] = strtolower($_SESSION["category"]);
 			$criteria["type"] = strtolower($_SESSION[self::WIN_TYPE_SESS]);
+			$criteria["side"] = "esterno";
+			if (isset($_SESSION[self::WIN_COLOR_OUT_SESS])) {
+				$criteria["color"] = $_SESSION[self::WIN_COLOR_OUT_SESS];
+			}
 			$renderingList = Rendering::findAll($criteria);
 			if (count($renderingList) == 0) {
-				$_SESSION['wizState'] = new StartState();
-				return header(HEADER_PREFIX.StartState::NAME);
+				//$_SESSION['wizState'] = new StartState();
+				//return header(HEADER_PREFIX.StartState::NAME);
 			}
-			$defaultRendering = '';
-			foreach ($renderingList as $key => $elem) {
-				if (preg_match('/esterno/', $elem)) {
-					$defaultRendering = $renderingList[$key];
-					break;
-				}
-			}
-			$defaultRendering = ($defaultRendering == '') ? OUTDOOR_DEF_IMG : $defaultRendering;
+			$defaultRendering = $renderingList[0];
+
 			require_once(__DIR__.'/../view/wizard/wizView.php');
 			$this->view = new WizView();
 			$this->view->setTplParam('HOST', HOST);
@@ -229,7 +228,6 @@ class Outdoor extends State {
 			$this->view->setTplParam('indoorColor', (isset($_SESSION[self::WIN_COLOR_SESS])) ? 
 				$_SESSION[self::WIN_COLOR_SESS] : 'avorio');
 			$this->view->setTplParam('winColorOutdoorParam', self::WIN_COLOR_OUT);
-
 
 			$p = [];
 			$p[self::WIN_COLOR_OUT] = (isset($_SESSION[self::WIN_COLOR_OUT_SESS])) ? 
