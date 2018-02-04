@@ -211,7 +211,7 @@ margin: 0 -5px 0 -8px;
 #sppb-addon-1494231614610 {
 margin: 0 0 0 -8px;
 }
-.sp-page-builder .page-content #noce{margin:0px 5px 0px -5px;padding:0px 0px 0px 0px;}
+.sp-page-builder .page-content #marrone{margin:0px 5px 0px -5px;padding:0px 0px 0px 0px;}
 #sppb-addon-1490731691329 {
 margin: 0 -5px 0 -8px;
 }
@@ -409,18 +409,30 @@ var sp_offanimation = 'default';
 			Joomla.JText.load({"COM_SPPAGEBUILDER_FRONTEND_EDITOR":"Editor Frontend","COM_SPPAGEBUILDER_PREVIEW":"Anteprima","COM_SPPAGEBUILDER_APPLY":"Applica","COM_SPPAGEBUILDER_CANCEL":"Annulla","COM_SPPAGEBUILDER_MEDIA_MANAGER":"Gestione Media","COM_SPPAGEBUILDER_MEDIA_MANAGER_UPLOAD_FILES":"Carica File","COM_SPPAGEBUILDER_MEDIA_MANAGER_CLOSE":"Chiudi Modale","COM_SPPAGEBUILDER_MEDIA_MANAGER_INSERT":"Inserisci","COM_SPPAGEBUILDER_MEDIA_MANAGER_SEARCH":"Cerca","COM_SPPAGEBUILDER_MEDIA_MANAGER_CANCEL":"Annulla","COM_SPPAGEBUILDER_MEDIA_MANAGER_DELETE":"Cancella","COM_SPPAGEBUILDER_MEDIA_MANAGER_CONFIRM_DELETE":"Stai per eliminare definitivamente questo elemento. \"annulla\" per fermarti, \"OK\" per procedere e cancellare l'elemento.","COM_SPPAGEBUILDER_MEDIA_MANAGER_LOAD_MORE":"Carica pi\u00f9 elementi","COM_SPPAGEBUILDER_MEDIA_MANAGER_UNSUPPORTED_FORMAT":"Formato file non supportato","COM_SPPAGEBUILDER_MEDIA_MANAGER_BROWSE_MEDIA":"Sfoglia media","COM_SPPAGEBUILDER_MEDIA_MANAGER_BROWSE_FOLDERS":"Sfoglia cartelle","COM_SPPAGEBUILDER_MEDIA_MANAGER_CREATE_FOLDER":"Nuova cartella","COM_SPPAGEBUILDER_ADDON_ICON_SELECT":"Icona Di Selezione","COM_SPPAGEBUILDER_MEDIA_MANAGER_ENTER_DIRECTORY_NAME":"Inserisci il nome della cartella da creare","COM_SPPAGEBUILDER_MEDIA_MANAGER_MEDIA_UPLOADING":"Caricamento","COM_SPPAGEBUILDER_MEDIA_MANAGER_UPLOAD_FAILED":"Caricamento fallito","COM_SPPAGEBUILDER_MEDIA_MANAGER_MEDIA_LARGE":"Questo file \u00e8 troppo grande per essere caricato.","COM_SPPAGEBUILDER_MEDIA_MANAGER_FILE_NOT_SUPPORTED":"File non supportato","COM_SPPAGEBUILDER_ROW_OPTIONS":"Opzioni riga","COM_SPPAGEBUILDER_ADD_NEW_ROW":"Aggiungi nuova riga","COM_SPPAGEBUILDER_DUPLICATE_ROW":"Duplica riga","COM_SPPAGEBUILDER_DISABLE_ROW":"Disabilita riga","COM_SPPAGEBUILDER_ENABLE_ROW":"Abilita riga","COM_SPPAGEBUILDER_COPY_ROW":"Copia riga","COM_SPPAGEBUILDER_ROW_COPIED":"Copiato","COM_SPPAGEBUILDER_PASTE_ROW":"Incolla riga","COM_SPPAGEBUILDER_DELETE_ROW":"Cancella riga","COM_SPPAGEBUILDER_ROW_TOGGLE":"Seleziona riga","COM_SPPAGEBUILDER_DELETE_ROW_CONFIRMATION":"Vuoi davvero eliminare questa riga?","COM_SPPAGEBUILDER_ROW_COLUMNS_MANAGEMENT":"Aggiungi\/gestisci Colonne","COM_SPPAGEBUILDER_ROW_COLUMNS_CUSTOM":"Personalizzato","COM_SPPAGEBUILDER_ROW_COLUMNS_GENERATE":"Genera","COM_SPPAGEBUILDER_IMPORT_PAGE":"Importa","COM_SPPAGEBUILDER_IMPORT_PAGE_ALT":"Importa","COM_SPPAGEBUILDER_EXPORT_PAGE":"Esporta","COM_SPPAGEBUILDER_PAGE_TEMPLATES":"Template pagine","COM_SPPAGEBUILDER_UNDO":"Annulla","COM_SPPAGEBUILDER_REDO":"Ripristina","COM_SPPAGEBUILDER_SAVE":"Salva","COM_SPPAGEBUILDER_ROW_COLUMNS_OPTIONS":"Opzioni colonna","COM_SPPAGEBUILDER_DELETE_COLUMN":"Elimina colonna","COM_SPPAGEBUILDER_ADD_NEW_ADDON":"Aggiungi nuovo Addon","COM_SPPAGEBUILDER_ADDON":"Addon","COM_SPPAGEBUILDER_DELETE_ADDON":"Elimina Addon","COM_SPPAGEBUILDER_DUPLICATE_ADDON":"Clona Addon","COM_SPPAGEBUILDER_EDIT_ADDON":"Modifica Addon","COM_SPPAGEBUILDER_ADDONS_LIST":"Lista Addon","COM_SPPAGEBUILDER_ALL":"Tutto","COM_SPPAGEBUILDER_MODAL_CLOSE":"Chiudi Modale","COM_SPPAGEBUILDER_DISABLE_COLUMN":"Disabilita colonna","COM_SPPAGEBUILDER_ENABLE_COLUMN":"Abilita colonna","COM_SPPAGEBUILDER_YES":"Si","COM_SPPAGEBUILDER_NO":"No","COM_SPPAGEBUILDER_PAGE_TEMPLATES_LIST":"Lista Template","COM_SPPAGEBUILDER_PAGE_TEMPLATE_LOAD":"Carica","COM_SPPAGEBUILDER_ENABLE_ADDON":"Abilita Addon","COM_SPPAGEBUILDER_DISABLE_ADDON":"Disabilita addon","COM_SPPAGEBUILDER_ADDON_PARENT_COLUMN":"Colonna \"genitore\"","COM_SPPAGEBUILDER_ADD_NEW_INNER_ROW":"Aggiungi riga interna","COM_SPPAGEBUILDER_MOVE_COLUMN":"Sposta colonna"});
 		})();
 	</script>
-	<meta content="country portafinestra battente esterno" property="og:title" />
+	<meta content="" property="og:title" />
 	<meta content="website" property="og:type"/>
-	<meta content="http://94.177.177.252/index.php/country-portafinestra-battente-esterno" property="og:url" />
+	<meta content="" property="og:url" />
 
                                 </head>
                 <body class="site com-sppagebuilder view-page no-layout no-task itemid-107 it-it ltr  layout-fluid off-canvas-menu-init">
 
                     <div class="body-wrapper">
                         <div class="body-innerwrapper">
-                            <div class="sp-pre-loader"><div class="sp-loader-bubble-loop"></div></div>
+                            <div class="sp-pre-loader">
+                            <div class="sp-loader-bubble-loop">
+                            </div>
+                        	</div>
  <!-- header -->
-<section id="section-id-1494172944745" class="sppb-section  sppb-hidden-sm sppb-hidden-xs"><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-4"><div id="column-id-1494085957782" class="sppb-column  margini1bis"><div class="sppb-column-addons"><div id="sppb-addon-1494080026683" class="clearfix"><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
+<section id="section-id-1494172944745" class="sppb-section  sppb-hidden-sm sppb-hidden-xs">
+	<div class="sppb-row-container">
+		<div class="sppb-row">
+			<div class="sppb-col-md-4">
+				<div id="column-id-1494085957782" class="sppb-column  margini1bis">
+					<div class="sppb-column-addons">
+						<div id="sppb-addon-1494080026683" class="clearfix">
+							<div class="sppb-addon sppb-addon-raw-html ">
+								<div class="sppb-addon-content">
+									<table>
 <tbody>
 <tr>
 <td><img style="width:85px; height: 85px;" src="/images/2017/05/06/logo_alsistem150x150.png"></td>
@@ -475,7 +487,20 @@ var sp_offanimation = 'default';
 <td style="width:1%; padding-right:8px;"></td>
 </tr>
 </tbody>
-</table></div></div></div></div></div></div><div class="sppb-col-md-2"><div id="column-id-1494085957784" class="sppb-column  margini3"><div class="sppb-column-addons"><div id="sppb-addon-1494169781290" class="clearfix"><div class="sppb-addon sppb-addon-module "><div class="sppb-addon-content"><div class="sclogin sourcecoast">
+</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="sppb-col-md-2">
+			<div id="column-id-1494085957784" class="sppb-column  margini3">
+				<div class="sppb-column-addons">
+					<div id="sppb-addon-1494169781290" class="clearfix">
+						<div class="sppb-addon sppb-addon-module ">
+							<div class="sppb-addon-content">
+								<div class="sclogin sourcecoast">
 
     <div class="sclogout-button">
         <div class="sclogin-joomla-login">
@@ -493,10 +518,27 @@ var sp_offanimation = 'default';
     </div>
     <div class="clearfix"></div>
 </div>
-</div></div></div></div></div></div></div></div></section>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
 
 
-<div id="section-id-1494172984093" class="sppb-section  sppb-hidden-md sppb-hidden-lg sppb-hidden-xs"  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-3 sppb-col-sm-3"><div id="column-id-1494158935830" class="sppb-column  margini1" ><div class="sppb-column-addons"><div id="sppb-addon-1494158935831" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html  posizione2"><div class="sppb-addon-content"><div style="margin-left: 10px; z-index:100;">
+<div id="section-id-1494172984093" class="sppb-section  sppb-hidden-md sppb-hidden-lg sppb-hidden-xs"  >
+	<div class="sppb-container-inner">
+		<div class="sppb-row">
+			<div class="sppb-col-md-3 sppb-col-sm-3">
+				<div id="column-id-1494158935830" class="sppb-column  margini1" >
+					<div class="sppb-column-addons">
+						<div id="sppb-addon-1494158935831" class="clearfix" >
+							<div class="sppb-addon sppb-addon-raw-html  posizione2">
+								<div class="sppb-addon-content">
+									<div style="margin-left: 10px; z-index:100;">
 <table>
 <tbody>
 <tr>
@@ -594,7 +636,20 @@ var sp_offanimation = 'default';
 <td style="width:1%;"></td>
 </tr>
 </tbody>
-</table></div></div></div></div></div></div><div class="sppb-col-md-2 sppb-col-sm-2"><div id="column-id-1494158935834" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-1494231614691" class="clearfix" ><div class="sppb-addon sppb-addon-module "><div class="sppb-addon-content"><div class="sclogin sourcecoast">
+</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sppb-col-md-2 sppb-col-sm-2">
+			<div id="column-id-1494158935834" class="sppb-column " >
+				<div class="sppb-column-addons">
+					<div id="sppb-addon-1494231614691" class="clearfix" >
+						<div class="sppb-addon sppb-addon-module ">
+							<div class="sppb-addon-content">
+								<div class="sclogin sourcecoast">
 
     <div class="sclogout-button">
         <div class="sclogin-joomla-login">
@@ -614,7 +669,25 @@ var sp_offanimation = 'default';
             </div>
     <div class="clearfix"></div>
 </div>
-</div></div></div></div></div></div></div></div></div><div id="section-id-1494173013988" class="sppb-section  sppb-equalize-columns sppb-hidden-md sppb-hidden-lg sppb-hidden-sm"  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-4 sppb-col-xs-4"><div id="column-id-1494085957869" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-1494085957870" class="clearfix" ><div class="sppb-addon sppb-addon-raw-html "><div class="sppb-addon-content"><table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="section-id-1494173013988" class="sppb-section  sppb-equalize-columns sppb-hidden-md sppb-hidden-lg sppb-hidden-sm"  >
+			<div class="sppb-container-inner">
+				<div class="sppb-row">
+					<div class="sppb-col-md-4 sppb-col-xs-4">
+						<div id="column-id-1494085957869" class="sppb-column " >
+							<div class="sppb-column-addons">
+								<div id="sppb-addon-1494085957870" class="clearfix" >
+									<div class="sppb-addon sppb-addon-raw-html ">
+										<div class="sppb-addon-content">
+											<table>
 <tbody>
 <tr>
 <td><img style="width:25px; height: 25px;" src="/images/2017/05/06/logo_alsistem150x150.png"></td>
@@ -709,7 +782,20 @@ var sp_offanimation = 'default';
 <td style="width:1%; padding-right:2px;"></td>
 </tr>
 </tbody>
-</table></div></div></div></div></div></div><div class="sppb-col-md-2 sppb-col-xs-2"><div id="column-id-1494085957873" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-1494231614708" class="clearfix" ><div class="sppb-addon sppb-addon-module "><div class="sppb-addon-content"><div class="sclogin sourcecoast">
+</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sppb-col-md-2 sppb-col-xs-2">
+				<div id="column-id-1494085957873" class="sppb-column " >
+					<div class="sppb-column-addons">
+						<div id="sppb-addon-1494231614708" class="clearfix" >
+							<div class="sppb-addon sppb-addon-module ">
+								<div class="sppb-addon-content">
+									<div class="sclogin sourcecoast">
 
     <div class="sclogout-button">
         <div class="sclogin-joomla-login">
@@ -728,95 +814,112 @@ var sp_offanimation = 'default';
     <div class="sclogin-social-connect">
             </div>
     <div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+
 <section id="section-id-1490355666609" class="sppb-section">
-<div class="sppb-row-container">
-<div class="sppb-row">
-<div class="sppb-col-md-3 sppb-col-sm-3">
-<div id="column-id-1490355666610" class="sppb-column " >
-<div class="sppb-column-addons">
-<div id="sppb-addon-1490375998889" class="clearfix" >
-<div class="sppb-addon sppb-addon-text-block sppb-text-left ">
-<div class="sppb-addon-content">
-<div>
-<table width="100%">
-<tbody>
-<tr>
-<td style="padding-top: 3px; font-size: 12px; line-height: 18px; border-top: 1px solid #858585; border-bottom: 1px solid #858585;">PER L'INTERNO HAI SCELTO IL COLORE</td>
-<td style="width: 2%;">&nbsp;</td>
-<td style="padding-top: 3px; font-size: 12px; line-height: 18px; border-top: 1px solid #858585; border-bottom: 1px solid #858585;"><?php echo strtoupper($v_indoorColor); ?></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div id="sppb-addon-1494247615170" class="clearfix" >
-<div class="sppb-addon sppb-addon-raw-html ">
-<div class="sppb-addon-content">
-<button style="background: #ffffff; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="mostra">
-<div>
-<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">Scegli il colore dell'esterno</div> 
-<div style="float:right; margin-right:5px"><i class="fa fa-plus"></i>
-</div>
-</div>
-</button>
-<button style="background: #ce0000; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="nascondi">
-<div>
-<div style="float:left; vertical-align: middle; padding-top:7px; color:#ffffff;">Scegli il colore dell'esterno</div> 
-<div style="float:right; margin-right:5px"><i style="color:#ffffff" class="fa fa-plus"></i>
-</div>
-</div>
-</button>
-</div>
-</div>
-</div>
-<div id="sppb-addon-1494174149873" class="clearfix" >
-<div class="sppb-addon sppb-addon-raw-html ">
-<div class="sppb-addon-content">
-<a href="javascript: wizPost([{name: 'action', value:'config'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
-<div>
-<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFIGURA INTERNO</div> 
-<div style="float:right; margin-right:5px"><i class="fa fa-pencil-square-o"></i>
-</div>
-</div>
-</a>
-</div>
-</div>
-</div>
-<div id="sppb-addon-1494509008898" class="clearfix" >
-<div class="sppb-addon sppb-addon-raw-html ">
-<div class="sppb-addon-content">
-<a href="javascript: wizPost([{name: 'action', value:'configB'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
-<div>
-<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">CONFERMA E PROSEGUI
-</div> 
-<div style="float:right; margin-right:5px"><i class="fa fa-floppy-o"></i>
-</div>
-</div>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sppb-col-md-9 sppb-col-sm-9">
-<div id="column-id-1490355666611" class="sppb-column" >
-<div class="sppb-column-addons">
-<div id="sppb-addon-1494256006468" class="clearfix" >
-<div class="sppb-addon sppb-addon-raw-html ">
-<div class="sppb-addon-content">
+	<div class="sppb-row-container">
+		<div class="sppb-row">
+			<div class="sppb-col-md-3 sppb-col-sm-3">
+				<div id="column-id-1490355666610" class="sppb-column " >
+					<div class="sppb-column-addons">
+						<div id="sppb-addon-1490375998889" class="clearfix" >
+							<div class="sppb-addon sppb-addon-text-block sppb-text-left ">
+								<div class="sppb-addon-content">
+									<div>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<td style="padding-top: 3px; font-size: 12px; line-height: 18px; border-top: 1px solid #858585; border-bottom: 1px solid #858585;">
+														PER L'INTERNO HAI SCELTO IL COLORE
+													</td>
+													<td style="width: 2%;">&nbsp;</td>
+													<td style="padding-top: 3px; font-size: 12px; line-height: 18px; border-top: 1px solid #858585; border-bottom: 1px solid #858585;">
+														<?php echo strtoupper($v_indoorColor); ?>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+							<div id="sppb-addon-1494247615170" class="clearfix" >
+								<div class="sppb-addon sppb-addon-raw-html ">
+									<div class="sppb-addon-content">
+										<button style="background: #ffffff; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="mostra">
+											<div>
+												<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">
+													Scegli il colore dell'esterno
+												</div> 
+												<div style="float:right; margin-right:5px">
+													<i class="fa fa-plus"></i>
+												</div>
+											</div>
+										</button>
+										<button style="background: #ce0000; border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" id="nascondi">
+											<div>
+												<div style="float:left; vertical-align: middle; padding-top:7px; color:#ffffff;">
+													Scegli il colore dell'esterno
+												</div> 
+												<div style="float:right; margin-right:5px">
+													<i style="color:#ffffff" class="fa fa-plus"></i>
+												</div>
+											</div>
+										</button>
+									</div>
+								</div>
+							</div>
+								<div id="sppb-addon-1494174149873" class="clearfix" >
+									<div class="sppb-addon sppb-addon-raw-html ">
+										<div class="sppb-addon-content">
+										<a href="javascript: wizPost([{name: 'action', value:'config'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+											<div>
+												<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">
+													CONFIGURA INTERNO
+												</div> 
+												<div style="float:right; margin-right:5px">
+													<i class="fa fa-pencil-square-o"></i>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+								<div id="sppb-addon-1494509008898" class="clearfix" >
+									<div class="sppb-addon sppb-addon-raw-html ">
+										<div class="sppb-addon-content">
+											<a href="javascript: wizPost([{name: 'action', value:'configB'}]);" style="border:1px solid #858585; width:100%; padding: 5px; font-size: 16px; line-height: 1px;" class="sppb-btn  sppb-btn-xlg sppb-btn-square" title="">
+												<div>
+													<div style="float:left; vertical-align: middle; padding-top:7px; color:#878787;">
+														CONFERMA E PROSEGUI
+													</div> 
+													<div style="float:right; margin-right:5px">
+														<i class="fa fa-floppy-o"></i>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						<div class="sppb-col-md-9 sppb-col-sm-9">
+							<div id="column-id-1490355666611" class="sppb-column" >
+								<div class="sppb-column-addons">
+									<div id="sppb-addon-1494256006468" class="clearfix" >
+										<div class="sppb-addon sppb-addon-raw-html ">
+											<div class="sppb-addon-content">
 <link rel="stylesheet" type="text/css" href="/css/component.css" />
 <script src="/js/modernizr.custom.js"></script>
 
@@ -825,7 +928,7 @@ div#base{display:block}
 div#avorio{display:none}
 div#bianco{display:none}
 div#grigio{display:none}
-div#noce{display:none}
+div#marrone{display:none}
 div#nero{display:none}
 div#luce1{border:0px solid #ff3000}
 div#vetro1{border:0px solid #ff3000}
@@ -1069,7 +1172,7 @@ $("#baseok").hide();
  $("#avorio").hide();
  $("#bianco").hide();
  $("#grigio").hide();
- $("#noce").hide();
+ $("#marrone").hide();
  $("#nero").hide();
  });
  
@@ -1105,7 +1208,7 @@ $("#grigio1").click(function(){
 });
 
 $("#noce1").click(function(){
- $("#noce").show();
+ $("#marrone").show();
  $("#baseok").hide();
  $("input[name=<?php echo $v_winColorOutdoorParam ?>").attr("value", "avorio");
  var tmp = smvcApplyFilter(smvcGetFilter()); 
@@ -1171,7 +1274,7 @@ $("#nero1").click(function(){
 <td style="width:1%"></td>
 	<td style="vertical-align: top; width:15%;">
    <button style="width: 100%; text-align: center; cursor: pointer; background-color: #ffffff; padding: 5px 5px 0; border: none; border-radius: 0;" 
-onclick="mostranascondi1('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)">
+onclick="mostranascondi1('base', 'avorio', 'bianco', 'grigio', 'marrone', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)">
 <div class="boxpuls" id="luce1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;">
 <img src="/images/PRODOTTI/COLORI-PRODOTTI/AVORIO.jpg" class="imagebox" alt=""/>
 AVORIO
@@ -1183,7 +1286,7 @@ AVORIO
 	<td style="width:1%"></td>
 	<td align="center" style="width:15%;">
 	<button style="width: 100%; text-align: center; cursor: pointer; background-color: #ffffff; padding: 5px 5px 0; border: none; border-radius: 0;" 
-    onclick="mostranascondi2('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)">
+    onclick="mostranascondi2('base', 'avorio', 'bianco', 'grigio', 'marrone', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)">
     <div class="boxpuls" id="vetro1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
@@ -1197,7 +1300,7 @@ AVORIO
 	<td style="width:1%"></td>
 	<td align="center" style="width:15%;">
 	<button style="width: 100%; text-align: center; cursor: pointer; background-color: #ffffff; padding: 5px 5px 0; border: none; border-radius: 0;" 
-    onclick="mostranascondi3('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)">
+    onclick="mostranascondi3('base', 'avorio', 'bianco', 'grigio', 'marrone', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)">
     <div class="boxpuls" id="nathura1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
@@ -1211,7 +1314,7 @@ AVORIO
 	<td style="width:1%"></td>
 		<td align="center" style="width:15%;">
 		<button style="width: 100%; text-align: center; cursor: pointer; background-color: #ffffff; padding: 5px 5px 0; border: none; border-radius: 0;" 
-    onclick="mostranascondi4('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)"><div class="boxpuls" id="classic1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+    onclick="mostranascondi4('base', 'avorio', 'bianco', 'grigio', 'marrone', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)"><div class="boxpuls" id="classic1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
     color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/MARRONE-GOTICO.jpg" width="250" height="250" class="imagebox" alt=""/>
@@ -1224,7 +1327,7 @@ AVORIO
 	<td style="width:1%"></td>
 		<td align="center" style="width:15%;">
 		<button style="width: 100%; text-align: center; cursor: pointer; background-color: #ffffff; padding: 5px 5px 0; border: none; border-radius: 0;" 
-    onclick="mostranascondi5('base', 'avorio', 'bianco', 'grigio', 'noce', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)"><div class="boxpuls" id="invisio1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+    onclick="mostranascondi5('base', 'avorio', 'bianco', 'grigio', 'marrone', 'nero', 'luce1', 'vetro1', 'nathura1', 'classic1', 'invisio1', 'baseok'); return(false)"><div class="boxpuls" id="invisio1" style="text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
     font-weight: bold;
     letter-spacing: 0.3px;
     color: #858585; font-size: 16px; line-height: 32px; background: #ffffff; width:100%; height: auto; margin-bottom:0px;"><img src="/images/PRODOTTI/COLORI-PRODOTTI/NERO.jpg" width="250" height="250" class="imagebox" alt=""/>
@@ -1240,25 +1343,216 @@ AVORIO
 	</tbody>
   </table>
 </div>
-</div></div></div></div></div></div></div></div></div></div><div id="avorio" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614550" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490731691299" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a><img class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="COUNTRY-ESTERNO-AVORIO.jpg" title=""></div></div></div></div><div id="sppb-addon-1490777906390" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO AVORIO</div></div></div></div></div></div></div></div></div></div><div id="bianco" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614586" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490731691306" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-BIANCO.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-BIANCO.jpg" alt="COUNTRY-ESTERNO-BIANCO.jpg" title=""></div></div></div></div><div id="sppb-addon-1494231614588" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO BIANCO</div></div></div></div></div></div></div></div></div></div><div id="grigio" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614608" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490731691313" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-GRIGIO.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-GRIGIO.jpg" alt="COUNTRY-ESTERNO-GRIGIO.jpg" title=""></div></div></div></div><div id="sppb-addon-1494231614610" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO GRIGIO</div></div></div></div></div></div></div></div></div></div><div id="noce" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494231614652" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1490731691329" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NOCE.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NOCE.jpg" alt="COUNTRY-ESTERNO-NOCE.jpg" title=""></div></div></div></div><div id="sppb-addon-1494231614654" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO NOCE</div></div></div></div></div></div></div></div></div></div><div id="nero" class="sppb-section "  ><div class="sppb-container-inner"><div class="sppb-row"><div class="sppb-col-md-12"><div id="column-id-1494317158345" class="sppb-column" ><div class="sppb-column-addons"><div id="sppb-addon-1494317158346" class="clearfix" ><div class="sppb-addon sppb-addon-single-image sppb-text-center "><div class="sppb-addon-content"><div class="sppb-addon-single-image-container"><div class="sppb-addon-image-overlay"></div><a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NERO.jpg">+</a><img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NERO.jpg" alt="COUNTRY-ESTERNO-NERO.jpg" title=""></div></div></div></div><div id="sppb-addon-1494317158347" class="clearfix" ><div class="sppb-addon sppb-addon-text-block sppb-text-left "><div class="sppb-addon-content"><div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">PORTAFINESTRA -&nbsp;ESTERNO NERO</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></section>			</div>
-</div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer2" class="col-sm-12 col-md-12"><div class="sp-column "><span class="sp-copyright">All Rights Reserved 2017 © ALsistem Scrl</span></div></div></div></div></footer>                        </div> <!-- /.body-innerwrapper -->
-                    </div> <!-- /.body-innerwrapper -->
-
-                    <!-- Off Canvas Menu -->
-                    <div class="offcanvas-menu">
-                        <a href="#" class="close-offcanvas"><i class="fa fa-remove"></i></a>
-                        <div class="offcanvas-inner">
-                                                          <p class="alert alert-warning">
-                                Please publish modules in <strong>offcanvas</strong> position.                              </p>
-                                                    </div> <!-- /.offcanvas-inner -->
-                    </div> <!-- /.offcanvas-menu -->
-
-                    
-                    
-                    <!-- Preloader -->
-                    
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="avorio" class="sppb-section "  >
+		<div class="sppb-container-inner">
+			<div class="sppb-row">
+				<div class="sppb-col-md-12">
+					<div id="column-id-1494231614550" class="sppb-column" >
+					<div class="sppb-column-addons">
+							<div id="sppb-addon-1490731691299" class="clearfix" >
+								<div class="sppb-addon sppb-addon-single-image sppb-text-center ">
+									<div class="sppb-addon-content">
+										<div class="sppb-addon-single-image-container">
+											<div class="sppb-addon-image-overlay">
+											</div>
+											<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>">+</a>
+											<img class="sppb-img-responsive" src="<?php echo "$v_METHOD://$v_HOST/$v_APP/$v_rendering"?>" alt="" title="">
+										</div>
+									</div>
+								</div>
+							</div>
+						<div id="sppb-addon-1490777906390" class="clearfix" >
+							<div class="sppb-addon sppb-addon-text-block sppb-text-left ">
+								<div class="sppb-addon-content">
+									<div style="font-size: 14px; font-weight: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">
+										PORTAFINESTRA -&nbsp;ESTERNO AVORIO
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="bianco" class="sppb-section "  >
+		<div class="sppb-container-inner">
+			<div class="sppb-row">
+				<div class="sppb-col-md-12">
+					<div id="column-id-1494231614586" class="sppb-column" >
+						<div class="sppb-column-addons">
+							<div id="sppb-addon-1490731691306" class="clearfix" >
+								<div class="sppb-addon sppb-addon-single-image sppb-text-center ">
+									<div class="sppb-addon-content">
+										<div class="sppb-addon-single-image-container">
+											<div class="sppb-addon-image-overlay">
+											</div>
+											<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-BIANCO.jpg">+</a>
+											<img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-BIANCO.jpg" alt="" title="">
+											</div>
+										</div>
+									</div>
+								</div>
+							<div id="sppb-addon-1494231614588" class="clearfix" >
+								<div class="sppb-addon sppb-addon-text-block sppb-text-left ">
+									<div class="sppb-addon-content">
+										<div style="font-size: 14px; font-weight: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">
+											PORTAFINESTRA -&nbsp;ESTERNO BIANCO
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div id="grigio" class="sppb-section "  >
+			<div class="sppb-container-inner">
+				<div class="sppb-row">
+					<div class="sppb-col-md-12">
+						<div id="column-id-1494231614608" class="sppb-column" >
+							<div class="sppb-column-addons">
+								<div id="sppb-addon-1490731691313" class="clearfix" >
+									<div class="sppb-addon sppb-addon-single-image sppb-text-center ">
+										<div class="sppb-addon-content">
+											<div class="sppb-addon-single-image-container">
+												<div class="sppb-addon-image-overlay">
+												</div>
+												<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-GRIGIO.jpg">+</a>
+												<img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-GRIGIO.jpg" alt="" title="">
+											</div>
+										</div>
+									</div>
+								</div>
+							<div id="sppb-addon-1494231614610" class="clearfix" >
+								<div class="sppb-addon sppb-addon-text-block sppb-text-left ">
+									<div class="sppb-addon-content">
+										<div style="font-size: 14px; font-weight: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">
+											PORTAFINESTRA -&nbsp;ESTERNO GRIGIO
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div id="marrone" class="sppb-section "  >
+	<div class="sppb-container-inner">
+		<div class="sppb-row">
+			<div class="sppb-col-md-12">
+				<div id="column-id-1494231614652" class="sppb-column" >
+					<div class="sppb-column-addons">
+						<div id="sppb-addon-1490731691329" class="clearfix" >
+							<div class="sppb-addon sppb-addon-single-image sppb-text-center ">
+								<div class="sppb-addon-content">
+									<div class="sppb-addon-single-image-container">
+										<div class="sppb-addon-image-overlay">
+										</div>
+									<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NOCE.jpg">+</a>
+									<img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NOCE.jpg" alt="" title="">
+								</div>
+							</div>
+						</div>
+					</div>
+						<div id="sppb-addon-1494231614654" class="clearfix" >
+							<div class="sppb-addon sppb-addon-text-block sppb-text-left ">
+								<div class="sppb-addon-content">
+									<div style="font-size: 14px; font-weight: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">
+										PORTAFINESTRA -&nbsp;ESTERNO MARRONE
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="nero" class="sppb-section "  >
+		<div class="sppb-container-inner">
+			<div class="sppb-row">
+				<div class="sppb-col-md-12">
+					<div id="column-id-1494317158345" class="sppb-column" >
+						<div class="sppb-column-addons">
+							<div id="sppb-addon-1494317158346" class="clearfix" >
+								<div class="sppb-addon sppb-addon-single-image sppb-text-center ">
+									<div class="sppb-addon-content">
+										<div class="sppb-addon-single-image-container">
+											<div class="sppb-addon-image-overlay">
+											</div>
+										<a class="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NERO.jpg">+</a>
+										<img class="sppb-img-responsive" src="/images/PRODOTTI/GRANDI/COUNTRY-ESTERNO-NERO.jpg" alt="" title="">
+									</div>
+								</div>
+							</div>
+						</div>
+					<div id="sppb-addon-1494317158347" class="clearfix" >
+						<div class="sppb-addon sppb-addon-text-block sppb-text-left ">
+							<div class="sppb-addon-content">
+								<div style="font-size: 14px; font-wieght: bold; line-height: 28px; padding: 4px 8px; border-bottom: 1px solid #858585;">
+									PORTAFINESTRA -&nbsp;ESTERNO NERO
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+		<footer id="sp-footer">
+			<div class="container">
+				<div class="row">
+					<div id="sp-footer2" class="col-sm-12 col-md-12">
+						<div class="sp-column ">
+							<span class="sp-copyright">Tutti i diritti riservati 2018 © ALsistem Scrl</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div> <!-- /.body-innerwrapper -->
+</div> <!-- /.body-innerwrapper -->
+   <!-- Off Canvas Menu -->
+   <div class="offcanvas-menu">
+      <a href="#" class="close-offcanvas"><i class="fa fa-remove"></i></a>
+   		<div class="offcanvas-inner">
+           <p class="alert alert-warning">Pubblica un modulo nella posizione <strong>offcanvas</strong></p>
+        </div> <!-- /.offcanvas-inner -->
+  </div> <!-- /.offcanvas-menu --> 
+                    <!-- Preloader -->                    
                     <!-- Go to top -->
-                                            <a href="javascript:void(0)" class="scrollup">&nbsp;</a>
+<a href="javascript:void(0)" class="scrollup">&nbsp;</a>
 <form id='thisForm' method="POST" action="<?php echo $v_action?>">
 <input type="hidden" name="smvc-def" value="esterno">";
 <?php
@@ -1309,8 +1603,8 @@ function updateRender(renderPath) {
     $("#bianco").find('a').attr("href", URL);
     $("#grigio").find('img').attr("src", URL);
     $("#grigio").find('a').attr("href", URL);
-    $("#noce").find('img').attr("src", URL);
-    $("#noce").find('a').attr("href", URL);
+    $("#marrone").find('img').attr("src", URL);
+    $("#marrone").find('a').attr("href", URL);
     $("#nero").find('img').attr("src", URL);
     $("#nero").find('a').attr("href", URL);
 }
@@ -1328,7 +1622,7 @@ function wizPost(paramsList) {
     theForm.submit();
 };
 
-</script>
-</form>
-                </body>
-                </html>
+	</script>
+	</form>
+  </body>
+</html>

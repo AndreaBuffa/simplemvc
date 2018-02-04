@@ -7,7 +7,7 @@
     <base href="http://frontend6.orchestraweb.net/alwin3d2/index.php/country-panorami" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="Joomla! - Open Source Content Management" />
-	<title>country panorami</title>
+	<title>scelta panorama</title>
 	<link href="/templates/shaper_helix3/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 	<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 	<link href="/components/com_sppagebuilder/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -34,132 +34,6 @@
 	<link href="/plugins/system/helix3/assets/css/pagebuilder.css" rel="stylesheet" type="text/css" />
 	<link href="/templates/shaper_helix3/css/frontend-edit.css" rel="stylesheet" type="text/css" />
 	<style type="text/css">
-.margini1 {
-    margin-right: -15px;
-}
-.margini2 {
-margin-left: -15px;
-margin-right: -15px;
-}
-.margini3 {
-    margin-left: -15px;
-    border-left: 1px solid #858585;
-}
-.margini4 {
-   margin-left: -20px;
-   padding-left: 5px;
-    border-left: 1px solid #858585;
-}
-
-#sppb-addon-1494148931288 a {
-    color: rgba(135, 135, 135, 1);
-}
-
-#sppb-addon-1494148931288 a:hover {
-   color: #ce0000;
-}
-
-#sppb-addon-1494158935833 a {
-    color: rgba(135, 135, 135, 1);
-}
-
-#sppb-addon-1494158935833 a:hover {
-   color: #ce0000;
-}
-
-#sppb-addon-1494159618661 a {
-    color: rgba(135, 135, 135, 1);
-}
-
-#sppb-addon-1494159618661 a:hover {
-   color: #ce0000;
-}
-#sppb-addon-1494169577394 a {
-    color: rgba(135, 135, 135, 1);
-}
-
-#sppb-addon-1494169577394 a:hover {
-   color: #ce0000;
-}
-
-.marginia {
-    margin-left: -10px;
-    margin-right: 0px;
-}
-.marginib {
-    margin-left: 0px;
-    margin-right: -10px;
-}
-#sppb-addon-1494169999418 a {
-    color: rgba(135, 135, 135, 1);
-}
-
-#sppb-addon-1494169999418 a:hover {
-   color: #ce0000;
-}
-.marginia2 {
-    margin-left: -10px;
-    margin-right: 0px;
-    margin-bottom:-15px;
-}
-.marginib2 {
-    margin-left: 0px;
-    margin-right: -10px;
-    margin-bottom:-15px;
-}
-
-
-
-
-.sp-page-builder .page-content #section-id-1494085957781{margin:0px 0px 0px 0px;padding:15px 0px 10px 0px;}
-#column-id-1494085957782{padding:0 10px 0 0;background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494080026683 {
-margin: 0 -15px 0 0;
-}
-#column-id-1494085957783{padding:0 0 0 0;background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494148931288 {
-	background-color: rgba(241, 241, 241, 1);
-}
-#column-id-1494085957784{background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494169781290 {
-padding: 31px 5px 8px 5px;
-}
-.sp-page-builder .page-content #section-id-1494158935829{margin:0px 0px 0px 0px;padding:0px 0px 10px 0px;}
-#column-id-1494158935830{padding:0 10px 0 0;background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494158935831 {
-margin: 0 -15px 0 0;
-}
-#column-id-1494158935832{padding:0 0 0 0;background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494158935833 {
-	background-color: rgba(241, 241, 241, 1);
-margin: 0 -15px 0 0;
-}
-#column-id-1494158935834{background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494169999418 {
-	background-color: rgba(241, 241, 241, 1);
-margin: 0 0 0 0;
-padding: 13px 5px 13px 5px;
-}
-.sp-page-builder .page-content #section-id-1494085957868{margin:0px 0px 5px 0px;padding:0px 0px 0px 0px;background-color:rgba(241, 241, 241, 1);}
-#column-id-1494085957869{background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494085957870 {
-margin: 0 0px 0 0;
-}
-#column-id-1494085957871{padding:0 0 0 0;background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494159618661 {
-	background-color: rgba(241, 241, 241, 1);
-margin: 0 0 0 -20px;
-}
-#column-id-1494085957873{background-color:rgba(241, 241, 241, 1);}
-#sppb-addon-1494169577394 {
-	background-color: rgba(241, 241, 241, 1);
-margin: 0 0 0 -15px;
-}
-.sp-page-builder .page-content #section-id-1494080026687{margin:10px 0px 0px 0px;padding:0px 0px 0px 0px;}
-#column-id-1494080026688{padding:0 0 0 0;}
-#column-id-1494160813209{padding:0 0 0 0;}
-
-
 
 #pulstestata a {
     color: rgba(135, 135, 135, 1);
@@ -191,10 +65,6 @@ margin: 0 0 0 -15px;
 
 #pulstestatapiccola {background-color: rgba(241, 241, 241, 1); margin: 0 0 0 0;}
 
-#baseimmagine a {color: rgba(255, 3, 3, 1);}
-
-#baseimmagine .sppb-addon-image-overlay{background-color: rgba(255, 255, 255, 0.51);}
-
 .rl_tooltips.popover {max-width: 400px;z-index: 10000;} 
 
 body{font-family:Raleway, sans-serif; font-size:18px; font-weight:300; }
@@ -205,147 +75,12 @@ h4{font-family:Aldrich, sans-serif; font-size:28px; font-weight:normal; }
 h5{font-family:Raleway, sans-serif; font-size:28px; font-weight:100; }
 h6{font-family:Aldrich, sans-serif; font-size:28px; font-weight:normal; }
 
-.box {
-margin: 7px 0px 33px 0px;
-background: #f1f1f1;
-padding: 15px;
-font-size: 20px;
-line-height: 28px;
-}
-.box1 {
-margin: 7px 0px 7px 0px;
-background: #f1f1f1;
-padding: 15px;
-font-size: 20px;
-line-height: 28px;
+#sp-footer {
+margin-top:0;
 }
 
-.box2 {
-margin: 0;
-}
-
-.boxlargo {
-width:100%;
-}
-
-
-.box2bis {
-margin: 14px 7px;
-}
-
-.box3 {
-margin:0 40px;
-background: #ececec;
-padding-bottom:30px;
-padding-top:15px;
-}
-
-.box4 {
-margin:0;
-background: #ececec;
-padding-bottom:30px;
-padding-top:15px;
-}
-
-.box5 {
-text-align:center;
-margin-top:-10px;
-margin-left:10px;
-border-left:1px solid #e6e6e6;
-background: #ffffff;
-height:100%;
-padding-top:0;
-padding-left:5px;
-}
-
-.box6 {
-margin:0 15px 0 0;
-background: #ececec;
-padding-bottom:300px;
-padding-top:15px;
-}
-
-.box7 {
-margin:0 15px 0 0;
-background: #ececec;
-padding-bottom:0px;
-padding-top:15px;
-}
-
-.box8 {
-margin:20px 0 0;
-background: #848484;
-padding:8px 15px 2px;
-font-size: 20px;
-line-height: 30px;
-font-family: Aldrich;
-color: #ffffff;
-}
-
-
-.box8bis {
-margin:30px 0 0;
-background: #848484;
-padding:1px 15px;
-font-size: 26px;
-line-height: 24px;
-font-family: Aldrich;
-color: #ffffff;
-}
-
-.box9 {
-margin:0;
-background: #C3C3C3;
-padding:8px 15px 2px;
-font-size: 20px;
-line-height: 30px;
-font-family: Aldrich;
-color: #333333;
-}
-
-.boxcontorno {
-background: #f1f1f1;
-padding: 15px;
-}
-
-.sppb-addon-title2 {
-text-shadow: 0px 2px 2px #000;
-font-size: 20px;
-font-weight: 500;
-position:absolute;
-padding-top: 0px;
-padding-left:10px;
-z-index: 500;
-}
-
-.i .fa2 {
-font-size: 36px;
-color:#ff0000;
-}
-
-.boxtris {
-margin: 0px 0px 24px 0px;
-background: #f1f1f1;
-padding: 15px;
-font-size: 20px;
-line-height: 28px;
-}
-
-pulssotto {
-margin-bottom: 15px;
-}
-
-.fondo {
-background-color:#d82231;
-}
-.bordobox {
-margin-left:-20px;
-}
-.centro {
-text-align: center;
-}
-#sp-top-bar{ background-color:#f5f5f5;color:#999999; }
-	</style>
+</style>
+	
 	<script src="/media/system/js/core.js" type="text/javascript"></script>
 	<script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
 	<script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
@@ -369,12 +104,73 @@ var sp_offanimation = 'default';
 	</script>
 	<script type="text/javascript">
 		(function() {
-			Joomla.JText.load({"COM_SPPAGEBUILDER_FRONTEND_EDITOR":"Frontend Editor","COM_SPPAGEBUILDER_PREVIEW":"Preview","COM_SPPAGEBUILDER_APPLY":"Apply","COM_SPPAGEBUILDER_CANCEL":"Cancel","COM_SPPAGEBUILDER_MEDIA_MANAGER":"Media Manager","COM_SPPAGEBUILDER_MEDIA_MANAGER_UPLOAD_FILES":"Upload Files","COM_SPPAGEBUILDER_MEDIA_MANAGER_CLOSE":"Close Modal","COM_SPPAGEBUILDER_MEDIA_MANAGER_INSERT":"Insert","COM_SPPAGEBUILDER_MEDIA_MANAGER_SEARCH":"Search","COM_SPPAGEBUILDER_MEDIA_MANAGER_CANCEL":"Cancel","COM_SPPAGEBUILDER_MEDIA_MANAGER_DELETE":"Delete","COM_SPPAGEBUILDER_MEDIA_MANAGER_CONFIRM_DELETE":"You are about to permanently delete this item. 'Cancel' to stop, 'OK' to delete.","COM_SPPAGEBUILDER_MEDIA_MANAGER_LOAD_MORE":"Load More","COM_SPPAGEBUILDER_MEDIA_MANAGER_UNSUPPORTED_FORMAT":"File format not supported.","COM_SPPAGEBUILDER_MEDIA_MANAGER_BROWSE_MEDIA":"Browse Media","COM_SPPAGEBUILDER_MEDIA_MANAGER_BROWSE_FOLDERS":"Browse Folders","COM_SPPAGEBUILDER_MEDIA_MANAGER_CREATE_FOLDER":"New Folder","COM_SPPAGEBUILDER_ADDON_ICON_SELECT":"Select Icon","COM_SPPAGEBUILDER_MEDIA_MANAGER_ENTER_DIRECTORY_NAME":"Please enter the name of the directory which should be created.","COM_SPPAGEBUILDER_MEDIA_MANAGER_MEDIA_UPLOADING":"Uploading","COM_SPPAGEBUILDER_MEDIA_MANAGER_UPLOAD_FAILED":"Upload Failed","COM_SPPAGEBUILDER_MEDIA_MANAGER_MEDIA_LARGE":"This file is too large to upload.","COM_SPPAGEBUILDER_MEDIA_MANAGER_FILE_NOT_SUPPORTED":"File not supported","COM_SPPAGEBUILDER_ROW_OPTIONS":"Row Options","COM_SPPAGEBUILDER_ADD_NEW_ROW":"Add New Row","COM_SPPAGEBUILDER_DUPLICATE_ROW":"Duplicate row","COM_SPPAGEBUILDER_DISABLE_ROW":"Disable Row","COM_SPPAGEBUILDER_ENABLE_ROW":"Enable Row","COM_SPPAGEBUILDER_COPY_ROW":"Copy Row","COM_SPPAGEBUILDER_ROW_COPIED":"Copied","COM_SPPAGEBUILDER_PASTE_ROW":"Paste Row","COM_SPPAGEBUILDER_DELETE_ROW":"Delete Row","COM_SPPAGEBUILDER_ROW_TOGGLE":"Toggle Row","COM_SPPAGEBUILDER_DELETE_ROW_CONFIRMATION":"Do you really want to delete this row?","COM_SPPAGEBUILDER_ROW_COLUMNS_MANAGEMENT":"Add\/Manage Columns","COM_SPPAGEBUILDER_ROW_COLUMNS_CUSTOM":"Custom","COM_SPPAGEBUILDER_ROW_COLUMNS_GENERATE":"Generate","COM_SPPAGEBUILDER_IMPORT_PAGE":"Import","COM_SPPAGEBUILDER_IMPORT_PAGE_ALT":"Import","COM_SPPAGEBUILDER_EXPORT_PAGE":"Export","COM_SPPAGEBUILDER_PAGE_TEMPLATES":"Page Templates","COM_SPPAGEBUILDER_UNDO":"Undo","COM_SPPAGEBUILDER_REDO":"Redo","COM_SPPAGEBUILDER_SAVE":"Save","COM_SPPAGEBUILDER_ROW_COLUMNS_OPTIONS":"Column Options","COM_SPPAGEBUILDER_DELETE_COLUMN":"Delete Column","COM_SPPAGEBUILDER_ADD_NEW_ADDON":"Add New Addon","COM_SPPAGEBUILDER_ADDON":"Addon","COM_SPPAGEBUILDER_DELETE_ADDON":"Delete Addon","COM_SPPAGEBUILDER_DUPLICATE_ADDON":"Clone Addon","COM_SPPAGEBUILDER_EDIT_ADDON":"Edit Addon","COM_SPPAGEBUILDER_ADDONS_LIST":"Addons List","COM_SPPAGEBUILDER_ALL":"All","COM_SPPAGEBUILDER_MODAL_CLOSE":"Close Modal","COM_SPPAGEBUILDER_DISABLE_COLUMN":"Disable Column","COM_SPPAGEBUILDER_ENABLE_COLUMN":"Enable Column","COM_SPPAGEBUILDER_YES":"Yes","COM_SPPAGEBUILDER_NO":"No","COM_SPPAGEBUILDER_PAGE_TEMPLATES_LIST":"Templates List","COM_SPPAGEBUILDER_PAGE_TEMPLATE_LOAD":"Load","COM_SPPAGEBUILDER_ENABLE_ADDON":"Enable Addon","COM_SPPAGEBUILDER_DISABLE_ADDON":"Disable Addon","COM_SPPAGEBUILDER_ADDON_PARENT_COLUMN":"Parent Column","COM_SPPAGEBUILDER_ADD_NEW_INNER_ROW":"Add Inner Row","COM_SPPAGEBUILDER_MOVE_COLUMN":"Move Column"});
+			Joomla.JText.load({"COM_SPPAGEBUILDER_FRONTEND_EDITOR":"Frontend Editor",
+			"COM_SPPAGEBUILDER_PREVIEW":"Preview","COM_SPPAGEBUILDER_APPLY":"Apply",
+			"COM_SPPAGEBUILDER_CANCEL":"Cancel","COM_SPPAGEBUILDER_MEDIA_MANAGER":"Media Manager",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_UPLOAD_FILES":"Upload Files",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_CLOSE":"Close Modal",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_INSERT":"Insert",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_SEARCH":"Search",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_CANCEL":"Cancel",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_DELETE":"Delete",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_CONFIRM_DELETE":"You are about to permanently delete this item. 'Cancel' to stop, 'OK' to delete.",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_LOAD_MORE":"Load More",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_UNSUPPORTED_FORMAT":"File format not supported.",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_BROWSE_MEDIA":"Browse Media",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_BROWSE_FOLDERS":"Browse Folders",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_CREATE_FOLDER":"New Folder",
+			"COM_SPPAGEBUILDER_ADDON_ICON_SELECT":"Select Icon",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_ENTER_DIRECTORY_NAME":"Please enter the name of the directory which should be created.",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_MEDIA_UPLOADING":"Uploading",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_UPLOAD_FAILED":"Upload Failed",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_MEDIA_LARGE":"This file is too large to upload.",
+			"COM_SPPAGEBUILDER_MEDIA_MANAGER_FILE_NOT_SUPPORTED":"File not supported",
+			"COM_SPPAGEBUILDER_ROW_OPTIONS":"Row Options",
+			"COM_SPPAGEBUILDER_ADD_NEW_ROW":"Add New Row",
+			"COM_SPPAGEBUILDER_DUPLICATE_ROW":"Duplicate row",
+			"COM_SPPAGEBUILDER_DISABLE_ROW":"Disable Row",
+			"COM_SPPAGEBUILDER_ENABLE_ROW":"Enable Row",
+			"COM_SPPAGEBUILDER_COPY_ROW":"Copy Row",
+			"COM_SPPAGEBUILDER_ROW_COPIED":"Copied",
+			"COM_SPPAGEBUILDER_PASTE_ROW":"Paste Row",
+			"COM_SPPAGEBUILDER_DELETE_ROW":"Delete Row",
+			"COM_SPPAGEBUILDER_ROW_TOGGLE":"Toggle Row",
+			"COM_SPPAGEBUILDER_DELETE_ROW_CONFIRMATION":"Do you really want to delete this row?",
+			"COM_SPPAGEBUILDER_ROW_COLUMNS_MANAGEMENT":"Add\/Manage Columns","COM_SPPAGEBUILDER_ROW_COLUMNS_CUSTOM":"Custom",
+			"COM_SPPAGEBUILDER_ROW_COLUMNS_GENERATE":"Generate",
+			"COM_SPPAGEBUILDER_IMPORT_PAGE":"Import",
+			"COM_SPPAGEBUILDER_IMPORT_PAGE_ALT":"Import",
+			"COM_SPPAGEBUILDER_EXPORT_PAGE":"Export",
+			"COM_SPPAGEBUILDER_PAGE_TEMPLATES":"Page Templates",
+			"COM_SPPAGEBUILDER_UNDO":"Undo",
+			"COM_SPPAGEBUILDER_REDO":"Redo",
+			"COM_SPPAGEBUILDER_SAVE":"Save",
+			"COM_SPPAGEBUILDER_ROW_COLUMNS_OPTIONS":"Column Options",
+			"COM_SPPAGEBUILDER_DELETE_COLUMN":"Delete Column",
+			"COM_SPPAGEBUILDER_ADD_NEW_ADDON":"Add New Addon",
+			"COM_SPPAGEBUILDER_ADDON":"Addon","COM_SPPAGEBUILDER_DELETE_ADDON":"Delete Addon",
+			"COM_SPPAGEBUILDER_DUPLICATE_ADDON":"Clone Addon",
+			"COM_SPPAGEBUILDER_EDIT_ADDON":"Edit Addon",
+			"COM_SPPAGEBUILDER_ADDONS_LIST":"Addons List",
+			"COM_SPPAGEBUILDER_ALL":"All",
+			"COM_SPPAGEBUILDER_MODAL_CLOSE":"Close Modal",
+			"COM_SPPAGEBUILDER_DISABLE_COLUMN":"Disable Column",
+			"COM_SPPAGEBUILDER_ENABLE_COLUMN":"Enable Column",
+			"COM_SPPAGEBUILDER_YES":"Yes",
+			"COM_SPPAGEBUILDER_NO":"No",
+			"COM_SPPAGEBUILDER_PAGE_TEMPLATES_LIST":"Templates List",
+			"COM_SPPAGEBUILDER_PAGE_TEMPLATE_LOAD":"Load",
+			"COM_SPPAGEBUILDER_ENABLE_ADDON":"Enable Addon",
+			"COM_SPPAGEBUILDER_DISABLE_ADDON":"Disable Addon",
+			"COM_SPPAGEBUILDER_ADDON_PARENT_COLUMN":"Parent Column",
+			"COM_SPPAGEBUILDER_ADD_NEW_INNER_ROW":"Add Inner Row",
+			"COM_SPPAGEBUILDER_MOVE_COLUMN":"Move Column"});
 		})();
 	</script>
 	<meta content="website" property="og:type"/>
-	<meta content="http://94.177.177.252/index.php/country-panorami" property="og:url" />
-	<meta content="country panorami" property="og:title" />
+	<meta content="" property="og:url" />
+	<meta content="panorami" property="og:title" />
+	
 	<script type="text/javascript">// <![CDATA[
     	jQuery(document).ready(function() {
     		var metropoli = <?php echo $v_metro ?>;
@@ -412,7 +208,7 @@ var sp_offanimation = 'default';
         						<div class="sppb-row-container">
         							<div class="sppb-row">
 										<div class="sppb-col-md-4">
-        									<div style="padding:0 10px 0 -10px;background-color:#f1f1f1;" class="sppb-column  margini1bis" >
+        									<div style="padding:0 10px 0 -10px;background-color:#f1f1f1;" class="sppb-column" >
         										<div class="sppb-column-addons">
         											<div style="margin: 0 -10px 0 0;" class="clearfix" >
         												<div class="sppb-addon sppb-addon-raw-html ">
@@ -422,7 +218,7 @@ var sp_offanimation = 'default';
 																		<tr>
 																			<td><img style="width:85px; height: 85px;" src="/images/2017/05/06/logo_alsistem150x150.png"></td>
 																			<td style="width:10px"></td>
-																			<td style="padding-left:10px; width: 196px; height: 85px; background: #f1f1f1;">
+																			<td style="padding-left:0px; width: 170px; height: 85px; background: #f1f1f1;">
 																				<div style="padding-top: 10px; font-family: Aldrich; font-size: 28px; color: #ce0000; line-height: 75px; vertical-align: middle; text-align: center; margin-right:12px;">ALWIN3D</div>
 																			</td>
 																			<td style="width:10px; background: #ffffff;"></td>
@@ -794,7 +590,7 @@ var sp_offanimation = 'default';
 	</div>
 
 
-<section id="section-id-1494080026687" class="sppb-section "  >
+<section style="margin:10px 0px 0px 0px;padding:0;" class="sppb-section "  >
 	<div class="sppb-row-container">
 		<div class="sppb-row">
 			
@@ -818,10 +614,10 @@ function wizPost(paramsList) {
 <form id='thisForm' method="POST" action="<?php echo $v_action?>">
 	
 			<div class="sppb-col-md-6">
-				<div id="column-id-1494080026688" class="sppb-column " >
+				<div style="padding:0;" class="sppb-column " >
 					<div class="sppb-column-addons">
 						<div id="mare" class="clearfix" >
-							<div class="sppb-addon sppb-addon-module  marginib">
+							<div style="margin-left: 0px; margin-right: -10px;" class="sppb-addon sppb-addon-module  marginib">
 								<div class="sppb-addon-content">						
   <script type="text/javascript">
     jQuery(document).ready(function() {
@@ -861,7 +657,7 @@ function wizPost(paramsList) {
 							</div>
 						</div>
 						<div id="montagna" class="clearfix" >
-							<div class="sppb-addon sppb-addon-module  marginib">
+							<div style="margin-left: 0px; margin-right: -10px;" class="sppb-addon sppb-addon-module">
 								<div class="sppb-addon-content">
 
   <script type="text/javascript">
@@ -939,7 +735,7 @@ function wizPost(paramsList) {
 						
 						
 						<div id="metropoli" class="clearfix" >
-							<div class="sppb-addon sppb-addon-module  marginib2">
+							<div style="margin-left: 0px; margin-right: -10px; margin-bottom:-15px;" class="sppb-addon sppb-addon-module">
 								<div class="sppb-addon-content">
 
   <script type="text/javascript">
@@ -986,10 +782,10 @@ function wizPost(paramsList) {
 				</div>
 	</div>
 	<div class="sppb-col-md-6">
-		<div id="column-id-1494160813209" class="sppb-column " >
+		<div style="padding:0;" class="sppb-column " >
 			<div class="sppb-column-addons">
 				<div id="citta" class="clearfix" >
-					<div class="sppb-addon sppb-addon-module  marginia">
+					<div style="margin-left: -10px;" margin-right: 0px;class="sppb-addon sppb-addon-module">
 						<div class="sppb-addon-content">
 
   <script type="text/javascript">
@@ -1080,7 +876,7 @@ function wizPost(paramsList) {
 					</div>
 				</div>
 				<div id="lago" class="clearfix" >
-					<div class="sppb-addon sppb-addon-module  marginia2">
+					<div style="margin-left: -10px; margin-right: 0px; margin-bottom:-15px;class="sppb-addon sppb-addon-module">
 						<div class="sppb-addon-content">
 
   <script type="text/javascript">
@@ -1178,7 +974,7 @@ function wizPost(paramsList) {
 				<div class="row">
 					<div id="sp-footer2" class="col-sm-12 col-md-12">
 						<div class="sp-column ">
-							<span class="sp-copyright">Tutti i diritti riservati 2017 © ALsistem Scrl</span>
+							<span class="sp-copyright">Tutti i diritti riservati 2018 © ALsistem Scrl</span>
 						</div>
 					</div>
 				</div>

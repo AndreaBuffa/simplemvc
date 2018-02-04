@@ -104,6 +104,13 @@ h4{font-family:Aldrich, sans-serif; font-size:28px; font-weight:normal; }
 h5{font-family:Raleway, sans-serif; font-size:28px; font-weight:100; }
 h6{font-family:Aldrich, sans-serif; font-size:28px; font-weight:normal; }
 
+.sclogin .logout-link {
+color:#ce0000;
+font-weight: bold;
+text-decoration: none;
+cursor: pointer;
+font-size: 16px;
+} 
 
 </style>
 
@@ -1432,7 +1439,7 @@ types = ['luce', 'vetro', 'nathura', 'classic', 'invisio', 'classic-s', 'nathura
   						<div class="boxpuls" style="float:left; text-align: center; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: bold; letter-spacing: 0.3px; color: #858585; line-height: 20px; background: #ffffff; width:90px; height: auto; margin:0 4px; 10px">
   							<button  id="wenge1" name="bigWnClrBtn" style="padding:5px; font-size: 12px;" onclick="setWinColor('wenge')">
   								<img  style="padding-bottom:5px;" src="/alwin3d2/images/COLORI/SERRAMENTI/wenge.jpg" class="imagebox" alt=""/>
-  								NOCE
+  								WENGE
   							</button>
   						</div>
   					</td>
@@ -2169,7 +2176,7 @@ types = ['luce', 'vetro', 'nathura', 'classic', 'invisio', 'classic-s', 'nathura
 			<div class="row">
 				<div id="sp-footer1" class="col-sm-12 col-md-12">
 					<div class="sp-column ">
-						<span class="sp-copyright">Tutti i diritti riservati 2017 © ALsistem Scrl</span>
+						<span class="sp-copyright">Tutti i diritti riservati 2018 © ALsistem Scrl</span>
 					</div>
 				</div>
 			</div>

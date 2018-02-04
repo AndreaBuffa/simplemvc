@@ -8,7 +8,7 @@
                     <base href="http://frontend6.orchestraweb.net/alwin3d2/index.php/stili" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="generator" content="Joomla! - Open Source Content Management" />
-    <title>stili</title>
+    <title>Scelta Stile</title>
     <link href="/templates/shaper_helix3/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link href="/components/com_sppagebuilder/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -79,9 +79,6 @@ padding: 10px;
 }
 
 #column-id-1494085957783{padding:17px 0px 0px 0px;background-color:rgba(241, 241, 241, 1);}
-#sppb-modal-1506011208213.white-popup-block {width: 500px; height: 680px;}
-#sppb-addon-1506011208213 #sppb-modal-1506011208213-selector.sppb-btn-custom { background-color: rgba(201, 0, 0, 1); color: #ffffff; padding:5px 10px; margin-top:17px; white-space:normal;}
-#sppb-addon-1506011208213 #sppb-modal-1506011208213-selector.sppb-btn-custom:hover { background-color: rgba(184, 0, 0, 1); color: #ffffff; padding:5px 10px; margin-top:17px; white-space:normal;}
 #column-id-1494085957784{background-color:rgba(241, 241, 241, 1);}
 #sppb-addon-1494169781290 {background-color: rgba(241, 241, 241, 1); padding: 31px 5px 8px 5px;}
 
@@ -422,58 +419,7 @@ var sp_offanimation = 'default';
 		<div class="sppb-col-md-2">
 			<div id="column-id-1494085957783" class="sppb-column paddingzero3">
 				<div class="sppb-column-addons">
-					<div id="sppb-addon-1506011208213" class="clearfix">
-						<div id="sppb-modal-1506011208213" class="mfp-hide white-popup-block">
-							<div class="modal-inner-block">
-								<div style="margin: 15px; text-align: center; font-size: 16px; line-height: 22px;">SELEZIONA O INSERISCI CLIENTE<br>
-								<div style="margin-bottom: 6px; text-align: left; width: 98%; padding: 15px 5px 0; font-size: 16px;">Seleziona un cliente già registrato</div>
-								<select class="mdl-card__supporting-text" style="width: 98%;">
-									<option>Sergio Viola</option>
-									<option>Mario Rossi</option>
-									<option>Giorgio Verdi</option>
-									<option>Maria Bianchi</option>
-									<option>Paolo Neri</option>
-								</select>
-								<div style="margin-bottom: 6px; text-align: left; width: 98%; padding: 15px 5px 0; font-size: 16px;">Inserisci un nuovo cliente</div>
-									<table width="100%">
-										<tbody>
-											<tr style="text-align: left;">
-												<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Nome <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci il nome del cliente"></td>
-											</tr>
-											<tr style="text-align: left;">
-												<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Utente <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci il suo username"></td>
-											</tr>
-											<tr style="text-align: left;">
-												<td style="width: 20%; height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;">CAP <input style="width: 110px; height: 30px; float: left;" maxlength="5" size="5" type="text" placeholder="Inserire CAP"></td>
-												<td style="width: 1%;">&nbsp;</td>
-												<td style="width: 79%; height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;">Città <input style="width: 295px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci la città"></td>
-											</tr>
-											<tr style="text-align: left;">
-												<td style="width: 20%; height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;">Prov. <input style="width: 110px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Prov"></td>
-												<td style="width: 1%;">&nbsp;</td>
-												<td style="width: 79%; height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;">Nazione <input style="width: 295px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci la nazione"></td>
-											</tr>
-											<tr style="text-align: left;">
-												<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Partita IVA <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci la Partita IVA"></td>
-											</tr>
-											<tr style="text-align: left;">
-												<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Codice Fiscale <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci il codice fiscale"></td>
-											</tr>
-											<tr style="text-align: left;">
-												<td style="height: 28px; text-align: justify; padding: 5px 10px; border-bottom: 1px solid #dedede;" colspan="3">Email <input style="width: 430px; height: 30px; float: left;" maxlength="25" size="40" type="text" placeholder="Inserisci email"></td>
-											</tr>
-											<tr>
-												<td style="height: 28px; padding: 5px 10px 5px 20px; border-bottom: 1px solid #dedede; text-align: left;" colspan="3">&nbsp;<a class="sppb-btn  sppb-btn-primary sppb-btn-rounded" style="padding: 10px; float: right;" href="/alwin3d2/index.php/pagina-utente-finale">SALVA</a></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					<div class=" sppb-text-left"><a class="sppb-btn  sppb-btn-custom sppb-btn-rounded sppb-magnific-popup sppb-modal-selector" data-popup_type="inline" data-mainclass="mfp-no-margins mfp-with-zoom" href="#sppb-modal-1506011208213" id="sppb-modal-1506011208213-selector">
-					<i class="fa fa-user-plus"></i> SELEZIONA<br/>O INSERISCI CLIENTE</a>
-					</div>
-				</div>
+					
 			</div>
 		</div>
 	</div>
@@ -991,7 +937,7 @@ classToAdd: 'favshow layout-effect1', // Class to add to the elements when they 
 		<div class="row">
 			<div id="sp-footer2" class="col-sm-12 col-md-12">
 				<div class="sp-column ">
-				<span class="sp-copyright">Tutti i diritti riservati 2017 © ALsistem Scrl</span>
+				<span class="sp-copyright">Tutti i diritti riservati 2018 © ALsistem Scrl</span>
 				</div>
 			</div>
 		</div>
